@@ -1,0 +1,146 @@
+:root {
+  --black: #000000;
+  --eerie-black: #1e1e1e;
+  --white: #ffffff;
+
+  --primary-color: #1e1e1e;
+  --secondary-color: #ffffff;
+
+  --font-size-m: 12px;
+  --font-size-l: 14px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 36px;
+  --font-size-xxxl: 64px;
+
+  --font-weight-light: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 700;
+
+  --container-max-width: 1320px;
+
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-syncopate: 'Syncopate', sans-serif;
+
+  --btn-bg-primary: #1e1e1e;
+  --btn-bg-secondary: #ffffff;
+
+  --btn-color-primary: #ffffff;
+  --btn-color-secondary: #000000;
+}
+
+
+/* Basic Styling */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  color: var(--eerie-black);
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  text-align: left;
+  background-color: var(--white);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* TYPOGRAPHY */
+div {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-light);
+  -webkit-text-size-adjust: none;
+  font-style: normal;
+}
+
+h1 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+}
+
+h2 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+}
+
+h3 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+}
+
+h4 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-l);
+  font-style: normal;
+}
+
+h5 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+}
+
+h6 {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+}
+
+a {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-m);
+  display: contents;
+  text-decoration: none;
+  font-style: normal;
+}
+
+p {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+}
+
+table{
+  width: 100%;
+}
+
+
+/* FORMS AND BUTTONS */
+input {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+textarea {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+/* Responsive images */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.shop_table .product-thumbnail img{
+  width: 200px;
+}
