@@ -92,10 +92,35 @@ header .top-header-style-2{
   font-weight: var(--font-weight-regular);
   color: var(--white);
   line-height: var(--line-height-m);
+  position: relative;
+  top: 5px;
 }
 
 header .top-header-style-2 a{
   color: var(--white);
+}
+
+#s{
+  width: 40%;
+  background-color: var(--faux-cg-blue2);
+  height: 25px;
+  border: 0;
+}
+
+#categorysubmit{
+  height: 28px;
+  opacity: 0.8;
+}
+
+#searchsubmit{
+  background-color: var(--white);
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-regular);
+  color: var(--faux-cg-blue);
+  line-height: var(--line-height-m);
+  width: 85px;
+  height: 28px;
 }
 
 header .top-header-content p {
@@ -109,7 +134,6 @@ header .top-header-content p span.know-more {
   color: var(--faux-cg-blue);
   text-decoration: underline;
 }
-
 
 /** RESPONSIVE NAVBAR */
 header .main-nav {
@@ -201,6 +225,13 @@ header .menu-toggler .toggle-icon {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+@media only screen and (min-width: 375px ) {
+  header .site-branding.header-logo img{
+    width: 106px;
+    height: 56px;
+  }
+}
+
 /* Navigation menu Only for mobile and < tablet devices */
 @media screen and (max-width: 767px) {
   header .navbar.responsive .nav-menu-container {position: relative;}
@@ -228,10 +259,6 @@ header .menu-toggler .toggle-icon {
   }
   header .site-branding {
     flex: 0%;
-  }
-  header .site-branding.header-logo img{
-    width: 106px;
-    height: 56px;
   }
   header .nav-menu-container {
     display: flex;
