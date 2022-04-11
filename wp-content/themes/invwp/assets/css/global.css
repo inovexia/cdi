@@ -251,6 +251,9 @@ header .menu-toggler .toggle-icon {
     color: #000;
     text-decoration: none;
   }
+  header .top-header-section{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
