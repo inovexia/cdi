@@ -34,14 +34,14 @@ function invx_add_theme_scripts () {
     wp_enqueue_style( 'invwps-normalize-css', get_template_directory_uri() . '/assets/css/normalize.css', array(), _S_VERSION, 'all');
 
     // Google Fonts
-    wp_enqueue_style( 'invwps-google-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Syncopate&display=swap', false );
+    wp_enqueue_style( 'invwps-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap', false );
 
     wp_enqueue_style( 'invwps-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' );
 
 
     // Style guide and global css
-    //wp_enqueue_style( 'invwps-styleguide-css', get_template_directory_uri () . '/assets/css/styleguide.css', array(), _S_VERSION, 'all' );
-    //wp_enqueue_style( 'invwps-global-css', get_template_directory_uri () . '/assets/css/global.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-styleguide-css', get_template_directory_uri () . '/assets/css/styleguide.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-global-css', get_template_directory_uri () . '/assets/css/global.css', array(), _S_VERSION, 'all' );
     //wp_enqueue_style( 'invwps-common-css', get_template_directory_uri () . '/assets/css/common-component.css', array(), _S_VERSION, 'all' );
     // SwiperJs styles
     wp_enqueue_style( 'invwps-swiper-bundle-css', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', array(), _S_VERSION, 'all' );

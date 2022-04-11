@@ -25,7 +25,6 @@
   }
 }
 
-
 /* RESPONSIVE STYLING */
 .row {
   display: block;
@@ -85,14 +84,14 @@ header .top-header-section {
 }
 
 header .top-header-content p {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-normal);
-  color: var(--eerie-black);
+  color: var(--faux-cg-blue);
 }
 
 header .top-header-content p span.know-more {
-  color: var(--eerie-black);
+  color: var(--faux-cg-blue);
   text-decoration: underline;
 }
 
@@ -103,7 +102,7 @@ header .main-nav {
   background-color: var(--white);
   display: flex;
   height: 80px;
-  border-bottom: 1px solid var(--eerie-black);
+  border-bottom: 1px solid var(--faux-cg-blue);
 }
 
 header .site-branding {
@@ -118,8 +117,8 @@ header .navbar {
 }
 
 header .site-branding .site-title {
-  color: var(--eerie-black);
-  font-family: var(--font-family-syncopate);
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
   font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: 0;
@@ -137,8 +136,8 @@ header ul li {
 }
 
 header li a {
-  color: var(--eerie-black);
-  font-family: var(--font-family-lato);
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
   font-size: var(--font-size-m);
   font-weight: 400;
   font-style: normal;
@@ -262,27 +261,27 @@ header .menu-toggler .toggle-icon {
 }
 
 .button-primary {
-  background-color: var(--eerie-black);
-  border: 1px solid var(--eerie-black);
+  background-color: var(--faux-cg-blue);
+  border: 1px solid var(--faux-cg-blue);
   color: var(--white);
 }
 
 .button-primary:hover {
   background-color: var(--white);
-  color: var(--eerie-black);
-  border: 1px solid var(--eerie-black);
+  color: var(--faux-cg-blue);
+  border: 1px solid var(--faux-cg-blue);
 }
 
 .button-secondary {
   background-color: var(--white);
-  color: var(--eerie-black);
-  border: 1px solid var(--eerie-black);
+  color: var(--faux-cg-blue);
+  border: 1px solid var(--faux-cg-blue);
 }
 
 .button-secondary:hover {
-  background: var(--eerie-black);
+  background: var(--faux-cg-blue);
   color: var(--white);
-  border: 1px solid var(--eerie-black);
+  border: 1px solid var(--faux-cg-blue);
 }
 
 
@@ -333,7 +332,7 @@ header .menu-toggler .toggle-icon {
 .text-right { text-align: right;}
 .text-uppercase { text-transform: uppercase;}
 
-.text-primary{ color: var(--eerie-black);}
+.text-primary{ color: var(--faux-cg-blue);}
 .text-secondary{ color: var(--white);}
 
 .text-black{ color: var(--black);}
@@ -342,7 +341,7 @@ header .menu-toggler .toggle-icon {
 .overflow-hidden { overflow: hidden;}
 
 .section-title {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-medium);
   font-style: normal;
@@ -352,18 +351,18 @@ header .menu-toggler .toggle-icon {
 }
 
 .subtitle-primary {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-opne-sans);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
   font-style: normal;
-  color: var(--eerie-black);
+  color: var(--faux-cg-blue);
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .subtitle-secondary {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
   font-style: normal;
@@ -423,7 +422,7 @@ header .menu-toggler .toggle-icon {
 .not-found {
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid var(--eerie-black);
+  border: 1px solid var(--faux-cg-blue);
   border-radius: 20px;
   width: 50%;
 }
@@ -495,12 +494,12 @@ footer {
 }
 footer .top-footer {
   width: 100%;
-  background-color: var(--eerie-black);
+  background-color: var(--faux-cg-blue);
   color: var(--white);
   padding: 100px 0px;
 }
 footer .top-footer-about h6 {
-  font-family: 'Syncopate';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -508,7 +507,7 @@ footer .top-footer-about h6 {
   color: #FFFFFF;
 }
 footer .top-footer-about .widget {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -519,7 +518,7 @@ footer .top-footer-about .widget {
 
 /* Footer Menu */
 footer .top-footer-menu .widget-title {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -533,7 +532,7 @@ footer .top-footer-menu li {
   margin-top: 14px;
 }
 footer .top-footer-menu li a {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -543,7 +542,7 @@ footer .top-footer-menu li a {
 
 /* Customer Menu */
 footer .top-footer-customer-service .widget-title {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -557,7 +556,7 @@ footer .top-footer-customer-service li {
   margin-top: 14px;
 }
 footer .top-footer-customer-service li a {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -567,7 +566,7 @@ footer .top-footer-customer-service li a {
 
 /* Contact Menu */
 footer .top-footer-contact h6 {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -578,7 +577,7 @@ footer .top-footer-contact h6 {
   margin-top: 81px;
 }
 footer .top-footer-contact .widget {
-  font-family: var(--font-family-lato);
+  font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -610,7 +609,7 @@ footer .bottom-footer .social-link li, .payment-method li{
 
 footer .bottom-footer .social-link li i {
   list-style: none;
-  color: var(--eerie-black);
+  color: var(--faux-cg-blue);
 }
 .woocommerce-tabs ul.tabs li {
     display: inline-block;
