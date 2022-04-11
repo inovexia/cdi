@@ -66,7 +66,7 @@
           <li class="nav-item">
             <a href="#">NEW USER? SIGN UP</a>
           </li>
-          
+
         </ul>
 
       </div>
@@ -84,7 +84,7 @@
       <div class="bag-section">
         <?php if ( class_exists( 'WooCommerce' ) ) { ?>
           <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
-            <span class="bag"><i class="fas fa-shopping-bag" aria-hidden="true"></i></span>
+            <span class="bag"><img src="invwp/assets/images/cart-icon.png" ></span>
               <?php
               global $woocommerce;
               $item_count =  $woocommerce->cart->cart_contents_count;
