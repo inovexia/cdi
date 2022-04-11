@@ -13,19 +13,19 @@ get_header ();
 
     <div class="content">
         <!-- Hero section -->
-        <?php get_template_part( 'template-parts/page/home/hero-image', 'hero'); ?>
+        <?php //get_template_part( 'template-parts/page/home/hero-image', 'hero'); ?>
 
         <!--Products Slider-->
-        <?php get_template_part( 'template-parts/page/home/product-categories'); ?>
+        <?php //get_template_part( 'template-parts/page/home/product-categories'); ?>
 
         <!--Help Section-->
-        <?php get_template_part( 'template-parts/page/home/about-us'); ?>
+        <?php //get_template_part( 'template-parts/page/home/about-us'); ?>
 
         <!--Products Slider-->
-        <?php get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
+        <?php //get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
 
         <!--Contact Section-->
-        <?php get_template_part( 'template-parts/page/home/contact', 'contact'); ?>
+        <?php //get_template_part( 'template-parts/page/home/contact', 'contact'); ?>
 
       </div>
 

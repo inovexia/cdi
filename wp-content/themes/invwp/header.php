@@ -30,6 +30,6 @@
 	<header id="masthead" class="site-header">
 
 		<!-- Load Header template -->
-		<?php //get_template_part('template-parts/header/header'); ?>
+		<?php get_template_part('template-parts/header/header'); ?>
 
 	</header><!-- #masthead -->

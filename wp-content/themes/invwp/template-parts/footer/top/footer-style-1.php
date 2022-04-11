@@ -2,14 +2,14 @@
   <div class="container">
     <!-- First row -->
     <div class="row">
-      <div class="col-8">
-        <div class="top-footer-about">
-          <?php dynamic_sidebar('top-footer-about'); ?>
-        </div>
-      </div>
-      <div class="col-4">
+      <div class="col-6">
         <div class="top-footer-newslettert">
           <?php dynamic_sidebar('top-footer-newsletter'); ?>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="top-footer-about">
+          <?php dynamic_sidebar('top-footer-about'); ?>
         </div>
       </div>
     </div>
