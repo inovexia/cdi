@@ -99,6 +99,24 @@
         </form>
       </div>
 
+      <div class="bag-section">
+        <?php if ( class_exists( 'WooCommerce' ) ) { ?>
+          <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
+            <span class="bag"><i class="fas fa-shopping-bag" aria-hidden="true"></i></span>
+              <?php
+              global $woocommerce;
+              $item_count =  $woocommerce->cart->cart_contents_count;
+              if ($item_count > 9) {
+                $cart_items_count = '9+';
+              } else {
+                $cart_items_count = $item_count;
+              }
+              ?>
+              (<span class="cart-items-count"><?php echo $cart_items_count; ?></span>)
+          </a>
+        <?php } ?>
+      </div>
+
       <div class="menu-toggler" id="menu-toggler">
         <a href="#" class="toggle-icon" id="menu-toggler" onclick="toggle_menu ()">&#9776;</a>
       </div>
