@@ -89,6 +89,16 @@
 
       </div>
 
+      <div class="search-section-nav">
+        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <div>
+                <label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" Placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+            </div>
+        </form>
+      </div>
+
       <div class="menu-toggler" id="menu-toggler">
         <a href="#" class="toggle-icon" id="menu-toggler" onclick="toggle_menu ()">&#9776;</a>
       </div>

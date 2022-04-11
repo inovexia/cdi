@@ -254,9 +254,15 @@ header .menu-toggler .toggle-icon {
   header .top-header-section{
     display: none;
   }
+  header .search-section-nav {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  header .search-section-nav {
+    display: none;
+  }
   .dropdown-content li{
     margin-left: 0 !important;
   }
