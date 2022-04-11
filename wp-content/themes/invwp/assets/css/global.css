@@ -257,6 +257,10 @@ header .menu-toggler .toggle-icon {
   header .search-section-nav, .bag-section {
     display: block;
   }
+  .bag-section{
+    width: 21px;
+    height: 24px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

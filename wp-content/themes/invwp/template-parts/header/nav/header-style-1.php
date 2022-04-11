@@ -84,7 +84,7 @@
       <div class="bag-section">
         <?php if ( class_exists( 'WooCommerce' ) ) { ?>
           <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
-            <span class="bag"><img src="invwp/assets/images/cart-icon.png" ></span>
+            <span class="bag"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cart-icon.png" /></span>
               <?php
               global $woocommerce;
               $item_count =  $woocommerce->cart->cart_contents_count;
