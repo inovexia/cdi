@@ -66,25 +66,7 @@
           <li class="nav-item">
             <a href="#">NEW USER? SIGN UP</a>
           </li>
-
-          <li class="nav-item" style="display: none;">
-            <?php if ( class_exists( 'WooCommerce' ) ) { ?>
-              <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
-                <span class="bag">BAG</span>
-                  <?php
-                  global $woocommerce;
-                  $item_count =  $woocommerce->cart->cart_contents_count;
-                  if ($item_count > 9) {
-                    $cart_items_count = '9+';
-                  } else {
-                    $cart_items_count = $item_count;
-                  }
-                  ?>
-                  (<span class="cart-items-count"><?php echo $cart_items_count; ?></span>)
-              </a>
-            <?php } ?>
-          </li>
-
+          
         </ul>
 
       </div>

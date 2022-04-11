@@ -254,13 +254,13 @@ header .menu-toggler .toggle-icon {
   header .top-header-section{
     display: none;
   }
-  header .search-section-nav {
+  header .search-section-nav, .bag-section {
     display: block;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  header .search-section-nav {
+  header .search-section-nav, .bag-section {
     display: none;
   }
   .dropdown-content li{
