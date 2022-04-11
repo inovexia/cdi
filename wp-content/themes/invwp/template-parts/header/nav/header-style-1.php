@@ -42,7 +42,7 @@
           <li class="nav-item">
             <div class="dropdown">
               <?php if (is_user_logged_in()) { ?>
-                <!--<a href="#" class="dropbtn">My Account</a>
+                <a href="#" class="dropbtn">My Account</a>
                 <ul class="dropdown-content">
                   <?php if ( class_exists( 'WooCommerce' ) ) { ?>
                     <li><a class="dropdown-item" href="<?php echo wc_get_account_endpoint_url(''); ?>">Account Information</a></li>
@@ -52,16 +52,37 @@
                     <li><hr class="dropdown-divider"></li>
                   <?php } ?>
                   <li><a class="dropdown-item" href="<?php echo wp_logout_url(home_url()); ?>"> Logout</a></li>
-                </ul>-->
+                </ul>
               <?php } else { ?>
-                <nav class="cd-main-nav js-main-nav">
-            			<ul class="cd-main-nav__list js-signin-modal-trigger">
+                <nav class="">
+            			<ul class="">
             				<!-- inser more links here -->
-            				<li><a class="login-modal cd-main-nav__item cd-main-nav__item--signin" href="#0" style="cursor:pointer;" data-signin="login">LOGIN</a></li>
+            				<li><a class="login-modal" href="#0" style="cursor:pointer;" data-signin="login">LOG IN</a></li>
             			</ul>
             		</nav>
               <?php } ?>
             </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">NEW USER? SIGN UP</a>
+          </li>
+
+          <li class="nav-item" style="display: none;">
+            <?php if ( class_exists( 'WooCommerce' ) ) { ?>
+              <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
+                <span class="bag">BAG</span>
+                  <?php
+                  global $woocommerce;
+                  $item_count =  $woocommerce->cart->cart_contents_count;
+                  if ($item_count > 9) {
+                    $cart_items_count = '9+';
+                  } else {
+                    $cart_items_count = $item_count;
+                  }
+                  ?>
+                  (<span class="cart-items-count"><?php echo $cart_items_count; ?></span>)
+              </a>
+            <?php } ?>
           </li>
 
         </ul>
