@@ -19,10 +19,13 @@ get_header ();
         <?php get_template_part( 'template-parts/page/home/product-categories'); ?>
 
         <!--Help Section-->
-        <?php //get_template_part( 'template-parts/page/home/about-us'); ?>
+        <?php get_template_part( 'template-parts/page/home/about-us'); ?>
+
+        <!--Home Shop Section-->
+        <?php get_template_part( 'template-parts/page/home/home-shop'); ?>
 
         <!--Products Slider-->
-        <?php //get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
+        <?php get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
 
         <!--Contact Section-->
         <?php //get_template_part( 'template-parts/page/home/contact', 'contact'); ?>

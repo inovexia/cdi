@@ -14,9 +14,9 @@
       <div class="row">
         <div class="col-12">
           <!-- Slider main container -->
-          <div class="home-industry-slider swiper">
+          <div class="home-industry-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper1 row">
               <?php
                $args = array (
                 'post_type' => 'post',
@@ -34,7 +34,7 @@
                   $image = wp_get_attachment_url ( get_post_thumbnail_id ( get_the_Id()));
                   ?>
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide1 col-4">
                      <div class="slide-image">
                        <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
                      </div>
@@ -55,15 +55,7 @@
                }
                ?>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </div>
