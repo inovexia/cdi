@@ -20,7 +20,6 @@
               'hide_empty' => false,
              );
              $product_categories = get_terms( 'product_cat', $cat_args);
-             print_r($product_categories);
              if ($product_categories) {
                foreach ($product_categories as $key => $category) {
                  $thumbnail_id = get_term_meta( $category->term_id, 'thumbnail_id', true );
