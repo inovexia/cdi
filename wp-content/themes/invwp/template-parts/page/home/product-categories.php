@@ -22,7 +22,7 @@
              $product_categories = get_terms( 'product_cat', $cat_args);
              if ($product_categories) {
                foreach ($product_categories as $key => $category) {
-               print_r($category);
+               //print_r($category);
                  ?>
                  <div class="title">
                    <a class="text-uppercase" href="<?php echo get_term_link($category); ?>" title="<?php echo $category->name; ?>"><?php echo $category->name; ?></a>
