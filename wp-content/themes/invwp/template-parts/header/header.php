@@ -9,7 +9,7 @@ $navigation_style = get_field('navigation_style', 'option');
         echo 'test';
       }
       else{
-        get_template_part('template-parts/header/top/header', 'style-2');
+        get_template_part('template-parts/header/top/header', 'style-3');
       }
   }
 

@@ -74,6 +74,42 @@ register_sidebar(
 		'after_title'   => '</h6>',
 	)
 );
+// TOP HEADER MENU
+register_sidebar(
+	array(
+		'name'          => esc_html__( 'Top Header Menu', 'invwp' ),
+		'id'            => 'top-header-menu',
+		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	)
+);
+// TOP HEADER MENU
+register_sidebar(
+	array(
+		'name'          => esc_html__( 'Top Header Menu 1', 'invwp' ),
+		'id'            => 'top-header-menu1',
+		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	)
+);
+// TOP HEADER MENU
+register_sidebar(
+	array(
+		'name'          => esc_html__( 'Top Header Menu 2', 'invwp' ),
+		'id'            => 'top-header-menu2',
+		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="widget-title">',
+		'after_title'   => '</h6>',
+	)
+);
 // TOP FOOTER ABOUT
 register_sidebar(
 	array(

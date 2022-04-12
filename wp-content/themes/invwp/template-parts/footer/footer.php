@@ -10,7 +10,7 @@
         get_template_part('template-parts/footer/top/footer', 'style-'.$footer_top_style);
       }
       else{
-        get_template_part('template-parts/footer/top/footer', 'style-1');
+        get_template_part('template-parts/footer/top/footer', 'style-3');
       }
   }
 
@@ -18,7 +18,7 @@
       if($bottom_footer_style > 0 ){
         get_template_part('template-parts/footer/bottom/footer', 'style-'.$bottom_footer_style);
       } else {
-        get_template_part('template-parts/footer/bottom/footer', 'style-1');
+        get_template_part('template-parts/footer/bottom/footer', 'style-3');
       }
   }
   ?>

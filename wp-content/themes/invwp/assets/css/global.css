@@ -93,7 +93,15 @@ header .top-header-style-2{
   color: var(--white);
   line-height: var(--line-height-m);
   position: relative;
-  top: 5px;
+  top: 15px;
+}
+
+header .top-header-style-2 span{
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-regular);
+  color: var(--white);
+  line-height: var(--line-height-m);
 }
 
 header .top-header-style-2 a{
@@ -652,10 +660,26 @@ footer .top-footer-contact .widget {
  }
 
 footer .bottom-footer {
-   background-color: #f1f1f1;
+   background-color: var(--faux-cg-blue);
    height: 60px;
 }
 
+footer .social-icons ul li{
+  display: inline-block;
+}
+
+footer .social-icons ul li a{
+  color: var(--white);
+}
+
+footer .payment-options{
+  display: flex;
+}
+
+footer .payment-options img{
+  width: 60px;
+  height: 38px;
+}
 
 footer .bottom-footer .social-link, .payment-method {
   display: flex;
