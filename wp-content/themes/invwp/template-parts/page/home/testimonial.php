@@ -35,7 +35,7 @@
                      </div>
                      <h6 class="slide-meta text-uppercase">
                      </h6>
-                     <h6 class="text-left">
+                     <h6 class="text-center">
                         <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                      </h6>
                      <p class="slide-excerpt mb-5">
