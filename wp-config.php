@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'cdi_wp' );
+define( 'DB_NAME', 'icbtccom_dev_cdi' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'icbtccom_develop' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'icbtc.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -65,7 +65,7 @@ define( 'NONCE_SALT',       '+.?+CldeGiK)$W`y~mr[FN}DGGz*rl-rk#}MPZ-/_=.;tq!hx+-
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wpcd_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -83,6 +83,8 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+define( 'WP_SITEURL', 'http://localhost/dev/cdi' );
+define( 'WP_HOME', 'http://localhost/dev/cdi' );
 
 
 /* That's all, stop editing! Happy publishing. */
