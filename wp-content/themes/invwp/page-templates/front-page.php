@@ -27,6 +27,12 @@ get_header ();
         <!--Products Slider-->
         <?php get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
 
+        <!--Faq Section-->
+        <?php get_template_part( 'template-parts/page/home/faq'); ?>
+
+        <!--Testimonial Section-->
+        <?php get_template_part( 'template-parts/page/home/testimonial'); ?>
+
         <!--Contact Section-->
         <?php //get_template_part( 'template-parts/page/home/contact', 'contact'); ?>
 

@@ -1,15 +1,10 @@
 <section class="home-industry-section full-width">
   <div class="container">
     <div class="row">
-      <div class="col-6">
-          <h6 class="subtitle-secondary text-uppercase"><?php echo the_field('industry_sub_title'); ?></h6>
-          <h2 class="section-title"><?php echo the_field("industry_title"); ?></h2>
-        </div>
-        <div class="col-6 text-right">
-            <a class="button button-secondary" href="<?php echo site_url('industry');?>"><?php echo the_field('industry_button'); ?></a>
+      <div class="col-12 text-center">
+          <h2 class="section-title">Health blog & articles<?php //echo the_field("industry_title"); ?></h2>
         </div>
       </div>
-
 
       <div class="row">
         <div class="col-12">
@@ -43,15 +38,19 @@
                      <h6 class="text-left">
                         <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                      </h6>
-                     <p class="slide-excerpt">
+                     <p class="slide-excerpt mb-5">
                         <?php
         								$excerpt= get_the_excerpt();
         								echo substr($excerpt, 0, 160);
         								?>
                      </p>
+                     <div class="text-right">
+                       <a href="<?php echo the_permalink (); ?>">Read more</a>
+                     </div>
                   </div>
                    <?php
                  }
+                 wp_reset_postdata();
                }
                ?>
             </div>
