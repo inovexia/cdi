@@ -50,12 +50,14 @@
     justify-content:space-between;
     pointer-events: none;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .row > * {
     flex-shrink: 0;
     pointer-events: auto;
   }
+
 
   .col-1 { width: 8.33%;}
   .col-2 { width: 16.66%;}
