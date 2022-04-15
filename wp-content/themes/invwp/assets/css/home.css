@@ -82,6 +82,11 @@
   font-style: normal;
 }
 
+.home-testimonial-slider .slide-image img{
+  width: 120px;
+  height: 120px;
+}
+
 @media only screen and (min-width: 375px ) {
 
 }
@@ -115,8 +120,7 @@
   .home-about-us .button{
     width: 100%;
   }
-  .home-testimonial-slider .slide-image img{
-    width: 120px;
-    height: 120px;
+  .home-industry-slider h5 a{
+    color: var(--faux-cg-blue);
   }
 }
