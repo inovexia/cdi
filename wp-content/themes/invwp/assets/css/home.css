@@ -66,6 +66,22 @@
   border-radius: 20px;
 }
 
+.product-categories h4 a{
+  color: var(--black2);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+}
+
+.product-categories li a{
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+}
+
 @media only screen and (min-width: 375px ) {
 
 }
@@ -94,6 +110,13 @@
 
 }
 
-@media only screen and (min-width: 768px ) {
+@media only screen and (max-width: 767px ) {
 
+  .home-about-us .button{
+    width: 100%;
+  }
+  .home-testimonial-slider .slide-image img{
+    width: 120px;
+    height: 120px;
+  }
 }

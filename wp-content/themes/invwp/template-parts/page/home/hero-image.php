@@ -26,31 +26,31 @@
 <section class="home-col-section text-center">
   <div class="container">
       <div class="row">
-          <div class="col-3">
+          <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 text-uppercase" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text'); ?></a>
                 </p>
               </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 text-uppercase" href="<?php echo site_url('contact');?>"><?php echo the_field('banner_section_button_text1'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('contact');?>"><?php echo the_field('banner_section_button_text1'); ?></a>
                 </p>
               </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 text-uppercase" href="<?php echo site_url('about');?>"><?php echo the_field('banner_section_button_text2'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('about');?>"><?php echo the_field('banner_section_button_text2'); ?></a>
                 </p>
               </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 text-uppercase" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text3'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text3'); ?></a>
                 </p>
               </div>
           </div>

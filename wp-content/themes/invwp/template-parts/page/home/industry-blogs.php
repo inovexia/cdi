@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-          <h2 class="section-title">Health blog & articles<?php //echo the_field("industry_title"); ?></h2>
+          <h3 class="section-title">Health blog & articles<?php //echo the_field("industry_title"); ?></h3>
         </div>
       </div>
 
@@ -35,17 +35,22 @@
                      </div>
                      <h6 class="slide-meta text-uppercase">
                      </h6>
-                     <h6 class="text-left">
-                        <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
-                     </h6>
-                     <p class="slide-excerpt mb-5">
-                        <?php
-        								$excerpt= get_the_excerpt();
-        								echo substr($excerpt, 0, 160);
-        								?>
-                     </p>
-                     <div class="text-right">
-                       <a href="<?php echo the_permalink (); ?>">Read more</a>
+                     <div class="mt-5">
+                       <h5 class="text-left mt-5">
+                          <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
+                       </h5>
+                       <div class="post-meta">
+                        <?php echo get_the_date( 'F d Y' ); ?>
+                       </div>
+                       <p class="slide-excerpt mb-5 mt-5">
+                          <?php
+          								$excerpt= get_the_excerpt();
+          								echo substr($excerpt, 0, 160);
+          								?>
+                       </p>
+                       <div class="text-right">
+                         <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right"></i></a>
+                       </div>
                      </div>
                   </div>
                    <?php

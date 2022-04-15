@@ -1,15 +1,15 @@
-<section class="home-industry-section full-width">
+<section class="home-testimonial-section full-width">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-          <h2 class="section-title">Notes from our happy customer</h2>
+          <h3 class="section-title">Notes from our happy customer</h3>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
           <!-- Slider main container -->
-          <div class="home-industry-slider">
+          <div class="home-testimonial-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper1 row">
               <?php
@@ -29,7 +29,7 @@
                   $image = wp_get_attachment_url ( get_post_thumbnail_id ( get_the_Id()));
                   ?>
                   <!-- Slides -->
-                  <div class="swiper-slide1 col-4">
+                  <div class="swiper-slide1 col-4 text-center">
                      <div class="slide-image">
                        <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
                      </div>
