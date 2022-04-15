@@ -34,170 +34,6 @@ add_action ('woocommerce_single_product_summary', 'woocommerce_template_single_r
 **/
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40, 0);
 
-/* Function to get total products count */
-function total_product_count($post_type='product', $post_status='publish') {
-   $args = array( 'post_type' => $post_type, 'posts_per_page' => -1, 'post_status' => $post_status );
-
-   $products = new WP_Query( $args );
-
-   return $products->found_posts;
-}
-
-
-/**
-* Register widget area.
-*
-* @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
-*/
-function invwp_init_sidebars () {
-// LEFT SIDEBAR
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Sidebar Left', 'invwp' ),
-		'id'            => 'sidebar-left',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// RIGHT SIDEBAR
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Sidebar Right', 'invwp' ),
-		'id'            => 'sidebar-right',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP HEADER MENU
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Header Menu', 'invwp' ),
-		'id'            => 'top-header-menu',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP HEADER MENU
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Header Menu 1', 'invwp' ),
-		'id'            => 'top-header-menu1',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP HEADER MENU
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Header Menu 2', 'invwp' ),
-		'id'            => 'top-header-menu2',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP FOOTER ABOUT
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Footer About Us', 'invwp' ),
-		'id'            => 'top-footer-about',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP FOOTER MENU
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Footer Menu', 'invwp' ),
-		'id'            => 'top-footer-menu',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP FOOTER CUSTOMER
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Footer Customer Services', 'invwp' ),
-		'id'            => 'top-footer-customer-service',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP FOOTER CONTACT
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Footer Contact', 'invwp' ),
-		'id'            => 'top-footer-contact',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// TOP FOOTER NEWSLETTER
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Top Footer Newsletter', 'invwp' ),
-		'id'            => 'top-footer-newsletter',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-
-// BOTTOM FOOTER LEFT
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Bottom Footer Left', 'invwp' ),
-		'id'            => 'bottom-footer-left',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-// BOTTOM FOOTER RIGHT
-register_sidebar(
-	array(
-		'name'          => esc_html__( 'Bottom Footer Right', 'invwp' ),
-		'id'            => 'bottom-footer-right',
-		'description'   => esc_html__( 'Add widgets here.', 'invwp' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h6 class="widget-title">',
-		'after_title'   => '</h6>',
-	)
-);
-}
-add_action( 'widgets_init', 'invwp_init_sidebars' );
-
 
 /**
 * Load theme files.
@@ -205,58 +41,24 @@ add_action( 'widgets_init', 'invwp_init_sidebars' );
 require get_template_directory() . '/inc/enqueue.php';
 
 /**
+* Register widget areas.
+*/
+require get_template_directory() . '/inc/widget-areas.php';
+
+/**
+* Load common helper functions.
+*/
+require get_template_directory() . '/inc/helper-functions.php';
+
+/**
 * Load WC Plugins.
 */
 require get_template_directory() . '/plugins/wc/shop-page/featured-products.php';
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/cart/quantity-updater.php';
-
-/**
-* Load WC Plugins.
-*/
-//require get_template_directory() . '/plugins/wc/auth_login_and_registration.php';
-
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/checkout/payment-method-position.php';
-
-/**
-* Load WC Plugins.
-*/
-//require get_template_directory() . '/plugins/wc/group-buy/group-buy-functions.php';
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/mini-cart/mini-cart-functions.php';
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/single-product/related-products.php';
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/single-product/tabs.php';
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/shop-page/add-to-cart.php';
-
-/**
-* Load WC Plugins.
-*/
 //require get_template_directory() . '/plugins/wc/shop-page/customize.php';
-
-
-/**
-* Load WC Plugins.
-*/
 require get_template_directory() . '/plugins/wc/shop-page/product-button-text.php';
