@@ -13,7 +13,26 @@
       <div class="col-12">
         <!-- Slider main container -->
         <div class="home-product-category-slider">
+
             <?php
+            $taxonomy = 'product_cat';
+              // Get subcategories of the current category
+              $terms    = get_terms([
+                  'taxonomy'    => $taxonomy,
+                  'hide_empty'  => true,
+              ]);
+
+              $output = '<ul class="subcategories-list">';
+
+              // Loop through product subcategories WP_Term Objects
+              foreach ( $terms as $term ) {
+                  $term_link = get_term_link( $term, $taxonomy );
+
+                  $output .= '<li class="'. $term->slug .'"><a href="'. $term_link .'">'. $term->name .'</a></li>';
+              }
+
+              echo $output . '</ul>';
+
              $args = array(
               'orderby'    => 'name',
               'order'      => 'ASC',
