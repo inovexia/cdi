@@ -29,7 +29,7 @@
                   $image = wp_get_attachment_url ( get_post_thumbnail_id ( get_the_Id()));
                   ?>
                   <!-- Slides -->
-                  <div class="swiper-slide1 col-4">
+                  <div class="swiper-slide1 col-4 px-5">
                      <div class="slide-image">
                        <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
                      </div>
