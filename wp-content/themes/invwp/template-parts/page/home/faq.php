@@ -1,4 +1,4 @@
-<section class="home-faq-section">
+<section class="home-faq-section section-padding">
   <div class="container">
     <h3 class="section-title">Frequently Asked Questions</h3>
     <?php if (have_rows('faq_collapse')) : ?>

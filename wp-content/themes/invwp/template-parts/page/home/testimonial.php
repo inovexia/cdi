@@ -1,4 +1,4 @@
-<section class="home-testimonial-section full-width">
+<section class="home-testimonial-section full-width pb-5">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
