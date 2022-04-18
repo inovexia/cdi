@@ -87,6 +87,13 @@
   font-size: var(--font-size-xxxl);
 }
 
+.post-meta {
+  color: var(--faux-cg-blue);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-l);
+  line-height: 24px;
+}
+
 .home-industry-slider .read-more, .home-industry-slider .read-more a{
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
@@ -139,7 +146,7 @@
 
 @media only screen and (max-width: 767px ) {
 
-  .home-about-us .button{
+  .home-about-us .button, .home-shop .button{
     width: 100%;
   }
   .home-industry-slider h5 a{
