@@ -117,6 +117,11 @@ header .top-header-style-2 a{
   color: var(--white);
 }
 
+.top-header-search button{
+  margin-left: 0;
+  width: 85px;
+}
+
 #s{
   width: 40%;
   background-color: var(--faux-cg-blue2);
@@ -251,6 +256,20 @@ header .menu-toggler .toggle-icon {
 
 /* Navigation menu Only for mobile and < tablet devices */
 @media screen and (max-width: 767px) {
+  header .site-branding {
+    flex: 0;
+  }
+  .search-section-nav i{
+    position: relative;
+    top: 20px;
+    left: 10px;
+  }
+  .search-section-nav #s{
+    background: var(--white);
+    border: 1px solid var(--faux-cg-blue);
+    width: 100%;
+  }
+
   .home-banner-section .banner-texts{
     display: none;
   }
