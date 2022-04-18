@@ -95,7 +95,7 @@ header .top-header-style-2{
   color: var(--white);
   line-height: var(--line-height-m);
   position: relative;
-  top: 15px;
+  top: 7px;
 }
 
 header .top-header-style-2 span{
@@ -107,6 +107,13 @@ header .top-header-style-2 span{
 }
 
 header .top-header-style-2 a{
+  color: var(--white);
+}
+
+.top-header-search input{
+  background: var(--faux-cg-blue1);
+  padding: 8px;
+  border: 1px solid var(--faux-cg-blue1);
   color: var(--white);
 }
 

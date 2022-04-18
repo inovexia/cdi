@@ -36,10 +36,10 @@
                      <h6 class="slide-meta text-uppercase">
                      </h6>
                      <div class="home-industry-title my-5">
-                       <h5 class="text-left mt-5">
+                       <h5 class="text-left my-5">
                           <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                        </h5>
-                       <div class="post-meta">
+                       <div class="post-meta my-4">
                         <?php echo get_the_date( 'F d Y' ); ?>
                        </div>
                        <p class="slide-excerpt mb-5 mt-5">

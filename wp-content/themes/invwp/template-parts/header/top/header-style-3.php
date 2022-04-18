@@ -12,8 +12,8 @@
             <?php dynamic_sidebar('top-header-menu1'); ?>
           </div>
         </div>
-        <div class="col-7 text-right">
-          <?php dynamic_sidebar('top-header-menu2'); ?>  
+        <div class="col-7 top-header-search text-right">
+          <?php dynamic_sidebar('top-header-menu2'); ?>
         </div>
       </div>
     </div>
