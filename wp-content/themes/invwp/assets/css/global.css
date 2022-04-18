@@ -509,11 +509,10 @@ header .menu-toggler .toggle-icon {
 
 .section-title {
   font-family: var(--font-family-open-sans);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-IVxl);
   font-weight: var(--font-weight-medium);
   font-style: normal;
-  letter-spacing: 0.05em;
-  line-height: 46px;
+  line-height: 150%;
   margin-top: 10px;
 }
 
@@ -547,7 +546,7 @@ header .menu-toggler .toggle-icon {
 }
 
 .section-padding{
-  padding: 100px 50px;
+  padding: 55px 50px;
 }
 
 /* DEFAULT MODAL */
