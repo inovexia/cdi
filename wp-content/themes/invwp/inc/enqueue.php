@@ -36,6 +36,7 @@ function invx_add_theme_scripts () {
     // Google Fonts
     wp_enqueue_style( 'invwps-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap', false );
     wp_enqueue_style( 'invwps-google-popins-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap', false );
+    wp_enqueue_style( 'invwps-google-popins-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap', false );
 
     wp_enqueue_style( 'invwps-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' );
 
