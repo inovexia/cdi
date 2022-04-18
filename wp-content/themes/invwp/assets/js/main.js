@@ -1,4 +1,11 @@
 (function(){
+	
+	$(document).ready(function(){
+	    $("#toggle-btn").click(function(){
+	      $("#toggle-example").collapse('toggle'); // toggle collapse
+	    });
+	});
+
     //Login/Signup modal window - by CodyHouse.co
 	function ModalSignin( element ) {
 		this.element = element;
@@ -43,7 +50,7 @@
 				});
 			})(i);
 		}
-	
+
 	};
 
 	ModalSignin.prototype.togglePassword = function(target) {

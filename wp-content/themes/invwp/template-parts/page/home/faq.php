@@ -8,11 +8,11 @@
           $y++;
           $tCount = $y; ?>
       <div class="accordion-item">
-        <h6 class="accordion-header" id="heading<?php echo $tCount; ?>" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $tCount; ?>" aria-expanded="true"
+        <h6 class="accordion-header" id="toggle-btn" data-toggle="collapse" data-target="#toggle-example" aria-expanded="true"
           aria-controls="collapse<?php echo $tCount; ?>">
           <span class="accordion-button"><?php the_sub_field('accordion_title'); ?></span>
         </h6>
-        <div id="collapse<?php echo $tCount; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?php echo $tCount; ?>" data-bs-parent="#accordionExample">
+        <div id="toggle-example" class="accordion-collapse collapse" aria-labelledby="heading<?php echo $tCount; ?>" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p><?php the_sub_field('accordion_description'); ?></p>
           </div>

@@ -33,11 +33,11 @@
                      <div class="slide-image">
                        <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
                      </div>
-                     <h6 class="slide-meta text-uppercase">
-                     </h6>
-                     <h6 class="text-center">
-                        <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
-                     </h6>
+                     <div class="testimonial-title my-5">
+                       <h6 class="slide-meta text-center">
+                          <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
+                       </h6>
+                     </div>
                      <p class="slide-excerpt mb-5">
                         <?php
         								$excerpt= get_the_excerpt();

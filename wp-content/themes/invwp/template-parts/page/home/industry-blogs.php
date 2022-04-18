@@ -35,7 +35,7 @@
                      </div>
                      <h6 class="slide-meta text-uppercase">
                      </h6>
-                     <div class="mt-5">
+                     <div class="home-industry-title my-5">
                        <h5 class="text-left mt-5">
                           <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                        </h5>
@@ -48,7 +48,7 @@
           								echo substr($excerpt, 0, 160);
           								?>
                        </p>
-                       <div class="text-right">
+                       <div class="read-more text-right">
                          <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right"></i></a>
                        </div>
                      </div>

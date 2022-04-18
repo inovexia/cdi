@@ -764,6 +764,7 @@ footer .social-icons ul li a{
 
 footer .payment-options section{
   display: inline-block;
+  padding-left: 15px;
 }
 
 footer .payment-options section.widget_block p{
@@ -778,6 +779,11 @@ footer .payment-options section.widget_block p{
 footer .payment-options img{
   width: 60px;
   height: 38px;
+}
+
+footer .bottom-footer .social-icons {
+  position: relative;
+  top: 20px;
 }
 
 footer .bottom-footer .social-link, .payment-method {

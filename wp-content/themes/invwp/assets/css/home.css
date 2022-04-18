@@ -82,9 +82,27 @@
   font-style: normal;
 }
 
+.home-industry-title h5, .home-industry-title h5 a{
+  color: var(--faux-cg-blue);
+  font-size: var(--font-size-xxxl);
+}
+
+.home-industry-slider .read-more, .home-industry-slider .read-more a{
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-l);
+  line-height: 24px;
+}
+
 .home-testimonial-slider .slide-image img{
   width: 120px;
   height: 120px;
+}
+
+.testimonial-title h6, .testimonial-title h6 a{
+  color: var(--faux-cg-blue);
+  font-size: var(--font-size-xxxl: 24px);
 }
 
 @media only screen and (min-width: 375px ) {
@@ -108,6 +126,10 @@
     background: #FFFFFF;
     border-radius: 5px;
   }
+  footer .payment-options section:first-child{
+    position: relative;
+    top: -11px;
+  }
 }
 
 /*Laptop*/
@@ -122,5 +144,24 @@
   }
   .home-industry-slider h5 a{
     color: var(--faux-cg-blue);
+  }
+  footer .payment-options section:first-child{
+    display: block;
+  }
+  footer .bottom-footer .social-icons {
+    top: 55px;
+  }
+  footer .bottom-footer{
+    height: auto;
+  }
+  footer .top-footer {
+    padding: 40px 0px;
+  }
+  .top-footer-newslettert .widget_block div{
+    padding: 0 !important;
+  }
+  footer .top-footer-menu .widget-title, footer .top-footer-customer-service .widget-title,
+  footer .top-footer-contact h6{
+    margin-top: 30px;
   }
 }
