@@ -258,6 +258,9 @@ header .menu-toggler .toggle-icon {
 
 /* Navigation menu Only for mobile and < tablet devices */
 @media screen and (max-width: 767px) {
+  .section-padding {
+    padding: 55px 10px;
+  }
   header .site-branding {
     flex: 0;
   }
