@@ -3,6 +3,10 @@
   --faux-cg-blue: #037E9B;
   --faux-cg-blue1: #2394AE;
   --faux-cg-blue2: #4EB0C7;
+  --tumbleweed: #E4A680;
+  --venice-blue: #0A5B89;
+  --casper: #A4C8D0;
+  --athens-gray: #EAEDF1;
   --black2: #1E1E1E;
   --white: #ffffff;
 
@@ -34,7 +38,6 @@
   --btn-color-secondary: #ffffff;
 }
 
-
 /* Basic Styling */
 * {
   -webkit-font-smoothing: antialiased;
@@ -54,7 +57,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
-
 
 /* TYPOGRAPHY */
 div {
@@ -147,7 +149,6 @@ a.font-poppins{
 table{
   width: 100%;
 }
-
 
 /* FORMS AND BUTTONS */
 input {
