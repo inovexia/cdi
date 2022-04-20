@@ -1,6 +1,6 @@
 <section class="home-faq-section section-padding">
   <div class="container">
-    <h3 class="section-title">Frequently Asked Questions</h3>
+    <h3 class="section-title mb-5">Frequently Asked Questions</h3>
     <?php if (have_rows('faq_collapse')) : ?>
     <div class="accordion accordion-container" id="accordion">
       <?php $y = 0;;
