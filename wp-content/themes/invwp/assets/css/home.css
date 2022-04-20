@@ -112,6 +112,46 @@
   font-size: var(--font-size-xxxl: 24px);
 }
 
+/* Home Faq */
+.accordion-item{
+  border-bottom: 1px solid var(--faux-cg-blue);
+}
+.accordion-container .article-title {
+		position: relative;
+		padding: 0.625em 0 0.625em 0;
+    cursor: pointer;
+}
+
+.accordion-container .article-title:hover,
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+		color: var(--faux-cg-blue);
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+		color: var(--faux-cg-blue);
+}
+
+.accordion-container .content-entry i {
+		position: absolute;
+		top: 3px;
+		left: 12px;
+}
+
+.accordion-container .content-entry i:before {
+		content: "+ ";
+}
+
+.accordion-container .content-entry.open i:before {
+		content: "- ";
+}
+
+.accordion-content {
+		display: none;
+}
+
 @media only screen and (min-width: 375px ) {
 
 }
