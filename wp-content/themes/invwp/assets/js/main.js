@@ -131,7 +131,7 @@
 	};
 })();
 
-// Accordion toggle js
+// Home Faq section Accordion toggle js
 	$(function() {
 		var Accordion = function(el, multiple) {
 				this.el = el || {};

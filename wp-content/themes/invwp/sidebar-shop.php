@@ -33,7 +33,7 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 					$thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
 					$image = wp_get_attachment_image($thumbnail_id, $size);
 			?>
-			<li>
+			<li class="my-3">
 				<a href="<?php echo get_term_link($category); ?>" class=""><?php echo $category->name; ?> <span> (<?php echo $category->count;  ?>)</span></a>
 			</li>
 			<?php

@@ -54,7 +54,7 @@ function invx_add_theme_scripts () {
     wp_enqueue_style( 'invwps-mscu-css', get_template_directory_uri () . '/assets/css/multi-step-checkout.css', array(), _S_VERSION, 'all' );
     wp_enqueue_style( 'invwps-msur-css', get_template_directory_uri () . '/assets/css/multi-step-user-registration.css', array(), _S_VERSION, 'all' );
     wp_enqueue_style( 'invwps-home-css', get_template_directory_uri () . '/assets/css/home.css', array(), _S_VERSION, 'all' );
-    //wp_enqueue_style( 'invwps-shop-css', get_template_directory_uri () . '/assets/css/shop.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-shop-css', get_template_directory_uri () . '/assets/css/shop.css', array(), _S_VERSION, 'all' );
     //wp_enqueue_style( 'invwps-login-modalcss', get_template_directory_uri () . '/assets/css/login-modal.css', array(), _S_VERSION, 'all' );
 
 

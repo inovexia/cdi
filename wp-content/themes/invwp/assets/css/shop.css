@@ -1,0 +1,39 @@
+/*
+ * SHOP CSS FILE
+ * This file will contain CSS for only shop page
+ */
+
+/* HERO BANNER SECTION */
+.ourproduct-cat li a {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-style: normal;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-xxl);
+  line-height: 25px;
+}
+@media only screen and (max-width: 767px ) {
+
+  ul.products li.product{
+    width: 29%;
+  }
+
+  ul.products li.product h2{
+    font-family: var(--font-family-open-sans);
+    font-style: normal;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-l);
+    line-height: 19px;
+    color: var(--faux-cg-blue);
+  }
+
+  ul.products li.product span.price{
+    font-family: var(--font-family-open-sans);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-xl);
+    line-height: 22px;
+    color: var(--black2);
+  }
+  
+}
