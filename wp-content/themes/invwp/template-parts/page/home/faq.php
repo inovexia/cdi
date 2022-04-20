@@ -12,7 +12,7 @@
           aria-controls="collapse<?php echo $tCount; ?>">
           <i></i><span class="accordion-button"><?php the_sub_field('accordion_title'); ?></span>
         </h6>
-        <div id="toggle-example" class="accordion-collapse collapse accordion-content" aria-labelledby="heading<?php echo $tCount; ?>" data-bs-parent="#accordionExample">
+        <div id="toggle-example" class="accordion-collapse collapse mb-5 accordion-content" aria-labelledby="heading<?php echo $tCount; ?>" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p><?php the_sub_field('accordion_description'); ?></p>
           </div>
