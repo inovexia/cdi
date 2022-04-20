@@ -734,6 +734,8 @@ footer .top-footer-menu li a {
 
 footer .top-footer-menu li {
   margin-top: 14px;
+  float: left;
+  width: 50%;
 }
 
 /* Customer Menu */
@@ -751,6 +753,8 @@ footer .top-footer-customer-service .widget-title {
 
 footer .top-footer-customer-service li {
   margin-top: 14px;
+  float: left;
+  width: 50%;
 }
 
 footer .top-footer-customer-service li a{

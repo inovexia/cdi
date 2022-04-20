@@ -191,6 +191,10 @@
   .home-industry-slider h5 a{
     color: var(--faux-cg-blue);
   }
+  .product-categories{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   footer .payment-options section:first-child{
     display: block;
   }
