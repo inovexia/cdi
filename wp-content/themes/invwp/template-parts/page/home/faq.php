@@ -7,7 +7,7 @@
         while (have_rows('faq_collapse')) : the_row();
           $y++;
           $tCount = $y; ?>
-      <div class="accordion-item">
+      <div class="accordion-item content-entry">
         <h6 class="accordion-header article-title" id="toggle-btn" data-toggle="collapse" data-target="#toggle-example" aria-expanded="true"
           aria-controls="collapse<?php echo $tCount; ?>">
           <i></i><span class="accordion-button"><?php the_sub_field('accordion_title'); ?></span>

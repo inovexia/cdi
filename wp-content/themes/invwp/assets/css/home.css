@@ -136,16 +136,15 @@
 
 .accordion-container .content-entry i {
 		position: absolute;
-		top: 3px;
-		left: 12px;
+		right: 0;
 }
 
 .accordion-container .content-entry i:before {
-		content: "+ ";
+		content: "\25BC";
 }
 
 .accordion-container .content-entry.open i:before {
-		content: "- ";
+		content: "\25B2 ";
 }
 
 .accordion-content {
