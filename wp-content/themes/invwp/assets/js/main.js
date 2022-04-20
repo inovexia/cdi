@@ -1,4 +1,8 @@
 (function(){
+	//Newsletter
+	$(document).ready(function(){
+	  $('.tnp-email').attr('placeholder','Enter your email');
+	});
 
     //Login/Signup modal window - by CodyHouse.co
 	function ModalSignin( element ) {
