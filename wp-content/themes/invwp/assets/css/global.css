@@ -659,6 +659,24 @@ header .menu-toggler .toggle-icon {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
 }
+/* Breadcrumb */
+.woocommerce-breadcrumb a{
+  font-family: var(--font-family-open-sans);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-l);
+  line-height: 19px;
+  color: var(--black2);
+}
+
+.woocommerce-breadcrumb-desc{
+  font-family: var(--font-family-open-sans);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-l);
+  line-height: 19px;
+  color: var(--black2);
+}
 
 /* FOOTER */
 footer {

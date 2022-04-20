@@ -60,8 +60,8 @@
       $sub_title = '';
     }
     ?>
-    <h1 class="woocommerce-products-header__title page-title montserrat-normal-mexican-red-18px"><?php echo $title; ?></h1>
-    <p class="montserrat-normal-ebony-clay-12px"><?php echo $sub_title; ?></p>
+    <h1 class="woocommerce-products-header__title page-title"><?php echo $title; ?></h1>
+    <p class="woocommerce-breadcrumb-desc"><?php echo $sub_title; ?></p>
     <?php
     /**
      * Hook: woocommerce_archive_description.
