@@ -152,13 +152,13 @@
 }
 
 .tnp-subscription-minimal input.tnp-submit{
-  background-color: var(--white);
-  color: var(--faux-cg-blue);
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-s);
+  background-color: var(--white) !important;
+  color: var(--faux-cg-blue) !important;
+  font-family: var(--font-family-lato) !important;
+  font-size: var(--font-size-s) !important;
   font-style: normal;
-  line-height: 12px;
-  letter-spacing: 0.05em;
+  line-height: 12px !important;
+  letter-spacing: 0.05em !important;
 }
 
 @media only screen and (min-width: 375px ) {
