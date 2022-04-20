@@ -151,6 +151,11 @@
 		display: none;
 }
 
+.tnp-subscription-minimal input.tnp-submit{
+  background-color: var(--white);
+  color: var(--faux-cg-blue);
+}
+
 @media only screen and (min-width: 375px ) {
 
 }
