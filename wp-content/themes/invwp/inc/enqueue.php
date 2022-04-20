@@ -35,6 +35,10 @@ function invx_add_theme_scripts () {
 
     // Google Fonts
     wp_enqueue_style( 'invwps-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap', false );
+    wp_enqueue_style( 'invwps-google-popins-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap', false );
+    wp_enqueue_style( 'invwps-google-lato-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap', false );
+    wp_enqueue_style( 'invwps-google-montserrat-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap', false );
+    wp_enqueue_style( 'invwps-google-roboto-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', false );
 
     wp_enqueue_style( 'invwps-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' );
 
@@ -50,8 +54,8 @@ function invx_add_theme_scripts () {
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/fontawesome.min.css', array(), _S_VERSION, 'all');*/
     wp_enqueue_style( 'invwps-mscu-css', get_template_directory_uri () . '/assets/css/multi-step-checkout.css', array(), _S_VERSION, 'all' );
     wp_enqueue_style( 'invwps-msur-css', get_template_directory_uri () . '/assets/css/multi-step-user-registration.css', array(), _S_VERSION, 'all' );
-    //wp_enqueue_style( 'invwps-home-css', get_template_directory_uri () . '/assets/css/home.css', array(), _S_VERSION, 'all' );
-    //wp_enqueue_style( 'invwps-shop-css', get_template_directory_uri () . '/assets/css/shop.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-home-css', get_template_directory_uri () . '/assets/css/home.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-shop-css', get_template_directory_uri () . '/assets/css/shop.css', array(), _S_VERSION, 'all' );
     //wp_enqueue_style( 'invwps-login-modalcss', get_template_directory_uri () . '/assets/css/login-modal.css', array(), _S_VERSION, 'all' );
 
 

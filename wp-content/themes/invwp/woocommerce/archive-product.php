@@ -20,8 +20,6 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 ?>
 
-
-
 <?php
 /**
  * Hook: woocommerce_before_main_content.
