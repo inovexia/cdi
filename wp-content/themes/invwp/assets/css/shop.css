@@ -22,16 +22,16 @@
   line-height: 25px;
 }
 .products .product:hover .actions-buttons {
-    opacity: 0.5;
+    opacity: 0.7;
 }
-.product-image{
+.product-thumbnail img{
   position: relative;
   padding: 30px;
   min-height: 245px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 420px;
+  min-height: 290px;
 }
 .actions-buttons {
   position: absolute;
@@ -49,6 +49,9 @@
   opacity: 0;
   transition: all 0.3s;
   border: 1px solid var(--faux-cg-blue);
+}
+.actions-buttons .view-pdt{
+  display: block;
 }
 .products .product-thumbnail .add_to_cart_button{
   font-family: var(--font-family-open-sans);

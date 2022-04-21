@@ -42,12 +42,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		 */
 		do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
+	</div>
 	<div class="actions-buttons">
 			<?php
 				do_action( 'invwx_product_buttons' );
 			?>
 	</div>
-</div>
 		<?php
 		/**
 		 * Hook: woocommerce_shop_loop_item_title.
