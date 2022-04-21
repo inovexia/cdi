@@ -18,7 +18,7 @@ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_loop_rating', 20, 0);
 
 /**
- * Show product rating stars after product title 
+ * Show product rating stars after product title
 **/
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10, 0);
 add_action ('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 15, 0);

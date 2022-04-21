@@ -1,8 +1,8 @@
 <?php if (is_shop()) {
   $upload_dir = wp_upload_dir(); ?>
-<section class="woocommerce-products-header clearfix w-100 breadcrumb-display-none my-5" style="padding: 25px 0 25px 0;background-image:url('<?php echo $upload_dir['baseurl']; ?>/2022/04/shop_banner-1-1.png');background-position: top center; background-repeat: no-repeat; background-size: cover;">
+<section class="woocommerce-products-header clearfix breadcrumb-display-none my-5" style="padding: 35px 0 35px 0;background-image:url('<?php echo $upload_dir['baseurl']; ?>/2022/04/shop_banner-1-1.png');background-position: top center; background-repeat: no-repeat; background-size: cover;">
 <?php } else { ?>
-<section class="woocommerce-products-header clearfix w-100 breadcrumb-display-none my-5">
+<section class="woocommerce-products-header clearfix breadcrumb-display-none my-5">
 <?php } ?>
   <div class="container">
     <?php
@@ -19,6 +19,7 @@
     );
 
     woocommerce_breadcrumb($args);
+
     if (is_shop()) {
       $title = 'BROWSE MEDICATION';
       $sub_title = 'Check out our wide range of fillers and injectables.';

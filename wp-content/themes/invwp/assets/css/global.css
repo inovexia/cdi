@@ -441,6 +441,8 @@ header .menu-toggler .toggle-icon {
 .pl-5 { padding-left: 10px;}
 .pl-6 { padding-left: 15px;}
 
+.pr-10 { padding-left: 35px;}
+
 .mb-0 { margin-bottom: 0;}
 .mb-1 { margin-bottom: 2px;}
 .mb-2 { margin-bottom: 4px;}
@@ -660,7 +662,10 @@ header .menu-toggler .toggle-icon {
   visibility: visible;
 }
 /* Breadcrumb */
-.woocommerce-breadcrumb a{
+.woocommerce-breadcrumb{
+  font-weight: var(--font-weight-bold) !important;
+}
+.woocommerce-breadcrumb, .woocommerce-breadcrumb a{
   font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: var(--font-weight-light);

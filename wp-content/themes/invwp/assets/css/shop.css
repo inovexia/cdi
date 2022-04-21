@@ -4,6 +4,15 @@
  */
 
 /* HERO BANNER SECTION */
+.woocommerce-ordering{
+  float: right;
+  position: relative;
+  top: -20px;
+}
+.woocommerce-ordering select {
+  border: none;
+}
+
 .ourproduct-cat li a {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
@@ -12,6 +21,34 @@
   font-size: var(--font-size-xxl);
   line-height: 25px;
 }
+.product-image{
+  position: relative;
+  padding: 30px;
+  min-height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  border: 1px solid var(--faux-cg-blue);
+}
+.product-actions {
+    position: absolute;
+    text-align: center;
+    right: 0;
+}
+.product-actions {
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #037E9B;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
 @media only screen and (min-width: 768px ) {
 
   ul.products li.product{

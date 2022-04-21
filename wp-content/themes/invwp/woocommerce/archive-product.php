@@ -83,7 +83,9 @@ do_action( 'woocommerce_before_main_content' );
                   }
 
                   woocommerce_product_loop_end();
-
+                  ?>
+                  <div class="clearfix"></div>
+                  <?php
                   /**
                    * Hook: woocommerce_after_shop_loop.
                    *
@@ -107,7 +109,7 @@ do_action( 'woocommerce_before_main_content' );
                    *
                    * @hooked woocommerce_pagination - 10
                    */
-                  do_action('woocommerce_after_shop_loop');
+                  //do_action('woocommerce_after_shop_loop');
                   ?>
                 </p>
 
@@ -117,7 +119,7 @@ do_action( 'woocommerce_before_main_content' );
     </div><!-- Container -->
   </section>
 
-  <section class="featured-product full-width">
+  <!--<section class="featured-product full-width">
   	<div class="container">
   		<div class="row">
   			<div class="col-12">
@@ -129,12 +131,12 @@ do_action( 'woocommerce_before_main_content' );
   				 *
   				 * @hooked Displays featured product section
   				 */
-  				invwp_show_featured_products ();
+  				//invwp_show_featured_products ();
   				?>
   			</div>
   		</div>
   	</div>
-  </section>
+  </section>-->
 
 <?php
 	/**

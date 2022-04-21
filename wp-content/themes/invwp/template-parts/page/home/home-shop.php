@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-5 d-flex">
-        <div class="content-wrap px-6">
+        <div class="content-wrap pl-6 pr-10">
           <h3 class="section-title"><?php echo the_field('home_shop_title'); ?></h3>
           <p class="section-description"><?php echo the_field('home_shop_description'); ?></p>
           <p class="mt-30">
