@@ -13,13 +13,16 @@
   border: none;
 }
 
-.ourproduct-cat li a {
+.ourproduct-cat li a, .brands li a {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: var(--font-weight-semi-bold);
   font-size: var(--font-size-xxl);
   line-height: 25px;
+}
+.products .product:hover .actions-buttons {
+    opacity: 0.5;
 }
 .product-image{
   position: relative;
@@ -29,30 +32,38 @@
   align-items: center;
   justify-content: center;
   min-height: 420px;
+}
+.actions-buttons {
+  position: absolute;
+  text-align: center;
+  right: 0;
+}
+.actions-buttons {
+  height: 84%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #037E9B;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
   border: 1px solid var(--faux-cg-blue);
 }
-.product-actions {
-    position: absolute;
-    text-align: center;
-    right: 0;
-}
-.product-actions {
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #037E9B;
-    display: flex;
-    align-items: center;
-    opacity: 0.6;
-    transition: all 0.3s;
+.products .product-thumbnail .add_to_cart_button{
+  font-family: var(--font-family-open-sans);
+  font-style: normal;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-l);
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--faux-cg-blue);
 }
 
 @media only screen and (min-width: 768px ) {
 
   ul.products li.product{
-    width: 29% !important;
   }
 
 }

@@ -1,4 +1,4 @@
-<section class="home-about-us section-padding">
+<section class="home-about-us">
   <div class="container">
     <div class="row">
       <div class="col-6 mt-5 text-left">

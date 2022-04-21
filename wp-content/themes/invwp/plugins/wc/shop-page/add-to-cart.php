@@ -63,12 +63,3 @@ function wc_mini_cart_refresh_items($fragments) {
    $fragments['div.mini-cart-content'] = ob_get_clean();
    return $fragments;
 }
-
-//default sorting rename function
-add_filter( 'woocommerce_catalog_orderby', 'mspa_rename_default_sorting_options' );
-function mspa_rename_default_sorting_options( $options ){
-
-  $options[ 'menu_order' ] = 'Sort by price'; // rename
-  return $options;
-
-}

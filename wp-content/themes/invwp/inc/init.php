@@ -60,5 +60,5 @@ require get_template_directory() . '/plugins/wc/mini-cart/mini-cart-functions.ph
 require get_template_directory() . '/plugins/wc/single-product/related-products.php';
 require get_template_directory() . '/plugins/wc/single-product/tabs.php';
 require get_template_directory() . '/plugins/wc/shop-page/add-to-cart.php';
-//require get_template_directory() . '/plugins/wc/shop-page/customize.php';
+require get_template_directory() . '/plugins/wc/shop-page/customize.php';
 require get_template_directory() . '/plugins/wc/shop-page/product-button-text.php';

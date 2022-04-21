@@ -1,4 +1,4 @@
-<section class="home-shop section-padding">
+<section class="home-shop">
   <div class="container">
     <div class="row">
       <div class="col-12">

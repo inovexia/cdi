@@ -17,6 +17,29 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 <aside class="sidebar-left widget-area">
 	<?php //dynamic_sidebar( 'sidebar-shop' ); ?>
 	<div class="ourproduct-cat">
+		<?php
+			$cats = get_product_categories ();
+			if (! empty ($cats)) {
+				foreach ($cats as $id => $cat) {
+					?>
+					<div class="col-4 product-categories">
+							<h4 class="mb-5"><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h4>
+							<?php
+							if (! empty ($cat['sub_cats'])) {
+								echo '<ul class="list-disc pl-6">';
+								foreach ($cat['sub_cats'] as $sub_cat) {
+									echo '<li>';
+										echo '<a href="'.$sub_cat['link'].'">' . $sub_cat['name'] . '</a>';
+									echo '</li>';
+								}
+								echo '</ul>';
+							}
+							?>
+					</div>
+					<?php
+				}
+			}
+		?>
 		<ul class="list-unstyled">
 			<!--<li>
 				<a href="<?php //echo get_permalink(wc_get_page_id('shop')); ?>" class="">All Products <span> (<?php //echo total_product_count();  ?>)</span></a>
