@@ -131,13 +131,13 @@
 	};
 })();
 
-// Home Faq section Accordion toggle js
+// Home Faq section Accordion toggle js & Shop sidebar collapse section Accordion toggle js
 	$(function() {
 		var Accordion = function(el, multiple) {
 				this.el = el || {};
 				this.multiple = multiple || false;
 
-				var links = this.el.find('.article-title');
+				var links = this.el.find('.article-title, .shoparticle-title');
 				links.on('click', {
 						el: this.el,
 						multiple: this.multiple
@@ -153,14 +153,14 @@
 				$this.parent().toggleClass('open');
 
 				if (!e.data.multiple) {
-						$el.find('.accordion-content').not($next).slideUp().parent().removeClass('open');
+						$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
 				};
 		}
-		var accordion = new Accordion($('.accordion-container'), false);
+		var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
 	});
 
 	$(document).on('click', function (event) {
-		if (!$(event.target).closest('#accordion').length) {
+		if (!$(event.target).closest('#accordion, #shopaccordion').length) {
 			$this.parent().toggleClass('open');
 		}
 	});
