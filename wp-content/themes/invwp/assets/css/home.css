@@ -70,6 +70,15 @@
   background-color: var(--alice-blue);
 }
 
+.home-about-us .container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.home-about-us .container .col-6 {
+  padding: 0px;
+}
+
 .home-shop{
   padding: 40px 0;
 }

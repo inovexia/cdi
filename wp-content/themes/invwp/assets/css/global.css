@@ -440,6 +440,7 @@ header .menu-toggler .toggle-icon {
 .pl-4 { padding-left: 8px;}
 .pl-5 { padding-left: 10px;}
 .pl-6 { padding-left: 15px;}
+.pl-10 { padding-left: 25px;}
 
 .pr-10 { padding-left: 35px;}
 
@@ -471,6 +472,7 @@ header .menu-toggler .toggle-icon {
 .px-4{ padding-left: 8px; padding-right: 8px;}
 .px-5{ padding-left: 10px; padding-right: 10px;}
 .px-6{ padding-left: 15px; padding-right: 15px;}
+.px-10{ padding-left: 35px; padding-right: 35px;}
 
 .pb-20 { padding-bottom: 20px; }
 .mt-30 { margin-top: 30px;}

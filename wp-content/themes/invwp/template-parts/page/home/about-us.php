@@ -8,7 +8,7 @@
         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="<?php echo $image['width']; ?>" <?php echo $image['height']; ?>/>
       </div>
       <div class="col-6 d-flex">
-        <div class="content-wrap px-6">
+        <div class="content-wrap px-10">
           <!--<h6 class="subtitle-primary"><?php //echo the_field('about_sub_title'); ?></h6>-->
           <h3 class="section-title"><?php echo the_field('about_title'); ?></h3>
           <p class="section-description"><?php echo the_field('about_description'); ?></p>

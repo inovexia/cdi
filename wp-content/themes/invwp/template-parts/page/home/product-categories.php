@@ -1,4 +1,4 @@
-<section class="home-product-categories">
+<section class="home-product-categories pb-5">
   <div class="container">
     <div class="row">
       <!--<div class="col-6">
