@@ -70,6 +70,10 @@
   background-color: var(--alice-blue);
 }
 
+.home-shop{
+  padding: 40px 0;
+}
+
 .product-categories h4 a{
   color: var(--black2);
   font-family: var(--font-family-open-sans);
