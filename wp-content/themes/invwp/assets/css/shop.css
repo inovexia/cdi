@@ -147,7 +147,7 @@
   ul.products li.product {
     float: left;
     width: 46%;
-    min-height: 313px;
+    min-height: auto;
     padding-right: 10px;
   }
   .product-thumbnail img{
