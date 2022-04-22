@@ -1,29 +1,5 @@
 (function ($) {
   $(document).ready(function () {
-    // Home Blogs Slider
-    new Swiper('.home-industry-slider', {
-      slidesPerView: 3.1,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-prev',
-        prevEl: '.swiper-button-next',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2.5,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 3.3,
-        },
-      },
-    });
 
     // Homepage product category slider
     new Swiper('.home-product-category-slider', {
@@ -157,31 +133,6 @@
       },
     });
 
-    new Swiper('.productvatSwiperhome', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
-    });
-
     // Home Blogs Slider
     new Swiper('.blogSwiper', {
       slidesPerView: 1,
@@ -197,13 +148,13 @@
       },
       breakpoints: {
         640: {
-          slidesPerView: 1.4,
+          slidesPerView: 1,
         },
         768: {
-          slidesPerView: 1.4,
+          slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 1.8,
+          slidesPerView: 3,
         },
       },
     });
@@ -343,7 +294,7 @@
       }
 
     });
-    
+
     // swiper - modal
     var swiperModal = new Swiper('.swiper-container-modal', {
       observer: true,

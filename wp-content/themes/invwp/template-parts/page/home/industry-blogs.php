@@ -10,8 +10,9 @@
         <div class="col-12">
           <!-- Slider main container -->
           <div class="home-industry-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper1 row">
+            <div class="overflow-hidden swiper blogSwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper position-relative row">
               <?php
                $args = array (
                 'post_type' => 'post',
@@ -22,43 +23,48 @@
                 'hide_empty' => false,
                );
                $query = new WP_Query($args);
-               if ($query->have_posts()) {
+               if ($query->have_posts()) { ?>
+                 <?php
                  while ($query->have_posts()) {
                   $query->the_post();
                   // get the image URL
                   $image = wp_get_attachment_url ( get_post_thumbnail_id ( get_the_Id()));
                   ?>
-                  <!-- Slides -->
-                  <div class="swiper-slide1 col-4 px-5">
-                     <div class="slide-image">
-                       <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
-                     </div>
-                     <h6 class="slide-meta text-uppercase">
-                     </h6>
-                     <div class="home-industry-title my-5">
-                       <h5 class="text-left my-5">
-                          <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
-                       </h5>
-                       <div class="post-meta my-4">
-                        <?php echo get_the_date( 'F d Y' ); ?>
-                       </div>
-                       <p class="slide-excerpt mb-5 mt-5">
-                          <?php
-          								$excerpt= get_the_excerpt();
-          								echo substr($excerpt, 0, 160);
-          								?>
-                       </p>
-                       <div class="read-more text-right">
-                         <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right"></i></a>
-                       </div>
-                     </div>
-                  </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide col-4 px-5">
+                         <div class="slide-image">
+                           <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
+                         </div>
+                         <h6 class="slide-meta text-uppercase">
+                         </h6>
+                         <div class="home-industry-title px-6 my-5">
+                           <h5 class="text-left my-5">
+                              <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
+                           </h5>
+                           <div class="post-meta text-left my-4">
+                            <?php echo get_the_date( 'F d, Y' ); ?>
+                           </div>
+                           <p class="slide-excerpt text-left mb-5 mt-5">
+                              <?php
+              								$excerpt= get_the_excerpt();
+              								echo substr($excerpt, 0, 160);
+              								?>
+                           </p>
+                           <div class="read-more text-right">
+                             <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right"></i></a>
+                           </div>
+                         </div>
+                      </div>
                    <?php
-                 }
+                 } ?>
+               <?php
                  wp_reset_postdata();
-               }
-               ?>
-            </div>
+                  } else { ?>
+                  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                <?php } ?>
+                 <!-- end of the loop -->
+               </div>
+             </div>
 
           </div>
         </div>

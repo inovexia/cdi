@@ -1,4 +1,4 @@
-<section class="home-product-categories pb-5">
+<section class="home-product-categories">
   <div class="container">
     <div class="row">
       <!--<div class="col-6">
@@ -9,6 +9,48 @@
       </div>-->
       <div class="col-12">
           <h1>Browse Medications</h1>
+      </div>
+    </div>
+
+    <div class="brands">
+      <div class="row">
+        <div class="col-4">
+          <h4 class="">Top Insulin Brands</h4>
+          <?php
+          $terms =  array('taxonomy' => 'product_brand', 'hide_empty' => false,);
+          $product_brand = get_terms($terms);
+          foreach ($product_brand as $key => $brand) { ?>
+          <li>
+            <a href="<?php echo get_term_link($brand); ?>" class=""><?php echo $brand->name;  ?><!--<span> (<?php echo $brand->count; ?>)</span>--></a>
+          </li>
+
+          <?php }  ?>
+        </div>
+        <div class="col-4">
+          <h4 class="">Top Diabetic Medications</h4>
+          <?php
+          $terms =  array('taxonomy' => 'product_brand', 'hide_empty' => false,);
+          $product_brand = get_terms($terms);
+          foreach ($product_brand as $key => $brand) { ?>
+          <li>
+            <a href="<?php echo get_term_link($brand); ?>" class=""><?php echo $brand->name;  ?><!--<span> (<?php echo $brand->count; ?>)</span>--></a>
+          </li>
+
+          <?php }  ?>
+        </div>
+          <div class="col-4">
+            <h4 class="">Top Diabetic Supplies</h4>
+            <ul class="list-disc my-6 pl-6">
+              <?php
+              $terms =  array('taxonomy' => 'product_brand', 'hide_empty' => false,);
+              $product_brand = get_terms($terms);
+              foreach ($product_brand as $key => $brand) { ?>
+              <li>
+                <a href="<?php echo get_term_link($brand); ?>" class=""><?php echo $brand->name;  ?><!--<span> (<?php echo $brand->count; ?>)</span>--></a>
+              </li>
+              <?php }  ?>
+            </ul>
+          </div>
       </div>
     </div>
 
