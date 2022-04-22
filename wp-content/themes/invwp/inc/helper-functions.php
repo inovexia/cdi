@@ -11,13 +11,14 @@ function total_product_count($post_type='product', $post_status='publish') {
 
 
 // Function to return an array of product categories and sub categories
-function get_product_categories () {
+function get_product_categories ($category_name='') {
   $cats =  array();
   $args = array(
           'taxonomy' => 'product_cat',
           'hide_empty' => true,
-          'parent'   => 0
-  );
+          'parent'   => 0,
+          'slug' => $category_name, /*category name*/
+        );
   $product_cat = get_terms( $args );
 
   foreach ($product_cat as $parent_product_cat)  {

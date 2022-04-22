@@ -14,7 +14,8 @@
 
     <div class="row">
       <?php
-        $cats = get_product_categories ();
+        $category_name = ['insulin', 'hypoglycemic', 'diabetic-supplies'];
+        $cats = get_product_categories ($category_name);
         if (! empty ($cats)) {
           foreach ($cats as $id => $cat) {
             ?>
