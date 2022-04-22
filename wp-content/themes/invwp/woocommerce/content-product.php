@@ -72,4 +72,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+	<div class="actions-buttons-m">
+			<?php
+				do_action( 'invwx_product_buttons' );
+			?>
+	</div>
 </li>

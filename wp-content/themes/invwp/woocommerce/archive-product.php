@@ -41,7 +41,7 @@ do_action( 'woocommerce_before_main_content' );
             <?php get_sidebar('shop'); ?>
           </div>
 
-          <div class="col-9">
+          <div class="col-9 all-products">
 
             <div class="content">
 

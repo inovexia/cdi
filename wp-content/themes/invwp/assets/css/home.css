@@ -221,7 +221,7 @@
     background: #FFFFFF;
     border-radius: 5px;
   }
-  .home-shop .container .row .col-5 img{
+  .home-shop .container .row .col-5 img, .home-shop .container .row .col-5 video{
     display: none;
   }
   footer .payment-options section:first-child{
@@ -254,6 +254,9 @@
     padding-top: 20px;
   }
   .home-shop .container .row .col-5 img{
+    display: none;
+  }
+  .home-shop .container .row .col-5 video{
     display: block;
   }
   .home-shop .col-5 h3.section-title{
