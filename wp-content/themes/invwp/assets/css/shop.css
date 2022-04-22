@@ -150,6 +150,9 @@
     min-height: 313px;
     padding-right: 10px;
   }
+  .product-thumbnail img{
+    min-height: auto !important;
+  }
   .actions-buttons .add_to_cart_button, .actions-buttons .view-pdt{
     display: none !important;
   }
