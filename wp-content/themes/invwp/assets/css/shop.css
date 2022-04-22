@@ -4,6 +4,9 @@
  */
 
 /* HERO BANNER SECTION */
+.all-products{
+  padding-bottom: 80px;
+}
 .woocommerce-ordering{
   float: right;
   position: relative;
@@ -49,6 +52,8 @@
 .actions-buttons .add_to_cart_button, .actions-buttons .view-pdt{
   padding: 16px 48px;
   height: 45px;
+  position: relative;
+  top: 84px;
 }
 
 .actions-buttons {
@@ -63,6 +68,7 @@
   width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #037E9B;
   display: flex;
+  flex-direction: column;
   align-items: center;
   opacity: 0;
   transition: all 0.3s;
@@ -121,8 +127,43 @@
 		display: none;
 }
 
+@media only screen and (max-width: 767px ) {
+  .actions-buttons {
+    height: 75%;
+  }
+  .actions-buttons-m a{
+    padding: 15px 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    font-style: normal;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    height: 45px;
+  }
+  ul.products li.product {
+    float: left;
+    width: 46%;
+    min-height: auto;
+    padding-right: 10px;
+  }
+  .product-thumbnail img{
+    min-height: auto !important;
+  }
+  .actions-buttons .add_to_cart_button, .actions-buttons .view-pdt{
+    display: none !important;
+  }
+  .actions-buttons-m .add_to_cart_button, .actions-buttons-m .view-pdt{
+    display: block;
+  }
+}
 @media only screen and (min-width: 768px ) {
-
+  .actions-buttons-m, .actions-buttons-m .buttons{
+    display: none;
+  }
   ul.products li.product{
   }
 
