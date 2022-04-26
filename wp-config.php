@@ -19,16 +19,16 @@
  */
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'icbtccom_dev_cdi' );
+define( 'DB_NAME', 'invxadmin_dev_cdi' );
 
 /** Database username */
-define( 'DB_USER', 'icbtccom_develop' );
+define( 'DB_USER', 'invxadmin_develop' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'icbtc.com' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -81,13 +81,8 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
-<<<<<<< HEAD
-define( 'WP_SITEURL', 'https://inovexiasoftware.in/dev/shahbazkhan/cdi' );
-define( 'WP_HOME', 'https://inovexiasoftware.in/dev/shahbazkhan/cdi' );
-=======
 define( 'WP_SITEURL', 'https://inovexiasoftware.in/dev/asifaziz/cdi' );
 define( 'WP_HOME', 'https://inovexiasoftware.in/dev/asifaziz/cdi' );
->>>>>>> 1786e324f5a9b2ee551de0efaa4d18708d9bbfdf
 
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */

@@ -14,6 +14,9 @@
         </div>
         <div class="col-7 top-header-search text-right">
           <?php //dynamic_sidebar('top-header-menu2'); ?>
+			<?php
+			//if (isset ($_GET['product_name'])
+			?>
 			<form role="search" method="get" id="searchform" action="">
 			<div>
 				<input type="text" value="" name="s" id="s" />

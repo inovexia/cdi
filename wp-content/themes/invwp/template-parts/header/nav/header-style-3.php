@@ -30,6 +30,7 @@
       <div class="nav-menu-container">
         <?php
         wp_nav_menu( array(
+            'menu'          => 'primary',
             'menu_class'     => 'nav-menu',
             'depth'          => 2,
             'container'      => 'div',
