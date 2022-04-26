@@ -42,7 +42,7 @@
           <li class="nav-item">
             <div class="dropdown">
               <?php if (is_user_logged_in()) { ?>
-                <a href="#" class="dropbtn">My Account</a>
+                <a href="#" class="dropbtn"><img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="26"></a>
                 <ul class="dropdown-content">
                   <?php if ( class_exists( 'WooCommerce' ) ) { ?>
                     <li><a class="dropdown-item" href="<?php echo wc_get_account_endpoint_url(''); ?>">Account Information</a></li>

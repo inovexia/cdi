@@ -20,7 +20,7 @@ function invwp_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 314,
+			'thumbnail_image_width' => 315,
 			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 3,
