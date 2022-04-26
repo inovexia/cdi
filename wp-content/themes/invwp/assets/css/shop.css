@@ -237,6 +237,9 @@ nav.shopfilter-slide a {
   .ourproduct-cat.shopaccordion-container{
     display: none;
   }
+  .ourproduct-shopfilter .product-categories{
+	padding-left: 30px;
+  }
   .actions-buttons {
     height: 75%;
   }

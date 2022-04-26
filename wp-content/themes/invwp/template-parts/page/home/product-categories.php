@@ -15,6 +15,7 @@
     <div class="brands">
       <div class="row">
         <div class="col-4 mt-5">
+			<div class="box-product-categories">
           <h4 class="">Top Insulin Brands</h4>
           <ul class="list-disc mt-5 pl-6">
             <?php
@@ -27,7 +28,9 @@
             <?php } ?>
           </ul>
         </div>
+        </div>
         <div class="col-4 mt-5">
+			<div class="box-product-categories">
           <h4 class="">Top Diabetic Medications</h4>
           <!--<ul class="list-disc mt-5 pl-6">
             <?php
@@ -61,8 +64,10 @@
               </ul>
           <?php endwhile; ?>
           <?php wp_reset_query(); ?>
+			</div>
         </div>
           <div class="col-4 mt-5">
+			<div class="box-product-categories">
             <h4 class="">Top Diabetic Supplies</h4>
             <!--<ul class="list-disc mt-5 pl-6">
               <?php
@@ -98,6 +103,7 @@
             <?php endwhile; ?>
             <?php wp_reset_query(); ?>
           </div>
+          </div>
       </div>
     </div>
 
@@ -109,6 +115,7 @@
           foreach ($cats as $id => $cat) {
             ?>
             <div class="col-4 product-categories">
+				<div class="box-product-categories">
                 <h4 class="mb-5"><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h4>
                 <?php
                 if (! empty ($cat['sub_cats'])) {
@@ -121,6 +128,7 @@
                   echo '</ul>';
                 }
                 ?>
+				</div>
             </div>
             <?php
           }
