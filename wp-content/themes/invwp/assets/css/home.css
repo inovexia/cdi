@@ -234,7 +234,11 @@
 @media only screen and (min-width: 1024px ) {
 
 }
-
+@media only screen and (min-width: 1920px ) {
+  .home-banner-section{
+	background-position: top center !important;	
+  }
+}
 @media only screen and (max-width: 767px ) {
   .home-about-us {
     padding-left: 20px;

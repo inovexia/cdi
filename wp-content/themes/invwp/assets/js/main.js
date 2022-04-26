@@ -164,3 +164,14 @@
 			$this.parent().toggleClass('open');
 		}
 	});
+	
+//sidebar filter collapse - Side-Slide
+	$('.shopfilter').click(function() {
+		$('.shopfilter-slide').animate({left: "0px"}, 200);
+		 $('.shopfilter-slide').addClass('shopfilter-m');
+	});
+
+	$('.shopfilterclose').click(function() {
+		$('.shopfilter-slide').animate({left: "-322px"}, 200);
+		 $('.shopfilter-slide').removeClass('shopfilter-m');
+	});

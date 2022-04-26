@@ -28,7 +28,7 @@ function woo_custom_product_tabs( $tabs ) {
       'callback'  => 'woo_attrib_desc_tab_content'
   );
 
-  // Adds the qty pricing  tab
+  /* Adds the qty pricing  tab
   $tabs['qty_pricing_tab'] = array(
       'title'     => __( 'Quantity Pricing', 'woocommerce' ),
       'priority'  => 110,
@@ -40,7 +40,7 @@ function woo_custom_product_tabs( $tabs ) {
       'title'     => __( 'Other Products', 'woocommerce' ),
       'priority'  => 120,
       'callback'  => 'woo_other_products_tab_content'
-  );
+  );*/
   return $tabs;
 }
 
@@ -50,7 +50,7 @@ function woo_attrib_desc_tab_content() {
     echo '<h4>Description</h4>';
     echo '<p>Custom description tab.</p>';
 }
-function woo_qty_pricing_tab_content() {
+/*function woo_qty_pricing_tab_content() {
     // The qty pricing tab content
     echo '<h4>Quantity Pricing</h4>';
     echo '<p>Here\'s your quantity pricing tab.</p>';
@@ -59,7 +59,7 @@ function woo_other_products_tab_content() {
     // The other products tab content
     echo '<h4>Other Products</h4>';
     echo '<p>Here\'s your other products tab.</p>';
-}
+}*/
 
 add_action( 'wp_head', 'invwps_align_tabs' );
 function invwps_align_tabs () {

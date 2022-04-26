@@ -40,4 +40,36 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 				}
 			}
 		?>
+	</div>
+
+	<div class="ourproduct-shopfilter">
+		<p class="shopfilter"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cil_filter.png" />&nbsp; Filter By</p>
+		<nav class="shopfilter-slide">			
+			<p class="shopfilterclose">>&nbsp;&nbsp; Filter By</p>
+			<?php
+				$cats = get_product_categories ();
+				if (! empty ($cats)) {
+					foreach ($cats as $id => $cat) {
+						?>
+						<div class="col-12 product-categories">
+								<h4 class="mb-5 pl-6 shoparticle-title" id="shoptoggle-btn"><i></i><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h4>
+								<?php
+								if (! empty ($cat['sub_cats'])) {
+									echo '<ul id="shoptoggle-example" class="list-disc pl-10 accordion-content">';
+									foreach ($cat['sub_cats'] as $sub_cat) {
+										echo '<li>';
+											echo '<a href="'.$sub_cat['link'].'">' . $sub_cat['name'] . '</a>';
+										echo '</li>';
+									}
+									echo '</ul>';
+								}
+								?>
+						</div>
+						<?php
+					}
+				}
+			?>
+		</nav>
+	</div>
+
 </aside>
