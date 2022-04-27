@@ -1,88 +1,17 @@
-<!-- Modal -->
-<div class="cd-signin-modal js-signin-modal"> <!-- this is the entire modal form, including the background -->
-  <div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
-    <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
-      <li><a href="#0" data-signin="login" data-type="login">LOGIN</a></li>
-      <li><a href="#0" data-signin="signup" data-type="signup">SIGNUP</a></li>
-    </ul>
-
-    <div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
-      <form class="cd-signin-modal__form">
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail">
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" type="text"  placeholder="Password">
-          <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
-          <label for="remember-me">Remember me</label>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
-        </p>
-      </form>
-
-      <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
-    </div> <!-- cd-signin-modal__block -->
-
-    <div class="cd-signin-modal__block js-signin-modal-block" data-type="signup"> <!-- sign up form -->
-      <form class="cd-signin-modal__form">
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace" for="signup-username">Username</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-username" type="text" placeholder="Username">
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signup-email">E-mail</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-email" type="email" placeholder="E-mail">
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signup-password">Password</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-password" type="text"  placeholder="Password">
-          <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <input type="checkbox" id="accept-terms" class="cd-signin-modal__input ">
-          <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Create account">
-        </p>
-      </form>
-    </div> <!-- cd-signin-modal__block -->
-
-    <div class="cd-signin-modal__block js-signin-modal-block" data-type="reset"> <!-- reset password form -->
-      <p class="cd-signin-modal__message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-      <form class="cd-signin-modal__form">
-        <p class="cd-signin-modal__fieldset">
-          <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="reset-email">E-mail</label>
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="reset-email" type="email" placeholder="E-mail">
-          <span class="cd-signin-modal__error">Error message here!</span>
-        </p>
-
-        <p class="cd-signin-modal__fieldset">
-          <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Reset password">
-        </p>
-      </form>
-
-      <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back to log-in</a></p>
-    </div> <!-- cd-signin-modal__block -->
-    <a href="#0" class="cd-signin-modal__close js-close">Close</a>
-  </div> <!-- cd-signin-modal__container -->
-</div> <!-- cd-signin-modal -->
+<p><button data-target="login-modal" data-toggle="modal" class="btn btn-default">A Basic Modal</button></p>
+<!-- Basic modal with title -->
+<div id="login-modal" class="modal">
+    <div class="modal-window large">
+		<span class="close" data-dismiss="modal">&times;</span>
+        <h3>A Basic Modal with Title</h3>
+		<div>
+			<p>This is a modal window. You can do the following things with it:</p>
+			<ul>
+				<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+				<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+				<li><strong>Close:</strong> click on the button below to close the modal.</li>
+			</ul>
+			<button data-dismiss="modal">Close</button>
+		</div>
+    </div>
+</div>

@@ -71,7 +71,7 @@
                   <li><a class="dropdown-item" href="<?php echo wp_logout_url(home_url()); ?>"> Logout</a></li>
                 </ul>
               <?php } else { ?>
-                <a class="login-modal" id="login-modal" style="cursor:pointer;" href="#">LOGIN</a>
+                <a data-target="login-modal" data-toggle="modal" style="cursor:pointer;" href="#">LOGIN</a>
               <?php } ?>
             </div>
           </li>

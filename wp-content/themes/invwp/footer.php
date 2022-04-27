@@ -17,7 +17,8 @@
 </div><!-- #page -->
 
 <!-- Include login-registration modal template -->
-<?php //get_template_part('template-parts/components/all-modal/auth-modal', ''); ?>
+<?php get_template_part('template-parts/component/all-modal/auth-modal', ''); ?>
+<?php get_template_part('template-parts/component/offcanvas-sidebar', ''); ?>
 
 <?php wp_footer(); ?>
 

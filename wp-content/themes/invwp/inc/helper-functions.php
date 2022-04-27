@@ -26,6 +26,7 @@ function get_product_categories ($category_name='') {
     $cats[$id] = [
         'id'=>$parent_product_cat->term_id,
         'name'=>$parent_product_cat->name,
+        'count'=>$parent_product_cat->count,
         'link'=>get_term_link($parent_product_cat->term_id),
     ];
     $child_args = array(
@@ -38,6 +39,7 @@ function get_product_categories ($category_name='') {
       $cats[$id]['sub_cats'][] = [
         'id'=>$child_product_cat->term_id,
         'name'=>$child_product_cat->name,
+        'count'=>$child_product_cat->count,
         'link'=>get_term_link($child_product_cat->term_id)
       ];
     }

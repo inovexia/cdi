@@ -25,8 +25,8 @@ function invx_add_theme_scripts () {
     */
 
     // mini cart & cart
-     wp_enqueue_script( 'invwps-cart-actions', get_template_directory_uri() . '/assets/js/cart-actions.js', array(), _S_VERSION, true );
-     wp_localize_script( 'invwps-cart-actions', 'spa', array('ajax_url' => admin_url('admin-ajax.php')));
+    // wp_enqueue_script( 'invwps-cart-actions', get_template_directory_uri() . '/assets/js/cart-actions.js', array(), _S_VERSION, true );
+    // wp_localize_script( 'invwps-cart-actions', 'spa', array('ajax_url' => admin_url('admin-ajax.php')));
 
     /* Add styles */
     // Reset and Normalize

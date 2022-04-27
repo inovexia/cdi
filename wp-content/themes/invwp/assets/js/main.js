@@ -1,177 +1,96 @@
-(function(){
-	//Newsletter
-	$(document).ready(function(){
-	  $('.tnp-email').attr('placeholder','Enter your email');
-	});
+$(document).ready(function(){
+  $('.tnp-email').attr('placeholder','Enter your email');
+});
 
-    //Login/Signup modal window - by CodyHouse.co
-	function ModalSignin( element ) {
-		this.element = element;
-		this.blocks = this.element.getElementsByClassName('js-signin-modal-block');
-		this.switchers = this.element.getElementsByClassName('js-signin-modal-switcher')[0].getElementsByTagName('a');
-		this.triggers = document.getElementsByClassName('js-signin-modal-trigger');
-		this.hidePassword = this.element.getElementsByClassName('js-hide-password');
-		this.init();
-	};
+/* Modal dialog script */
+document.addEventListener('click', function (e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    e.preventDefault();
 
-	ModalSignin.prototype.init = function() {
-		var self = this;
-		//open modal/switch form
-		for(var i =0; i < this.triggers.length; i++) {
-			(function(i){
-				self.triggers[i].addEventListener('click', function(event){
-					if( event.target.hasAttribute('data-signin') ) {
-						event.preventDefault();
-						self.showSigninForm(event.target.getAttribute('data-signin'));
-					}
-				});
-			})(i);
-		}
+    if ((target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') || (target.parentElement.hasAttribute ('data-toggle') && target.parentElement.getAttribute('data-toggle') == 'modal')) {
+        if (target.hasAttribute('data-target')) {
+            var m_ID = target.getAttribute('data-target');
+            document.getElementById(m_ID).classList.add('open');
+        } else if (target.parentElement.hasAttribute ('data-target')) {
+					var m_ID = target.parentElement.getAttribute('data-target');
+					document.getElementById(m_ID).classList.add('open');
+				}
+    }
 
-		//close modal
-		this.element.addEventListener('click', function(event){
-			if( hasClass(event.target, 'js-signin-modal') || hasClass(event.target, 'js-close') ) {
-				event.preventDefault();
-				removeClass(self.element, 'invx-signin-modal--is-visible');
-			}
-		});
-		//close modal when clicking the esc keyboard button
-		document.addEventListener('keydown', function(event){
-			(event.which=='27') && removeClass(self.element, 'invx-signin-modal--is-visible');
-		});
+    // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+    if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal') ||
+		   (target.parentElement.hasAttribute('data-dismiss') && target.parentElement.getAttribute('data-dismiss') == 'modal') || target.parentElement.classList.contains('modal')) {
+        var modal = document.querySelector('[class="modal open"]');
+        modal.classList.remove('open');
+    }
+}, false);
 
-		//hide/show password
-		for(var i =0; i < this.hidePassword.length; i++) {
-			(function(i){
-				self.hidePassword[i].addEventListener('click', function(event){
-					self.togglePassword(self.hidePassword[i]);
-				});
-			})(i);
-		}
+/* Offcanvas Sidepanel */
+function openSidePanel() {
+  document.getElementById("offcanvas-sidepanel").style.width = "250px";
+}
 
-	};
+function closeSidePanel() {
+  document.getElementById("offcanvas-sidepanel").style.width = "0";
+}
 
-	ModalSignin.prototype.togglePassword = function(target) {
-		var password = target.previousElementSibling;
-		( 'password' == password.getAttribute('type') ) ? password.setAttribute('type', 'text') : password.setAttribute('type', 'password');
-		target.textContent = ( 'Hide' == target.textContent ) ? 'Show' : 'Hide';
-		putCursorAtEnd(password);
-	}
-
-	ModalSignin.prototype.showSigninForm = function(type) {
-		// show modal if not visible
-		!hasClass(this.element, 'invx-signin-modal--is-visible') && addClass(this.element, 'invx-signin-modal--is-visible');
-		// show selected form
-		for( var i=0; i < this.blocks.length; i++ ) {
-			this.blocks[i].getAttribute('data-type') == type ? addClass(this.blocks[i], 'invx-signin-modal__block--is-selected') : removeClass(this.blocks[i], 'invx-signin-modal__block--is-selected');
-		}
-		//update switcher appearance
-		var switcherType = (type == 'signup') ? 'signup' : 'login';
-		for( var i=0; i < this.switchers.length; i++ ) {
-			this.switchers[i].getAttribute('data-type') == switcherType ? addClass(this.switchers[i], 'invx-selected') : removeClass(this.switchers[i], 'invx-selected');
-		}
-	};
-
-	ModalSignin.prototype.toggleError = function(input, bool) {
-		// used to show error messages in the form
-		toggleClass(input, 'invx-signin-modal__input--has-error', bool);
-		toggleClass(input.nextElementSibling, 'invx-signin-modal__error--is-visible', bool);
-	}
-
-	var signinModal = document.getElementsByClassName("js-signin-modal")[0];
-	if( signinModal ) {
-		new ModalSignin(signinModal);
-	}
-
-	// toggle main navigation on mobile
-	var mainNav = document.getElementsByClassName('js-main-nav')[0];
-	if(mainNav) {
-		mainNav.addEventListener('click', function(event){
-			if( hasClass(event.target, 'js-main-nav') ){
-				var navList = mainNav.getElementsByTagName('ul')[0];
-				toggleClass(navList, 'invx-main-nav__list--is-visible', !hasClass(navList, 'invx-main-nav__list--is-visible'));
-			}
-		});
-	}
-
-	//class manipulations - needed if classList is not supported
-	function hasClass(el, className) {
-	  	if (el.classList) return el.classList.contains(className);
-	  	else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
-	}
-	function addClass(el, className) {
-		var classList = className.split(' ');
-	 	if (el.classList) el.classList.add(classList[0]);
-	 	else if (!hasClass(el, classList[0])) el.className += " " + classList[0];
-	 	if (classList.length > 1) addClass(el, classList.slice(1).join(' '));
-	}
-	function removeClass(el, className) {
-		var classList = className.split(' ');
-	  	if (el.classList) el.classList.remove(classList[0]);
-	  	else if(hasClass(el, classList[0])) {
-	  		var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
-	  		el.className=el.className.replace(reg, ' ');
-	  	}
-	  	if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
-	}
-	function toggleClass(el, className, bool) {
-		if(bool) addClass(el, className);
-		else removeClass(el, className);
-	}
-
-	//credits http://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
-	function putCursorAtEnd(el) {
-    	if (el.setSelectionRange) {
-      		var len = el.value.length * 2;
-      		el.focus();
-      		el.setSelectionRange(len, len);
-    	} else {
-      		el.value = el.value;
-    	}
-	};
-})();
+body.on ('click', function (e) {
+  alert ()
+});
 
 // Home Faq section Accordion toggle js & Shop sidebar collapse section Accordion toggle js
-	$(function() {
-		var Accordion = function(el, multiple) {
-				this.el = el || {};
-				this.multiple = multiple || false;
+$(function() {
+	var Accordion = function(el, multiple) {
+			this.el = el || {};
+			this.multiple = multiple || false;
 
-				var links = this.el.find('.article-title, .shoparticle-title');
-				links.on('click', {
-						el: this.el,
-						multiple: this.multiple
-				}, this.dropdown)
-		}
+			var links = this.el.find('.article-title, .shoparticle-title');
+			links.on('click', {
+					el: this.el,
+					multiple: this.multiple
+			}, this.dropdown)
+	}
 
-		Accordion.prototype.dropdown = function(e) {
-				var $el = e.data.el;
-				$this = $(this),
-						$next = $this.next();
+	Accordion.prototype.dropdown = function(e) {
+			var $el = e.data.el;
+			$this = $(this),
+					$next = $this.next();
 
-				$next.slideToggle();
-				$this.parent().toggleClass('open');
+			$next.slideToggle();
+			$this.parent().toggleClass('open');
 
-				if (!e.data.multiple) {
-						$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
-				};
-		}
-		var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
-	});
+			if (!e.data.multiple) {
+					$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
+			};
+	}
+
+	var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
 
 	$(document).on('click', function (event) {
 		if (!$(event.target).closest('#accordion, #shopaccordion').length) {
-			$this.parent().toggleClass('open');
+			//$this.parent().toggleClass('open');
 		}
 	});
-	
-//sidebar filter collapse - Side-Slide
-	$('.shopfilter').click(function() {
-		$('.shopfilter-slide').animate({left: "0px"}, 200);
-		 $('.shopfilter-slide').addClass('shopfilter-m');
-	});
+});
 
-	$('.shopfilterclose').click(function() {
-		$('.shopfilter-slide').animate({left: "-322px"}, 200);
-		 $('.shopfilter-slide').removeClass('shopfilter-m');
-	});
+
+//sidebar filter collapse - Side-Slide
+$('.shopfilter').click(function() {
+	$('.shopfilter-slide').animate({left: "0px"}, 200);
+	 $('.shopfilter-slide').addClass('shopfilter-m');
+});
+
+$('.shopfilterclose').click(function() {
+	$('.shopfilter-slide').animate({left: "-322px"}, 200);
+	 $('.shopfilter-slide').removeClass('shopfilter-m');
+});
+
+function toggle_menu () {
+  var x = document.getElementById("site-navigation");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}

@@ -29,7 +29,7 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 								echo '<ul id="shoptoggle-example" class="list-disc pl-10 accordion-content">';
 								foreach ($cat['sub_cats'] as $sub_cat) {
 									echo '<li>';
-										echo '<a href="'.$sub_cat['link'].'">' . $sub_cat['name'] . '</a>';
+										echo '<a href="'.$sub_cat['link'].'">' . $sub_cat['name'] . ' ('.$sub_cat['count'].')</a>';
 									echo '</li>';
 								}
 								echo '</ul>';
@@ -44,7 +44,7 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 
 	<div class="ourproduct-shopfilter">
 		<p class="shopfilter"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cil_filter.png" />&nbsp; Filter By</p>
-		<nav class="shopfilter-slide">			
+		<nav class="shopfilter-slide">
 			<p class="shopfilterclose">>&nbsp;&nbsp; Filter By</p>
 			<?php
 				$cats = get_product_categories ();

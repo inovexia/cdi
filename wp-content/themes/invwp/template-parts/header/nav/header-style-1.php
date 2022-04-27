@@ -28,6 +28,16 @@
         ?>
       </div><!-- .site-branding -->
 
+      <div class="search-section-nav">
+        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <div>
+                <label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" Placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+            </div>
+        </form>
+      </div>
+
       <div class="nav-menu-container">
         <?php
         wp_nav_menu( array(
@@ -39,10 +49,12 @@
         ?>
 
         <ul class="nav-menu-right">
-          <li class="nav-item">
-            <div class="dropdown">
-              <?php if (is_user_logged_in()) { ?>
-                <a href="#" class="dropbtn"><img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="26"></a>
+          <?php if (is_user_logged_in()) { ?>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" class="dropbtn">
+        					<img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+        				</a>
                 <ul class="dropdown-content">
                   <?php if ( class_exists( 'WooCommerce' ) ) { ?>
                     <li><a class="dropdown-item" href="<?php echo wc_get_account_endpoint_url(''); ?>">Account Information</a></li>
@@ -53,39 +65,30 @@
                   <?php } ?>
                   <li><a class="dropdown-item" href="<?php echo wp_logout_url(home_url()); ?>"> Logout</a></li>
                 </ul>
-              <?php } else { ?>
-                <nav class="">
-            			<ul class="">
-            				<!-- inser more links here -->
-            				<li><a class="login-modal" href="#0" style="cursor:pointer;" data-signin="login">LOG IN</a></li>
-            			</ul>
-            		</nav>
-              <?php } ?>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#">NEW USER? SIGN UP</a>
-          </li>
+              </div>
+            </li>
+          <?php } else { ?>
+						<li>
+              <a data-target="login-modal" data-toggle="modal" href="#" >
+							  <img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+						  </a>
+						</li>
+          <?php } ?>
 
+    		  <li>
+      			<a>
+      				<img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+      			</a>
+    		  </li>
         </ul>
 
-      </div>
-
-      <div class="search-section-nav">
-        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <div>
-                <label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="text" Placeholder="Search" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-            </div>
-        </form>
       </div>
 
       <div class="bag-section">
         <?php if ( class_exists( 'WooCommerce' ) ) { ?>
           <a class="btn-bag" id="btn-bag" style="cursor:pointer;">
-            <span class="bag"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cart-icon.png" /></span>
-              <?php
+			<img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+            <?php
               global $woocommerce;
               $item_count =  $woocommerce->cart->cart_contents_count;
               if ($item_count > 9) {
@@ -94,7 +97,9 @@
                 $cart_items_count = $item_count;
               }
               ?>
-              (<span class="cart-items-count"><?php echo $cart_items_count; ?></span>)
+			  <span class="bag-icon-counter">
+				<span class="cart-items-count"><?php echo $cart_items_count; ?></span>
+			  </span>
           </a>
         <?php } ?>
       </div>
