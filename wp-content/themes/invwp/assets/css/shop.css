@@ -24,6 +24,9 @@
   font-size: var(--font-size-xxl);
   line-height: 25px;
 }
+.ourproduct-cat h4.is-open, .ourproduct-cat h4.is-open a {
+  color: var(--white);
+}
 .ourproduct-cat li a, .brands li a{
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
@@ -101,7 +104,7 @@
   opacity: 0;
   transition: all 0.3s;
   border: 1px solid var(--faux-cg-blue);
-  
+
   position: absolute;
   top: 0;
   bottom: 0;
@@ -356,12 +359,12 @@ nav.shopfilter-slide a {
     color: var(--faux-cg-blue);
 }
 .product-desc{
-	
+
 }
 .related-wrapper{
 	padding: 50px 0;
 }
-@media only screen and (max-width: 767px ) {	
+@media only screen and (max-width: 767px ) {
   .woocommerce-ordering select {
 	border: 1px solid var(--surf);
 	padding: 8px 0px;
@@ -378,7 +381,7 @@ nav.shopfilter-slide a {
   }
   nav.shopfilter-slide a{
 	color: var(--faux-cg-blue);
-  }	
+  }
   nav.shopfilter-slide {
 	overflow: auto;
   }
