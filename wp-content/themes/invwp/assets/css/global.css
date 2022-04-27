@@ -896,3 +896,38 @@ footer .bottom-footer .social-link li i {
 .openbtn:hover {
   background-color:#444;
 }
+
+/* Accordian */
+.accordion .accordion-title {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.accordion .accordion-title:after {
+  font-family: FontAwesome;
+  content: "\f078";
+  font-family: "fontawesome";
+  float: right;
+}
+
+.accordion .accordion-title.is-open:after {
+  content: "\f077";
+}
+
+.accordion .accordion-title.is-open {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.accordion .accordion-content {
+  background-color: white;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}

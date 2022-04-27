@@ -37,56 +37,24 @@ function closeSidePanel() {
 }
 
 
-/* commented 26-4-22
-	$(function() {
-		var Accordion = function(el, multiple) {
-				this.el = el || {};
-				this.multiple = multiple || false;
+const accordionBtns = document.querySelectorAll(".accordion .accordion-title");
 
-				var links = this.el.find('.article-title, .shoparticle-title');
-				links.on('click', {
-						el: this.el,
-						multiple: this.multiple
-				}, this.dropdown)
-		}
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("is-open");
 
-		Accordion.prototype.dropdown = function(e) {
-				var $el = e.data.el;
-				$this = $(this),
-						$next = $this.next();
+    let content = this.nextElementSibling;
+    ///console.log(content);
 
-				$next.slideToggle();
-				$this.parent().toggleClass('open');
-
-				if (!e.data.multiple) {
-						$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
-				};
-		}
-		var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
-	});
->>>>>>> 26b6fbb1b19c4db97b93c6ef93052a61c206c30b
-
-	$(document).on('click', function (event) {
-		if (!$(event.target).closest('#accordion, #shopaccordion').length) {
-			//$this.parent().toggleClass('open');
-		}
-<<<<<<< HEAD
-	});
-});
-
-=======
-	});*/
-
-
-//sidebar filter collapse - Side-Slide
-$('.shopfilter').click(function() {
-	$('.shopfilter-slide').animate({left: "0px"}, 200);
-	 $('.shopfilter-slide').addClass('shopfilter-m');
-});
-
-$('.shopfilterclose').click(function() {
-	$('.shopfilter-slide').animate({left: "-322px"}, 200);
-	 $('.shopfilter-slide').removeClass('shopfilter-m');
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      //console.log(content.style.maxHeight);
+    }
+  };
 });
 
 function toggle_menu () {
