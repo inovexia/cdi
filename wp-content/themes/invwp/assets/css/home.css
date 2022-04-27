@@ -67,7 +67,11 @@
 }
 .home-product-categories .brands{
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+}
+.box-product-categories{
+  background: var(--alice-blue);
+  padding: 10px 0px 10px 10px;
 }
 .home-about-us {
   background-color: var(--alice-blue);

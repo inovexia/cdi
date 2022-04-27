@@ -39,40 +39,46 @@ body.on ('click', function (e) {
   alert ()
 });
 
-// Home Faq section Accordion toggle js & Shop sidebar collapse section Accordion toggle js
-$(function() {
-	var Accordion = function(el, multiple) {
-			this.el = el || {};
-			this.multiple = multiple || false;
 
-			var links = this.el.find('.article-title, .shoparticle-title');
-			links.on('click', {
-					el: this.el,
-					multiple: this.multiple
-			}, this.dropdown)
-	}
+/* commented 26-4-22
+	$(function() {
+		var Accordion = function(el, multiple) {
+				this.el = el || {};
+				this.multiple = multiple || false;
 
-	Accordion.prototype.dropdown = function(e) {
-			var $el = e.data.el;
-			$this = $(this),
-					$next = $this.next();
+				var links = this.el.find('.article-title, .shoparticle-title');
+				links.on('click', {
+						el: this.el,
+						multiple: this.multiple
+				}, this.dropdown)
+		}
 
-			$next.slideToggle();
-			$this.parent().toggleClass('open');
+		Accordion.prototype.dropdown = function(e) {
+				var $el = e.data.el;
+				$this = $(this),
+						$next = $this.next();
 
-			if (!e.data.multiple) {
-					$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
-			};
-	}
+				$next.slideToggle();
+				$this.parent().toggleClass('open');
 
-	var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
+				if (!e.data.multiple) {
+						$el.find('.accordion-content, .shopaccordion-content').not($next).slideUp().parent().removeClass('open');
+				};
+		}
+		var accordion = new Accordion($('.accordion-container, .shopaccordion-container'), false);
+	});
+>>>>>>> 26b6fbb1b19c4db97b93c6ef93052a61c206c30b
 
 	$(document).on('click', function (event) {
 		if (!$(event.target).closest('#accordion, #shopaccordion').length) {
 			//$this.parent().toggleClass('open');
 		}
+<<<<<<< HEAD
 	});
 });
+
+=======
+	});*/
 
 
 //sidebar filter collapse - Side-Slide

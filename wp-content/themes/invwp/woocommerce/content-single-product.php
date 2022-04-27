@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 			</div>
 			<div class="col-9">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-5">
 						<?php
 						/**
 						 * Hook: woocommerce_before_single_product_summary.
@@ -131,157 +131,10 @@ if ( post_password_required() ) {
 						</div>
 					</div>
 
-					<script type="text/javascript">
-						<!-- Initialize Swiper -->
-
-
-					</script>
-
-					<style>
-					/* ................................................ swiper gallery .......................................................... */
-					#simpleModal .navigate-btn .swiper-button-prev{
-							left: 30px;
-					}
-					 #simpleModal .navigate-btn .swiper-button-next{
-							right: 30px;
-					}
-					.swiper-containernew {
-						width: 500px;
-						min-width: 300px;
-						height: auto;
-						padding-bottom: 15px;
-					}
-
-					.swiper-containernew .swiper-slide-img {
-						height: auto;
-						width: 100%;
-						min-height: 353px;
-					}
-
-					.swiper-containernew .swiper-slide-img:hover {
-						cursor: pointer;
-					}
-					/* ................................................ thumbs .......................................................... */
-
-					.gallery-thumbs {
-							padding: 0;
-							margin-top: 0;
-							margin-bottom: 40px;
-					}
-
-					.gallery-thumbs .swiper-slide {
-							width: 25%;
-							opacity: 0.9;
-					}
-
-					.gallery-thumbs .swiper-slide-thumb-active {
-							opacity: 1;
-					}
-
-					.gallery-thumbs .swiper-slide img {
-							width: 100%;
-							height: 70px;
-							min-height: 40px;
-							object-fit: cover;
-					}
-
-					/* ................................................ modal .......................................................... */
-
-					#simpleModal .modal-content {
-						background-color: rgba(0, 0, 0,0.8);
-						animation-name: modalOpen;
-						animation-duration: 1s;
-					}
-
-					/* ............................................. modal swiper gallery ....................................................... */
-					/* used ids higher specificity to override gallery styles */
-
-					#swiper-container-modal {
-						z-index:3;
-						width:100%;
-						height:100%;
-						overflow:hidden;
-						padding:0;
-						border:0;
-					}
-
-					#swiper-pagination-modal {
-						display:none; /* if pagination not included in modal... index.html pagination buttons dnt change (black for active slide)*/
-					}
-
-					#swiper-button-next-modal {
-						transform:translateX(-40%);
-						color: white;
-					}
-
-					#swiper-button-prev-modal {
-						transform:translateX(40%);
-						color: white;
-					}
-
-					.swiper-slide-modal {
-						height: 100vh;
-					}
-
-					.swiper-lazy-modal {
-						object-fit: contain;
-						border:0;
-					}
-					/* ............................................. responsiveness ....................................................... */
-					@media all and (max-width: 520px) {
-
-						.abouttestimonialSwiper .navigate-btn {
-								bottom: 15px !important;
-						}
-						.swiper-container {
-							width: calc(100vw - 20px);
-						}
-
-						.swiper-button-next:after {
-							font-size: 20px !important;
-							transform:translateX(60%);
-						}
-
-						.swiper-button-prev:after {
-							font-size: 20px !important;
-							transform:translateX(-60%);
-						}
-
-						#swiper-button-next-modal {
-							font-size: 20px !important;
-							transform:translateX(20%);
-						}
-
-						#swiper-button-prev-modal {
-							font-size: 20px !important;
-							transform:translateX(-20%);
-						}
-
-						.swiper-pagination {
-							padding: 4px;
-						}
-
-						.swiper-slide-img {
-							width: calc(100vw-32px);
-							height: auto;
-							border: 16px solid #d8d8d8;  /* move next and prev buttons off img */
-							min-height: calc((0.5338 * 100vw) + 48.476px);
-						}
-
-						.swiper-pagination .swiper-pagination-bullet {
-							height: 12px;
-							width: 12px;
-						}
-
-						.gallery-thumbs .swiper-slide img {
-									height: 14vw;
-						}
-					}
-
-					</style>
+					
 					</div>
 
-					<div class="col-6 singleproduct-rightsidebar">
+					<div class="col-7 singleproduct-rightsidebar">
 
 						<div class="summary entry-summary">
 							<?php
@@ -303,7 +156,7 @@ if ( post_password_required() ) {
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row related-wrapper mt-5">
 					<div class="col-12">
 
 						<?php

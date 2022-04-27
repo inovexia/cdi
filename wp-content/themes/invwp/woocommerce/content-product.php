@@ -25,6 +25,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class( '', $product ); ?>>
+	<div class="actions-overlay">
+	</div>
 	<div class="product-thumbnail">
 		<?php
 		/**
