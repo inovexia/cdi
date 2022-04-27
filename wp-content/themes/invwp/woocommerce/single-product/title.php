@@ -19,4 +19,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-the_title( '<h1 class="product_title entry-title">', '</h1>' );
+//the_title( '<h1 class="product_title entry-title">', '</h1>' );
+
+global $product;
+?>
+<div class="row single-rightsidebar-wrapper">
+  <div class="col-6">
+  	<?php the_title( '<h1 class="product_title entry-title">', '</h1>' ); ?>
+		<div class="clearfix"></div>
+		<?php if (get_field ('product_subtitle')) { ?>
+			<p><?php the_field ('product_subtitle'); ?></p>
+		<?php }	?>
+	</div>

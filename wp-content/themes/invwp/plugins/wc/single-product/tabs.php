@@ -23,7 +23,7 @@ function woo_custom_product_tabs( $tabs ) {
   // 2 Adding new tabs and set the right order
   //Attribute Description tab
   $tabs['attrib_desc_tab'] = array(
-      'title'     => __( 'Desc', 'woocommerce' ),
+      'title'     => __( '', 'woocommerce' ),
       'priority'  => 100,
       'callback'  => 'woo_attrib_desc_tab_content'
   );
@@ -47,8 +47,11 @@ function woo_custom_product_tabs( $tabs ) {
 // New Tab contents
 function woo_attrib_desc_tab_content() {
     // The attribute description tab content
-    echo '<h4>Description</h4>';
-    echo '<p>Custom description tab.</p>';
+    echo '<h4 class="mb-5">Description</h4>';
+	echo '<div class="product-desc mt-5 mb-5">';
+	the_content();
+	echo '</div>';
+
 }
 /*function woo_qty_pricing_tab_content() {
     // The qty pricing tab content
