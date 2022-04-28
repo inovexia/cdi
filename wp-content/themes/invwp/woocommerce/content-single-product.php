@@ -72,10 +72,11 @@ if ( post_password_required() ) {
 
 								</div>
 
-								</div><div class="navigate-btn">
+								</div>
+								<div class="navigate-btn">
 									<div class="swiper-button-next"></div>
 									<div class="swiper-button-prev"></div>
-									</div>
+								</div>
 							</div>
 						</div>
 
@@ -137,7 +138,8 @@ if ( post_password_required() ) {
 					<div class="col-7 singleproduct-rightsidebar">
 
 						<div class="summary entry-summary">
-							<?php
+							<?php						
+
 							/**
 							 * Hook: woocommerce_single_product_summary.
 							 *
@@ -154,8 +156,10 @@ if ( post_password_required() ) {
 							?>
 						</div>
 					</div>
+					
+					
 				</div>
-
+				
 				<div class="row related-wrapper mt-5">
 					<div class="col-12">
 
