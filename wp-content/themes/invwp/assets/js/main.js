@@ -37,8 +37,7 @@ function closeSidePanel() {
 }
 
 
-
-
+/* Accordions  */
 const accordionBtns = document.querySelectorAll(".accordion .accordion-title");
 
 accordionBtns.forEach((accordion) => {
