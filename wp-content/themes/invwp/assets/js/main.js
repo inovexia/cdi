@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $('.tnp-email').attr('placeholder','Enter your email');
+  $('.tnp-submit').attr('value','SIGN UP');
+  $('#s').attr('placeholder','Search');
 });
 
 /* Modal dialog script */
@@ -29,13 +31,39 @@ document.addEventListener('click', function (e) {
 
 /* Offcanvas Sidepanel */
 function openSidePanel() {
-  document.getElementById("offcanvas-sidepanel").style.width = "250px";
+  document.getElementById("offcanvas-sidepanel").style.width = "350px";
 }
 
 function closeSidePanel() {
   document.getElementById("offcanvas-sidepanel").style.width = "0";
 }
 
+/* Offcanvas Sidepanel 
+function openSidePanel1() {
+  document.getElementById("offcanvas-sidepanel").style.right = "0";
+}
+
+function closeSidePanel1() {
+  document.getElementById("offcanvas-sidepanel").style.right = "-100%";
+}*/
+
+/* Tabbed View */
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpenTab" and click on it
+document.getElementById("defaultOpenTab").click();
 
 const accordionBtns = document.querySelectorAll(".accordion .accordion-title");
 

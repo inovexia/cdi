@@ -53,7 +53,7 @@
             <li class="nav-item">
               <div class="dropdown">
                 <a href="#" class="dropbtn">
-        					<img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+        					<!--<img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">-->My Account
         				</a>
                 <ul class="dropdown-content">
                   <?php if ( class_exists( 'WooCommerce' ) ) { ?>
@@ -70,13 +70,13 @@
           <?php } else { ?>
 						<li>
               <a data-target="login-modal" data-toggle="modal" href="#" >
-							  <img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
+							  <!--<img src="<?php echo get_template_directory_uri ().'/assets/images/user-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">-->LOGIN
 						  </a>
 						</li>
           <?php } ?>
 
     		  <li>
-      			<a>
+      			<a class="openbtn" id="btn-bag" style="cursor:pointer;" onclick="openSidePanel()">
       				<img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
       			</a>
     		  </li>

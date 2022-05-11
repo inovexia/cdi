@@ -29,7 +29,7 @@
           <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('register');?>"><?php echo the_field('banner_section_button_text'); ?></a>
                 </p>
               </div>
           </div>
@@ -50,7 +50,7 @@
           <div class="col-3 col-m-6">
               <div class="">
                 <p class="hero-buttons mt-30">
-                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url();?>"><?php echo the_field('banner_section_button_text3'); ?></a>
+                  <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('shop');?>"><?php echo the_field('banner_section_button_text3'); ?></a>
                 </p>
               </div>
           </div>

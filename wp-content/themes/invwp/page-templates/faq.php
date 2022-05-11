@@ -13,11 +13,11 @@ get_header ();
 <main id="primary" class="site-main">
 
     <?php
-    $sidebar = get_field('sidebar', 'option');
+    /*$sidebar = get_field('sidebar', 'option');
 
       if($sidebar == 1 || $sidebar == 3){
         get_sidebar('left');
-      }
+      }*/
     ?>
 
       <div class="content">
@@ -28,9 +28,9 @@ get_header ();
       </div>
 
     <?php
-          if($sidebar == 2 || $sidebar == 3){
+          /*if($sidebar == 2 || $sidebar == 3){
             get_sidebar('right');
-          }
+          }*/
     ?>
 
 </main><!-- #main -->

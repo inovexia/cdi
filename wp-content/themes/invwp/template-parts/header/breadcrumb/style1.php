@@ -39,13 +39,13 @@
       $title = 'Magenta Club';
       $sub_title = '';
     } else if (is_page('faq')) {
-      $title = 'FAQ';
+      $title = '';
       $sub_title = '';
     } else if (is_page('contact')) {
       $title = 'Contact';
       $sub_title = '';
     } else if (is_page('how-to-order')) {
-      $title = 'How To Order';
+      $title = '';
       $sub_title = '';
     } else if (is_404()) {
       $title = 'PAGE NOT FOUND';

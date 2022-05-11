@@ -16,7 +16,7 @@
   }
 
   #custom-checkout-progressbar #progressbar .active {
-    color: #081228;
+    color: var(--faux-cg-blue);
   }
 
   #custom-checkout-progressbar #progressbar li {
@@ -32,7 +32,7 @@
 
   #custom-checkout-progressbar #progressbar li.active:before,
   #custom-checkout-progressbar #progressbar li.active:after {
-    background: #081228;
+    background: var(--faux-cg-blue);
   }
 
   #custom-checkout-progressbar #progressbar li:before {
@@ -40,7 +40,7 @@
     height: 20px;
     line-height: 5px;
     display: block;
-    color: #ffffff;
+    color: var(--white);
     background: lightgray;
     border-radius: 50%;
     margin: 0 auto 10px auto;
@@ -56,7 +56,7 @@
     position: absolute;
     left: 0;
     top: 10px;
-    z-index: -1;
+    z-index: 0;
   }
 
   #custom-checkout-progressbar #progressbar #step2:before {
@@ -72,7 +72,7 @@
   }
 
   #custom-checkout-progressbar fieldset.checkout-tab {
-    background: white;
+    background: var(--white);
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -89,33 +89,85 @@
     display: none;
   }
 
-  /*
-#custom-checkout-progressbar fieldset.checkout-tab .previous-step, #custom-checkout-progressbar fieldset.checkout-tab .next-step {
-	color: white;
-	border: 0 none;
-	border-radius: 0px;
+  .woocommerce-billing-fields input, .woocommerce-billing-fields select, .woocommerce-billing-fields span.select{
+	background-color: var(--grey1);
+	border: 1px solid var(--white);
+    margin-bottom: 20px !important;
+    padding: 8px 15px !important;
+    color: var(--faux-cg-blue);
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 26px;
+    outline: 0;
+    border-radius: 0;
+    width: 100% !important;
+  }
+  button.button.wc-forward.next-step{
+	background-color: var(--faux-cg-blue);
+    border: 1px solid var(--faux-cg-blue);
+    color: var(--white);
+    width: 100%;
 	cursor: pointer;
-}
-
-#custom-checkout-progressbar fieldset.checkout-tab .previous-step {
-	background: #616161;
-}
-
-#custom-checkout-progressbar fieldset.checkout-tab .next-step {
-	background: #4B2DA5;
-}
-
-#custom-checkout-progressbar fieldset.checkout-tab .previous-step:hover,
-#custom-checkout-progressbar fieldset.checkout-tab .previous-step:focus {
-	background-color: #000000
-}
-
-#custom-checkout-progressbar fieldset.checkout-tab .next-step:hover,
-#custom-checkout-progressbar fieldset.checkout-tab .next-step:focus {
-	background-color: #4B2DA5
-}
-
-*/
+	margin-left: 0;
+  }
+  button.button.wc-forward.next-step:hover{
+	background-color: var(--white);
+    border: 1px solid var(--faux-cg-blue);
+    color: var(--faux-cg-blue);
+    width: 100%;
+  }
+  .cart-thumbnail img {
+    width: 100%;
+    max-height: 155px;
+  }
+  .checkout-minicart-content a{
+	color: var(--faux-cg-blue);
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: var(--font-weight-semi-bold);
+  }
+  .woocommerce-checkout-review-order .cart-subtotal {
+    border-top: 1px solid var(--faux-cg-blue);
+    border-bottom: 1px solid var(--faux-cg-blue);
+  }
+  .woocommerce-checkout-review-order .cart-subtotal td{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semi-bold);
+	padding: 0.5rem 0.5rem;
+    line-height: 22px;
+  }
+  .checkout_coupon.woocommerce-form-coupon p{
+	  text-align: center;
+  }
+  .checkout-mini-cart{
+	padding-bottom: 20px;
+  }
+  .checkout_coupon input{
+	background-color: var(--grey1);
+    border: 1px solid var(--white);
+    margin-bottom: 20px !important;
+    padding: 8px 15px !important;
+    color: var(--faux-cg-blue);
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 26px;
+    outline: 0;
+    border-radius: 0;
+    width: 100% !important;
+  }
+  .checkout_coupon button{
+	background-color: var(--faux-cg-blue);
+    border: 1px solid var(--faux-cg-blue);
+    color: var(--white);
+    width: 100%;
+	padding: 10px 48px;
+    height: 35px;
+  }
   .pass-input-desktop {
     display: none;
   }
@@ -155,16 +207,16 @@
     text-transform: uppercase;
   }
   .btn-place-order:hover {
-  background: var(--white);
-  border: 1px solid var(--ebony-clay);
-  padding: 14px 34px;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  color: var(--ebony-clay);
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-s);
-  font-style: normal;
-  font-weight: 600;
+	background: var(--white);
+	border: 1px solid var(--ebony-clay);
+	padding: 14px 34px;
+	transition: 0.5s all;
+	text-transform: uppercase;
+	color: var(--ebony-clay);
+	font-family: var(--font-family-montserrat);
+	font-size: var(--font-size-s);
+	font-style: normal;
+	font-weight: 600;
   }
   .wc_payment_methods .form-row {
     display: flex;

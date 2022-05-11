@@ -33,14 +33,14 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <?php do_action( 'woocommerce_login_form_start' ); ?>
 
     <div class=" form-group row">
-      <div class="col-md-12">
+      <div class="col-12">
         <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" autocomplete="username"
           value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" placeholder="Your username" /><?php // @codingStandardsIgnoreLine ?>
       </div>
     </div>
 
     <div class=" form-group row d-md-none pass-input-mobile">
-      <div class="col-md-12">
+      <div class="col-12">
         <input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="password" name="password" id="password" autocomplete="current-password" placeholder="Your Password" />
         <a class="lost" href="<?php echo wp_lostpassword_url(); ?>">Forgot your password?</a>
       </div>
@@ -54,10 +54,10 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <!-- --------------------------------only for desktop------------------------------ -->
 
     <div class=" form-group row pass-input-desktop">
-      <div class="col-md-8">
+      <div class="col-8">
         <input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="password" name="password" id="password" autocomplete="current-password" placeholder="Your Password" />
       </div>
-      <div class="col-md-4 checkout-login-width">
+      <div class="col-4 checkout-login-width">
         <div class="woocommerce-form-row forgot-pass-btn form-row ">
           <a class="lost" href="<?php echo wp_lostpassword_url(); ?>">Forgot your password?</a>
         </div>

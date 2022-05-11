@@ -8,7 +8,7 @@
     <fieldset id="crf-step1" class="crf-tab 12">
       <div class=" form-group ">
         <?php if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) : ?>
-        <div class="col-md-12">
+        <div class="col-12">
           <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="reg_username" autocomplete="username"
             value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" placeholder="Username*" required="required" />
         </div>
@@ -16,21 +16,21 @@
       </div>
 
       <div class=" form-group ">
-        <div class="col-md-12">
+        <div class="col-12">
           <input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" autocomplete="email"
             value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>" placeholder="Email address*" />
         </div>
       </div>
 
       <div class=" form-group ">
-        <div class="col-md-12">
+        <div class="col-12">
           <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="reg_phone" id="reg_phone" maxlength="15" autocomplete="reg_phone"
             value="<?php echo ( ! empty( $_POST['reg_phone'] ) ) ? esc_attr( wp_unslash( $_POST['reg_phone'] ) ) : ''; ?>" placeholder="Phone Number" required="required" />
         </div>
       </div>
 
       <div class=" form-group ">
-        <div class="col-md-12">
+        <div class="col-12">
           <?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
           <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" autocomplete="new-password" placeholder="Password*" />
@@ -43,8 +43,8 @@
         </div>
       </div>
 
-      <div class="d-grid gap-2">
-        <button type="button" class="btn button-background-jordy-blue btn-block next-step" data-toggle="1">Next </button>
+      <div class="d-grid text-center">
+        <button type="button" class="button button-background-jordy-blue button-primary text-uppercase next-step" data-toggle="1">Next </button>
       </div>
 
     </fieldset>
@@ -108,8 +108,8 @@
       </div>
 
       <div class="d-grid gap-2">
-        <button type="button" class="btn button-background-jordy-blue btn-block next-step" data-toggle="2">Next </button>
-        <button type="button" class="btn button-background-blue btn-block previous-step" data-toggle="2">Previous </button>
+        <button type="button" class="button button-background-jordy-blue btn-block next-step" data-toggle="2">Next </button>
+        <button type="button" class="button button-background-blue btn-block previous-step" data-toggle="2">Previous </button>
 
       </div>
 
@@ -203,9 +203,9 @@
       </div>
 
       <div class=" form-group row">
-        <div class="col-md-12">
-          <button type="button" class="btn button-background-jordy-blue next-step" data-toggle="3">Next </button>
-          <button type="button" class="btn button-background-blue previous-step" data-toggle="3">Previous </button>
+        <div class="col-12">
+          <button type="button" class="btn button-primary text-uppercase next-step" data-toggle="3">Next </button>
+          <button type="button" class="btn button-secondary text-uppercase previous-step" data-toggle="3">Previous </button>
 
         </div>
 
@@ -218,7 +218,7 @@
     <!-- Step 4 -->
     <fieldset id="crf-step4" class="crf-tab">
       <div class=" form-group row">
-        <div class="col-md-12 my-2">
+        <div class="col-12 my-2">
 
           <div class="thanks-message text-center" id="thanks-message">
 
@@ -233,7 +233,7 @@
 
               <p>
                 <button id="reg-form-submit" type="button" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit reg-form-submit btn button-background-blue next-step" name="register" value="<?php esc_attr_e( 'SUBMIT', 'woocommerce' ); ?>"><?php esc_html_e( 'SUBMIT', 'woocommerce' ); ?></button>
-                <button type="button" class="btn button-background-blue previous-step" data-toggle="4">Previous </button>
+                <button type="button" class="button button-secondary text-uppercase previous-step" data-toggle="4">Previous </button>
               </p>
             </div>
 

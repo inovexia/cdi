@@ -24,6 +24,7 @@ $has_methods   = (bool) $saved_methods;
 $types         = wc_get_account_payment_methods_types();
 
 do_action( 'woocommerce_before_account_payment_methods', $has_methods ); ?>
+<h4 class="payment-heading-title">Payment Methods </h4>
 
 <?php if ( $has_methods ) : ?>
 

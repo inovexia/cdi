@@ -39,7 +39,7 @@
                          </h6>
                          <div class="home-industry-title px-6 my-5">
                            <h5 class="text-left my-5">
-                              <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
+                              <a class="slide-title" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                            </h5>
                            <div class="post-meta text-left my-4">
                             <?php echo get_the_date( 'F d, Y' ); ?>
@@ -51,7 +51,7 @@
               								?>
                            </p>
                            <div class="read-more text-right">
-                             <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right"></i></a>
+                             <a href="<?php echo the_permalink (); ?>">Read more&nbsp;<i class="fas fa-arrow-right pl-5"></i></a>
                            </div>
                          </div>
                       </div>

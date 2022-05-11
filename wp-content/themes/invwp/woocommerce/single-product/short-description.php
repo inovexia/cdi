@@ -32,8 +32,10 @@ $product_cats_ids = wc_get_product_term_ids( $product->get_id(), 'product_cat' )
 foreach( $product_cats_ids as $cat_id ) {
 	$term = get_term_by( 'id', $cat_id, 'product_cat' );
 	//print_r($term);
+	$wc_options = get_option('woocommerce_permalinks');
+ $product_category_base = $wc_options['category_base'];
 ?>
-	<h4 class="single-product-cat-title"><a href="<?php echo esc_url($term->slug); ?>"><?php echo $term->name; ?></a></h4>
+	<h4 class="single-product-cat-title"><a href="<?php echo site_url()."/".$product_category_base."/".$term->slug; ?>"><?php echo $term->name; ?></a></h4>
 <?php 
 }
 ?>

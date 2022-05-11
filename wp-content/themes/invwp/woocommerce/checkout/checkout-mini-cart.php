@@ -19,7 +19,7 @@
     <li class="woocommerce-mini-cart-item list-group-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 
       <div class="row">
-        <div class="col-sm-6 col-md-4 mini-cart-img">
+        <div class="col-4 mini-cart-img">
           <figure class="figure cart-thumbnail">
             <div class="rectangle-184"></div>
             <?php if ( empty( $product_permalink ) ) : ?>
@@ -32,12 +32,12 @@
           </figure>
         </div>
 
-        <div class="col-sm-6 col-md-8">
+        <div class="col-8 checkout-minicart-content">
           <div class="w-100">
             <?php if ( empty( $product_permalink ) ) : ?>
             <?php echo wp_kses_post( $product_name ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
             <?php else : ?>
-            <a href="<?php echo esc_url( $product_permalink ); ?>" class="text-50 montserrat-normal-ebony-clay-18px">
+            <a href="<?php echo esc_url( $product_permalink ); ?>" class="text-50">
               <?php echo wp_kses_post( $product_name ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
             </a>
             <?php endif; ?>
@@ -125,8 +125,8 @@
   <tfoot>
 
     <tr class="cart-subtotal">
-      <th class="subtotal montserrat-normal-ebony-clay-18px"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
-      <td class="x-14000 montserrat-normal-ebony-clay-18px"><?php wc_cart_totals_subtotal_html(); ?></td>
+      <th class="subtotal f-weight-bold"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+      <td class="x-14000"><?php wc_cart_totals_subtotal_html(); ?></td>
     </tr>
 
     <?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
@@ -172,8 +172,8 @@
     <?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
     <tr class="order-total">
-      <th class="subtotal montserrat-normal-ebony-clay-18px"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
-      <td class="x-14000 montserrat-normal-ebony-clay-18px"><?php wc_cart_totals_order_total_html(); ?></td>
+      <th class="subtotal f-weight-bold"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+      <td class="x-14000"><?php wc_cart_totals_order_total_html(); ?></td>
     </tr>
 
     <?php do_action( 'woocommerce_review_order_after_order_total' ); ?>

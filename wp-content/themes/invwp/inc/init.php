@@ -62,3 +62,5 @@ require get_template_directory() . '/plugins/wc/single-product/tabs.php';
 require get_template_directory() . '/plugins/wc/shop-page/add-to-cart.php';
 require get_template_directory() . '/plugins/wc/shop-page/customize.php';
 require get_template_directory() . '/plugins/wc/shop-page/product-button-text.php';
+require get_template_directory() . '/plugins/wc/my-account/myaccount-functions.php';
+require get_template_directory() . '/plugins/wc/auth_login_and_registration.php';

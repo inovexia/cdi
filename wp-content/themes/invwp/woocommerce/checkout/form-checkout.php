@@ -39,13 +39,13 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 							<div class="pt-4 pb-0 mt-3 mb-3">
 			          <ul id="progressbar">
 			            <li class="step-progress active <?php if (! is_user_logged_in ()) { echo 'active';} ?>" id="step1">
-			              <strong class="montserrat-normal-ebony-clay-12px">Account</strong>
+			              <strong class="">Account</strong>
 			            </li>
 			            <li class="step-progress <?php if (is_user_logged_in ()) { echo 'active';} ?>" id="step2">
 			              <strong class="montserrat-normal-ebony-clay-12px">Shipping</strong>
 			            </li>
-			            <li class="step-progress" id="step3"><strong class="montserrat-normal-ebony-clay-12px">Payment</strong></li>
-			            <li class="step-progress" id="step4"><strong class="montserrat-normal-ebony-clay-12px">Review</strong></li>
+			            <li class="step-progress" id="step3"><strong class="">Payment</strong></li>
+			            <li class="step-progress" id="step4"><strong class="">Review</strong></li>
 			          </ul>
 
 			          <div class="clearfix"></div>
@@ -113,29 +113,29 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			            <fieldset id="fieldset4" class="checkout-tab">
 			              <h2>Review Order</h2>
 			              <div class="row checkout-order-review-shipping-block mb-4">
-			                <div class="col-md-6 ">
+			                <div class="col-6">
 			                  <strong>Shipping address:</strong>
-			                  <div id="shipping-address-line1" class="montserrat-normal-ebony-clay-10px"></div>
-			                  <div id="shipping-address-line2" class="montserrat-normal-ebony-clay-10px"><span id="shipping-address-zipcode"></span><span id="shipping-address-city"></span><span
+			                  <div id="shipping-address-line1" class=""></div>
+			                  <div id="shipping-address-line2" class=""><span id="shipping-address-zipcode"></span><span id="shipping-address-city"></span><span
 			                      id="shipping-address-state"></span></div>
-			                  <div id="shipping-address-line3" class="montserrat-normal-ebony-clay-10px"><span id="shipping-address-canada"></span></div>
+			                  <div id="shipping-address-line3" class=""><span id="shipping-address-canada"></span></div>
 			                  <div><a href="#" id="edit-shipping-tab">Edit</a></div>
 			                </div>
 
-			                <div class="col-md-6">
+			                <div class="col-6">
 			                  <strong>Payment method:</strong>
-			                  <div id="shipping-payment-line1" class="montserrat-normal-ebony-clay-10px"></div>
-												<div id="shipping-payment-line11" class="montserrat-normal-ebony-clay-10px"></div>
-			                  <div id="shipping-payment-line2" class="montserrat-normal-ebony-clay-10px"></div>
-			                  <div id="shipping-payment-line3" class="montserrat-normal-ebony-clay-10px"></div>
+			                  <div id="shipping-payment-line1" class=""></div>
+												<div id="shipping-payment-line11" class=""></div>
+			                  <div id="shipping-payment-line2" class=""></div>
+			                  <div id="shipping-payment-line3" class=""></div>
 			                  <div><a href="#" id="edit-payment-tab">Edit</a></div>
 			                </div>
 			              </div>
 
 			              <div class="row checkout-order-review-email-block mt-4 mb-4">
-			                <div class="col-md-6">
+			                <div class="col-6">
 			                  <strong>Email address:</strong>
-			                  <div id="shipping-email-line1" class="montserrat-normal-ebony-clay-10px"></div>
+			                  <div id="shipping-email-line1" class=""></div>
 			                </div>
 			              </div>
 			              <?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
@@ -168,7 +168,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						</div>
 					</div>
 					<div class="col-4">
-						<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+						<!--<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>-->
 
 						<?php //do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

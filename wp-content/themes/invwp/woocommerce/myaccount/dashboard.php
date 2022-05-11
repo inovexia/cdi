@@ -26,12 +26,77 @@ $allowed_html = array(
 		'href' => array(),
 	),
 );
-?>
 
-<p>
+$customer_id = get_current_user_id();
+
+if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
+	$get_addresses = apply_filters(
+		'woocommerce_my_account_get_addresses',
+		array(
+			'billing'  => __( 'Billing address', 'woocommerce' ),
+			'shipping' => __( 'Shipping address', 'woocommerce' ),
+		),
+		$customer_id
+	);
+} else {
+	$get_addresses = apply_filters(
+		'woocommerce_my_account_get_addresses',
+		array(
+			'billing' => __( 'Billing address', 'woocommerce' ),
+		),
+		$customer_id
+	);
+}
+?>
+<div class="row">
+		<h4 class="addresses-bill-ship-title">Account Information </h4>
+		<div class="col-12 px-0">
+
+			<div class="post-column addresses-bill-ship">
+				<div class="row my-5">
+					<div class="col-6">
+						<h4 class="contact-information">CONTACT INFORMATION </h4>
+						 <?php $current_userfullname = $current_user->user_firstname .'&nbsp;'.$current_user->user_lastname;
+						 ?>
+						<p class="name-maria-murillo my-5">Name:  <?php echo $current_userfullname;
+						//echo $current_user->display_name; ?></p>
+						<p class="name-maria-murillo my-5">Email: <?php echo $current_user->user_email; ?></p>
+					</div>
+					<div class="col-6">
+						<h4 class="contact-information">NEWSLETTER </h4>
+						<p class="text-97 my-5">You are subscribe to our newsletter.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="row">
+		<h4 class="addresses-bill-ship-title">Addresses </h4>
+		<div class="col-12 px-0">
+			<div class="post-column addresses-bill-ship">
+				<div class="row my-5">
+					<?php foreach ( $get_addresses as $name => $address_title ) : ?>
+					<?php
+						$address = wc_get_account_formatted_address( $name );
+					?>
+					<div class="col-6">
+						<h4 class="addresses-bill-ship contact-information">BILLING ADDRESS </h4>
+						<p class="text-97 my-5"><?php echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set a shipping address yet.', 'woocommerce' ); ?></p>
+					</div>
+					<?php endforeach; ?>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<?php /*
+<!--<p>
 	<?php
 	printf(
-		/* translators: 1: user display name 2: logout url */
+		/* translators: 1: user display name 2: logout url 
 		wp_kses( __( 'Hello %1$s (not %1$s? <a href="%2$s">Log out</a>)', 'woocommerce' ), $allowed_html ),
 		'<strong>' . esc_html( $current_user->display_name ) . '</strong>',
 		esc_url( wc_logout_url() )
@@ -41,10 +106,10 @@ $allowed_html = array(
 
 <p>
 	<?php
-	/* translators: 1: Orders URL 2: Address URL 3: Account URL. */
+	/* translators: 1: Orders URL 2: Address URL 3: Account URL. 
 	$dashboard_desc = __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">billing address</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' );
 	if ( wc_shipping_enabled() ) {
-		/* translators: 1: Orders URL 2: Addresses URL 3: Account URL. */
+		/* translators: 1: Orders URL 2: Addresses URL 3: Account URL. 
 		$dashboard_desc = __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' );
 	}
 	printf(
@@ -54,8 +119,8 @@ $allowed_html = array(
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )
 	);
 	?>
-</p>
-
+</p>-->
+*/ ?>
 <?php
 	/**
 	 * My Account dashboard.

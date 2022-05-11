@@ -25,11 +25,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 		<thead>
 			<tr>
-				<th class="product-remove">&nbsp;</th>
-				<th class="product-thumbnail">&nbsp;</th>
-				<th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
+				<!--<th class="product-remove">&nbsp;</th>-->
+				<th class="product-thumbnail"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+				<th class="product-name"><?php esc_html_e( '', 'woocommerce' ); ?></th>
 				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
+				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
@@ -94,12 +94,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						</td>
 
-						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
-							<?php
-								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
-							?>
-						</td>
-
 						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 						<?php
 						if ( $_product->is_sold_individually() ) {
@@ -120,7 +114,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 						?>
-							<div class="product-remove">
+							<div class="product-remove mt-2 text-center">
 								<?php
 									echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 										'woocommerce_cart_item_remove_link',
@@ -135,6 +129,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 									);
 								?>
 							</div>
+						</td>
+
+						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+							<?php
+								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+							?>
 						</td>
 
 						<td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
@@ -188,4 +188,15 @@ do_action( 'woocommerce_before_cart' ); ?>
 	?>
 </div>
 
-<?php do_action( 'woocommerce_after_cart' ); ?>
+<div class="row">
+  <div class="col-7">
+    <?php do_action( 'woocommerce_after_cart' ); ?>
+  </div>
+  <div class="col-5">
+    <div class="wc-proceed-to-checkout my-4">
+      <?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+      <a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="button">Continue Shopping</a>
+    </div>
+    <p class="text-right">Shipping cost will be calculated based on your shipping address.</p>
+  </div>
+</div>

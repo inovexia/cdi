@@ -8,7 +8,9 @@
 // Utility function that outputs the mini cart content
 function my_wc_mini_cart_content(){
     $cart = WC()->cart->get_cart();
-
+?>
+	<div class="row">
+		<?php
     foreach ( $cart as $cart_item_key => $cart_item  ):
         $_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
         $product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
@@ -23,14 +25,17 @@ function my_wc_mini_cart_content(){
                 $size_name = $term_obj->name;
             }
             ?>
-
-            <div class="media mini-cart__item woocommerce-mini-cart-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
+            <div class="col-6 minicart-thumbnail media mini-cart__item woocommerce-mini-cart-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
                <?php echo $thumbnail; ?>
-
+            </div>
+			<div class="col-6 mini-cart-item-body">
                 <div class="media-body mini-cart__item_body">
-                    <div class="mini-cart__item__heading mt-0"><?php echo $product_name; ?></div>
+                    <div class="mini-cart__item__heading mb-5"><?php echo $product_name; ?></div>
+					
+
+				
                     <?php
-                    echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<div class="cart__item__price">' .
+                    echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<div class="cart__item__price mb-5">' .
                     sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) .
                     '</div>', $cart_item, $cart_item_key );
 
@@ -38,7 +43,6 @@ function my_wc_mini_cart_content(){
                         <div class="mini-cart__item__size"><?php echo $size_name; ?></div>
                     <?php } ?>
                 </div>
-
                 <div class="mini-cart__item_remove ">
                     <?php
                     echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -55,8 +59,13 @@ function my_wc_mini_cart_content(){
             <?php
         }
     endforeach; ?>
-
-    <a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="btn btn-dark btn-block"><span class="btn__text"><?php _e('Checkout', 'frosted'); ?></span></a>
+            </div>
+			  
+	<div class="mini-cart-buttons-section d-flex">
+		<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="button button-secondary"><?php _e('View Cart', 'frosted'); ?></a>
+		<a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="button button-primary text-uppercase"><?php _e('Checkout', 'frosted'); ?></a>
+	</div>
+	
     <?php
 }
 
