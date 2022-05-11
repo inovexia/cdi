@@ -65,6 +65,7 @@ function openTab(evt, tabName) {
 // Get the element with id="defaultOpenTab" and click on it
 document.getElementById("defaultOpenTab").click();
 
+/* Accordions  */
 const accordionBtns = document.querySelectorAll(".accordion .accordion-title");
 
 accordionBtns.forEach((accordion) => {
