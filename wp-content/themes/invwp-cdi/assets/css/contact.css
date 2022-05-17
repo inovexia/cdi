@@ -1,87 +1,108 @@
-/*
- * CONTACT CSS FILE
- * This file will contain CSS for only contact page sections
- */
+@media (min-width: 0) {
+    .contact-newsletter-wrp {
+        background: #F1F1F1;
+        padding: 50px 0 25px 0;
+    }
 
-/* ORDER HERO BANNER SECTION */
-.contact-banner {
-  padding: 70px 0px;
-}
-.contact-banner .hero-title {
-  font-family: var(--font-family-open-sans);
-  font-size: var(--font-size-Vxl);
-  font-weight: var(--font-weight-regular);
-  color: var(--faux-cg-blue);
-  line-height: 65px;
-  letter-spacing: 0;
-  margin-top: 10px;
-}
-.contact-col-section{
-  padding: 70px 0;	
-}
-.section-icon i {
-  color: var(--faux-cg-blue);
-  font-size: var(--font-size-xxl);
-}
+    .page-template-contact-us .form-footer .button-secondary {
+        display: none;
+    }
 
-.contact-section input[type=text], .contact-section input[type=email], .contact-section textarea{
-  background-color: var(--grey1);
-  border: 1px solid var(--white);
-  margin-bottom: 20px !important;
-  padding: 8px 15px !important;
-  color: var(--faux-cg-blue);
-  font-family: var(--font-family-open-sans);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: var(--font-weight-medium);
-  line-height: 26px;
-  outline: 0;
-  border-radius: 0;
-  width: 100% !important;
-}
-.contact-section input[type=submit]{
-  background-color: var(--faux-cg-blue);
-  border: 1px solid var(--faux-cg-blue);
-  color: var(--white);
-  width: 100%;
-  cursor: pointer;
-  padding: 10px 48px;
-  text-decoration: none;
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-medium);
-  height: 45px;
-}
+    .contact-newsletter-wrp form {
+        display: flex;
+    }
 
-.contact-section input[type=submit]:hover{
-  background-color: var(--white);
-  border: 1px solid var(--faux-cg-blue);
-  color: var(--faux-cg-blue);
-}
+    .contact-newsletter-wrp .tnp-email {
+        background: #000 !important;
+    }
 
-.contact-section .col-8{
-  margin: 0 auto;
-}
+    .contact-newsletter-wrp .tnp-field-button {
+        margin-left: -35px;
+    }
 
-@media only screen and (min-width: 375px ) {
+    .contact-newsletter-wrp h4 {
+        font-family: var(--font-family-lato);
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--eerie-black);
+        margin: 0;
+    }
 
-}
+    .contact-newsletter-wrp .widget_block h4 {
+        display: none;
+    }
 
-@media only screen and (min-width: 425px ) {
+    .contact-newsletter-wrp .col-4 p {
+        margin-top: 10px;
+    }
 
-}
+    .contact-newsletter-wrp p a {
+        color: #000 !important;
+    }
 
-/*Tablet*/
-@media only screen and (min-width: 768px ) {
-   
+    .contact-newsletter-wrp .row {
+        align-items: center;
+        display: flex;
+    }
+
+    .widget_block h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .contact-newsletter-wrp .col-4 {
+        margin-bottom: 0;
+    }
+
+    .page-template-contact-us #block-25 h3 {
+        display: none;
+    }
+
+    .contact-newsletter-wrp .tnp-email {
+        color: #ffffff !important;
+    }
+
+    .news-letter-part {
+        display: none;
+    }
 }
 
-/*Laptop*/
-@media only screen and (min-width: 1024px ) {
+@media (min-width: 576px) {}
+
+@media (max-width: 767px) {
+    .wpcf7-form .form-footer div.col-6 {
+        padding-right: 2px;
+    }
+
+    .contact-newsletter-wrp .row {
+        display: block;
+    }
+
+    .contact-newsletter-wrp .col-4 {
+        margin-bottom: 5px;
+    }
 
 }
-@media only screen and (min-width: 1920px ) {
-  
-}
-@media only screen and (max-width: 767px ) {
 
+@media (min-width: 768px) {
+    .news-letter-part {
+        display: block;
+    }
 }
+
+@media (min-width: 992px) {
+    .contact-page .container {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1680px) {}
+
+@media (min-width:1920px) {}
