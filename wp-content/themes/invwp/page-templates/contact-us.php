@@ -12,9 +12,9 @@ get_header ();
 <main id="primary" class="site-main">
 
     <?php
-          if($sidebar == 2 || $sidebar == 3){
+          /*if($sidebar == 2 || $sidebar == 3){
             get_sidebar('right');
-          }
+          }*/
     ?>
 
       <div class="content">
@@ -28,9 +28,9 @@ get_header ();
       </div>
 
     <?php
-          if($sidebar == 2 || $sidebar == 3){
+          /*if($sidebar == 2 || $sidebar == 3){
             get_sidebar('right');
-          }
+          }*/
     ?>
 
 </main><!-- #main -->

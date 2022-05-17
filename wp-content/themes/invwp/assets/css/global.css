@@ -1032,7 +1032,12 @@ form.woocommerce-form-login{
   border-right: 1px solid #e1e1e1;
   box-shadow: 5px 0px 3px #e1e1e1;
 }
-
+.mini-cart-buttons-section a.button{
+  padding: 15px 25px 8px 32px;
+}
+.mini-cart-buttons-section a.button-secondary{
+  color: var(--faux-cg-blue) !important;
+}
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -1040,6 +1045,12 @@ form.woocommerce-form-login{
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+.mini-cart-buttons-section a.button-secondary:hover{
+  color: var(--white) !important;	
+}
+.mini-cart-buttons-section a.button-primary:hover{
+  color: var(--faux-cg-blue);
 }
 
 .sidepanel a:hover {

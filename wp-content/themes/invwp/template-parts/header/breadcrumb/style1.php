@@ -30,8 +30,8 @@
       $title = 'BEAUTY INDUSTRY';
       $sub_title = 'Read the latest news about the beauty business.';
     } else if (is_page('privacy-policy')) {
-      $title = 'PRIVACY POLICY';
-      $sub_title = 'Learn about ' . ucwords(strtolower(get_bloginfo('name'))) . '\'s privacy policy.';
+      $title = '';
+      //$sub_title = 'Learn about ' . ucwords(strtolower(get_bloginfo('name'))) . '\'s privacy policy.';
     } else if (is_page('site-map')) {
       $title = 'SITEMAP';
       $sub_title = ucwords(strtolower(get_bloginfo('name'))) . '\'s sitemap.';
@@ -42,7 +42,7 @@
       $title = '';
       $sub_title = '';
     } else if (is_page('contact')) {
-      $title = 'Contact';
+      $title = '';
       $sub_title = '';
     } else if (is_page('how-to-order')) {
       $title = '';
