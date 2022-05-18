@@ -1,151 +1,200 @@
 <?php
-/* Template Name: All Blogs */
+/* Template Name: Article Blogs */
 
 get_header();
 ?>
 
 <div id="primary" class="site-content blog-page">
-  <main id="main" class="site-main">
-    <div class="container">
-      <?php
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    // are we on page one?
-    if (1 == $paged) { ?>
-      <?php
-          $args = array(
-             'post_type' => 'post',
-             'order'     => 'ASC',
-             "posts_per_page" => 1 
-          );
-
-          $post_query = new WP_Query($args);
-
-          if($post_query->have_posts() ) {
-            while($post_query->have_posts() ) {
-             $post_query->the_post();
-             ?>
-      <div class="row first-blog-row">
-        <div class="col-6">
-    <a href="<?php the_permalink(); ?>">
-          <?php
-                     if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                       the_post_thumbnail( 'large' );
-                     }
-                    ?>
-          </a>
-        </div>
-        <div class="col-6 first-blog-column-text">
-          <p>Publish On <strong><span><?php $category = get_the_category();
-                         $allcategory = get_the_category();
-                      foreach ($allcategory as $category) {
-                        $cat_link = get_category_link($category->cat_ID);
-                      ?>
-                <a href="<?php echo $cat_link; ?>" class="card-link"><strong><?php echo $category->cat_name;; ?></strong></a>
-                <?php
-                      }
-                      ?></span></strong> By <strong><?php the_author(); ?></strong></p>
-          <h3 class="section-title"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h3>
-          <div class="main-para mb-4">
-            <?php $excerpt= get_the_excerpt();
-            echo substr($excerpt, 0, 90); ?>
-
-          </div>
-      <div class="blog-btn">
-      <a href="<?php the_permalink(); ?>" class="main-btn">Read More</a>
-      </div>
-          
-        </div>
-      </div>
-      <?php
-          }
-        }
-
-        ?>
-    </div>
+  <div class="container">
     <?php
-          }
-        
+  	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  	// are we on page one?
+  	if (1 == $paged) {
 
-        ?>
-    <div class="container">
+    			$args = array(
+    				'post_type' => 'post',
+    				'post_status' => 'publish',
+    				'posts_per_page' => 1,
+    				'order' => 'ASC',
+    			);
+    			$post_query = new WP_Query($args);
 
-      <div class="blog-row">
-        <?php
-          $args = array(
-             'post_type' => 'post',
-             'order'     => 'ASC',
-             "posts_per_page" => 6,
-             'paged' => get_query_var('paged'), 
-          );
+    			if($post_query->have_posts() ) {
+      			while($post_query->have_posts() ) {
 
-          $post_query = new WP_Query($args);
+      				$post_query->the_post();
+          		?>
+			  <div class="row px-0">
+				<div class="col-12 blog-big-image">
+				  <?php
+					if ( has_post_thumbnail() ) :
+					  the_post_thumbnail();
+					endif;
+				  ?>
+				</div>
+				<div class="col-12 text-center my-5">
+					<h2 class="section-title"><?php echo the_title(); ?></h2>
+					<p class="section-description">
+					  <?php
+						$excerpt= get_the_excerpt();
+						echo substr($excerpt, 0, 200);
+						//echo get_the_excerpt();
+					   ?>
+					</p>
+				</div>
+			  </div>
 
-          if($post_query->have_posts() ) {
-            while($post_query->have_posts() ) {
-             $post_query->the_post();
-             ?>
-        <div class="col-4 blog-column">
-    <a href="<?php the_permalink(); ?>">
-          <?php
-                     if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                       the_post_thumbnail( 'large' );
-                     }
-                    ?>
-</a>
-          <p>Publish On <strong><span><?php $category = get_the_category();
-                         $allcategory = get_the_category();
-                      foreach ($allcategory as $category) {
-                        $cat_link = get_category_link($category->cat_ID);
-                      ?>
-                <a href="<?php echo $cat_link; ?>" class="card-link"><strong><?php echo $category->cat_name;; ?></strong></a>
-                <?php
-                      }
-                      ?></span></strong> By <strong><?php the_author(); ?></strong></p>
+			<?php
+				}
+				wp_reset_postdata();
+				}
+    		?>
 
-          <h3 class="sub-heading"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h3>
-          <div class="main-para mb-4">
-            <?php $excerpt= get_the_excerpt();
-            echo substr($excerpt, 0, 90); ?>
+    <div class="row post-maincolumns">
+		  <?php
+			$args = array(
+				'post_type' => 'post',
+				'post_status' => 'publish',
+				'posts_per_page' => 3,
+				'order' => 'ASC',
+				'paged' => get_query_var('paged'),
+			);
 
-          </div>
-          <div class="blog-btn">
-      <a href="<?php the_permalink(); ?>" class="main-btn">Read More</a>
-      </div>
-        </div>
-        <?php
-            }
-          }
-        ?>
-      </div>
+			$post_query = new WP_Query($args);
 
+			if ($post_query->have_posts() ) {
+
+				while($post_query->have_posts() ) {
+
+					$post_query->the_post();
+		  ?>
+		  <div id="post-<?php the_ID(); ?>" class="col-4 blog-column px-5">
+
+			  <div class="row">
+				<div class="col-12">
+				  <?php
+						if ( has_post_thumbnail() ) :
+							the_post_thumbnail();
+						endif;
+					?>
+				</div>
+				<div class="col-12 px-6 my-5 text-left">
+				  <h4 class="my-5"><?php echo the_title(); ?></h4>
+				  <div class="post-meta my-4"><?php the_time( 'F j, Y' ); ?></div>
+				  <p class="card-text mb-5 mt-5">
+					<?php
+						$excerpt= get_the_excerpt();
+						echo substr($excerpt, 0, 160);
+						//echo get_the_excerpt();
+					 ?>
+				  </p>
+				  <a href="<?php echo the_permalink(); ?>" class="read-more text-right">Read More</a>
+				</div>
+			  </div>
+			</div>
+
+			<?php
+  				  }
+				wp_reset_postdata();
+  			?>
+		  <div class="clearfix"></div>
+		  <div class="col-12">
+			<nav aria-label="Page navigation example">
+			<ul class="pagination d-flex justify-content-center">
+			  <li class="page-item">
+				<?php
+					$big = 999999999;
+					echo paginate_links( array(
+						  'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+						  'format' => '?paged=%#%',
+						  'current' => max( 1, get_query_var('paged') ),
+						  'total' => $post_query->max_num_pages,
+						  'prev_text' => 'PREVIOUS',
+						  'next_text' => 'NEXT'
+					) );
+
+					}
+				?>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	
     </div>
-    <div class="clearfix"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <?php
+    <?php } else { ?>
+    <div class="row row-main-blogs">
 
-            $big = 999999999;
-            echo paginate_links( array(
-                'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-                'format' => '?paged=%#%',
-                'current' => max( 1, get_query_var('paged') ),
-                'total' => $post_query->max_num_pages,
-                'prev_text' => 'PREVIOUS',
-                'next_text' => 'NEXT'
-            ) );
+      <?php
+		$args = array(
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'posts_per_page' => 3,
+			'order' => 'ASC',
+			'paged' => get_query_var('paged'),
+		);
 
-          
-        ?>
-              </li>
-            </ul>
-          </nav>
-        </div>
+		$post_query = new WP_Query($args);
+
+	if($post_query->have_posts() ) {
+
+		while($post_query->have_posts() ) {
+
+			$post_query->the_post();
+		?>
+
+	   <div id="post-<?php the_ID(); ?>" class="col-4 blog-column px-5">
+
+		<div class="row">
+		  <div class="col-12">
+			<?php
+				if ( has_post_thumbnail() ) :
+					the_post_thumbnail();
+				endif;
+			?>
+		  </div>
+		  <div class="col-12 px-6 my-5 text-left">
+			  <h4 class="my-5"><?php echo the_title(); ?></h4>
+			  <div class="post-meta my-4"><?php the_time( 'F j, Y' ); ?></div>
+			  <p class="card-text mb-5 mt-5">
+				<?php
+					$excerpt= get_the_excerpt();
+					echo substr($excerpt, 0, 160);
+					//echo get_the_excerpt();
+				 ?>
+			  </p>
+			  <a href="<?php echo the_permalink(); ?>" class="read-more text-right">Read More</a>
+		  </div>
+		</div>
+	  </div>
+
+      <?php
+						}
+    wp_reset_postdata();
+						?>
+      <div class="clearfix"></div>
+      <div class="col-12">
+		  <nav aria-label="Page navigation example">
+			  <ul class="pagination d-flex justify-content-center">
+				<li class="page-item">
+					<?php
+						$big = 999999999;
+						echo paginate_links( array(
+							  'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+							  'format' => '?paged=%#%',
+							  'current' => max( 1, get_query_var('paged') ),
+							  'total' => $post_query->max_num_pages,
+							  'prev_text' => 'PREVIOUS',
+							  'next_text' => 'NEXT'
+						) );
+					}
+				?>
+				</li>
+			  </ul>
+		  </nav>
       </div>
     </div>
-  </main>
+    <?php } ?>
+  </div><!-- #content -->
 </div><!-- #primary -->
+
 <?php get_footer(); ?>

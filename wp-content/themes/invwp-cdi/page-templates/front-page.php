@@ -11,8 +11,13 @@ get_header ();
 ?>
 <main id="primary" class="site-main">
 
+<<<<<<< HEAD
   <div class="content">
     <!-- Hero section -->
+=======
+    <div class="content">
+        <!-- Hero section -->
+>>>>>>> 2374b8f6ed51acccb8551f5ee319be14531c8a1f
         <?php get_template_part( 'template-parts/page/home/hero-image', 'hero'); ?>
 
         <!--Products Slider-->
@@ -32,12 +37,18 @@ get_header ();
 
         <!--Testimonial Section-->
         <?php get_template_part( 'template-parts/page/home/testimonial'); ?>
+<<<<<<< HEAD
+=======
+
+        <!--Contact Section-->
+        <?php //get_template_part( 'template-parts/page/home/contact', 'contact'); ?>
+
+      </div>
+
+  	</main><!-- #main -->
+>>>>>>> 2374b8f6ed51acccb8551f5ee319be14531c8a1f
 
   </div>
-
-</main><!-- #main -->
-
-</div>
 <?php
 get_footer ();
 ?>

@@ -20,7 +20,7 @@ function invwp_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 315,
+			'thumbnail_image_width' => 150,
 			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 3,
@@ -118,8 +118,9 @@ if ( ! function_exists( 'invwp_woocommerce_wrapper_before' ) ) {
 	 */
 	function invwp_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main">
-		<?php
+<main id="primary" class="site-main">
+
+    <?php
 	}
 }
 add_action( 'woocommerce_before_main_content', 'invwp_woocommerce_wrapper_before' );
@@ -134,8 +135,8 @@ if ( ! function_exists( 'invwp_woocommerce_wrapper_after' ) ) {
 	 */
 	function invwp_woocommerce_wrapper_after() {
 		?>
-			</main><!-- #main -->
-		<?php
+</main><!-- #main -->
+<?php
 	}
 }
 add_action( 'woocommerce_after_main_content', 'invwp_woocommerce_wrapper_after' );
@@ -150,48 +151,50 @@ add_action( 'woocommerce_after_main_content', 'invwp_woocommerce_wrapper_after' 
 			invwp_woocommerce_header_cart();
 		}
 	?>
- */
+*/
 
 if ( ! function_exists( 'invwp_woocommerce_cart_link_fragment' ) ) {
-	/**
-	 * Cart Fragments.
-	 *
-	 * Ensure cart contents update when products are added to the cart via AJAX.
-	 *
-	 * @param array $fragments Fragments to refresh via AJAX.
-	 * @return array Fragments to refresh via AJAX.
-	 */
-	function invwp_woocommerce_cart_link_fragment( $fragments ) {
-		ob_start();
-		invwp_woocommerce_cart_link();
-		$fragments['a.cart-contents'] = ob_get_clean();
+/**
+* Cart Fragments.
+*
+* Ensure cart contents update when products are added to the cart via AJAX.
+*
+* @param array $fragments Fragments to refresh via AJAX.
+* @return array Fragments to refresh via AJAX.
+*/
+function invwp_woocommerce_cart_link_fragment( $fragments ) {
+ob_start();
+invwp_woocommerce_cart_link();
+$fragments['a.cart-contents'] = ob_get_clean();
 
-		return $fragments;
-	}
+return $fragments;
+}
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'invwp_woocommerce_cart_link_fragment' );
 
 if ( ! function_exists( 'invwp_woocommerce_cart_link' ) ) {
-	/**
-	 * Cart Link.
-	 *
-	 * Displayed a link to the cart including the number of items present and the cart total.
-	 *
-	 * @return void
-	 */
-	function invwp_woocommerce_cart_link() {
-		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'invwp' ); ?>">
-			<?php
+/**
+* Cart Link.
+*
+* Displayed a link to the cart including the number of items present and the cart total.
+*
+* @return void
+*/
+function invwp_woocommerce_cart_link() {
+?>
+<a class="cart-contents btn-bag" id="btn-bag" style="cursor:pointer;" onclick="openNav()"
+    title="<?php esc_attr_e( 'View your shopping cart', 'invwp' ); ?>">
+    <?php
 			$item_count_text = sprintf(
 				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'invwp' ),
+				_n( '(%d)', '(%d)', WC()->cart->get_cart_contents_count(), 'invwp' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>
-			<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo esc_html( $item_count_text ); ?></span>
-		</a>
-		<?php
+    <span class="amount bag">BAG<?php //echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+    <span class="count"><?php echo esc_html( $item_count_text ); ?></span>
+</a>
+<?php
 	}
 }
 
@@ -208,20 +211,22 @@ if ( ! function_exists( 'invwp_woocommerce_header_cart' ) ) {
 			$class = '';
 		}
 		?>
-		<ul id="site-header-cart" class="site-header-cart">
-			<li class="<?php echo esc_attr( $class ); ?>">
-				<?php invwp_woocommerce_cart_link(); ?>
-			</li>
-			<li>
-				<?php
-				$instance = array(
-					'title' => '',
-				);
+<li class="<?php echo esc_attr( $class ); ?>">
+    <?php invwp_woocommerce_cart_link(); ?>
+</li>
+<!--
+		<li class="d-none">
+			<?php
+			/*
+			$instance = array(
+				'title' => '',
+			);
 
-				the_widget( 'WC_Widget_Cart', $instance );
-				?>
-			</li>
-		</ul>
-		<?php
+			the_widget( 'WC_Widget_Cart', $instance );
+			*/
+			?>
+		</li>
+		-->
+<?php
 	}
 }
