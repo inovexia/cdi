@@ -37,7 +37,7 @@
                          </div>
                          <h6 class="slide-meta text-uppercase">
                          </h6>
-                         <div class="home-industry-title px-6 my-5">
+                         <div class="home-industry-title">
                            <h5 class="text-left my-5">
                               <a class="slide-title" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                            </h5>

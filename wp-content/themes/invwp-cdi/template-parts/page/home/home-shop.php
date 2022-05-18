@@ -29,7 +29,7 @@
           </p>
         </div>
       </div>
-      <div class="col-7 mt-5 text-right">
+      <div class="col-7 text-right">
         <?php $upload_dir = wp_upload_dir();
           $image =  get_field('home_shop_image');
           //$playimage =  get_field('home_shop_play_image');

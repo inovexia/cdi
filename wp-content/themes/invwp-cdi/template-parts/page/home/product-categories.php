@@ -13,9 +13,9 @@
     </div>
 
     <div class="brands">
-      <div class="row">
-        <div class="col-4 mt-5">
-			<div class="box-product-categories">
+      <div class="row home-product-row">
+        <div class="col-4 mt-5 box-product-categories">
+			<div class="">
           <h4 class="">Top Insulin Brands</h4>
           <ul class="list-disc mt-5 pl-6">
             <?php
@@ -29,8 +29,8 @@
           </ul>
         </div>
         </div>
-        <div class="col-4 mt-5">
-			<div class="box-product-categories">
+        <div class="col-4 mt-5 box-product-categories">
+			<div class="">
           <h4 class="">Top Diabetic Medications</h4>
           <!--<ul class="list-disc mt-5 pl-6">
             <?php
@@ -66,8 +66,8 @@
           <?php wp_reset_query(); ?>
 			</div>
         </div>
-          <div class="col-4 mt-5">
-			<div class="box-product-categories">
+          <div class="col-4 mt-5 box-product-categories">
+			<div class="">
             <h4 class="">Top Diabetic Supplies</h4>
             <!--<ul class="list-disc mt-5 pl-6">
               <?php
@@ -107,15 +107,15 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row home-product-row">
       <?php
         $category_name = ['insulin', 'hypoglycemic', 'diabetic-supplies'];
         $cats = invwp_get_product_categories ($category_name);
         if (! empty ($cats)) {
           foreach ($cats as $id => $cat) {
             ?>
-            <div class="col-4 product-categories">
-				<div class="box-product-categories">
+            <div class="col-4 box-product-categories">
+				<div class="">
                 <h4 class="mb-5"><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h4>
                 <?php
                 if (! empty ($cat['sub_cats'])) {
