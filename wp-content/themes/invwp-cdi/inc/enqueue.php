@@ -43,7 +43,7 @@ function invx_add_theme_scripts () {
 		// Style guide and global css
 		wp_enqueue_style( 'invwps-styleguide-css', get_template_directory_uri () . '/assets/css/styleguide.css', array(), _S_VERSION, 'all' );
 	    wp_enqueue_style( 'invwps-global-css', get_template_directory_uri () . '/assets/css/global.css', array(), _S_VERSION, 'all' );
-	    //wp_enqueue_style( 'invwps-common-css', get_template_directory_uri () . '/assets/css/common-component.css', array(), _S_VERSION, 'all' );
+	    wp_enqueue_style( 'invwps-common-css', get_template_directory_uri () . '/assets/css/common-component.css', array(), _S_VERSION, 'all' );
 	    // SwiperJs styles
 	    wp_enqueue_style( 'invwps-swiper-bundle-css', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', array(), _S_VERSION, 'all' );
 	    wp_enqueue_style( 'invwps-swiper-styles-css', get_template_directory_uri () . '/assets/css/swiper-styles.css', array(), _S_VERSION, 'all' );
@@ -58,7 +58,7 @@ function invx_add_theme_scripts () {
 	wp_enqueue_style( 'invwps-blog-css', get_template_directory_uri () . '/assets/css/blog.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'invwps-contact-css', get_template_directory_uri () . '/assets/css/contact.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'invwps-about-us-css', get_template_directory_uri () . '/assets/css/about-us.css', array(), _S_VERSION, 'all' );
-    //wp_enqueue_style( 'invwps-login-modalcss', get_template_directory_uri () . '/assets/css/login-modal.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'invwps-privacy', get_template_directory_uri () . '/assets/css/privacy.css', array(), _S_VERSION, 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'invx_add_theme_scripts' );

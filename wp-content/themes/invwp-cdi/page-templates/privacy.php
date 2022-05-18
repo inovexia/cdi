@@ -15,12 +15,12 @@ get_header();
 
       <div class="content">
 
-        <section class="section-privacyfullwidth">
+        <section class="section-privacyfullwidth section-margin">
           <div class="container">
             <div class="row">
               <div class="col-12 privacy-inner-content">
                 <div class="">
-                  <p><?php echo the_field('privacy_content'); ?></p>
+                  <p><?php echo the_content(); ?></p>
                 </div>
               </div>
             </div>
