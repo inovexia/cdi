@@ -327,9 +327,9 @@ cursor: pointer;
   .home-shop .container .row .col-5 img, .home-shop .container .row .col-5 video{
     display: none;
   }
-  /*footer .payment-options section:first-child{
+  footer .payment-options section:first-child{
     position: relative;
     top: -11px;
-  }*/
+  }
 }
 

@@ -1,61 +1,51 @@
-(function () {
-  /* Modal dialog script */
-  document.addEventListener(
-    "click",
-    function (e) {
-      e = e || window.event;
-      var target = e.target || e.srcElement;
+$(document).ready(function(){
+  $('.tnp-email').attr('placeholder','Enter your email');
+  $('.tnp-submit').attr('value','SIGN UP');
+  $('#s').attr('placeholder','Search');
+});
 
-      if (
-        (target.hasAttribute("data-toggle") &&
-          target.getAttribute("data-toggle") == "modal") ||
-        (target.parentElement.hasAttribute("data-toggle") &&
-          target.parentElement.getAttribute("data-toggle") == "modal")
-      ) {
+/* Modal dialog script */
+document.addEventListener('click', function (e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+
+    if ((target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') || (target.parentElement.hasAttribute ('data-toggle') && target.parentElement.getAttribute('data-toggle') == 'modal')) {
         e.preventDefault();
-        if (target.hasAttribute("data-target")) {
-          var m_ID = target.getAttribute("data-target");
-          document.getElementById(m_ID).classList.add("open");
-        } else if (target.parentElement.hasAttribute("data-target")) {
-          var m_ID = target.parentElement.getAttribute("data-target");
-          document.getElementById(m_ID).classList.add("open");
-        }
-      }
+        if (target.hasAttribute('data-target')) {
+            var m_ID = target.getAttribute('data-target');
+            document.getElementById(m_ID).classList.add('open');
+        } else if (target.parentElement.hasAttribute ('data-target')) {
+					var m_ID = target.parentElement.getAttribute('data-target');
+					document.getElementById(m_ID).classList.add('open');
+				}
+    }
 
-      // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
-      if (
-        (target.hasAttribute("data-dismiss") &&
-          target.getAttribute("data-dismiss") == "modal") ||
-        target.classList.contains("modal") ||
-        (target.parentElement.hasAttribute("data-dismiss") &&
-          target.parentElement.getAttribute("data-dismiss") == "modal") ||
-        target.parentElement.classList.contains("modal")
-      ) {
+    // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+    if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal') ||
+		   (target.parentElement.hasAttribute('data-dismiss') && target.parentElement.getAttribute('data-dismiss') == 'modal') || target.parentElement.classList.contains('modal')) {
         e.preventDefault();
         var modal = document.querySelector('[class="modal open"]');
-        modal.classList.remove("open");
-      }
-    },
-    false
-  );
-})();
+        modal.classList.remove('open');
+    }
+}, false);
 
 /* Offcanvas Sidepanel */
-function openNav() {
-  document.getElementById("minicart-nav").style.right = "0";
+function openSidePanel() {
+  document.getElementById("offcanvas-sidepanel").style.width = "350px";
 }
 
-function closeNav() {
-  document.getElementById("minicart-nav").style.right = "-100%";
+function closeSidePanel() {
+  document.getElementById("offcanvas-sidepanel").style.width = "0";
 }
 
-jQuery(function ($) {
-  // Add to cart functionality on all  products page
-  $(document.body).on("added_to_cart", function (response) {
-    // Show mini cart
-    openNav();
-  });
-});
+/* Offcanvas Sidepanel 
+function openSidePanel1() {
+  document.getElementById("offcanvas-sidepanel").style.right = "0";
+}
+
+function closeSidePanel1() {
+  document.getElementById("offcanvas-sidepanel").style.right = "-100%";
+}*/
 
 /* Tabbed View */
 function openTab(evt, tabName) {
@@ -75,48 +65,32 @@ function openTab(evt, tabName) {
 // Get the element with id="defaultOpenTab" and click on it
 document.getElementById("defaultOpenTab").click();
 
-jQuery(document).ready(function () {
-  jQuery("#desktopSearch input, .mobile-search-box .search-field").attr(
-    "placeholder",
-    "Search for brand, product, category..."
-  );
-  jQuery("#menu-toggler").click(function () {
-    jQuery(".mob-mega-menu").toggleClass("left-0");
-  });
-});
+/* Accordions  */
+const accordionBtns = document.querySelectorAll(".accordion .accordion-title");
 
-jQuery(document).ready(function () {
-  var curr_link = jQuery(".tab-link-hidden").attr("key");
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("is-open");
 
-  jQuery(".tab-link").each(function () {
-    var cl = jQuery(this).attr("data");
-    if (cl == curr_link) {
-      jQuery(".tab-link").removeClass("active");
-      jQuery(this).addClass("active");
-    }
-  });
+    let content = this.nextElementSibling;
+    ///console.log(content);
 
-  jQuery("#product-search-icon").click(function () {
-    jQuery("#desktopSearch").fadeIn();
-  });
-  jQuery("#desktopSearch .close").click(function () {
-    jQuery("#desktopSearch").fadeOut();
-  });
-  jQuery(".tnp-email").attr("placeholder", "Email");
-});
-
-/* Collapsible/Accordion */
-var collapse = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < collapse.length; i++) {
-  collapse[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
       content.style.maxHeight = null;
     } else {
+      //if the accordion is currently closed
       content.style.maxHeight = content.scrollHeight + "px";
+      //console.log(content.style.maxHeight);
     }
-  });
+  };
+});
+
+function toggle_menu () {
+  var x = document.getElementById("site-navigation");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
 }

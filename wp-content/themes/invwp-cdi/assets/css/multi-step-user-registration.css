@@ -1,0 +1,26 @@
+/* Auth-modal multi-step registration form styling  */
+#custom-registration-tabs fieldset.crf-tab {
+	background: inherit;
+	border: 0 none;
+	border-radius: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 20px;
+	position: relative
+}
+
+#custom-registration-tabs fieldset.crf-tab .finish {
+  text-align: left;
+}
+
+#custom-registration-tabs fieldset.crf-tab:not(:first-of-type) {
+	display: none
+}
+
+#custom-registration-tabs p.status {
+  color: var(--mexican-red);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
