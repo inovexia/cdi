@@ -9,76 +9,21 @@ jQuery(function($) {
   });
 
   // Add to cart functionality on product single page
-  $('form.cart').on( 'click', 'button.plus, button.minus', function() {
-      // Get current quantity values
-      var qty = $( this ).closest( 'form.cart' ).find( '.qty' );
-      var val   = parseFloat(qty.val());
-      var max = parseFloat(qty.attr( 'max' ));
-      var min = parseFloat(qty.attr( 'min' ));
-      var step = parseFloat(qty.attr( 'step' ));
+  $('form.cart .cart-plus-minus-icon').on('click', function() {
+    valueElementH = $(this).parent().find('.cart-item-quantity');
+    valueElementD = $(this).parent().find('.cart-item-quantity-span');
+    value = parseInt(valueElementH.val());
 
-      // Change the value if plus or minus
-      if ( $( this ).is( '.plus' ) ) {
-         if ( max && ( max <= val ) ) {
-            qty.val( max );
-         } else {
-            qty.val( val + step );
-         }
-      } else {
-         if ( min && ( min >= val ) ) {
-            qty.val( min );
-         } else if ( val > 1 ) {
-            qty.val( val - step );
-         }
+    if ($(this).hasClass('plus')) {
+      valueElementH.val(value + 1);
+      valueElementD.html(value + 1);
+    } else {
+      if (value > 1) {
+        valueElementH.val(value - 1);
+        valueElementD.html(value - 1);
       }
+    }
   });
-
-
-  // Update cart quantity functionality on cart page
-  $( document ).on( 'change', '.qty', function () {
-    setTimeout(function() {
-      $("[name=update_cart]").prop("disabled", false);
-      $("[name=update_cart]").prop("aria-disabled", false);
-      $("[name=update_cart]").trigger("click");
-    }, 1000 ); // 1 second delay, half a second (500) seems comfortable too
-  } );
-
-  $(document).on('click', 'button.plus, button.minus', function() {
-      var timeout;
-      // Get current quantity values
-      var qty = $( this ).closest( 'form.woocommerce-cart-form' ).find( '.qty' );
-      var val   = parseFloat(qty.val());
-      var max = parseFloat(qty.attr( 'max' ));
-      var min = parseFloat(qty.attr( 'min' ));
-      var step = parseFloat(qty.attr( 'step' ));
-
-      // Change the value if plus or minus
-      if ( $( this ).is( '.plus' ) ) {
-         if ( max && ( max <= val ) ) {
-            qty.val( max );
-         } else {
-            qty.val( val + step );
-         }
-      } else {
-         if ( min && ( min >= val ) ) {
-            qty.val( min );
-         } else if ( val > 1 ) {
-            qty.val( val - step );
-         }
-      }
-
-      if ( timeout !== undefined ) {
-        clearTimeout( timeout );
-      }
-
-      timeout = setTimeout(function() {
-        $("[name=update_cart]").prop("disabled", false);
-        $("[name=update_cart]").prop("aria-disabled", false);
-        $("[name=update_cart]").trigger("click");
-      }, 1000 ); // 1 second delay, half a second (500) seems comfortable too
-      //setInterval('location.reload()', 1000);
-  });
-
 
   // Update cart quantity functionality on mini-cart
   $('#offcanvas-mini-cart .cart-plus-minus-icon').on('click', function() {
@@ -128,6 +73,54 @@ jQuery(function($) {
   });
 
 
+
+  // Update cart quantity functionality on cart page
+  $('div.woocommerce .cart-plus-minus-icon').on('click', function() {
+    var timeout;
+    valueElementH = $(this).parent().find('.cart-item-quantity');
+    valueElementD = $(this).parent().find('.cart-item-quantity-span');
+    value = parseInt(valueElementH.val());
+    var item_hash = valueElementH.attr( 'name' ).replace(/cart\[([\w]+)\]\[qty\]/g, "$1");
+
+    if ($(this).hasClass('plus')) {
+      valueElementH.val(value + 1);
+      valueElementD.html(value + 1);
+    } else {
+      if (value > 1) {
+        valueElementH.val(value - 1);
+        valueElementD.html(value - 1);
+      }
+    }
+
+    if ( timeout !== undefined ) {
+      clearTimeout( timeout );
+    }
+
+    currentVal = valueElementH.val();
+
+    timeout = setTimeout(function() {
+
+      $('form.woocommerce-cart-form').block({ message: null, overlayCSS: { background: '#fff', opacity: 0.6 } });
+
+      $.ajax({
+          type: 'POST',
+          url: spa.ajax_url,
+          data: {
+              action: 'mspa_update_quantity',
+              hash: item_hash,
+              quantity: currentVal
+          },
+          success: function(response) {
+            window.location = '';
+          }
+      });
+
+      $('form.woocommerce-cart-form ').unblock();
+
+    }, 1000 ); // 1 second delay, half a second (500) seems comfortable too
+
+
+  });
 
   // Add to cart functionality on single product page
   $('form.cart').on('submit', function(e) {

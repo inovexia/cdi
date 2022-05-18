@@ -110,6 +110,11 @@ header .top-header-style-2 a{
   color: var(--white);
 }
 
+header .top-header-search{
+  position: relative;
+  top: 14px;
+}
+
 header .top-header-search input{
   background: var(--faux-cg-blue1);
   padding: 8px;
@@ -137,28 +142,28 @@ header .top-header-search button{
   width: 85px;
 }
 header .top-header-search form select{
-	background: var(--faux-cg-blue2);
-	border: none;
-	font-family: var(--font-family-open-sans);
-	font-size: var(--font-size-l);
-	font-weight: var(--font-weight-regular);
-	color: var(--white);
-	line-height: 19px;
-	width: 111px;
-	height: 28px;
+  background: var(--faux-cg-blue2);
+  border: none;
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-regular);
+  color: var(--white);
+  line-height: 19px;
+  width: 111px;
+  height: 28px;
 }
 header .top-header-search form select{
-	-webkit-appearance: none;
+  -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-	padding: 0 10px;
-	position: relative;
+  padding: 0 10px;
+  position: relative;
     top: -1px;
 }
 header .top-header-search form select:focus-visible {
     outline-offset: 0px;
-	outline: none;
+  outline: none;
     background: var(--faux-cg-blue2);
 }
 #s{
@@ -262,8 +267,8 @@ header .menu-toggler .toggle-icon {
 }
 
 header .nav-right-icons {
-	width: 19px;
-	height: 21px;
+  width: 19px;
+  height: 21px;
 }
 
 .dropbtn {
@@ -419,7 +424,7 @@ header .nav-right-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-	height: 100%;
+  height: 100%;
   }
   header .nav-menu-right {
     display: flex;
@@ -445,7 +450,7 @@ header .nav-right-icons {
   font-weight: var(--font-weight-medium);
   font-style: normal;
   text-align: center;
-  margin: 5px;
+  /*margin: 5px;*/
   width: 233px;
   height: 45px;
 }
@@ -557,10 +562,10 @@ header .nav-right-icons {
 
 /* Font weight */
 .f-weight-bold{
-	font-weight: var(--font-weight-semi-bold);
+  font-weight: var(--font-weight-semi-bold);
 }
 .justify-content-center{
-	justify-content: center!important;
+  justify-content: center!important;
 }
 /* Alignment */
 .text-center { text-align: center;}
@@ -622,59 +627,59 @@ header .nav-right-icons {
 
 /*-- Modal Window --*/
 .modal {
-	position:fixed;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-	display:none;
-	overflow:auto;
-	background-color:#000;
-	background-color:rgba(0, 0, 0, 0.4);
-	z-index:9999;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  display:none;
+  overflow:auto;
+  background-color:#000;
+  background-color:rgba(0, 0, 0, 0.4);
+  z-index:9999;
 }
 .modal-window {
-	position:relative;
-	background-color:#fff;
-	border-radius:6px;
-	box-shadow:0 11px 15px -7px rgba(0, 0, 0, 0.5), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.2);
-	width:85%;
-	max-width:660px;
-	max-height:80%;
-	margin:10% auto;
-	overflow-x:hidden;
+  position:relative;
+  background-color:#fff;
+  border-radius:6px;
+  box-shadow:0 11px 15px -7px rgba(0, 0, 0, 0.5), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.2);
+  width:85%;
+  max-width:660px;
+  max-height:80%;
+  margin:10% auto;
+  overflow-x:hidden;
     overflow-y:auto;
 }
 .modal-window > h3 {
-	background-color:#eee;
-	border-bottom:1px solid #bfbfbf;
-	font-size:24px;
-	font-weight:400;
-	margin:0;
-	padding:0.8em 56px .8em 27px;
+  background-color:#eee;
+  border-bottom:1px solid #bfbfbf;
+  font-size:24px;
+  font-weight:400;
+  margin:0;
+  padding:0.8em 56px .8em 27px;
 }
 .modal-window > div {padding:23px 27px;}
 .modal-window.large {margin:5% auto; width:85%; max-width:820px;}
 
 .close {
-	position:absolute;
-	top:13px;
-	right:10px;
-	color:#0085a6;
-	background-color:#fff;
-	border-radius:50%;
-	height:40px;
-	width:40px;
-	font-size:30px;
-	line-height:37px;
-	text-align:center;
-	-webkit-transition:all .3s ease-in-out;
+  position:absolute;
+  top:13px;
+  right:10px;
+  color:#0085a6;
+  background-color:#fff;
+  border-radius:50%;
+  height:40px;
+  width:40px;
+  font-size:30px;
+  line-height:37px;
+  text-align:center;
+  -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
 }
 .close:hover,
 .close:focus {background-color:#0085a6; color:#fff; cursor:pointer;}
 .open {
-	display:block;
+  display:block;
 
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -780,6 +785,11 @@ footer .top-footer-menu li a {
   color: var(--white);
 }
 
+footer ul.menu-top-footer-menu, footer ul.menu-top-footer-customer-service {
+  margin-left: -38px;
+  list-style: none;
+}
+
 footer .top-footer-menu li {
   margin-top: 14px;
   float: left;
@@ -788,15 +798,15 @@ footer .top-footer-menu li {
 
 /*footer newsletter*/
 footer .top-footer-newslettert .widget_block h6{
-	font-family: var(--font-family-lato);
-	font-size: var(--font-size-l);
-	font-weight: var(--font-weight-regular);
-	font-style: normal;
-	line-height: 26px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: var(--white);
-	padding-bottom: 20px;
+  font-family: var(--font-family-lato);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding-bottom: 20px;
 }
 .top-footer-newslettert .wp-block-tnp-minimal{
   padding: 0 !important;
@@ -958,7 +968,7 @@ footer .bottom-footer .social-link li i {
     cursor: pointer;
     padding: 5px;
     transition: 0.3s;
-	font-family: var(--font-family-open-sans);
+  font-family: var(--font-family-open-sans);
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-xxl);
     font-style: normal;
@@ -991,18 +1001,18 @@ footer .bottom-footer .social-link li i {
     animation: fadeEffect 1s;
 }
 form.woocommerce-form-login{
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .woocommerce-form-login .forgot-password {
     margin-top: 20px;
     margin-bottom: 28px;
 }
 .woocommerce-form-login input[type=text], .woocommerce-form-login input[type=password]{
-	background: var(--frostproof);
+  background: var(--frostproof);
     border: 1px solid var(--frostproof);
     height: 46px;
-	padding: 10px 20px;
-	border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 25px;
     width: 100%;
 }
 .woocommerce-form.woocommerce-form-register input[type=text], .woocommerce-form.woocommerce-form-register input[type=password], 
@@ -1047,7 +1057,7 @@ form.woocommerce-form-login{
   transition: 0.3s;
 }
 .mini-cart-buttons-section a.button-secondary:hover{
-  color: var(--white) !important;	
+  color: var(--white) !important; 
 }
 .mini-cart-buttons-section a.button-primary:hover{
   color: var(--faux-cg-blue);

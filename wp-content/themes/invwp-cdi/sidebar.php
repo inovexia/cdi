@@ -13,5 +13,21 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<?php
+		$sidebar = get_field('sidebar', 'option');
+
+			if($sidebar == '1'){
+				get_theme_file_path('sidebar-left.php');
+			}
+			elseif($sidebar == 'Right Sidebar'){
+				get_theme_file_path('sidebar-left.php');
+			}
+			elseif($sidebar == 'Both Sidebar'){
+				get_theme_file_path('sidebar-left.php');
+			}
+			else{
+				get_theme_file_path('sidebar.php');
+			}
+
+		dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->

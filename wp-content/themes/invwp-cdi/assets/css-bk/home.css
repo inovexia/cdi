@@ -4,8 +4,36 @@
  */
 
 /* HERO BANNER SECTION */
+
+@media (min-width: 0) {
+  
+}
+@media (min-width: 576px) {
+  
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width:1200px) {
+
+}
+@media (min-width: 1440px) { 
+  
+}
+@media (min-width: 1680px) { 
+  
+}
+@media (min-width:1920px) { 
+  
+}
 .home-banner-section {
   padding: 173px 0px;
+}
+.home-banner-section .banner-texts {
+    padding-left: 80px;
 }
 .home-banner-section .hero-title {
   font-family: var(--font-family-open-sans);
@@ -171,38 +199,38 @@
   border-bottom: 1px solid var(--faux-cg-blue);
 }
 .accordion-container .article-title {
-		position: relative;
-		padding: 0.625em 0 0.625em 0;
+    position: relative;
+    padding: 0.625em 0 0.625em 0;
     cursor: pointer;
 }
 
 .accordion-container .article-title:hover,
 .accordion-container .article-title:active,
 .accordion-container .content-entry.open .article-title {
-		color: var(--faux-cg-blue);
+    color: var(--faux-cg-blue);
 }
 
 .accordion-container .article-title:hover i:before,
 .accordion-container .article-title:hover i:active,
 .accordion-container .content-entry.open i {
-		color: var(--faux-cg-blue);
+    color: var(--faux-cg-blue);
 }
 
 .accordion-container .content-entry i {
-		position: absolute;
-		right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .accordion-container .content-entry i:before {
-		content: "\25BC";
+    content: "\25BC";
 }
 
 .accordion-container .content-entry.open i:before {
-		content: "\25B2 ";
+    content: "\25B2 ";
 }
 
 .accordion-contenta {
-		display: none;
+    display: none;
 }
 
 .tnp-subscription-minimal input.tnp-submit{
@@ -244,10 +272,10 @@
   .home-shop .container .row .col-5 img, .home-shop .container .row .col-5 video{
     display: none;
   }
-  footer .payment-options section:first-child{
+  /*footer .payment-options section:first-child{
     position: relative;
     top: -11px;
-  }
+  }*/
 }
 
 /*Laptop*/
@@ -256,7 +284,7 @@
 }
 @media only screen and (min-width: 1920px ) {
   .home-banner-section{
-	background-position: top center !important;
+  background-position: top center !important;
   }
 }
 @media only screen and (max-width: 767px ) {
@@ -316,7 +344,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  footer .payment-options section:first-child{
+  /*footer .payment-options section:first-child{
     display: block;
   }
   footer .bottom-footer .social-icons {
@@ -334,5 +362,5 @@
   footer .top-footer-menu .widget-title, footer .top-footer-customer-service .widget-title,
   footer .top-footer-contact h6{
     margin-top: 30px;
-  }
+  }*/
 }

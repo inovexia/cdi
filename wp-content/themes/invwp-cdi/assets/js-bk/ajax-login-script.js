@@ -1,11 +1,11 @@
 
-const loadingmessage = '<div class="spinner-border spinner-border-sm" role="status"><span class="sr-only">Loading...</span></div> ';
+const loadingmessage = 'Please wait...';
 
 // Perform AJAX login on form submit - CHECKOUT PAGE ONLY
 jQuery(document).ready(function($) {
-  $('form#checkout-custom-login-form').on('submit', function(e){
+  $('form#checkout-custom-login-form').on('submit', function(e) {
     e.preventDefault();
-      $('form#checkout-custom-login-form p.status').show().html(loadingmessage);
+      //$('form#checkout-custom-login-form p.status').show().html(loadingmessage);
       $.ajax({
           type: 'POST',
           dataType: 'json',
@@ -21,8 +21,12 @@ jQuery(document).ready(function($) {
               if (data.loggedin == true){
                   document.location.href = ajax_login_object.redirecturl;
               }
+              $('#checkout-custom-submit').html('Login');
+              $('#checkout-custom-submit').removeAttr('disabled');
           }
       });
+      $('#checkout-custom-submit').html(loadingmessage);
+      $('#checkout-custom-submit').attr('disabled', 'disabled');
   });
 });
 
