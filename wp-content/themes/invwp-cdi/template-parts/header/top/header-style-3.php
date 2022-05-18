@@ -20,10 +20,10 @@
 			<form role="search" method="get" id="searchform" action="">
 			<div>
 				<input type="text" value="" name="s" id="s" />
-				<!--<select name="product_cat">
+				<select name="product_cat">
 					<option value="0" class="product-cat">All Categories</option>
 					<?php
-			        $cats = get_product_categories ($category_name);
+			        $cats = invwp_get_product_categories ($category_name);
 					if (! empty ($cats)) {
 					  foreach ($cats as $id => $cat) {
 						?>
@@ -41,7 +41,7 @@
 					  }
 					}
 					?>
-				</select>-->
+				</select>
 				<input type="hidden" value="1" name="sentence" />
 				<input type="hidden" value="product" name="post_type" />
 				<input type="submit" id="searchsubmit" value="Search" />
