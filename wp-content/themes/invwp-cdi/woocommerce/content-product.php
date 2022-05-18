@@ -24,34 +24,39 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-
 <li <?php wc_product_class( '', $product ); ?>>
-<div class="product-data">
-<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' ); ?>
-	<div class="product-img">
-		<?php 
-			/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
+	<div class="actions-overlay">
+	</div>
+	<div class="product-thumbnail">
+		<?php
+		/**
+		 * Hook: woocommerce_before_shop_loop_item.
+		 *
+		 * @hooked woocommerce_template_loop_product_link_open - 10
+		 */
+		do_action( 'woocommerce_before_shop_loop_item' );
+
+		/**
+		 * Hook: woocommerce_before_shop_loop_item_title.
+		 *
+		 * @hooked woocommerce_show_product_loop_sale_flash - 10
+		 * @hooked woocommerce_template_loop_product_thumbnail - 10
+		 */
+		do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
 	</div>
-
-	<?php /**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
+	<div class="actions-buttons">
+			<?php
+				do_action( 'invwx_product_buttons' );
+			?>
+	</div>
+		<?php
+		/**
+		 * Hook: woocommerce_shop_loop_item_title.
+		 *
+		 * @hooked woocommerce_template_loop_product_title - 10
+		 */
+		do_action( 'woocommerce_shop_loop_item_title' );
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
@@ -69,6 +74,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-</div>
-	
+	<div class="actions-buttons-m">
+			<?php
+				do_action( 'invwx_product_buttons' );
+			?>
+	</div>
 </li>
