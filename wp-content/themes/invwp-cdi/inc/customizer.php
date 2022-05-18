@@ -59,3 +59,19 @@ function invwp_customize_preview_js() {
 	wp_enqueue_script( 'invwp-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'invwp_customize_preview_js' );
+
+/**
+ * Add view product button in shop page
+**/
+add_action ('invwx_product_buttons', 'invwx_view_product_button', 15);
+function invwx_view_product_button () {
+    global $product;
+    $link = $product->get_permalink();
+    echo do_shortcode('<a href="'.$link.'" class="view-pdt button-primary">VIEW PRODUCT</a>');
+}
+
+/**
+ * Remove product add to cart button in shop page
+**/
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0);
+add_action ('invwx_product_buttons', 'woocommerce_template_loop_add_to_cart', 10, 0);

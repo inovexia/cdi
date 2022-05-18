@@ -41,7 +41,7 @@ header .main-nav {
 }
 
 [class*="col-"] {
-  /* padding: 5px; */
+  padding: 5px;
   width: 100%;
 }
 
@@ -82,7 +82,7 @@ header .main-nav {
 header .top-header-section {
   background-color: var(--faux-cg-blue);
   color: var(--white);
-  /* height: 40px; */
+  height: 40px;
   padding: 16px 0px;
   border-bottom: 1px solid var(--faux-cg-blue);
   display: flex;

@@ -1,6 +1,6 @@
 <?php if (is_shop()) {
     $upload_dir = wp_upload_dir(); ?>
-  <section class="woocommerce-products-header clearfix  my-5" style="padding: 35px 0 35px 0;background-image:url('<?php echo $upload_dir['baseurl']; ?>/2022/04/shop_banner-1-1.png');background-position: top center; background-repeat: no-repeat; background-size: cover;">
+  <section class="woocommerce-products-header clearfix mb-5" style="padding: 35px 0 35px 0;background-image:url('<?php echo $upload_dir['baseurl']; ?>/2022/04/shop_banner-1-1.png');background-position: top center; background-repeat: no-repeat; background-size: cover;">
   <?php } else { ?>
   <section class="woocommerce-products-header clearfix breadcrumb-display-none my-5">
   <?php } ?>
@@ -71,7 +71,7 @@
         $sub_title = '';
       }
       ?>
-      <h1 class="woocommerce-products-header__title page-title"><?php// echo $title; ?>CDi</h1>
+      <h1 class="woocommerce-products-header__title page-title"><?php echo $title; ?></h1>
       <p class="woocommerce-breadcrumb-desc"><?php echo $sub_title; ?></p>
       <?php
       /**
