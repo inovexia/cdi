@@ -780,6 +780,11 @@ footer .top-footer-menu li a {
   color: var(--white);
 }
 
+footer ul.top-footer-menu, footer ul.menu-top-footer-customer-service {
+  margin-left: -38px;
+  list-style: none;
+}
+
 footer .top-footer-menu li {
   margin-top: 14px;
   float: left;
