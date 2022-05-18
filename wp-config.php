@@ -81,20 +81,15 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
-<<<<<<< HEAD
-define( 'WP_SITEURL', 'http://localhost/dev/cdi/' );
-define( 'WP_HOME', 'http://localhost/dev/cdi/' );
-=======
 define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest/' );
 define( 'WP_HOME', 'http://localhost/dev/cdi-latest/' );
->>>>>>> 2374b8f6ed51acccb8551f5ee319be14531c8a1f
 
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
 
 if ( ! defined( 'ABSPATH' ) ) {
 
-	define( 'ABSPATH', __DIR__ . '/' );
+    define( 'ABSPATH', __DIR__ . '/' );
 
 }
 /** Sets up WordPress vars and included files. */
