@@ -84,6 +84,7 @@ define( 'WP_DEBUG', false );
 define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest/' );
 define( 'WP_HOME', 'http://localhost/dev/cdi-latest/' );
 
+
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
 
