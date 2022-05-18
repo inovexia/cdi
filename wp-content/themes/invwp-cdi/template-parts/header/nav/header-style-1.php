@@ -76,9 +76,21 @@
           <?php } ?>
 
     		  <li>
-      			<a class="openbtn" id="btn-bag" style="cursor:pointer;" onclick="openSidePanel()">
+      			<a class="cart-contents btn-bag" id="btn-bag" style="cursor:pointer;" onclick="openNav()">
       				<img src="<?php echo get_template_directory_uri ().'/assets/images/bag-icon.png'; ?>" alt="Bag" width="19" height="21" class="nav-right-icons">
-      			</a>
+              <?php
+              global $woocommerce;
+              $item_count =  $woocommerce->cart->cart_contents_count;
+              if ($item_count > 9) {
+                $cart_items_count = '9+';
+              } else {
+                $cart_items_count = $item_count;
+              }
+              ?>
+        <span class="bag-icon-counter">
+        <span class="cart-items-count"><?php echo $cart_items_count; ?></span>
+        </span>
+          </a>
     		  </li>
         </ul>
 

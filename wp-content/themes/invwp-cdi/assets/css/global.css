@@ -683,6 +683,54 @@ header .nav-right-icons {
 [data-dismiss="modal"] {float:right; margin:0 0 20px 0;}
 /* End Modals ------------------------------*/
 
+.sidenav {
+  height: 100%;
+  width: 90%;
+  max-width: 487px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: -100%;
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 50px 58px;
+  border-radius: 27px 27px 0px 0px;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 21px;
+  right: 60px;
+  font-size: 34px;
+  padding: 0;
+  color: #1E1E1E;
+  opacity: 0.8;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav .closebtn:hover {
+  color: #1E1E1E;
+  opacity: 1;
+}
+
 /* Breadcrumb */
 .woocommerce-breadcrumb{
   font-weight: var(--font-weight-bold) !important;
@@ -1091,7 +1139,7 @@ form.woocommerce-form-login{
 .accordion .accordion-title:after {
   font-family: FontAwesome;
   content: "\f078";
-  font-family: "fontawesome";
+  font-family: "Font Awesome 5 Free";
   float: right;
 }
 
