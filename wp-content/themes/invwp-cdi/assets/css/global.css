@@ -17,6 +17,9 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+header .main-nav {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 @media only screen and (min-width: 1140px) {
   .container {
@@ -38,7 +41,7 @@
 }
 
 [class*="col-"] {
-  padding: 5px;
+  /* padding: 5px; */
   width: 100%;
 }
 
@@ -79,7 +82,7 @@
 header .top-header-section {
   background-color: var(--faux-cg-blue);
   color: var(--white);
-  height: 40px;
+  /* height: 40px; */
   padding: 16px 0px;
   border-bottom: 1px solid var(--faux-cg-blue);
   display: flex;
@@ -87,7 +90,14 @@ header .top-header-section {
   justify-content:center;
   border-bottom: 1px solid var(--faux-cg-blue);
 }
-
+.top-header-section .widget p {
+  padding: 0;
+  margin: 0;
+}
+.top-header-section .widget {
+  padding: 0;
+  margin: 0;
+}
 header .top-header-style-2{
   font-family: var(--font-family-open-sans);
   font-size: var(--font-size-l);
@@ -95,7 +105,7 @@ header .top-header-style-2{
   color: var(--white);
   line-height: var(--line-height-m);
   position: relative;
-  top: 7px;
+  /* top: 7px; */
 }
 
 header .top-header-style-2 span{
@@ -207,7 +217,6 @@ header .main-nav {
   align-items: center;
   background-color: var(--white);
   display: flex;
-  height: 73px;
 }
 
 header .site-branding {
@@ -298,6 +307,10 @@ header .nav-right-icons {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.breadcrumb-display-none {
+  padding: 20px 0;
+}
 
 @media only screen and (min-width: 375px ) {
   header .site-branding.header-logo img{
@@ -423,9 +436,11 @@ header .nav-right-icons {
   }
   header .nav-menu-right {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-  }
+    padding: 0;
+    margin: 0;
+}
   header .nav-menu li,
   header .nav-menu-right li {
     margin-left: 50px;

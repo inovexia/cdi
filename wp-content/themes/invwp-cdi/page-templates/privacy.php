@@ -19,7 +19,6 @@ get_header();
           <div class="container">
             <div class="row">
               <div class="col-12 privacy-inner-content">
-                <h4 class="text-uppercase"><?php echo the_field('privacy_title'); ?></h4>
                 <div class="">
                   <p><?php echo the_field('privacy_content'); ?></p>
                 </div>
