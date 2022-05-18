@@ -1,6 +1,7 @@
 <?php $image = get_field('banner_image'); ?>
-<section class="home-banner-section full-width" style="background-image:url('<?php echo $image['url']; ?>');background-position: center; background-repeat: no-repeat; background-size: cover;">
-    <div class="container">
+<section class="" >
+    <div class="container" >
+      <div class="home-banner-section" style="background-image:url('<?php echo $image['url']; ?>');background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="row ">
             <div class="col-6 d-flex">
                 <div class="banner-texts">
@@ -19,6 +20,7 @@
               </div>
             </div>
         </div>
+      </div>
       <div class="clearfix"></div>
     </div>
 </section>
