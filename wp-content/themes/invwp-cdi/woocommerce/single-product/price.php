@@ -20,6 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-
+/*
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+<!--<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>--> <?php  */ ?>
+
+<div class="col-6">
+    <p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price demo' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+  </div>
+</div><!-- Product title parent div closed. (Do not delete) -->

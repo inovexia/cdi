@@ -27,8 +27,7 @@
                   ?>
                   <h1 class="woocommerce-products-header__title page-title "><?php echo $title; ?></h1>
               <?php } ?>
-        <?php 
-  
+        <?php   
   
       if (is_shop()) {
         $title = 'BROWSE MEDICATION';
