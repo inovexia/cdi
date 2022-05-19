@@ -130,7 +130,7 @@ padding: 50px 0;
 .home-product-categories {
 padding-bottom: 60px;
 }
-.home-shop .section-title, .home-industry-section .section-title {
+.home-shop .section-title, .home-industry-section .section-title, .home-testimonial-section .section-title {
   margin-bottom: 30px;
 }
 .product-categories h4 a{
@@ -152,7 +152,9 @@ font-style: normal;
 background-color: var(--alice-blue);
 padding: 0;
 }
-
+.home-industry-title {
+  padding: 20px;
+}
 .home-industry-title h5, .home-industry-title h5 a{
 color: var(--faux-cg-blue);
 font-size: var(--font-size-xxxl);
@@ -177,8 +179,9 @@ font-weight: var(--font-weight-semi-bold);
 font-size: var(--font-size-l);
 line-height: 24px;
 }
-.home-testimonial-section{
-padding-bottom: 60px;
+.home-testimonial-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .home-testimonial-slider .slide-image img{
 width: 120px;
