@@ -15,7 +15,15 @@ function invwps_show_related_products () {
 
   global $post;
   ?>
-  <h2 class="text-center">Related Products</h2>
+  <div class="row">
+	<div class="col-6">
+		<h2 class="text-left">Related Products</h2>
+	</div>
+	<div class="col-6 text-right">
+		<a href="<?php echo site_url(); ?>/products/" class="">View all featured</h2>
+	</div>
+  </div>
+  <div class="row">
   <!-- Slider main container -->
   <div class="single-product-related-slider swiper">
     <!-- Additional required wrapper -->
@@ -54,8 +62,8 @@ function invwps_show_related_products () {
       wp_reset_postdata();
       ?>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <!-- If we need pagination 
+    <div class="swiper-pagination"></div>-->
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
@@ -64,5 +72,6 @@ function invwps_show_related_products () {
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
+   </div>
 <?php
 }

@@ -30,27 +30,27 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 ?>
 
 <section id="custom-checkout-progressbar">
-
-  <div class="row">
-    <div class="col-9">
+	<div class="container">
+	  <div class="row justify-content-center">
+	    <div class="col-8">
 
 			<div class="row">
-	      <div class="col-12">
-	        <ul id="progressbar">
-	            <li class="step-progress active <?php if (! is_user_logged_in ()) { echo 'active';} ?>" id="step1">
-	                <strong class="">Account</strong>
-	            </li>
-	            <li class="step-progress <?php if (is_user_logged_in ()) { echo 'active';} ?>" id="step2">
-	                <strong class="">Shipping</strong>
-	            </li>
-	            <li class="step-progress" id="step3">
-								<strong class="">Payment</strong>
-							</li>
-	            <li class="step-progress" id="step4">
-								<strong class="">Review</strong>
-							</li>
-	        </ul>
-				</div>
+		      <div class="col-12">
+		        <ul id="progressbar">
+		            <li class="step-progress active <?php if (! is_user_logged_in ()) { echo 'active';} ?>" id="step1">
+		                <strong class="">Account</strong>
+		            </li>
+		            <li class="step-progress <?php if (is_user_logged_in ()) { echo 'active';} ?>" id="step2">
+		                <strong class="">Shipping</strong>
+		            </li>
+		            <li class="step-progress" id="step3">
+									<strong class="">Payment</strong>
+								</li>
+		            <li class="step-progress" id="step4">
+									<strong class="">Review</strong>
+								</li>
+		        </ul>
+			  </div>
 			</div>
 
 	    <div class="clearfix"></div>
@@ -161,7 +161,8 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				</div>
 			</div>
 
-			<div class="col-3">
+			<?php /*
+			<!--<div class="col-4">
 
 				<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 
@@ -175,13 +176,30 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 				<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
+			</div>--> 
+			*/ ?>
+
+			<div class="col-4">
+				<!--<h3 id="order_review_heading"><?php //esc_html_e( 'Your order', 'woocommerce' ); ?></h3>-->
+
+				<?php //do_action( 'woocommerce_checkout_before_order_review' ); ?>
+
+				<div id="order_review" class="woocommerce-checkout-review-order">
+					<?php
+						wc_get_template( 'checkout/checkout-mini-cart.php');
+					?>
+					<?php //do_action( 'woocommerce_checkout_order_review' ); ?>
+				</div>
+
+				<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 			</div>
 		</div>
-
+	</div>
 
 </section>
 
-<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+<?php //do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+
 <script>
 $(document).ready(function() {
     <?php if (is_user_logged_in ()) { ?>

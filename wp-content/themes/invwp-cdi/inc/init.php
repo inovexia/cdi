@@ -38,3 +38,21 @@ require get_template_directory() . '/inc/plugins/multi-step-checkout.php';
 require get_template_directory() . '/inc/plugins/product-group-buy.php';
 require get_template_directory() . '/inc/plugins/auth-login-registration.php';
 require get_template_directory() . '/inc/plugins/checkout-shipping-fields.php';
+
+/**
+* Load WC Plugins.
+
+require get_template_directory() . '/inc/plugins/custom-layout.php';
+require get_template_directory() . '/inc/plugins/show-featured-products.php';
+require get_template_directory() . '/inc/plugins/quantity-updater.php';
+//require get_template_directory() . '/inc/plugins/payment-method-position.php';
+//require get_template_directory() . '/inc/plugins/mini-cart-functions.php';
+require get_template_directory() . '/inc/plugins/related-products.php';
+require get_template_directory() . '/inc/plugins/tabs.php';
+require get_template_directory() . '/inc/plugins/add-to-cart.php';
+require get_template_directory() . '/inc/plugins/product-group-buy.php';
+//require get_template_directory() . '/inc/customize.php';
+require get_template_directory() . '/inc/plugins/product-button-text.php';
+require get_template_directory() . '/inc/plugins/myaccount-functions.php';
+//require get_template_directory() . '/inc/plugins/auth_login_and_registration.php';
+require get_template_directory() . '/inc/plugins/checkout-shipping-fields.php';*/
