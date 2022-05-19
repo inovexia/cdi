@@ -7,6 +7,13 @@
 .about-main-banner {
   padding: 70px 0px;
 }
+.order-banner-section {
+  display: none;
+}
+.how-to-order-section, .order-by-phone-section {
+  background: #F9FAFB;
+  padding: 50px 0;
+}
 .contact-banner .hero-title {
   font-family: var(--font-family-open-sans);
   font-size: var(--font-size-Vxl);

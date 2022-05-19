@@ -49,10 +49,22 @@
         $title = 'Magenta Club';
         $sub_title = '';
       } else if (is_page('faq')) {
-        $title = '';
+        $title = 'Frequently Asked Questions';
         $sub_title = '';
       } else if (is_page('contact')) {
-        $title = '';
+        $title = 'Contact';
+        $sub_title = '';
+      } else if (is_page('terms-of-use')) {
+        $title = 'Terms of use';
+        $sub_title = '';
+      } else if (is_page('about-us')) {
+        $title = 'About Us';
+        $sub_title = '';
+      } else if (is_page('shipping')) {
+        $title = 'Shipping Policy';
+        $sub_title = '';
+      } else if (is_page('customer-agreement')) {
+        $title = 'Customer Agreement';
         $sub_title = '';
       } else if (is_page('how-to-order')) {
         $title = 'How To Order';

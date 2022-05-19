@@ -143,6 +143,7 @@ p {
   font-size: var(--font-size-l);
   font-style: normal;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
 a.font-poppins{
