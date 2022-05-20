@@ -55,7 +55,7 @@ global $product;
                 <?php
 if ( have_posts() ) {
 	?>
-                <div class="row pb-5">
+                <div class="row search-result-row pb-5">
 
                     <!--<div class="search-result-count default-max-width">
 		<?php
@@ -80,7 +80,7 @@ if ( have_posts() ) {
 
 		if ( get_post_type() == 'post' ) { //for posts		?>
 
-                    <div id="post-<?php the_ID(); ?>" class="card1 post-column search-result-card post-search">
+                    <div id="post-<?php the_ID(); ?>" class="card1 col-3 post-column search-result-card post-search">
                         <div class="card-body">
 
                         </div>
