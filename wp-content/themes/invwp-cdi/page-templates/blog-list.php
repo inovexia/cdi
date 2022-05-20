@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<div id="primary" class="site-content blog-page">
+<div id="primary" class="site-content blog-page section-margin">
   <div class="container">
     <?php
   	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

@@ -53,6 +53,9 @@
       } else if (is_page('contact')) {
         $title = 'Contact';
         $sub_title = '';
+      } else if (is_page('articles')) {
+        $title = 'Latest Blog';
+        $sub_title = '';
       } else if (is_page('terms-of-use')) {
         $title = 'Terms of use';
         $sub_title = '';
