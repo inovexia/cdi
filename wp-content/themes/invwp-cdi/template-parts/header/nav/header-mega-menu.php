@@ -2,7 +2,7 @@
     <div class="container">
         <h3>OUR PRODUCTS</h3>
         <div class="row">
-            <div class="col-3">
+            <div class="col-6">
                 <h4>All Products </h4>
                 <ul class="cat-menu">
                     <?php
@@ -19,7 +19,7 @@
                     <?php }  ?>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6">
                 <h4>Accessories </h4>
                 <ul class="cat-menu">
                     <?php
@@ -36,7 +36,7 @@
                     <?php }  ?>
                 </ul>
             </div>
-            <div class="col-3">
+            <!-- <div class="col-3">
                 <h4>Nullam </h4>
                 <ul class="cat-menu">
                     <?php
@@ -69,7 +69,7 @@
                     </li>
                     <?php }  ?>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
