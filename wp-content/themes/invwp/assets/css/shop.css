@@ -126,7 +126,21 @@
   letter-spacing: 0.05em;
   color: var(--faux-cg-blue);
 }
-
+/* Brand page */
+.brands-prod-category{
+  background-color: var(--white);
+  height: 347px;
+  min-width: 260px;
+  padding: 70px 50px;
+  border: 1px solid var(--faux-cg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands-prod-category a{
+  color: var(--faux-cg-blue);
+  line-height: 22px;
+}
 /* Shop sidebar category collapse & filter */
 .filteraccordion {
   width: 100%;

@@ -1,15 +1,37 @@
-<div class="container">
-  <div class="bg-dark text-secondary px-4 py-5 text-center">
-    <div class="py-5">
-      <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
+<section class="contact-banner">
+	<div class="container">
+	  <div class="bg-dark px-4 py-5 text-center">
+		<div class="py-5">
+		  <h2 class="section-title"><?php echo the_field('contact_banner_title'); ?></h2>
+		  <div class="col-lg-6 mx-auto">
+			<p class="section-description mb-4"><?php echo the_field('contact_banner_description'); ?></p>
+		  </div>
+		</div>
+	  </div>  
+	</div> 
+</section>
   <div class="b-example-divider mb-0"></div>
+  
+<section class="contact-col-section text-center">
+  <div class="container">
+      <div class="row">
+	  <?php if (have_rows('contact_address_section')) : ?>
+	  <?php
+        $y = 0;;
+        while (have_rows('contact_address_section')) : the_row();
+          $y++;
+          $tCount = $y;
+          ?>
+          <div class="col-4 col-m-6">
+              <div class="">
+				<p class="section-icon pb-5"><i class="fas <?php echo the_sub_field('address_icon'); ?> pl-5"></i></p>
+				<h3 class="section-title pb-5"><?php echo the_sub_field('address_title'); ?></h3>
+				<p class="section-description"><?php echo the_sub_field('address_description'); ?></p>
+              </div>
+          </div>
+		  <?php endwhile; ?>
+		  <?php else : endif; ?>
+      </div>
+    <div class="clearfix"></div>
+  </div>
+</section>

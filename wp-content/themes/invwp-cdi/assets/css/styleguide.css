@@ -1,0 +1,183 @@
+:root {
+  --black: #000000;
+  --faux-cg-blue: #037E9B;
+  --faux-cg-blue1: #2394AE;
+  --faux-cg-blue2: #4EB0C7;
+  --tumbleweed: #E4A680;
+  --venice-blue: #0A5B89;
+  --casper: #A4C8D0;
+  --athens-gray: #EAEDF1;
+  --black2: #1E1E1E;
+  --white: #ffffff;
+  --alice-blue: #F9FAFB;
+  --powder-white: #F3F8F9;
+  --surf: #B6D1D8;
+  --grey1: #DFE9EB;
+  --frostproof: #cfeef5;
+  --black-russian: #081228;
+  
+  --primary-color: #037E9B;
+  --secondary-color: #ffffff;
+
+  --font-size-s: 10px;
+  --font-size-m: 12px;
+  --font-size-l: 14px;
+  --font-size-xl: 16px;
+  --font-size-xxl: 18px;
+  --font-size-m-xxl: 20px;
+  --font-size-xxxl: 24px;
+  --font-size-m-IVxl: 32px;
+  --font-size-IVxl: 34px;
+  --font-size-l-IVxl: 36px;
+  --font-size-Vxl: 48px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --container-max-width: 1320px;
+
+  --font-family-open-sans: 'Open Sans', sans-serif;
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-roboto: 'Roboto', sans-serif;
+  --btn-bg-primary: #037E9B;
+  --btn-bg-secondary: #ffffff;
+
+  --btn-color-primary: #037E9B;
+  --btn-color-secondary: #ffffff;
+}
+
+/* Basic Styling */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  text-align: left;
+  background-color: var(--white);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* TYPOGRAPHY */
+div {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-light);
+  -webkit-text-size-adjust: none;
+  font-style: normal;
+}
+
+h1 {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-IVxl);
+  font-style: normal;
+}
+
+h2 {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+}
+
+h3 {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-IVxl);
+  font-style: normal;
+  line-height: 28px;
+}
+
+h4 {
+  color: var(--black2);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+}
+
+h5 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  line-height: 28px;
+}
+
+h6 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  line-height: 24px;
+}
+
+a {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-l);
+  display: contents;
+  text-decoration: none;
+  font-style: normal;
+}
+
+p {
+  color: var(--black2);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  line-height: 24px;
+}
+
+a.font-poppins{
+  padding: 20px 44px;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--faux-cg-blue);
+  min-height: 58px;
+  min-width: 295px;
+}
+
+table{
+  width: 100%;
+}
+
+/* FORMS AND BUTTONS */
+input {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+textarea {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+/* Responsive images */
+img {
+  width: 100%;
+  height: auto;
+}
