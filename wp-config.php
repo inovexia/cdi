@@ -81,13 +81,9 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
-<<<<<<< HEAD
-define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest/' );
-define( 'WP_HOME', 'http://localhost/dev/cdi-latest/' );
-=======
 define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest' );
 define( 'WP_HOME', 'http://localhost/dev/cdi-latest' );
->>>>>>> 66d66df5db9eeb2b230243491c0b9c647ca4d47d
+
 
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
