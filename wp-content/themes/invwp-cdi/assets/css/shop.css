@@ -940,3 +940,25 @@ ul.products li.product span.price{
     float: left;
     clear: none;
 }
+.edit-account-form label {
+    display: block;  
+}
+.edit-account-form input {
+    background: var(--frostproof);
+    border: 1px solid var(--black);
+    border-radius: 52px;
+    height: 46px;
+    width: 315px;
+}
+.edit-account-form p {
+    /*width: 50% !important;*/
+}
+.edit-account-form p {
+    /*float: left;
+    clear: none;*/
+}
+.edit-account-form p button{
+    cursor: pointer;
+    max-width: 100%;
+    width: 100%;
+}

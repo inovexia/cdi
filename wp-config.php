@@ -28,7 +28,7 @@ define( 'DB_USER', 'invxadmin_develop' );
 define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'inovexiasoftware.in' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -81,8 +81,8 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'https://inovexiasoftware.in/staging/cdi' );
-define( 'WP_HOME', 'https://inovexiasoftware.in/staging/cdi' );
+define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest/' );
+define( 'WP_HOME', 'http://localhost/dev/cdi-latest/' );
 
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
