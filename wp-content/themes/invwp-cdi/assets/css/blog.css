@@ -20,6 +20,12 @@
   padding-bottom: 50px;
 }
 
+.single-post .col-6, .single-post .col-12 {
+  padding: 0;
+}
+.single-post .col-12 {
+  margin-bottom: 50px;
+}
 @media only screen and (min-width: 375px ) {
 
 }
