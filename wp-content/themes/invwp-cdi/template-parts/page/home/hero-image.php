@@ -28,28 +28,28 @@
       <div class="row">
           <div class="col-3 col-m-6">
               <div class="">
-                <p class="hero-buttons mt-30">
+                <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('register');?>"><?php echo the_field('banner_section_button_text'); ?></a>
                 </p>
               </div>
           </div>
           <div class="col-3 col-m-6">
               <div class="">
-                <p class="hero-buttons mt-30">
+                <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('contact');?>"><?php echo the_field('banner_section_button_text1'); ?></a>
                 </p>
               </div>
           </div>
           <div class="col-3 col-m-6">
               <div class="">
-                <p class="hero-buttons mt-30">
+                <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('about');?>"><?php echo the_field('banner_section_button_text2'); ?></a>
                 </p>
               </div>
           </div>
           <div class="col-3 col-m-6">
               <div class="">
-                <p class="hero-buttons mt-30">
+                <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('shop');?>"><?php echo the_field('banner_section_button_text3'); ?></a>
                 </p>
               </div>

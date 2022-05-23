@@ -60,6 +60,8 @@ function invx_add_theme_scripts () {
 	wp_enqueue_style( 'invwps-about-us-css', get_template_directory_uri () . '/assets/css/about-us.css', array(), _S_VERSION, 'all' );
     wp_enqueue_style( 'invwps-privacy', get_template_directory_uri () . '/assets/css/privacy.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'invwps-search', get_template_directory_uri () . '/assets/css/search.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'invwps-login-modal', get_template_directory_uri () . '/assets/css/login-modal.css', array(), _S_VERSION, 'all' );
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'invx_add_theme_scripts' );

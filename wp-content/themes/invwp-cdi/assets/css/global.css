@@ -355,9 +355,9 @@ header .nav-right-icons {
     margin-left: 20px;
   }
 
-  .home-banner-section .banner-texts{
+  /* .home-banner-section .banner-texts{
     display: none;
-  }
+  } */
   header .navbar.responsive .nav-menu-container {position: relative;}
   header .navbar.responsive .nav-menu-container {
     position: absolute;
@@ -398,13 +398,14 @@ header .nav-right-icons {
   .col-m-11 { width: 91.66%;}
   .col-m-12 { width: 100.0%;}
 
-  .hero-buttons a{
+  .hero-buttons a {
     padding: 17px 0;
     min-width: 165px;
-    min-height: 56px;
+    /* min-height: 56px; */
     width: 165px;
-    height: 56px;
-  }
+    /* height: 56px; */
+    font-size: 13px;
+}
 
 }
 
@@ -462,7 +463,7 @@ header .nav-right-icons {
   text-align: center;
   /* margin: 5px; */
   width: 233px;
-  height: 45px;
+  /* height: 45px; */
 }
 
 .button-primary {
@@ -1054,7 +1055,7 @@ footer .bottom-footer .social-link li i {
     animation: fadeEffect 1s;
 }
 form.woocommerce-form-login{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .woocommerce-form-login .forgot-password {
     margin-top: 20px;

@@ -30,7 +30,30 @@ Login/Signup modal
 .invx-main-header__logo img {
   display: block;
 }
-
+.login-modal div#tab-content-login, .login-modal div#tab-content-register {
+  padding: 0;
+}
+.login-modal .woocommerce-form-login input, .login-modal .woocommerce-form-login select {
+  background: var(--frostproof) !important;
+}
+.login-modal .woocommerce-form-login__submit {
+  width: 100%;
+  background: var(--faux-cg-blue);
+  border: none;
+}
+.next-step, .previous-step {
+  background: var(--faux-cg-blue);
+  border: none;
+  padding: 12px;
+  width: 100%;
+  color: #fff;
+}
+.woocommerce-form-login .d-grid {
+  padding: 7px;
+}
+.login-modal .subtitle {
+  margin-top: 20px;
+}
 @media only screen and (min-width: 768px) {
   .invx-main-header {
     height: 80px;

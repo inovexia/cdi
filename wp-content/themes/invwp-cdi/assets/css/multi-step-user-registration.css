@@ -8,7 +8,12 @@
 	padding-bottom: 20px;
 	position: relative
 }
-
+#custom-registration-tabs fieldset {
+	padding: 10px 0;
+}
+#custom-registration-tabs .col-md-12 {
+    padding: 10px 0;
+}
 #custom-registration-tabs fieldset.crf-tab .finish {
   text-align: left;
 }

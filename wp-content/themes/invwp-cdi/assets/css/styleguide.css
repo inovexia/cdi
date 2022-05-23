@@ -156,7 +156,7 @@ a.font-poppins{
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--faux-cg-blue);
-  min-height: 58px;
+  /* min-height: 58px; */
   min-width: 295px;
 }
 
