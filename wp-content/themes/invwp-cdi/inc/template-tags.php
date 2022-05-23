@@ -163,3 +163,8 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+add_action('wp_footer', 'wpshout_action_example'); 
+function wpshout_action_example() { 
+    echo '<div style="background: green; color: white; text-align: right;">WPShout was here.</div>'; 
+}
