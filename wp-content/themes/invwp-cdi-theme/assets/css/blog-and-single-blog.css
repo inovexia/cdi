@@ -1,0 +1,117 @@
+@media (min-width: 0) {
+  .blog-page {
+    padding: 0 0 50px 0;
+}
+.site-main p, .site-main .main-para, .single-blog p {
+    font-family: var(--font-family-lato);
+    font-size: 14px;
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    color: var(--eerie-black);
+    width: 100%;
+	line-height: 22px;
+    margin-top: 20px;
+}
+.site-main p strong, .single-blog p strong{
+	font-family: var(--font-family-lato);
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+	color: #1E1E1E;
+}
+.blog-btn {
+    margin-left: 50px;
+    position: relative;
+    margin-top: 20px;
+}
+.blog-btn a{
+    color: #1E1E1E;
+}
+.blog-btn::after {
+    position: absolute;
+    left: -50px;
+    top: 6px;
+    width: 40px;
+    height: 1px;
+    background: #1E1E1E;
+    content: "";
+}
+.blog-page .sub-heading {
+    margin-top: 20px;
+}
+.single-blog {
+    padding: 0 0 50px 0;
+}
+.blog-page .sub-heading a {
+    font-family: var(--font-family-lato);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    color: #000;
+    line-height: 25px;
+}
+.section-title a{
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-medium);
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 46px;
+    margin-top: 10px;
+	color: #000;
+}
+.single-post .page-title {
+    display: none;
+}
+}
+@media (min-width: 576px) {
+  
+}
+@media (max-width: 767px) {
+	.blog-column{
+		padding-bottom: 25px;
+	}
+}
+@media (min-width: 768px) {
+	.blog-column{
+		/* padding-left: 10px; */
+		padding-right: 10px;
+		margin-bottom: 15px;
+	}
+	.first-blog-row {
+		padding-bottom: 15px;
+	}
+	.first-blog-row div.col-6.first-blog-column-text{
+		padding-left: 100px;
+	}
+}
+@media (min-width: 992px) {
+.first-blog-column-text {
+    padding-left: 130px;
+}
+.blog-column {
+    margin-right: 20px;
+    width: 31%;
+    margin-top: 50px;
+    float: left;
+}
+.blog-column:last-child {
+    margin-right: 0;
+}
+.first-blog-row {
+    display: flex;
+    align-items: center;
+}
+}
+@media (min-width:1200px) {
+
+}
+@media (min-width: 1440px) { 
+	
+}
+@media (min-width: 1680px) { 
+	
+}
+@media (min-width:1920px) { 
+	
+}
