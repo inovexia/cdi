@@ -3,10 +3,14 @@
   /* Checkout page step classes */
 
   /*checkout*/
-  #custom-checkout-progressbar {
+  .woocommerce-checkout #custom-checkout-progressbar {
     text-align: left;
     position: relative;
-  }
+    margin-bottom: 50px;
+}
+.awdr_cart_strikeout_line {
+  margin-bottom: 20px;
+}
 
   #custom-checkout-progressbar #progressbar {
     margin-bottom: 50px;
@@ -92,7 +96,7 @@
   .woocommerce-billing-fields input, .woocommerce-billing-fields select, .woocommerce-billing-fields span.select{
 	background-color: var(--grey1);
 	border: 1px solid var(--white);
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
     padding: 8px 15px !important;
     color: var(--faux-cg-blue);
     font-family: var(--font-family-open-sans);
@@ -122,13 +126,31 @@
     width: 100%;
     max-height: 155px;
   }
-  .checkout-minicart-content a{
-	color: var(--faux-cg-blue);
+  .checkout-minicart-content a {
+    color: var(--faux-cg-blue);
     font-family: var(--font-family-open-sans);
     font-size: var(--font-size-l);
     font-style: normal;
     font-weight: var(--font-weight-semi-bold);
-  }
+    margin-bottom: 15px;
+    display: block;
+}
+.woocommerce-checkout .woocommerce-mini-cart-item .row {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dfe9eb;
+}
+.woocommerce-checkout .woocommerce-mini-cart-item .row:last-child {
+  border-bottom: 0;
+}
+#custom-checkout-progressbar .subtotal {
+  font-size: 15px;
+}
+#custom-checkout-progressbar .cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
   .woocommerce-checkout-review-order .cart-subtotal {
     border-top: 1px solid var(--faux-cg-blue);
     border-bottom: 1px solid var(--faux-cg-blue);
@@ -234,6 +256,36 @@
     border: none;
     width: 80%;
   }
+  .woocommerce-checkout .select2-selection--single {
+    border: none;
+    margin-bottom: 25px;
+}
+.woocommerce-checkout .select2-selection__rendered {
+  background: #dfe9eb;
+  padding: 9px 15px;
+  margin-bottom: 25px;
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 26px;
+}
+.woocommerce-checkout textarea {
+  width: 100%;
+  height: 125px;
+  margin-top: 15px;
+  padding: 10px;
+}
+.woocommerce-checkout .notes {
+  margin-top: 10px;
+  display: block;
+}
+.woocommerce-checkout #payment {
+  margin: 20px 0;
+}
+.woocommerce-billing-fields h3 {
+  margin-bottom: 30px;
+}
 }
 
 @media (min-width: 576px) {}
