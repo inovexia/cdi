@@ -11,17 +11,17 @@ get_header ();
 ?>
 <main id="primary" class="site-main">
 
-    <?php get_sidebar('left'); ?>
+    <?php //get_sidebar('left'); ?>
 
       <div class="content">
 
-        <section class="section-privacyfullwidth">
+        <section class="section-privacyfullwidth section-margin">
           <div class="container body-container">
             <div class="row">
               <div class="col-12 privacy-inner-content">
                 <h4 class="lato-normal-black-pearl-14px text-uppercase"><?php echo the_field('shipment_title'); ?></h4>
                 <div class="lato-normal-black-pearl-14px">
-                  <p><?php echo the_field('shipment_content'); ?></p>
+                  <p><?php echo the_content() ?></p>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@ get_header ();
 
       </div>
 
-    <?php get_sidebar('right'); ?>
+    <?php //get_sidebar('right'); ?>
 
 </main><!-- #main -->
 

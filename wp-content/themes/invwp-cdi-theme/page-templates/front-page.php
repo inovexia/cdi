@@ -11,7 +11,7 @@ get_header ();
 ?>
 <main id="primary" class="site-main">
 
-  <div class="content">
+<div class="content">
     <!-- Hero section -->
     <?php get_template_part( 'template-parts/page/home/hero-image', 'hero'); ?>
 
@@ -21,11 +21,20 @@ get_header ();
     <!--Help Section-->
     <?php get_template_part( 'template-parts/page/home/about-us'); ?>
 
+    <!--Home Shop Section-->
+    <?php get_template_part( 'template-parts/page/home/home-shop'); ?>
+
     <!--Products Slider-->
     <?php get_template_part( 'template-parts/page/home/industry-blogs', 'blogs'); ?>
 
+    <!--Faq Section-->
+    <?php get_template_part( 'template-parts/page/home/faq'); ?>
+
+    <!--Testimonial Section-->
+    <?php get_template_part( 'template-parts/page/home/testimonial'); ?>
+
     <!--Contact Section-->
-    <?php get_template_part( 'template-parts/component/contact-form/contact-form-all'); ?>
+    <?php //get_template_part( 'template-parts/page/home/contact', 'contact'); ?>
 
   </div>
 
