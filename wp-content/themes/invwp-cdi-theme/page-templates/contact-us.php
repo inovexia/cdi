@@ -11,16 +11,27 @@ get_header ();
 ?>
 <main id="primary" class="site-main">
 
+    <?php
+          /*if($sidebar == 2 || $sidebar == 3){
+            get_sidebar('right');
+          }*/
+    ?>
 
+      <div class="content">
 
-  <div class="content">
-    <!--Contact Section-->
-    <?php get_template_part( 'template-parts/component/contact-form/contact-form-all'); ?>
-    <!--Contact Newsletter Section-->
-    <?php get_template_part( 'template-parts/page/contact-us/contact-newsletter'); ?>
+        <!-- Hero single image -->
+        <?php get_template_part( 'template-parts/page/contact-us/banner', 'contact-page'); ?>
 
-  </div>
+        <!-- Content Area Contact Section -->
+        <?php get_template_part( 'template-parts/page/contact-us/contact-section', 'contact-page'); ?>
 
+      </div>
+
+    <?php
+          /*if($sidebar == 2 || $sidebar == 3){
+            get_sidebar('right');
+          }*/
+    ?>
 
 </main><!-- #main -->
 <?php

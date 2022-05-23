@@ -3,17 +3,17 @@
     padding: 0 0 50px 0;
 }
 .site-main p, .site-main .main-para, .single-blog p {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-open-sans);
     font-size: 14px;
     font-weight: var(--font-weight-light);
     font-style: normal;
-    color: var(--eerie-black);
+    color: var(--black2);
     width: 100%;
 	line-height: 22px;
-    margin-top: 20px;
+    margin: 10px 0;
 }
 .site-main p strong, .single-blog p strong{
-	font-family: var(--font-family-lato);
+	font-family: var(--font-family-open-sans);
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
@@ -43,7 +43,7 @@
     padding: 0 0 50px 0;
 }
 .blog-page .sub-heading a {
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-open-sans);
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-xl);
     font-style: normal;
@@ -51,7 +51,7 @@
     line-height: 25px;
 }
 .section-title a{
-    font-family: var(--font-family-lato);
+    font-family: var(--font-family-open-sans);
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-medium);
     font-style: normal;
