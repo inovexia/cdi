@@ -1,6 +1,220 @@
 @media (min-width: 0) {
+
+    /* Top Header css start*/
+    .top-left-header {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+
+    .top-left-header li {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        margin-right: 84px;
+    }
+
+    .top-left-header li a {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #fff;
+        position: relative;
+        text-transform: unset;
+        display: inline-flex
+    }
+
+    .top-left-header li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 1px;
+        border-bottom: 1px solid #fff;
+        left: 0;
+        opacity: 0.6;
+    }
+
+    .top-header-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 6px 0px;
+    }
+
+    .top-header-search .search-submit {
+        background-color: #fff;
+        color: #037E9B;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Top Header css end */
+    /* Main Header css start */
+    .site-branding a {
+        width: 106px;
+    }
+
+    #menu-main-menu {
+        margin-left: 17px;
+    }
+
+    #menu-main-menu li a {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        font-family: "OSR";
+    }
+
+    #menu-main-menu li {
+        margin-right: 66px;
+    }
+
+    .menu-main-menu-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .wc-nav-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .wc-nav-icon a {
+        margin-right: 66px;
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        font-family: "OSR";
+        color: #037E9B;
+        text-decoration: none;
+    }
+
+    .mobile-bag-icon {
+        position: relative;
+    }
+
+    .wc-nav-icon a:last-child {
+        margin-right: 0px;
+    }
+
+    #menu-toggler {
+        width: 24px;
+    }
+
+    .mob-menu-body {
+        padding: 20px;
+    }
+
+    .mob-menu-footer {
+        background-color: #037E9B;
+        padding: 20px;
+    }
+
+    .mob-menu-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .mob-menu-header span {
+        font-size: 18px;
+    }
+
+    .site-branding .custom-logo-link {
+        width: 76px;
+    }
+
+    .mob-menu-body ul li {
+        margin-top: 16px;
+    }
+
+    .mob-menu-body ul li a {
+        display: flex;
+        align-items: center;
+        text-transform: unset;
+        color: #037E9B;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: "OSR";
+    }
+
+    .mob-menu-body ul li a img {
+        width: auto;
+        margin-right: 25px;
+    }
+
+    header .mob-mega-menu ul {
+        margin: 0;
+        padding: 5px 0px 30px;
+        border-bottom: 1px solid #037E9B;
+    }
+
+    .mob-menu-header .custom-logo-link {
+        width: 76px;
+    }
+
+    .mob-mega-menu .mobile-cart-items-count {
+        left: 7px;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .mob-mega-menu #menu-main-menu-1 li a {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .mob-mega-menu #menu-main-menu-1 {
+        padding-top: 15px;
+        border: none;
+    }
+
+    header .mob-mega-menu .mob-menu-footer ul {
+        padding: 0;
+    }
+
+    .mob-menu-footer ul li {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: 400;
+        font-family: "OSR";
+    }
+
+    .mob-menu-footer ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .mob-menu-footer ul li a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        text-transform: unset;
+    }
+
+    .mob-menu-footer ul li a::before {
+        position: absolute;
+        content: "";
+        border-bottom: 1px solid #fff;
+        opacity: 0.6;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+
+    }
+
+    /* Main header css end */
     section.main-nav.full-width {
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
 
     header .main-navigation #menu-main-menu li {
@@ -30,8 +244,10 @@
     }
 
     header #menu-toggler {
-        margin-right: 20px;
+        margin-right: 0px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 
     header #menu-toggler img {
@@ -76,13 +292,20 @@
 
     header .small-device-icons ul li a.mobile-bag-icon {
         position: relative;
+        width: 21px;
+        margin-right: 20px;
+    }
+
+
+    header .small-device-icons ul li a.mobile-bag-icon img {
+        width: auto;
     }
 
     header .mobile-cart-items-count {
         position: absolute;
         bottom: -3px;
-        right: 0;
-        background-color: #fff;
+        right: -10px;
+        background-color: #E4A680;
         border-radius: 50px;
         z-index: 9;
         width: 20px;
@@ -90,12 +313,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: none;
+        color: #fff;
     }
 
     header .mobile-search-box {
-        width: 100%;
-        margin-top: 20px;
+        width: 168px;
+        margin-top: 0;
         position: relative;
     }
 
@@ -103,11 +327,13 @@
         width: 100%;
         border: none;
         border-radius: 0px;
-        background-color: #F1F1F1;
-        color: #1E1E1E;
-        font-family: var(--font-family-lato);
+        background-color: transparent;
+        border: 1px solid #037E9B;
+        font-family: "OSR";
         font-weight: 300;
-        padding: 13px 10px;
+        padding: 5px 10px 5px 35px;
+        height: 28px;
+        color: #037E9B;
     }
 
     header .mobile-search-box .search-submit {
@@ -117,57 +343,28 @@
     header .mobile-search-icon {
         width: 30px;
         position: absolute;
-        top: 12px;
-        right: 5px;
+        top: 5px;
+        left: 7px;
     }
 
     header .mobile-search-icon img {
-        width: 20px;
-        height: auto;
+        width: auto;
         border-radius: 0px;
     }
 
     header .mob-mega-menu {
         position: absolute;
-        width: 100%;
+        width: 90%;
         left: -100%;
-        top: 100%;
+        top: 0;
         transition: all 0.3s;
-        background-color: #f1f1f1;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: center;
+        background-color: #fff;
         z-index: 99;
-        text-align: center;
+        max-width: 390px;
     }
 
     header .mob-mega-menu.left-0 {
         left: 0;
-    }
-
-    header .mob-mega-menu h4 {
-        margin-top: 15px;
-        font-family: var(--font-family-lato);
-        font-weight: 700;
-    }
-
-    header .mob-mega-menu ul li {
-        margin-top: 15px;
-    }
-
-    header .mob-mega-menu ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    header .mob-mega-menu ul li a {
-        font-size: 14px;
-        line-height: 24px;
-        font-family: var(--font-family-lato);
-        font-weight: 400;
-        color: #1E1E1E;
-        text-decoration: none;
-
     }
 
 }
@@ -175,6 +372,10 @@
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .site-branding .custom-logo-link {
+        width: 106px;
+    }
+
     header .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -229,7 +430,7 @@
         background-color: transparent;
         color: #fff;
         font-size: 30px;
-        font-family: var(--font-family-lato);
+        font-family: "OSR";
         font-weight: 400;
         border-radius: 0px;
     }
@@ -249,8 +450,8 @@
     header #desktopSearch .modal-content form input::-moz-placeholder,
     header #desktopSearch .modal-content form input::-webkit-input-placeholder {
         font: 30px;
-        color: #fff;
-        font-family: var(--font-family-lato);
+        color: #037E9B;
+        font-family: "OSR";
         font-weight: 400;
     }
 
