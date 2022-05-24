@@ -1607,11 +1607,11 @@ form.woocommerce-form-login {
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
-  padding: 50px 58px;
+  padding: 20px;
   border-radius: 0px;
   overflow-x: hidden;
   height: 100%;
-  box-shadow: 0px 0px 5px 1px #037E9B;
+  box-shadow: 0px 0px 3px 1px #037E9B;
 }
 
 
@@ -1636,5 +1636,9 @@ form.woocommerce-form-login {
 @media (min-width:992px) {
   header .nav-menu li {
     margin: 0px 33px;
+  }
+
+  .minicart {
+    padding: 50px 58px;
   }
 }
