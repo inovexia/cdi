@@ -11,7 +11,10 @@
 .page-template-front-page .woocommerce-products-header {
   display: none;
 }
-
+.faq-section {
+  background: #F9FAFB;
+  padding: 50px 0;
+}
 .home-banner-section .hero-title {
   font-family: var(--font-family-open-sans);
   font-size: var(--font-size-Vxl);

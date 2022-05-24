@@ -1,25 +1,24 @@
-<section class="faq-section section-padding">
-  <div class="container">
-    <?php if (have_rows('accordian')) : ?>
-      <div class="collapse">
-        <?php
-          $y = 0;
-          while (have_rows('accordian')) :
-            the_row();
-            $y++;
-            $tCount = $y;
-            ?>
-            <div class="collapse-item">
-              <h4 class="collapsible" id="heading<?php echo $tCount; ?>" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $tCount; ?>" aria-expanded="true"
-                aria-controls="collapse<?php echo $tCount; ?>">
-                <?php the_sub_field('accordian_title'); ?>
-              </h4>
-              <div class="content" aria-labelledby="heading<?php echo $tCount; ?>" data-bs-parent="">
-                  <?php the_sub_field('accordian_content'); ?>
-              </div>
-            </div>
-        <?php endwhile; ?>
-      </div>
-      <?php else : endif; ?>
-    </div>
-  </section>
+<section class="faq-section">
+	 <div class="container">
+		<h3 class="section-title text-center mb-5 pb-20">Frequently Asked Questions</h3>
+		<?php if (have_rows('faq_collapse')) : ?>
+		  <div class="accordion" >
+			<?php
+			$y = 0;;
+			while (have_rows('faq_collapse')) : the_row();
+			  $y++;
+			  $tCount = $y;
+			  ?>
+			  <div class="content-entry">
+				<h6 class="accordion-title" >
+				  <?php the_sub_field('accordion_title'); ?>
+				</h6>
+				<div class="accordion-content" >
+					<p><?php the_sub_field('accordion_description'); ?></p>
+				</div>
+			  </div>
+			<?php endwhile; ?>
+		  </div>
+		<?php else : endif; ?>
+	  </div>
+ </section>
