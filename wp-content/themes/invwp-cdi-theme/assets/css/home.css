@@ -11,10 +11,12 @@
 .page-template-front-page .woocommerce-products-header {
   display: none;
 }
+
 .faq-section {
   background: #F9FAFB;
   padding: 50px 0;
 }
+
 .home-banner-section .hero-title {
   font-family: var(--font-family-open-sans);
   font-size: var(--font-size-Vxl);
@@ -402,13 +404,5 @@
 
   .top-footer-newslettert .widget_block div {
     padding: 0 !important;
-  }
-
-  footer .top-footer-menu .widget-title,
-  footer .top-footer-customer-service .widget-title,
-  footer .top-footer-contact h6 {
-    margin-top: 30px;
-    text-transform: uppercase;
-    font-family: "OSR";
   }
 }
