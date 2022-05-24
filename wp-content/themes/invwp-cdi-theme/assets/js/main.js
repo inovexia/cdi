@@ -42,7 +42,6 @@
 
 /* Offcanvas Sidepanel */
 function openNav() {
-  alert ()
   document.getElementById("minicart-nav").style.right = "0";
 }
 
