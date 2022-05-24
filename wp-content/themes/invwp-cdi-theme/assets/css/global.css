@@ -1603,6 +1603,7 @@ form.woocommerce-form-login {
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.2s linear;
+  margin: 10px 0;
 }
 
 .accordion .accordion-title:after {
