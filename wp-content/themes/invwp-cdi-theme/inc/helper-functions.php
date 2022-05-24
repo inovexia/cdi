@@ -15,10 +15,9 @@ function invwp_get_product_categories () {
   $cats =  array();
   $args = array(
           'taxonomy' => 'product_cat',
-          'hide_empty' => true,
-          'parent'   => 0,
-          'slug' => $category_name, /*category name*/
-        );
+          'hide_empty' => false,
+          'parent'   => 0
+  );
   $product_cat = get_terms( $args );
 
   foreach ($product_cat as $parent_product_cat)  {

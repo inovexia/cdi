@@ -1,49 +1,40 @@
 @media (min-width: 0) {
-    .page-template-privacy .privacy-inner-content p {
-        font-size: 16px;
-        font-weight: 400;
-    }
-
     .privacy-inner-content h3 {
-        font-family: var(--font-family-lato);
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-xl);
+        color: var(--black2);
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-semi-bold);
+        font-size: var(--font-size-xxl);
         font-style: normal;
-        margin: 0 0 10px 0;
+        margin: 20px 0 10px 0;
+        display: block;
     }
 
     .privacy-inner-content p,
     .page-id-250 article p,
     .sitemap-wrp ul li a {
-        font-family: var(--font-family-lato);
+        font-family: var(--font-family-open-sans);
         font-size: 14px;
         font-weight: var(--font-weight-light);
         font-style: normal;
-        color: var(--eerie-black);
+        color: var(--black-russian);
         width: 100%;
         line-height: 22px;
         margin-top: 20px;
     }
 
-    .section-privacyfullwidth {
-        padding: 0 0 50px 0;
-    }
-
-    .page-id-303 article,
-    .page-id-312 .section-orderfullwidth {
-        padding: 0 0 50px 0;
-    }
 
     .page-id-303 article h2 {
-        font-family: var(--font-family-lato);
+        font-family: var(--font-family-open-sans);
         font-size: 17px;
         font-weight: var(--font-weight-bold);
         font-style: normal;
-        color: var(--eerie-black);
+        color: var(--black-russian);
         width: 100%;
         line-height: 22px;
         margin-top: 20px;
     }
+
+
 
     /*-----------------sitemap-------------------------*/
     .sitemap-wrp h3 {
@@ -54,42 +45,12 @@
         margin-bottom: 20px;
     }
 
-    .privacy-inner-content h3 {
-        font-family: var(--font-family-lato);
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-xl);
-        font-style: normal;
-        margin: 0 0 10px 0;
-    }
-
-    .privacy-inner-content p,
-    .page-id-250 article p,
-    .sitemap-wrp ul li a {
-        font-family: var(--font-family-lato);
-        font-size: 14px;
-        font-weight: var(--font-weight-light);
-        font-style: normal;
-        color: var(--eerie-black);
-        width: 100%;
-        line-height: 22px;
-        margin-top: 20px;
-    }
-
-    .section-privacyfullwidth {
-        padding: 0 0 50px 0;
-    }
-
-    .page-id-303 article,
-    .page-id-312 .section-orderfullwidth {
-        padding: 0 0 50px 0;
-    }
-
     .page-id-303 article h2 {
-        font-family: var(--font-family-lato);
+        font-family: var(--font-family-open-sans);
         font-size: 17px;
         font-weight: var(--font-weight-bold);
         font-style: normal;
-        color: var(--eerie-black);
+        color: var(--black-russian);
         width: 100%;
         line-height: 22px;
         margin-top: 20px;
@@ -98,7 +59,7 @@
     /*-----------------sitemap-------------------------*/
     .sitemap-wrp h6 {
         margin-bottom: 10px;
-        font-family: var(--font-family-lato);
+        font-family: var(--font-family-open-sans);
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-xl);
         font-style: normal;

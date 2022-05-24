@@ -12,22 +12,21 @@ get_header();
 <main id="primary" class="site-main">
 
 
-      <div class="content">
+<div class="content">
 
-        <section class="section-orderfullwidth">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 order-inner-content">
-                <!-- <h4 class="text-uppercase"><?php echo the_field('order_title'); ?></h4> -->
-                <div class="">
-                  <p><?php echo the_content(); ?></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <!-- Hero section -->
+    <?php get_template_part( 'template-parts/page/how-to-order/hero-banner', 'hero'); ?>
 
-      </div>
+    <!-- Order Online section -->
+    <?php get_template_part( 'template-parts/page/how-to-order/order-online', 'online'); ?>
+
+    <!-- Order By phone section -->
+    <?php get_template_part( 'template-parts/page/how-to-order/order-by-phone', 'phone'); ?>
+
+    <!-- Order By Fax section -->
+    <?php get_template_part( 'template-parts/page/how-to-order/order-by-fax', 'fax'); ?>
+
+  </div>
 
 
 </main><!-- #main -->
