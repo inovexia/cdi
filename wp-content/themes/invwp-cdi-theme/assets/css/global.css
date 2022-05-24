@@ -1522,40 +1522,42 @@ form.woocommerce-form-login {
 }
 
 
-/* Accordian */
-.accordion .accordion-title {
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  padding: 5px 10px;
+/* Collapsible/Accordion */
+.collapse {
+
+}
+.collapse .collapse-item {
+  border-bottom: 1px #ccc;
+}
+
+.collapse .collapsible {
   cursor: pointer;
-  transition: background-color 0.2s linear;
-  margin: 10px 0;
+  width: 90%;
+  text-align: left;
+  outline: none;
+}
+.collapse ul li {
+  list-style: none;
 }
 
-.accordion .accordion-title:after {
-  font-family: FontAwesome;
-  content: "\f078";
-  font-family: "fontawesome";
+.collapse .active, .collapse .collapsible:hover {
+
+}
+
+.collapse .collapsible:after {
+  content: '\002B';
   float: right;
+  margin-left: 5px;
 }
 
-.accordion .accordion-title.is-open:after {
-  content: "\f077";
+.collapse .active:after {
+  content: "\2212";
 }
 
-.accordion .accordion-title.is-open {
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-
-.accordion .accordion-content {
-  background-color: white;
-  padding: 0 10px;
+.collapse .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-out;
 }
 
 /* ----==== Minicart ===---- */
