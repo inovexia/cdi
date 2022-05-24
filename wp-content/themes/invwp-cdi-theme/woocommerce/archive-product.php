@@ -30,120 +30,87 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 
-<section class="product-page-wrp shop-page-filters">
-    <div class="container">
-        <div class="nav-filters">
-            <?php
-        $shop_page_url = get_permalink( wc_get_page_id( 'shop' ) );
-        if (isset($_GET['q'])) {
-          $variable = $_GET['q'];
-        } else {
-          $variable = '';
-        }
-      ?>
-            <input class="tab-link-hidden" type="hidden" key="<?php echo $variable; ?>" />
-            <div class="category-link">
-                <ul class="shop-page-tabs">
-                    <?php
-			$shop_page_url = get_permalink( wc_get_page_id( 'shop' ) );
-			?>
-                    <li class="tab-link active" data="all"><a href="<?php echo $shop_page_url.'?q=all'; ?>"
-                            class="tablinks">All</a></li>
-                    <li class="tab-link" data="brands"><a href="<?php echo $shop_page_url.'?q=brands'; ?>"
-                            class="tablinks">Brands</a></li>
-                    <li class="tab-link" data="bestseller"><a href="<?php echo $shop_page_url.'?q=bestseller'; ?>"
-                            class="tablinks">Best Seller</a></li>
-                    <li class="tab-link" data="popular"><a href="<?php echo $shop_page_url.'?q=popular'; ?>"
-                            class="tablinks">Most Popular</a></li>
-                    <li class="tab-link" data="bestrated"><a href="<?php echo $shop_page_url.'?q=bestrated'; ?>"
-                            class="tablinks">Best Rated</a></li>
-                </ul>
-            </div>
-            <div class="sorting">
-
-                <?php do_action( 'invwp_woocommerce_before_shop_loop' ); ?>
-
-            </div>
-        </div>
-</section>
-
 <section class="full-width product-list">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="content">
-                    <?php
-				if ( woocommerce_product_loop() ) {
+  <div class="container">
+    <div class="row">
+        <div class="col-3">
+          <?php get_sidebar('shop'); ?>
+        </div>
 
-					/**
-					 * Hook: woocommerce_before_shop_loop.
-					 *
-					 * @hooked woocommerce_output_all_notices - 10
-					 * @hooked woocommerce_result_count - 20
-					 * @hooked woocommerce_catalog_ordering - 30
-					 */
-					do_action( 'woocommerce_before_shop_loop' );
+        <div class="col-9 all-products">
 
+          <?php
+    				if ( woocommerce_product_loop() ) {
 
-					woocommerce_product_loop_start();
+      					/**
+      					 * Hook: woocommerce_before_shop_loop.
+      					 *
+      					 * @hooked woocommerce_output_all_notices - 10
+      					 * @hooked woocommerce_result_count - 20
+      					 * @hooked woocommerce_catalog_ordering - 30
+      					 */
+      					do_action( 'woocommerce_before_shop_loop' );
 
-					if ( wc_get_loop_prop( 'total' ) ) {
-						while ( have_posts() ) {
-							the_post();
+      					woocommerce_product_loop_start();
 
-							/**
-							 * Hook: woocommerce_shop_loop.
-							 */
-							do_action( 'woocommerce_shop_loop' );
+      					if ( wc_get_loop_prop( 'total' ) ) {
+      						while ( have_posts() ) {
+      							the_post();
 
-							wc_get_template_part( 'content', 'product' );
-						}
-					}
+      							/**
+      							 * Hook: woocommerce_shop_loop.
+      							 */
+      							do_action( 'woocommerce_shop_loop' );
 
-					woocommerce_product_loop_end();
-					?>
-                    <div class="clearfix"></div>
-                    <p>
-                        <?php
-						/**
-						 * Hook: woocommerce_after_shop_loop.
-						 *
-						 * @hooked woocommerce_pagination - 10
-						 */
-						do_action('woocommerce_after_shop_loop');
-						?>
-                    </p>
+      							wc_get_template_part( 'content', 'product' );
+      						}
+      					}
 
-                    <?php
+    					  woocommerce_product_loop_end();
+    					?>
+              <div class="clearfix"></div>
+              <p>
+                  <?php
+      						/**
+      						 * Hook: woocommerce_after_shop_loop.
+      						 *
+      						 * @hooked woocommerce_pagination - 10
+      						 */
+      						do_action('woocommerce_after_shop_loop');
+      						?>
+              </p>
 
-				} else {
-					/**
-					 * Hook: woocommerce_no_products_found.
-					 *
-					 * @hooked wc_no_products_found - 10
-					 */
-					do_action( 'woocommerce_no_products_found' );
-				}
-				?>
-                </div><!-- Content -->
-            </div>
+              <?php
+
+    				} else {
+    					/**
+    					 * Hook: woocommerce_no_products_found.
+    					 *
+    					 * @hooked wc_no_products_found - 10
+    					 */
+    					do_action( 'woocommerce_no_products_found' );
+    				}
+
+            /**
+             * Hook: woocommerce_after_main_content.
+             *
+             * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+             */
+            do_action( 'woocommerce_after_main_content' );
+
+            /**
+             * Hook: invwp_woocommerce_featured_products.
+             *
+             * @hooked outputs featured products
+             */
+            do_action( 'invwp_woocommerce_featured_products' );
+
+    				?>
         </div>
     </div>
+  </div>
 </section>
 <?php
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action( 'woocommerce_after_main_content' );
-
-/**
- * Hook: invwp_woocommerce_featured_products.
- *
- * @hooked outputs featured products
- */
-do_action( 'invwp_woocommerce_featured_products' );
 
 /**
  * Hook: woocommerce_sidebar.
