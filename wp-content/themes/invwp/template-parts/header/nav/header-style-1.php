@@ -4,17 +4,10 @@
 
       <div class="site-branding header-logo">
         <?php if( has_custom_logo() ):  ?>
-          <?php
-            // Get Custom Logo URL
-            $custom_logo_id = get_theme_mod( 'custom_logo' );
-            $custom_logo_data = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-            $custom_logo_url = $custom_logo_data[0];
-          ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"
              rel="home">
-              <img src="<?php echo esc_url( $custom_logo_url ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
+             <?php the_custom_logo(); ?>
           </a>
-        <?php //the_custom_logo(); ?>
         <?php else: ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a>
         <?php endif;

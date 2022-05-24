@@ -13,7 +13,7 @@ get_header();
 
 
 <div class="content">
-		
+
     <!-- Hero section -->
     <?php get_template_part( 'template-parts/page/how-to-order/hero-banner', 'hero'); ?>
 

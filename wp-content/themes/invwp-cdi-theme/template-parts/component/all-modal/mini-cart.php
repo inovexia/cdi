@@ -1,4 +1,4 @@
-<div id="minicart-nav" class="sidenav minicart">
+<div id="minicart-nav" class="minicart">
     <div class="custom-cart">
       <div class="d-flex cart-header">
         <h2 class="cart-title">Shopping Bag </h2>
