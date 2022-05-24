@@ -354,7 +354,7 @@ header .nav-right-icons {
 }
 
 .dropbtn {
-  padding: 5px;
+  /* padding: 5px; */
   border: none;
 }
 
@@ -385,10 +385,6 @@ header .nav-right-icons {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
 }
 
 @media (min-width:0) {
@@ -714,9 +710,12 @@ header .nav-right-icons {
     justify-content: space-between;
   }
 
-  header .nav-menu li,
+  header .nav-menu li {
+    margin: 0px 10px;
+  }
+
   header .nav-menu-right li {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   header .menu-toggler {
@@ -1593,4 +1592,10 @@ form.woocommerce-form-login {
 .minicart .closebtn:hover {
   color: #1E1E1E;
   opacity: 1;
+}
+
+@media (min-width:992px) {
+  header .nav-menu li {
+    margin: 0px 33px;
+  }
 }

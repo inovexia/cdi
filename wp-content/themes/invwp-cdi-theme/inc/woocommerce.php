@@ -118,7 +118,7 @@ if ( ! function_exists( 'invwp_woocommerce_wrapper_before' ) ) {
 	 */
 	function invwp_woocommerce_wrapper_before() {
 		?>
-		<main id="primary" class="site-main">
+<main id="primary" class="site-main">
     <?php
 	}
 }
@@ -134,8 +134,8 @@ if ( ! function_exists( 'invwp_woocommerce_wrapper_after' ) ) {
 	 */
 	function invwp_woocommerce_wrapper_after() {
 		?>
-		</main><!-- #main -->
-		<?php
+</main><!-- #main -->
+<?php
 	}
 }
 add_action( 'woocommerce_after_main_content', 'invwp_woocommerce_wrapper_after' );
@@ -153,20 +153,20 @@ add_action( 'woocommerce_after_main_content', 'invwp_woocommerce_wrapper_after' 
 */
 
 if ( ! function_exists( 'invwp_woocommerce_cart_link_fragment' ) ) {
-	/**
-	* Cart Fragments.
-	*
-	* Ensure cart contents update when products are added to the cart via AJAX.
-	*
-	* @param array $fragments Fragments to refresh via AJAX.
-	* @return array Fragments to refresh via AJAX.
-	*/
-	function invwp_woocommerce_cart_link_fragment( $fragments ) {
-		ob_start();
-		invwp_woocommerce_cart_link();
-		$fragments['a.cart-contents'] = ob_get_clean();
-		return $fragments;
-	}
+/**
+* Cart Fragments.
+*
+* Ensure cart contents update when products are added to the cart via AJAX.
+*
+* @param array $fragments Fragments to refresh via AJAX.
+* @return array Fragments to refresh via AJAX.
+*/
+function invwp_woocommerce_cart_link_fragment( $fragments ) {
+ob_start();
+invwp_woocommerce_cart_link();
+$fragments['a.cart-contents'] = ob_get_clean();
+return $fragments;
+}
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'invwp_woocommerce_cart_link_fragment' );
 
@@ -179,21 +179,23 @@ if ( ! function_exists( 'invwp_woocommerce_cart_link' ) ) {
 * @return void
 */
 function invwp_woocommerce_cart_link() {
-	?>
-	<li class="nav-item">
-		<a class="cart-contents btn-bag" id="btn-bag" style="cursor:pointer;" onclick="openNav()" title="<?php esc_attr_e( 'View your shopping cart', 'invwp' ); ?>">
-	    <?php
+?>
+<li class="nav-item">
+    <a class="cart-contents btn-bag" id="btn-bag" style="cursor:pointer;" onclick="openNav()"
+        title="<?php esc_attr_e( 'View your shopping cart', 'invwp' ); ?>">
+        <?php
 				$item_count_text = sprintf(
 					/* translators: number of items in the mini cart. */
 					_n( '(%d)', '(%d)', WC()->cart->get_cart_contents_count(), 'invwp' ),
 					WC()->cart->get_cart_contents_count()
 				);
 				?>
-	    	<span class="amount bag">BAG<?php //echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
-	    	<span class="count"><?php echo esc_html( $item_count_text ); ?></span>
-		</a>
-	</li>
-	<?php
+        <span class="amount bag"><img src="<?php echo get_template_directory_uri () . '/assets/images/shop.png'; ?>"
+                alt="user-icon" /><?php //echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+        <span class="count"><?php echo esc_html( $item_count_text ); ?></span>
+    </a>
+</li>
+<?php
 	}
 }
 
@@ -210,10 +212,10 @@ if ( ! function_exists( 'invwp_woocommerce_header_cart' ) ) {
 			$class = '';
 		}
 		?>
-		<li class="<?php echo esc_attr( $class ); ?>">
-		    <?php invwp_woocommerce_cart_link(); ?>
-		</li>
-		<!--
+<li class="<?php echo esc_attr( $class ); ?>">
+    <?php invwp_woocommerce_cart_link(); ?>
+</li>
+<!--
 		<li class="d-none">
 			<?php
 			/*
@@ -226,6 +228,6 @@ if ( ! function_exists( 'invwp_woocommerce_header_cart' ) ) {
 			?>
 		</li>
 		-->
-		<?php
+<?php
 	}
 }
