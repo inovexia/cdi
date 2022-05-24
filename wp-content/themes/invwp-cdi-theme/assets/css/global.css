@@ -1559,9 +1559,8 @@ form.woocommerce-form-login {
 
 
 /* Collapsible/Accordion */
-.collapse {
+.collapse {}
 
-}
 .collapse .collapse-item {
   border-bottom: 1px #ccc;
 }
@@ -1572,13 +1571,13 @@ form.woocommerce-form-login {
   text-align: left;
   outline: none;
 }
+
 .collapse ul li {
   list-style: none;
 }
 
-.collapse .active, .collapse .collapsible:hover {
-
-}
+.collapse .active,
+.collapse .collapsible:hover {}
 
 .collapse .collapsible:after {
   content: '\002B';
@@ -1605,13 +1604,14 @@ form.woocommerce-form-login {
   z-index: 9999;
   top: 0;
   right: -100%;
-  background-color: #F1F1F1;
+  background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
   padding: 50px 58px;
-  border-radius: 27px 0px 0px 27px;
+  border-radius: 0px;
   overflow-x: hidden;
   height: 100%;
+  box-shadow: 0px 0px 5px 1px #037E9B;
 }
 
 
