@@ -325,6 +325,10 @@
         margin-right: 25px;
     }
 
+    .nav-item.sign-in-btn {
+        display: none;
+    }
+
     .mob-search img {
         position: absolute;
         width: 15px;
@@ -510,6 +514,10 @@
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .nav-item.sign-in-btn {
+        display: block;
+    }
+
     .mob-search {
         display: none;
     }

@@ -58,7 +58,7 @@
                     </li>
                     <?php } else { ?>
                     <!-- inser more links here -->
-                    <li class="nav-item">
+                    <li class="nav-item sign-in-btn">
                         <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
                             data-signin="login">SIGN IN</a>
                     </li>
