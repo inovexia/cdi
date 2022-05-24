@@ -1,9 +1,11 @@
 <section class="woocommerce-products-header clearfix ">
-  <div class="container">
-    <?php
+    <div class="container wc-container" <?php if(is_shop() || is_product_category()){?>
+        style="background-image:url('<?php echo get_template_directory_uri () . '/assets/images/shop-banner.png'; ?>')"
+        <?php } ?>>
+        <?php
     if (is_shop()) {
-      $title = 'OUR PRODUCTS';
-      $sub_title = 'Discover our online catalogue by category.';
+      $title = 'BROWSE MEDICATION';
+      $sub_title = 'Check out our wide range of fillers and injectables.';
     } else if ( is_product()) {
       $title = '';
       $sub_title = '';
@@ -45,10 +47,10 @@
       $sub_title = 'Edit your personal information.';
     }
     ?>
-	<div class="woocommerce-products-header">
-		<?php /*if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-			<?php
+        <div class="woocommerce-products-header">
+            <?php /*if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+            <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+            <?php
 			/**
 			 * Hook: woocommerce_archive_description.
 			 *
@@ -57,20 +59,26 @@
 			 * /
 			do_action( 'woocommerce_archive_description' );
 			?>
-		<?php else: */?>
-			<?php if (! is_front_page()) { ?>
-				<?php
+            <?php else: */?>
+            <?php if (! is_front_page()) { ?>
+            <?php
 				$args = array(
 				  'delimiter' => ' > ',
 				  'before' => ''
 				);
 				woocommerce_breadcrumb($args);
 				?>
-				<h1 class="woocommerce-products-header__title page-title "><?php echo $title; ?></h1>
-			<?php } ?>
-		<?php /*endif; */?>
+            <h1 class="woocommerce-products-header__title page-title "><?php echo $title; ?></h1>
+            <?php if ($sub_title !== ""):
+                    echo '<p class="breadcrumb-subtitle">' .$sub_title.'</p>';
+                  else:
+                    echo "";
+                  endif;
+            ?>
+            <?php } ?>
+            <?php /*endif; */?>
 
-	</div>
+        </div>
 
-  </div>
+    </div>
 </section>

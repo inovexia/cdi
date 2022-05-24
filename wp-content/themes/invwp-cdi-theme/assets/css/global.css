@@ -1562,7 +1562,7 @@ form.woocommerce-form-login {
 .collapse {}
 
 .collapse .collapse-item {
-  border-bottom: 1px #ccc;
+  border-bottom: 1px solid #EAEDF1;
 }
 
 .collapse .collapsible {
@@ -1570,6 +1570,7 @@ form.woocommerce-form-login {
   width: 90%;
   text-align: left;
   outline: none;
+  margin-bottom: 22px;
 }
 
 .collapse ul li {
@@ -1580,13 +1581,17 @@ form.woocommerce-form-login {
 .collapse .collapsible:hover {}
 
 .collapse .collapsible:after {
-  content: '\002B';
+  content: '\f107';
   float: right;
   margin-left: 5px;
+  font-family: "Font Awesome 5 Free";
+  color: #C9D3D6;
+  font-size: 22px;
 }
 
 .collapse .active:after {
-  content: "\2212";
+  content: "\f106";
+  color: #037E9B;
 }
 
 .collapse .content {
