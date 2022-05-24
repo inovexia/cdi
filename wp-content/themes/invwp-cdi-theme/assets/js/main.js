@@ -42,6 +42,7 @@
 
 /* Offcanvas Sidepanel */
 function openNav() {
+  alert ()
   document.getElementById("minicart-nav").style.right = "0";
 }
 
@@ -76,15 +77,12 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpenTab").click();
 
 jQuery(document).ready(function () {
-  // jQuery("#desktopSearch input, .mobile-search-box .search-field").attr(
-  //   "placeholder",
-  //   "Search for brand, product, category..."
-  // );
+  jQuery("#desktopSearch input, .mobile-search-box .search-field").attr(
+    "placeholder",
+    "Search for brand, product, category..."
+  );
   jQuery("#menu-toggler").click(function () {
     jQuery(".mob-mega-menu").toggleClass("left-0");
-  });
-  jQuery(".mob-menu-header .close-btn").click(function () {
-    jQuery(".mob-mega-menu").removeClass("left-0");
   });
 });
 
@@ -113,10 +111,10 @@ var collapse = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < collapse.length; i++) {
-  collapse[i].addEventListener("click", function () {
+  collapse[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
+    if (content.style.maxHeight){
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
