@@ -434,6 +434,7 @@
 		margin: 45px auto 0px;
 		padding-bottom: 60px;
 		list-style: none;
+		padding-left: 0;
 	}
 
 	.product-list .page-numbers li {
@@ -453,6 +454,10 @@
 		color: #000;
 	}
 
+	.product-list .page-numbers .page-numbers.current {
+		color: #037E9B;
+	}
+
 	.product-list .page-numbers li a {
 		padding-bottom: 0px;
 	}
@@ -460,6 +465,7 @@
 	.product-list .page-numbers li a.prev,
 	.product-list .page-numbers li a.next {
 		font-weight: 700;
+		color: #037E9B;
 	}
 
 	/* Pagination End */
@@ -632,6 +638,7 @@
 	.wc-container {
 		padding: 35px 40px;
 		background-position: center center;
+		background: #F9FAFB;
 	}
 
 	.breadcrumb-subtitle {
