@@ -16,7 +16,7 @@ get_header( 'shop' );
 
 <div class="container">
 
-			<div class="brands">
+			<div class="brands section-margin">
         <h2><?php the_title (); ?></h2>
         	<div class="row">
 

@@ -1,4 +1,7 @@
 @media (min-width:0) {
+	.woocommerce-products-header {
+		padding: 20px 0;
+	}
 
 	/* .woocommerce-products-header.clearfix {
 		padding: 50px 0px 20px;
@@ -547,10 +550,7 @@
 }
 
 @media (min-width:992px) {
-	.woocommerce-products-header.clearfix {
-		padding: 0;
-	}
-
+	
 	.sidebar-left .collapsible a {
 		font-size: 18px;
 		line-height: 24px;

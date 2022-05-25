@@ -180,7 +180,7 @@
     .woocommerce-cart .cart-product-quantity .quantity button {
         width: 30px;
         height: 30px;
-        background-color: #000;
+        background-color: #037e9b;
         border: none;
         border-radius: 50px;
         text-align: center;
@@ -466,12 +466,25 @@
     }
 
     /* End Cart page CSS */
-
+    .cart-page-bottom-section .checkout-button, .cart-page-bottom-section .cart-page-buttons .button-primary {
+        padding: 10px;
+        vertical-align: middle;
+        line-height: 25px;
+    }
+    .cart-page-bottom-section .cart-custom-message {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .cart-page-bottom-section .cart-custom-message {
+        margin-bottom: 0;
+    }
+    .cart-page-bottom-section .cart-custom-message {
+        margin-right: 40px;
+    }
     .woocommerce-cart .cart-entry-header {
         padding: 66px 0px 30px;
     }

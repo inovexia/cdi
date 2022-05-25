@@ -1,5 +1,5 @@
 <section class="woocommerce-products-header clearfix ">
-    <div class="container wc-container" <?php if(is_shop() || is_product_category()){?>
+    <div class="container" <?php if(is_shop() || is_product_category()){?>
         style="background-image:url('<?php echo get_template_directory_uri () . '/assets/images/shop-banner.png'; ?>')"
         <?php } ?>>
         <?php
