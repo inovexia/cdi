@@ -31,15 +31,20 @@ do_action( 'woocommerce_before_main_content' );
 ?>
 
 <section class="full-width product-list">
-  <div class="container">
-    <div class="row">
-        <div class="col-3">
-          <?php get_sidebar('shop'); ?>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 sidebar-left-outer">
+                <?php get_sidebar('shop'); ?>
+                <div class="sidebar-back-btn"><span>BACK</span></div>
+            </div>
 
-        <div class="col-9 all-products">
-
-          <?php
+            <div class="col-9 all-products">
+                <div class="mobile-filetr-icon">
+                    <div class="col-6">
+                        <span class="filter-open"><i class="fas fa-filter"></i>Filetr By</span>
+                    </div>
+                </div>
+                <?php
     				if ( woocommerce_product_loop() ) {
 
       					/**
@@ -68,9 +73,9 @@ do_action( 'woocommerce_before_main_content' );
 
     					  woocommerce_product_loop_end();
     					?>
-              <div class="clearfix"></div>
-              <p>
-                  <?php
+                <div class="clearfix"></div>
+                <p>
+                    <?php
       						/**
       						 * Hook: woocommerce_after_shop_loop.
       						 *
@@ -78,9 +83,9 @@ do_action( 'woocommerce_before_main_content' );
       						 */
       						do_action('woocommerce_after_shop_loop');
       						?>
-              </p>
+                </p>
 
-              <?php
+                <?php
 
     				} else {
     					/**
@@ -106,10 +111,11 @@ do_action( 'woocommerce_before_main_content' );
             do_action( 'invwp_woocommerce_featured_products' );
 
     				?>
+            </div>
         </div>
     </div>
-  </div>
 </section>
+
 <?php
 
 /**

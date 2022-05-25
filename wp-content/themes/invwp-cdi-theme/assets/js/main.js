@@ -82,6 +82,18 @@ jQuery(document).ready(function () {
   jQuery(".mob-mega-menu .close-btn").click(function () {
     jQuery(".mob-mega-menu").removeClass("left-0");
   });
+
+  // Left Sidebar For Mobile
+
+  jQuery(".filter-open").click(function () {
+    jQuery(".sidebar-left-outer").toggleClass("left-0");
+  });
+  jQuery(".sidebar-back-btn > span").click(function () {
+    jQuery(".sidebar-left-outer").removeClass("left-0");
+  });
+  jQuery(".shopfilterclose").click(function () {
+    jQuery(".sidebar-left-outer").removeClass("left-0");
+  });
 });
 
 jQuery(document).ready(function () {
