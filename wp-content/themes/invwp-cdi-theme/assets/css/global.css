@@ -868,9 +868,11 @@ header .nav-right-icons {
 .mb-5 {
   margin-bottom: 10px;
 }
+
 .pr-6 {
   padding-right: 15px;
 }
+
 .pb-0 {
   padding-bottom: 0;
 }
@@ -1585,16 +1587,26 @@ form.woocommerce-form-login {
 .collapse .collapsible:hover {}
 
 .collapse .collapsible:after {
-  content: '\f107';
+  content: '\f078';
   float: right;
   margin-left: 5px;
   font-family: "Font Awesome 5 Free";
   color: #C9D3D6;
-  font-size: 22px;
+  font-size: 18px;
 }
 
-.collapse .active:after {
-  content: "\f106";
+@media (min-width:0) and (max-width:767px) {
+  .shopfilterclose::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    left: 20px;
+    position: absolute;
+  }
+}
+
+.collapse .active::after {
+  content: "\f077";
   color: #037E9B;
 }
 
