@@ -45,32 +45,32 @@
       $sub_title = 'Edit your personal information.';
     }
     ?>
-	<div class="woocommerce-products-header">
-		<?php /*if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-			<?php
-			/**
-			 * Hook: woocommerce_archive_description.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 * /
-			do_action( 'woocommerce_archive_description' );
-			?>
-		<?php else: */?>
-			<?php if (! is_front_page()) { ?>
-				<?php
-				$args = array(
-				  'delimiter' => ' > ',
-				  'before' => ''
-				);
-				woocommerce_breadcrumb($args);
-				?>
-				<h1 class="woocommerce-products-header__title page-title "><?php echo $title; ?></h1>
-			<?php } ?>
-		<?php /*endif; */?>
+  	<div class="woocommerce-products-header">
+  		<?php /*if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+  			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+  			<?php
+  			/**
+  			 * Hook: woocommerce_archive_description.
+  			 *
+  			 * @hooked woocommerce_taxonomy_archive_description - 10
+  			 * @hooked woocommerce_product_archive_description - 10
+  			 * /
+  			do_action( 'woocommerce_archive_description' );
+  			?>
+  		<?php else: */?>
+  			<?php if (! is_front_page()) { ?>
+  				<?php
+  				$args = array(
+  				  'delimiter' => ' > ',
+  				  'before' => ''
+  				);
+  				woocommerce_breadcrumb($args);
+  				?>
+  				<h1 class="woocommerce-products-header__title page-title "><?php echo $title; ?></h1>
+  			<?php } ?>
+  		<?php /*endif; */?>
 
-	</div>
+  	</div>
 
   </div>
 </section>
