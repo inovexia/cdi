@@ -2,7 +2,7 @@
   $(document).ready(function () {
     // Home Blogs Slider
     new Swiper(".home-industry-slider", {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
@@ -17,7 +17,7 @@
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 3,

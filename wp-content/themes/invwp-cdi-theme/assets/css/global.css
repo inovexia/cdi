@@ -734,7 +734,7 @@ header .nav-right-icons {
   font-weight: var(--font-weight-medium);
   font-style: normal;
   text-align: center;
-  margin: 5px;
+  margin: 5px 0;
   width: 233px;
   height: 45px;
 }

@@ -39,8 +39,11 @@ section#custom-checkout-progressbar input, section#custom-checkout-progressbar .
     border: none;
     margin-top: 5px;
 }
-section#custom-checkout-progressbar .select2 .select2-selection__rendered  {
+section#custom-checkout-progressbar .select2 .select2-selection__rendered {
     border: none !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+    background: transparent;
 }
 .select2-container--default .select2-selection--single {
     background-color: transparent;
