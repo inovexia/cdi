@@ -49,7 +49,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -354,7 +354,7 @@ header .nav-right-icons {
 }
 
 .dropbtn {
-  padding: 5px;
+  /* padding: 5px; */
   border: none;
 }
 
@@ -385,10 +385,6 @@ header .nav-right-icons {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
 }
 
 @media (min-width:0) {
@@ -423,7 +419,8 @@ header .nav-right-icons {
   footer ul {
     padding: 0;
     list-style: none;
-    display: unset;
+    display: inline-block;
+    margin: 0px;
   }
 
   .social-icons ul {
@@ -468,7 +465,7 @@ header .nav-right-icons {
   }
 
   .top-footer-contact section p {
-    margin-top: 16px;
+    margin-top: 0px;
     margin-bottom: 0;
   }
 
@@ -499,6 +496,16 @@ header .nav-right-icons {
 
 /* Navigation menu Only for mobile and < tablet devices */
 @media screen and (max-width: 767px) {
+
+  footer .top-footer-menu .widget-title,
+  footer .top-footer-customer-service .widget-title,
+  footer .top-footer-contact h6 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: "OSR";
+    margin-bottom: 20px;
+  }
+
   .section-padding {
     padding: 30px 0px !important;
   }
@@ -645,7 +652,12 @@ header .nav-right-icons {
 
 @media only screen and (min-width: 768px) {
   footer .top-footer-contact h6 {
-    margin-bottom: 45px;
+    margin-bottom: 24px;
+  }
+
+  .top-footer-contact section.widget_text {
+    margin-top: 0 !important;
+    margin-bottom: 12px;
   }
 
   footer .top-footer {
@@ -657,11 +669,11 @@ header .nav-right-icons {
   }
 
   .widget2 section h6 {
-    margin-bottom: 35px;
+    margin-bottom: 24px;
   }
 
   .top-footer-menu h6 {
-    margin-bottom: 35px;
+    margin-bottom: 24px;
   }
 
   footer .top-footer-about {
@@ -714,9 +726,12 @@ header .nav-right-icons {
     justify-content: space-between;
   }
 
-  header .nav-menu li,
+  header .nav-menu li {
+    margin: 0px 10px;
+  }
+
   header .nav-menu-right li {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   header .menu-toggler {
@@ -1242,7 +1257,7 @@ footer .top-footer-menu .widget-title {
   font-style: normal;
   line-height: 26px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--white);
   margin-top: 58px;
 }
@@ -1257,7 +1272,7 @@ footer .top-footer-menu li a {
 }
 
 footer .top-footer-menu li {
-  margin-top: 14px;
+  margin-bottom: 12px;
   float: left;
   width: 50%;
 }
@@ -1279,23 +1294,55 @@ footer .top-footer-newslettert .widget_block h6 {
   padding: 0 !important;
 }
 
-/* Customer Menu */
-footer .top-footer-customer-service .widget-title {
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-l);
-  font-weight: var(--font-weight-regular);
-  font-style: normal;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-top: 58px;
+@media (min-width:0) {
+  footer .top-footer-customer-service .widget-title {
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 28px;
+  }
+
+  /* Contact Menu */
+  footer .top-footer-contact h6 {
+    font-family: var(--font-family-lato);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 28px;
+  }
 }
 
+@media (min-width:768px) {
+  footer .top-footer-customer-service .widget-title {
+    margin-top: 58px;
+  }
+
+  /* Contact Menu */
+  footer .top-footer-contact h6 {
+    margin-top: 58px;
+  }
+}
+
+/* Customer Menu */
+
+
 footer .top-footer-customer-service li {
-  margin-top: 14px;
+  margin-bottom: 12px;
   float: left;
   width: 50%;
+}
+
+footer .top-footer-customer-service li:last-child {
+  margin-bottom: 0;
 }
 
 footer .top-footer-customer-service li a {
@@ -1307,18 +1354,7 @@ footer .top-footer-customer-service li a {
   color: #FFFFFF;
 }
 
-/* Contact Menu */
-footer .top-footer-contact h6 {
-  font-family: var(--font-family-lato);
-  font-size: var(--font-size-l);
-  font-weight: var(--font-weight-regular);
-  font-style: normal;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-top: 58px;
-}
+
 
 footer .top-footer-contact .widget {
   font-family: var(--font-family-open-sans);
@@ -1522,40 +1558,46 @@ form.woocommerce-form-login {
 }
 
 
-/* Accordian */
-.accordion .accordion-title {
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  padding: 5px 10px;
+/* Collapsible/Accordion */
+.collapse {}
+
+.collapse .collapse-item {
+  border-bottom: 1px solid #EAEDF1;
+}
+
+.collapse .collapsible {
   cursor: pointer;
-  transition: background-color 0.2s linear;
-  margin: 10px 0;
+  width: 90%;
+  text-align: left;
+  outline: none;
+  margin-bottom: 22px;
 }
 
-.accordion .accordion-title:after {
-  font-family: FontAwesome;
-  content: "\f078";
-  font-family: "fontawesome";
+.collapse ul li {
+  list-style: none;
+}
+
+.collapse .active,
+.collapse .collapsible:hover {}
+
+.collapse .collapsible:after {
+  content: '\f107';
   float: right;
+  margin-left: 5px;
+  font-family: "Font Awesome 5 Free";
+  color: #C9D3D6;
+  font-size: 22px;
 }
 
-.accordion .accordion-title.is-open:after {
-  content: "\f077";
+.collapse .active:after {
+  content: "\f106";
+  color: #037E9B;
 }
 
-.accordion .accordion-title.is-open {
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-
-.accordion .accordion-content {
-  background-color: white;
-  padding: 0 10px;
+.collapse .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-out;
 }
 
 /* ----==== Minicart ===---- */
@@ -1567,13 +1609,14 @@ form.woocommerce-form-login {
   z-index: 9999;
   top: 0;
   right: -100%;
-  background-color: #F1F1F1;
+  background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
-  padding: 50px 58px;
-  border-radius: 27px 0px 0px 27px;
+  padding: 20px;
+  border-radius: 0px;
   overflow-x: hidden;
   height: 100%;
+  box-shadow: 0px 0px 3px 1px #037E9B;
 }
 
 
@@ -1593,4 +1636,14 @@ form.woocommerce-form-login {
 .minicart .closebtn:hover {
   color: #1E1E1E;
   opacity: 1;
+}
+
+@media (min-width:992px) {
+  header .nav-menu li {
+    margin: 0px 33px;
+  }
+
+  .minicart {
+    padding: 50px 58px;
+  }
 }

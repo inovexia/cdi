@@ -15,6 +15,12 @@
 .home-shop .col-7 video {
   display: none;
 }
+
+.faq-section {
+  background: #F9FAFB;
+  padding: 50px 0;
+}
+
 .home-banner-section .hero-title {
 font-family: var(--font-family-open-sans);
 font-size: var(--font-size-Vxl);
@@ -404,3 +410,105 @@ cursor: pointer;
   }
 }
 
+/*Laptop*/
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1920px) {
+  .home-banner-section {
+    background-position: top center !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-about-us {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-about-us .container .col-7,
+  .content-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .home-about-us .container .col-5 .section-title {
+    display: block;
+  }
+
+  .home-about-us .container .col-7 .section-title {
+    display: none;
+  }
+
+  .home-about-us .container .col-7 .section-description {
+    padding-top: 20px;
+  }
+
+  .home-shop .container .row .col-5 img {
+    display: none;
+  }
+
+  .home-shop .container .row .col-5 video {
+    display: block;
+  }
+
+  .home-shop .col-5 h3.section-title {
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-m-xxl);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .home-about-us .container .col-7 img {
+    display: none;
+  }
+
+  .home-about-us .button,
+  .home-shop .button {
+    width: 100%;
+  }
+
+  .home-industry-slider h5 a {
+    color: var(--faux-cg-blue);
+  }
+
+  .home-shop .container .col-12 .section-title {
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-m-IVxl);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 36px;
+  }
+
+  .home-shop .container .col-7 img {
+    display: none;
+  }
+
+  .product-categories {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  footer .payment-options section:first-child {
+    display: block;
+  }
+
+  footer .bottom-footer .social-icons {
+    top: 55px;
+  }
+
+  footer .bottom-footer {
+    height: auto;
+  }
+
+  footer .top-footer {
+    padding: 40px 0px;
+  }
+
+  .top-footer-newslettert .widget_block div {
+    padding: 0 !important;
+  }
+}
