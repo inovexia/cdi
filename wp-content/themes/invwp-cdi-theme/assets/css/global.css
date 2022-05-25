@@ -868,7 +868,9 @@ header .nav-right-icons {
 .mb-5 {
   margin-bottom: 10px;
 }
-
+.pr-6 {
+  padding-right: 15px;
+}
 .pb-0 {
   padding-bottom: 0;
 }

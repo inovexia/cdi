@@ -179,10 +179,11 @@ do_action( 'woocommerce_before_cart' ); ?>
   		do_action( 'woocommerce_cart_collaterals' );
   	?>
   </div>
-  <?php do_action( 'invwp_woocommerce_product_group_buy' ); ?>
+  
 </form>
 
 <div class="cart-page-bottom-section">
+<?php do_action( 'invwp_woocommerce_product_group_buy' ); ?>
     <?php do_action( 'woocommerce_after_cart' ); ?>
     <div class="cart-footer-right">
         <div class="cart-page-buttons">
