@@ -40,6 +40,19 @@ if ( post_password_required() ) {
                 </div>
                 <div class="product-outer col-9">
                     <div class="col-6 product-data-right">
+                        <div class="product-title mob-d-block">
+                            <?php
+										/*
+										 * Custom action:
+										 * @hooked plugins/custom-layout.php
+										 * Show product title and price
+										*/
+										do_action( 'invwp_woocommerce_single_product_summary' );
+										?>
+                        </div>
+                        <div class="category-info mob-d-block">
+                            <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in_category">' . _n( '', '', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+                        </div>
                         <?php
 								/**
 								 * Hook: invwp_woocommerce_show_product_images.
@@ -120,17 +133,6 @@ if ( post_password_required() ) {
         <div class="row">
             <div class="col-12">
                 <?php do_action ('invwp_woocommerce_show_product_description'); ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="single-product-referral" class="product-section ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <?php get_template_part( 'template-parts/page/product-single/product-referral', 'product-referral'); ?>
             </div>
         </div>
     </div>

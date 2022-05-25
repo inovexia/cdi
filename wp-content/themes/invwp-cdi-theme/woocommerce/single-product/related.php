@@ -21,21 +21,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+<section class="related products">
 
-		<?php
+    <?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-		<?php endif; ?>
-		
-		<?php woocommerce_product_loop_start(); ?>
+    <h2><?php echo esc_html( $heading ); ?></h2>
+    <?php endif; ?>
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+    <?php woocommerce_product_loop_start(); ?>
 
-					<?php
+    <?php foreach ( $related_products as $related_product ) : ?>
+
+    <?php
 					$post_object = get_post( $related_product->get_id() );
 
 					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
@@ -43,12 +43,12 @@ if ( $related_products ) : ?>
 					wc_get_template_part( 'content', 'product' );
 					?>
 
-			<?php endforeach; ?>
+    <?php endforeach; ?>
 
-		<?php woocommerce_product_loop_end(); ?>
+    <?php woocommerce_product_loop_end(); ?>
 
-	</section>
-	<?php
+</section>
+<?php
 endif;
 
 wp_reset_postdata();

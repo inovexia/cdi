@@ -518,6 +518,12 @@
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .top-header-search .woocommerce-product-search {
+        display: inline-flex;
+        align-items: center;
+        height: 28px;
+    }
+
     .nav-item.sign-in-btn {
         display: block;
     }

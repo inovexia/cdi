@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post;
+global $product;
 
 $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
@@ -29,5 +30,19 @@ if ( ! $short_description ) {
 
 ?>
 <div class="woocommerce-product-details__short-description">
-	<?php echo $short_description; // WPCS: XSS ok. ?>
+    <div class="category-info">
+        <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in_category">' . _n( '', '', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+    </div>
+    <div class="short-description">
+        <span>Description</span>
+
+        <?php
+if($short_description !== ""){
+echo $short_description;
+} 
+else{
+	echo "Short description not added.";
+}  ?>
+    </div>
+
 </div>
