@@ -11,12 +11,12 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<!-- Footer Loader File -->
-		<?php get_template_part('template-parts/footer/footer'); ?>
+<footer id="colophon" class="site-footer">
+    <!-- Footer Loader File -->
+    <?php get_template_part('template-parts/footer/footer'); ?>
 
-	</footer><!-- #colophon -->
-	
+</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <!-- Include login-registration modal template -->
@@ -27,4 +27,5 @@
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
