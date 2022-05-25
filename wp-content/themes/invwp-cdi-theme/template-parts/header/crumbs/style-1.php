@@ -1,9 +1,11 @@
 <section class="woocommerce-products-header clearfix ">
-  <div class="container">
-    <?php
+    <div class="container wc-container" <?php if(is_shop() || is_product_category()){?>
+        style="background-image:url('<?php echo get_template_directory_uri () . '/assets/images/shop-banner.png'; ?>')"
+        <?php } ?>>
+        <?php
     if (is_shop()) {
-      $title = 'OUR PRODUCTS';
-      $sub_title = 'Discover our online catalogue by category.';
+      $title = 'BROWSE MEDICATION';
+      $sub_title = 'Check out our wide range of fillers and injectables.';
     } else if ( is_product()) {
       $title = '';
       $sub_title = '';

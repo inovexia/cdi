@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-6">
                     <div class="top-header-search">
-                        <?php get_search_form(); ?>
+                        <?php get_product_search_form(); ?>
                     </div>
                 </div>
             </div>

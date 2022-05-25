@@ -11,23 +11,17 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 
-    <?php
-      $sidebar = get_field('sidebar', 'option');
-
-      if($sidebar == 1 || $sidebar == 3){
-        get_sidebar('left');
-      }
-    ?>
+    
 
       <div class="content">
 
-          <section class="section-privacyfullwidth">
+          <section class="section-privacyfullwidth section-margin">
             <div class="container">
               <div class="row">
                 <div class="col-12 privacy-inner-content">
                   <h4 class="text-uppercase"><?php echo the_field('conditions_title'); ?></h4>
                   <div class="">
-                    <p><?php echo the_field('condition_content'); ?></p>
+                    <p><?php echo the_content(); ?></p>
                   </div>
                 </div>
               </div>
@@ -36,11 +30,7 @@ get_header();
 
       </div>
 
-    <?php
-          if($sidebar == 2 || $sidebar == 3){
-            get_sidebar('right');
-          }
-    ?>
+
 
 </main><!-- #main -->
 <?php get_footer(); ?>

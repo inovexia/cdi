@@ -329,6 +329,10 @@
         display: none;
     }
 
+    .nav-menu-right .nav-item .nav-item {
+        margin-left: 0;
+    }
+
     .mob-search img {
         position: absolute;
         width: 15px;

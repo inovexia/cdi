@@ -23,14 +23,14 @@ function mspa_checkout_fields_priority($fields) {
   $fields['billing']['billing_first_name']['priority'] = 1;
   $fields['billing']['billing_last_name']['priority'] = 2;
 
-  $fields['billing']['billing_country']['priority'] = 4;
-  $fields['billing']['billing_state']['priority'] = 5;
-
-  $fields['billing']['billing_address_1']['priority'] = 6;
+  $fields['billing']['billing_country']['priority'] = 3;
+  $fields['billing']['billing_state']['priority'] = 4;
+  $fields['billing']['billing_city']['priority'] = 5;
+  $fields['billing']['billing_postcode']['priority'] = 6;
+  $fields['billing']['billing_address_1']['priority'] = 7;
 
 //  $fields['billing']['billing_address_2']['priority'] = 7;
-  $fields['billing']['billing_city']['priority'] = 8;
-  $fields['billing']['billing_postcode']['priority'] = 9;
+  
 
   $fields['billing']['billing_email']['priority'] = 10;
   $fields['billing']['billing_phone']['priority'] = 11;
@@ -58,11 +58,11 @@ function mspa_checkout_fields_layout ( $fields ) {
 
     $fields['billing']['billing_country']['class'][0] = 'form-row-wide  ';
     $fields['billing']['billing_state']['class'][0] = 'form-row-wide  ';
-
+	$fields['billing']['billing_city']['class'][0] = 'form-row-first  ';
+	$fields['billing']['billing_postcode']['class'][0] = 'form-row-last  ';
 		$fields['billing']['billing_address_1']['class'][0] = 'form-row-wide';
 
-		$fields['billing']['billing_city']['class'][0] = 'form-row-first  ';
-		$fields['billing']['billing_postcode']['class'][0] = 'form-row-last  ';
+		
 
 		$fields['billing']['billing_email']['class'][0] = 'form-row-first  ';
 		$fields['billing']['billing_phone']['class'][0] = 'form-row-last  ';
@@ -70,7 +70,7 @@ function mspa_checkout_fields_layout ( $fields ) {
 		$fields['billing']['billing_company']['class'][0] = 'form-row-first  ';
 		$fields['billing']['billing_contact_name']['class'][0] = 'form-row-last  ';
 
-		$fields['billing']['billing_vat_number']['class'][0] = 'form-row-last  ';
+		$fields['billing']['billing_vat_number']['class'][0] = 'form-row-wide ';
 
   	return $fields;
 }

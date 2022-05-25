@@ -57,8 +57,8 @@ function invx_add_theme_scripts () {
 		wp_enqueue_style( 'invwps-magenta-css', get_template_directory_uri () . '/assets/css/magenta.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-blog-and-single-blog-css', get_template_directory_uri () . '/assets/css/blog-and-single-blog.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-referral-css', get_template_directory_uri () . '/assets/css/referral.css', array(), _S_VERSION, 'all' );
-
-		wp_enqueue_style( 'invwps-referral-css', get_template_directory_uri () . '/assets/css/referral.css', array(), _S_VERSION, 'all' );
+		
+		wp_enqueue_style( 'invwps-search-page-css', get_template_directory_uri () . '/assets/css/search-page.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-blogs-category-css', get_template_directory_uri () . '/assets/css/blogs-category.css', array(), _S_VERSION, 'all' );
 }
 
