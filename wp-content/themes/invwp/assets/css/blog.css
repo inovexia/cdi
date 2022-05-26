@@ -7,7 +7,8 @@
 .blog-column {
   background-color: var(--alice-blue);
 }
-.blog-column h4{
+
+.blog-column h4 {
   color: var(--faux-cg-blue);
   font-size: var(--font-size-xxxl);
   line-height: 28px;
@@ -20,56 +21,62 @@
   padding-bottom: 50px;
 }
 
-@media only screen and (min-width: 375px ) {
 
-}
 
-@media only screen and (min-width: 425px ) {
+@media only screen and (min-width: 375px) {}
 
-}
+@media only screen and (min-width: 425px) {}
 
 /*Tablet*/
-@media only screen and (min-width: 768px ) {
-  .order-about-us .container .col-5 .section-title{
+@media only screen and (min-width: 768px) {
+  .order-about-us .container .col-5 .section-title {
     display: none;
   }
-  
+
 }
 
 /*Laptop*/
-@media only screen and (min-width: 1024px ) {
+@media only screen and (min-width: 1024px) {}
 
-}
-@media only screen and (min-width: 1920px ) {
-  .order-banner-section{
-	background-position: top center !important;
+@media only screen and (min-width: 1920px) {
+  .order-banner-section {
+    background-position: top center !important;
   }
 }
-@media only screen and (max-width: 767px ) {
+
+@media only screen and (max-width: 767px) {
   .order-about-us {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .order-about-us .container .col-7 ,.content-wrap{
+
+  .order-about-us .container .col-7,
+  .content-wrap {
     padding-left: 0;
     padding-right: 0;
   }
-  .order-about-us .container .col-5 .section-title{
+
+  .order-about-us .container .col-5 .section-title {
     display: block;
   }
-  .order-about-us .container .col-7 .section-title{
+
+  .order-about-us .container .col-7 .section-title {
     display: none;
   }
-  .order-about-us .container .col-7 .section-description{
+
+  .order-about-us .container .col-7 .section-description {
     padding-top: 20px;
   }
-  .order-shop .container .row .col-5 img{
+
+  .order-shop .container .row .col-5 img {
     display: none;
   }
-  .order-shop .container .row .col-5 video{
+
+  .order-shop .container .row .col-5 video {
     display: block;
   }
-  .order-shop .col-5 h3.section-title{
+
+  .order-shop .col-5 h3.section-title {
     font-family: var(--font-family-open-sans);
     font-size: var(--font-size-m-xxl);
     font-weight: var(--font-weight-regular);
@@ -79,16 +86,21 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .order-about-us .container .col-7 img{
+
+  .order-about-us .container .col-7 img {
     display: none;
   }
-  .order-about-us .button, .order-shop .button{
+
+  .order-about-us .button,
+  .order-shop .button {
     width: 100%;
   }
-  .order-industry-slider h5 a{
+
+  .order-industry-slider h5 a {
     color: var(--faux-cg-blue);
   }
-  .order-shop .container .col-12 .section-title{
+
+  .order-shop .container .col-12 .section-title {
     font-family: var(--font-family-open-sans);
     font-size: var(--font-size-m-IVxl);
     font-weight: var(--font-weight-regular);

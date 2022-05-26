@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
    'name' => 'product_cat',
    'value_field' => 'slug',
    'class' => 'something',
+	 'hierarchical'       => 1,
 	 'show_option_all'=> 'All Categories'
 	);
 	wp_dropdown_categories( $args );
