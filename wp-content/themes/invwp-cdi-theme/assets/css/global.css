@@ -189,12 +189,12 @@ header .top-header-style-2 a {
 
 header .top-header-search input {
   background: var(--faux-cg-blue1);
-  padding: 8px;
   border: 1px solid var(--faux-cg-blue1);
   color: var(--white);
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-regular);
-  line-height: 19px;
+  padding: 0px 20px;
+  height: 100%;
 }
 
 header .top-header-search input::-webkit-input-placeholder {
@@ -220,6 +220,8 @@ header .top-header-search input:-moz-placeholder {
 header .top-header-search button {
   margin-left: 0;
   width: 85px;
+  background-color: #fff;
+  height: 100%;
 }
 
 header .top-header-search form select {
@@ -240,8 +242,7 @@ header .top-header-search form select {
   text-indent: 1px;
   text-overflow: '';
   padding: 0 10px;
-  position: relative;
-  top: -1px;
+  position: unset;
 }
 
 header .top-header-search form select:focus-visible {
@@ -998,9 +999,11 @@ header .nav-right-icons {
 .d-none {
   display: none;
 }
+
 .mx-auto {
   margin: auto;
 }
+
 .clearfix {
   clear: both;
   content: "";

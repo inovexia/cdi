@@ -31,12 +31,17 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 product-data-left">
-                <div class="product-title">
-                    <?php
+<div class="single-product-content">
+    <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+        <div class="container">
+            <div class="row">
+                <div class="product-sidebar col-3">
+                    <?php get_sidebar('shop'); ?>
+                </div>
+                <div class="product-outer col-9">
+                    <div class="col-6 product-data-right">
+                        <div class="product-title mob-d-block">
+                            <?php
 										/*
 										 * Custom action:
 										 * @hooked plugins/custom-layout.php
@@ -44,29 +49,11 @@ if ( post_password_required() ) {
 										*/
 										do_action( 'invwp_woocommerce_single_product_summary' );
 										?>
-                </div>
-                <div class="single-product-rating">
-                    <?php
-										/*
-										 * Custom action:
-										 * @hooked plugins/custom-layout.php
-										 * show product rating
-										*/
-										do_action( 'invwp_woocommerce_show_product_rating' );
-										?>
-                </div>
-
-                <?php
-									/*
-									 * Custom action:
-									 * @hooked plugins/custom-layout.php
-									 * show product rating, excerpt, add_to_cart_button
-									*/
-									do_action( 'invwp_woocommerce_show_product_data' );
-								?>
-            </div>
-            <div class="col-6 product-data-right">
-                <?php
+                        </div>
+                        <div class="category-info mob-d-block">
+                            <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in_category">' . _n( '', '', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+                        </div>
+                        <?php
 								/**
 								 * Hook: invwp_woocommerce_show_product_images.
 								 *
@@ -75,10 +62,42 @@ if ( post_password_required() ) {
 								 */
 								do_action( 'invwp_woocommerce_show_product_images' );
 								?>
-            </div>
-        </div>
+                    </div>
+                    <div class="col-6 product-data-left">
+                        <div class="product-title">
+                            <?php
+										/*
+										 * Custom action:
+										 * @hooked plugins/custom-layout.php
+										 * Show product title and price
+										*/
+										do_action( 'invwp_woocommerce_single_product_summary' );
+										?>
+                        </div>
+                        <div class="single-product-rating">
+                            <?php
+										/*
+										 * Custom action:
+										 * @hooked plugins/custom-layout.php
+										 * show product rating
+										*/
+										do_action( 'invwp_woocommerce_show_product_rating' );
+										?>
+                        </div>
 
-        <?php
+                        <?php
+									/*
+									 * Custom action:
+									 * @hooked plugins/custom-layout.php
+									 * show product rating, excerpt, add_to_cart_button
+									*/
+									do_action( 'invwp_woocommerce_show_product_data' );
+								?>
+                    </div>
+                </div>
+            </div>
+
+            <?php
 				/**
 				 * Hook: woocommerce_before_single_product_summary.
 				 *
@@ -86,24 +105,25 @@ if ( post_password_required() ) {
 				do_action( 'woocommerce_before_single_product_summary' );
 				?>
 
-        <div class="summary entry-summary">
-            <?php
+            <div class="summary entry-summary">
+                <?php
 						/**
 						 * Hook: woocommerce_single_product_summary.
 						 *
 						 */
 						do_action( 'woocommerce_single_product_summary' );
 						?>
-        </div>
+            </div>
 
-        <div class="product-thumbnail-part">
-            <?php
+            <div class="product-thumbnail-part">
+                <?php
 						/**
 						 * Hook: woocommerce_before_single_product_summary.
 						 *
 						 */
 						do_action( 'woocommerce_before_single_product_summary' );
 						?>
+            </div>
         </div>
     </div>
 </div>
@@ -113,17 +133,6 @@ if ( post_password_required() ) {
         <div class="row">
             <div class="col-12">
                 <?php do_action ('invwp_woocommerce_show_product_description'); ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="single-product-referral" class="product-section ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <?php get_template_part( 'template-parts/page/product-single/product-referral', 'product-referral'); ?>
             </div>
         </div>
     </div>
