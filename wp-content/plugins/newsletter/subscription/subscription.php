@@ -479,7 +479,14 @@ class NewsletterSubscription extends NewsletterModule {
 
         $subscription->data->language = $language;
         $subscription->optin = $this->is_double_optin() ? 'double' : 'single';
-        $subscription->if_exists = empty($this->options['multiple']) ? TNP_Subscription::EXISTING_ERROR : TNP_Subscription::EXISTING_MERGE;
+        
+        if (empty($this->options['multiple'])) {
+            $subscription->if_exists = TNP_Subscription::EXISTING_ERROR;
+        } else if ($this->options['multiple'] == 1) {
+            $subscription->if_exists = TNP_Subscription::EXISTING_MERGE;
+        } else {
+            $subscription->if_exists = TNP_Subscription::EXISTING_SINGLE_OPTIN;
+        }
 
         $lists = $this->get_lists();
         foreach ($lists as $list) {
@@ -530,7 +537,7 @@ class NewsletterSubscription extends NewsletterModule {
 
         // Exists?
         $user = $this->get_user_by_email($subscription->data->email);
-        
+
         $subscription = apply_filters('newsletter_subscription', $subscription, $user);
 
         // Do we accept repeated subscriptions?
@@ -538,7 +545,7 @@ class NewsletterSubscription extends NewsletterModule {
             //$this->show_message('error', $user);
             return new WP_Error('exists', 'Email address already registered and Newsletter sets to block repeated registrations. You can change this behavior or the user message above on subscription configuration panel.');
         }
-       
+
 
         if ($user != null) {
 
@@ -549,7 +556,7 @@ class NewsletterSubscription extends NewsletterModule {
             if ($user->status == TNP_User::STATUS_BOUNCED || $user->status == TNP_User::STATUS_COMPLAINED) {
                 return new WP_Error('bounced', 'Subscriber present and blocked');
             }
-            
+
             if ($user->status == TNP_User::STATUS_UNSUBSCRIBED) {
                 // Special behavior?
             }
@@ -585,7 +592,7 @@ class NewsletterSubscription extends NewsletterModule {
             $user->status = $subscription->optin == 'single' ? TNP_User::STATUS_CONFIRMED : TNP_User::STATUS_NOT_CONFIRMED;
             $user->updated = time();
         }
-        
+
         $user->ip = $this->process_ip($user->ip);
 
         $user = apply_filters('newsletter_user_subscribe', $user);
@@ -1260,7 +1267,7 @@ class NewsletterSubscription extends NewsletterModule {
 
         if (isset($attrs['confirmation_url'])) {
             if ($attrs['confirmation_url'] === '#') {
-                $attrs['confirmation_url'] = $_SERVER['REQUEST_URI'];
+                $attrs['confirmation_url'] = esc_url_raw($_SERVER['REQUEST_URI']);
             }
 
             $b .= '<input type="hidden" name="ncu" value="' . esc_attr($attrs['confirmation_url']) . '">';
@@ -1804,6 +1811,15 @@ class NewsletterSubscription extends NewsletterModule {
         $form .= $this->get_form_hidden_fields($attrs);
 
         $form .= '<input class="tnp-email" type="email" required name="ne" value="" placeholder="' . esc_attr($attrs['placeholder']) . '">';
+
+        if (isset($attrs['button_label'])) {
+            $label = $attrs['button_label'];
+        } else if (isset($attrs['button'])) { // Backward compatibility
+            $label = $attrs['button'];
+        } else {
+            $label = $this->form_options['subscribe'];
+        }
+
         $form .= '<input class="tnp-submit" type="submit" value="' . esc_attr($attrs['button']) . '"'
                 . ' style="background-color:' . esc_attr($attrs['button_color']) . '">';
 

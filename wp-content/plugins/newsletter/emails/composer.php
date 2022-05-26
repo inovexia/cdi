@@ -94,6 +94,14 @@ if ($controls->is_action()) {
             }
         } else {
             TNP_Composer::update_email($email, $controls);
+            
+            if (empty($email->options['text_message_mode'])) {
+                $text = TNP_Composer::convert_to_text($email->message);
+                if ($text) {
+                    $email->message_text = TNP_Composer::convert_to_text($email->message);
+                }
+            }
+            
             $email->updated = time();
             $email = Newsletter::instance()->save_email($email);
             TNP_Composer::prepare_controls($controls, $email);

@@ -141,7 +141,7 @@ class TNP_Composer {
             return "";
         }
 
-        $preheader_text = $email->options['preheader'];
+        $preheader_text = esc_html($email->options['preheader']);
         $html = "<div style=\"display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;\">$preheader_text</div>";
         $html .= "\n";
 
@@ -437,7 +437,7 @@ class TNP_Composer {
             }
             $b .= ' alt="' . esc_attr($media->alt) . '"'
                     . ' border="0"'
-                    . ' style="display: inline-block; max-width: 100%!important; padding: 0; border: 0;"'
+                    . ' style="display: inline-block; max-width: 100%!important; padding: 0; border: 0; font-size: 12px"'
                     . ' class="' . esc_attr($attr['class']) . '" '
                     . '>';
         }
@@ -665,8 +665,76 @@ class TNP_Composer {
 
         return $button_options;
     }
-
+    
+    static function convert_to_text($html) {
+        if (!class_exists('DOMDocument')) {
+            return '';
+        }
+        // Replace '&' with '&amp;' in URLs to avoid warnings about inavlid entities from loadHTML()
+        // Todo: make this more general using a regular expression
+        //$logger = PlaintextNewsletterAddon::$instance->get_logger();
+        //$logger->debug('html="' . $html . '"');
+        $html = str_replace( 
+            array('&nk=', '&nek=', '&id='),
+            array('&amp;nk=', '&amp;nek=', '&amp;id='),
+            $html);
+        //$logger->debug('new html="' . $html . '"');
+        //
+        $output = '';
+        $dom = new DOMDocument();
+        $r = $dom->loadHTML('<?xml encoding="utf-8" ?>' . $html);
+        if (!$r) {
+            return '';
+        }
+        $bodylist = $dom->getElementsByTagName('body');
+        // Of course it should be a single element
+        foreach ($bodylist as $body) {
+            self::process_dom_element($body, $output);
+        }
+        return $output;
+    }
+    
+    static function process_dom_element(DOMElement $parent, &$output) {
+        foreach ($parent->childNodes as $node) {
+            if (is_a($node, 'DOMElement') && ($node->tagName != 'style')) {
+          if ($node->tagName== 'br') {
+                    $output .= "\n";
+                    continue;
+                }
+                self::process_dom_element($node, $output);
+                
+                // If the containing tag was a block level tag, we add a couple of line ending
+                if ($node->tagName == 'p' || $node->tagName == 'div' || $node->tagName == 'td') {
+                    // Avoid more than one blank line between elements
+                    if ((strlen($output) >= 2) && (substr($output, -2) != "\n\n")) {
+                        $output .= "\n\n";
+                    }
+                }
+                
+                if ($node->tagName == 'a') {
+                    $output .= ' (' . $node->getAttribute('href') . ') ';
+                    continue;
+                }
+                elseif ($node->tagName == 'img') {
+                    $output .= $node->getAttribute('alt');
+                }
+            }
+            elseif (is_a($node, 'DOMText')) {
+                $decoded = utf8_decode($node->wholeText);
+                if (ctype_space($decoded)) {
+                    // Append blank only if last character output is not blank.
+                    if ((strlen($output) > 0) && !ctype_space(substr($output, -1))) {
+                        $output .= ' ';
+                    }
+                } else {
+                    $output .= trim($node->wholeText);
+                }
+            }
+        }
+    }
 }
+
+
 
 class TNP_Style {
 

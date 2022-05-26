@@ -555,7 +555,7 @@ $tnp_wpdb = new TNP_WPDB(DB_USER, DB_PASSWORD, DB_NAME, DB_HOST);
                                 <span class="tnp-maybe">MAY BE</span>
                             </td>
                             <td>
-                                Be sure Newsletter is set as active in EVERY context.
+                                Be sure Newsletter is set as active on EVERY context.
                             </td>
                         </tr>
                     <?php } ?>
@@ -567,10 +567,23 @@ $tnp_wpdb = new TNP_WPDB(DB_USER, DB_PASSWORD, DB_NAME, DB_HOST);
                                 <span class="tnp-maybe">MAY BE</span>
                             </td>
                             <td>
-                                Be sure Newsletter is set as active in EVERY context.
+                                Be sure Newsletter is set as active on EVERY context.
                             </td>
                         </tr>
                     <?php } ?>
+                        
+                    <?php if (is_plugin_active('freesoul-deactivate-plugins/freesoul-deactivate-plugins.php')) { ?>
+                        <tr>
+                            <td><a href="https://wordpress.org/plugins/freesoul-deactivate-plugins/" target="_blank">Freesoul Deactivate Plugins</a></td>
+                            <td>
+                                <span class="tnp-maybe">MAY BE</span>
+                            </td>
+                            <td>
+                                Be sure Newsletter is set as active on EVERY context.
+                            </td>
+                        </tr>
+                    <?php } ?>
+                        
                 </tbody>
             </table>
 
@@ -672,6 +685,44 @@ $tnp_wpdb = new TNP_WPDB(DB_USER, DB_PASSWORD, DB_NAME, DB_HOST);
                             <?php } ?>
                         </td>
                     </tr>
+
+
+                    <tr>
+                        <?php
+                        $attachments = get_posts([
+                            'post_type' => 'attachment',
+                            'post_mime_type' => 'image',
+                            'numberposts' => 1,
+                            'post_status' => null,
+                            'post_parent' => null
+                        ]);
+                        $condition = 1;
+                        $src = 'No media found to make a test';
+                        if ($attachments) {
+                            $src = wp_get_attachment_image_src($attachments[0]->ID);
+                            $src = $src[0];
+                            $condition = (strpos($src, 'http') !== 0) ? 0 : 1;
+                        }
+                        ?>
+                        <td>Images URL</td>
+                        <td>
+                            <?php $this->condition_flag($condition) ?>
+                        </td>
+                        <td>
+                            Example: <?php echo esc_html($src); ?>
+                           
+                            <?php if ($condition == 0) { ?>
+                                <br><br>
+                                Your uploadimages seems to be returned with a relative URL: they won't work in your newsletter. Check the <code>WP_CONTENT_URL</code>
+                                above and fix it if is showing a warning. If not, probably a plugin or some custom code is forcing relative URLs for your
+                                images. Check that with your site developer.
+                            <?php } else { ?>
+
+                            <?php } ?>
+                        </td>
+                    </tr>
+
+
 
                     <tr>
                         <?php

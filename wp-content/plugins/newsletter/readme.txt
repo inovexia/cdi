@@ -1,12 +1,12 @@
-=== Newsletter ===
-Tags: newsletter, email marketing, welcome email, signup forms, contact, lead generation, marketing automation
-Tested up to: 5.9.2
-Stable tag: 7.4.2
+=== Newsletter - Send awesome emails from WordPress ===
+Tags: newsletter, email marketing, welcome email, signup forms, lead generation, marketing automation
+Tested up to: 6.0
+Stable tag: 7.4.6
 Contributors: satollo,webagile,michael-travan
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Add a real newsletter system to your blog. For free. With unlimited newsletters and subscribers.
+An email marketing tool for your blog: subscription forms to create your lists with unlimited subscribers and newsletters.
 
 == Description ==
 
@@ -125,6 +125,31 @@ Thank you, The Newsletter Team
 3. The Reports extension
 
 == Changelog ==
+
+= 7.4.6 =
+
+* XSS security fix
+
+= 7.4.5 =
+
+* Fixed image block font-size to show the alt text (not for Outlook, it never shows the alt text)
+* XSS security fix
+
+= 7.4.4 =
+
+* Changed the dedicated page retrieval to intercept misconfigurations
+* Added option to accept repeated subscription in single opt-in (you should check if it is compatible with your privacy regulation)
+* Posts field selector keep now track of the previous post selected even if no more in list
+* Improved the error management when delivery fails using the WP native mailing function
+* Added title filter on posts block for compatibility with WPGlobus
+
+= 7.4.3 =
+
+* Removed obsolete note about the newsletter textual part
+* Introduced text part generator right now only for the Composer (with permission of Frank M.)
+* Added check on System>Status for images with relative URL
+* Addec check for Freesoul Deactivate Plugins
+* Minimal for layout now consider the button_label attribute
 
 = 7.4.2 =
 
