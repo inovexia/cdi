@@ -186,7 +186,7 @@ function invwp_woocommerce_cart_link() {
         <?php
 				$item_count_text = sprintf(
 					/* translators: number of items in the mini cart. */
-					_n( '(%d)', '(%d)', WC()->cart->get_cart_contents_count(), 'invwp' ),
+					_n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'invwp' ),
 					WC()->cart->get_cart_contents_count()
 				);
 				?>

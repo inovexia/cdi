@@ -185,9 +185,11 @@ if ($controls->is_action()) {
                         <tr>
                             <th><?php _e('Repeated subscriptions', 'newsletter')?></th>
                             <td>
-                                <?php $controls->select('multiple', array('0'=>__('Not allowed', 'newsletter'), '1'=>__('Allowed', 'newsletter'))); ?> 
+                                <?php $controls->select('multiple', ['0'=>__('Not allowed', 'newsletter'), '1'=>__('Allowed', 'newsletter'), 
+                                    '1'=>__('Allowed force single opt-in', 'newsletter')]); ?> 
                                 <br><br>
                                 <?php $controls->wp_editor('error_text'); ?>
+                                <p class="description">Shown only when "not allowed" is selected<p>
                             </td>
                         </tr>
                     </table>

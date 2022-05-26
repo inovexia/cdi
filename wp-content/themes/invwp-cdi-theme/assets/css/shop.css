@@ -609,6 +609,10 @@
 		display: none;
 	}
 
+	.all-products ul.products li.product {
+		width: 33.33%;
+	}
+
 	.all-products .product {
 		width: 33.33%;
 	}

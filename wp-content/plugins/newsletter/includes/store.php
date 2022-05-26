@@ -124,6 +124,8 @@ class NewsletterStore {
         foreach (array_keys($data) as $key) {
             if (substr($key, 0, 1) == '_') unset($data[$key]);
         }
+        
+        //$this->logger->debug($data);
 
         if (isset($data['id'])) {
             $id = (int)$data['id'];
