@@ -61,9 +61,12 @@ body {
 .d-none {
   display: none !important;
 }
-.post, .page {
+
+.post,
+.page {
   margin: 0;
 }
+
 @media only screen and (min-width: 1140px) {
   .container {
     max-width: var(--container-max-width);
@@ -435,7 +438,7 @@ header .nav-right-icons {
     list-style: none;
     display: flex;
     align-items: center;
-}
+  }
 
   .payment-options section {
     margin: 0;
@@ -654,11 +657,13 @@ header .nav-right-icons {
   }
 
 }
+
 .woocommerce-products-header.clearfix {
   border: 1px solid #dfdfdf;
   padding: 0;
   background: #F9FAFB;
 }
+
 @media only screen and (min-width: 768px) {
   footer .top-footer-contact h6 {
     margin-bottom: 24px;
@@ -1257,7 +1262,8 @@ footer .top-footer-contact h6 {
   text-transform: uppercase;
 }
 
-footer .top-footer-contact .widget_text p, footer .top-footer-contact .widget_text p a {
+footer .top-footer-contact .widget_text p,
+footer .top-footer-contact .widget_text p a {
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
@@ -1576,7 +1582,9 @@ form.woocommerce-form-login {
 
 
 /* Collapsible/Accordion */
-.collapse {}
+.collapsible a {
+  pointer-events: none;
+}
 
 .collapse .collapse-item {
   border-bottom: 1px solid #EAEDF1;
