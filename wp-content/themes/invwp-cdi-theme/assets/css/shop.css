@@ -44,7 +44,6 @@
 	}
 
 	.wc-container {
-		padding: 20px;
 		background-size: cover;
 		background-position: 70%;
 		background-repeat: no-repeat;
@@ -496,9 +495,6 @@
 
 	/* Start Rating End */
 	/* Shop Page Entry Header */
-	.wc-container {
-		padding: 20px;
-	}
 
 	.woocommerce-breadcrumb {
 		font-size: 14px;
@@ -640,7 +636,6 @@
 
 	/* Shop page entry header */
 	.wc-container {
-		padding: 35px 0;
 		background-position: center center;
 		background: #F9FAFB;
 		background-size: cover;

@@ -10,6 +10,7 @@ function invx_add_theme_scripts () {
 		wp_enqueue_script( 'invwps-swiper-bundle-js', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array(), _S_VERSION, true );
 		wp_enqueue_script( 'invwps-swiper-sliders-js', get_template_directory_uri() . '/assets/js/swiper-sliders.js', array(), _S_VERSION, true );
 		wp_enqueue_script( 'invwps-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
+		wp_enqueue_script( 'invwps-accordian-js', get_template_directory_uri() . '/assets/js/accordian.js', array(), _S_VERSION, true );
 
 		// For country/states dropdown lists
 		$wc_country = array(
@@ -47,6 +48,7 @@ function invx_add_theme_scripts () {
 		wp_enqueue_style( 'invwps-minicart-css', get_template_directory_uri () . '/assets/css/minicart.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-checkout-css', get_template_directory_uri () . '/assets/css/checkout.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-my-account-css', get_template_directory_uri () . '/assets/css/my-account.css', array(), _S_VERSION, 'all' );
+		wp_enqueue_style( 'invwps-accordian-css', get_template_directory_uri () . '/assets/css/accordian.css', array(), _S_VERSION, 'all' );
 
 		if (is_page ('home')) {
 			wp_enqueue_style( 'invwps-home-css', get_template_directory_uri () . '/assets/css/home.css', array(), _S_VERSION, 'all' );
