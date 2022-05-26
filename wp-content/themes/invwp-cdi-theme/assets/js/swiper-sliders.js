@@ -2,7 +2,6 @@
   $(document).ready(function () {
     // Home Blogs Slider
     new Swiper(".home-industry-slider", {
-      slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
@@ -17,7 +16,7 @@
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         1024: {
           slidesPerView: 3,
@@ -27,7 +26,6 @@
 
     // Homepage product category slider
     new Swiper(".home-product-category-slider", {
-      slidesPerView: 2,
       loop: true,
       spaceBetween: 20,
       pagination: {
@@ -46,14 +44,13 @@
           slidesPerView: 3,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
         },
       },
     });
 
     // related product slider
     new Swiper(".single-product-related-slider", {
-      slidesPerView: 1,
       loop: true,
       spaceBetween: 20,
       pagination: {
