@@ -17,9 +17,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--faux-cg-blue);
   }
-  .woocommerce-products-header {
-    padding: 20px 0;
-  }
+
   .three-column-cards {
     position: relative;
     width: 50%;
@@ -104,7 +102,17 @@
 .get-started-banner {
     padding: 70px 0px;
 }
-
+/*newsletter*/
+.newsletter-wrp {
+  padding: 20px;
+  background: #b4d9b4;
+  color: green;
+  margin-top: 40px;
+}
+.newsletter-wrp p {
+  color: green;
+  font-weight: 500;
+}
 }
 @media (min-width: 576px) {
 
@@ -114,7 +122,10 @@
  .brands .prod-category {
   margin-right: 15px;
 }
-
+.woocommerce-products-header {
+  padding: 20px 0;
+  border: none !important;
+}
 }
 @media (min-width: 992px) {
 

@@ -15,11 +15,10 @@ get_header();
 
       <div class="content">
 
-          <section class="section-privacyfullwidth section-margin">
+          <section class="section-privacyfullwidth section-margin section-padding">
             <div class="container">
               <div class="row">
                 <div class="col-12 privacy-inner-content">
-                  <h4 class="text-uppercase"><?php echo the_field('conditions_title'); ?></h4>
                   <div class="">
                     <p><?php echo the_content(); ?></p>
                   </div>

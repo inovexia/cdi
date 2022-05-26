@@ -1,4 +1,4 @@
-<section class="contact-banner">
+<!-- <section class="contact-banner">
 	<div class="container">
 	  <div class="bg-dark px-4 py-5 text-center">
 		<div class="py-5">
@@ -9,7 +9,7 @@
 		</div>
 	  </div>  
 	</div> 
-</section>
+</section> -->
   <div class="b-example-divider mb-0"></div>
   
 <section class="contact-col-section text-center">
@@ -22,10 +22,10 @@
           $y++;
           $tCount = $y;
           ?>
-          <div class="col-4 col-m-6">
+          <div class="col-4">
               <div class="">
-				<p class="section-icon pb-5"><i class="fas <?php echo the_sub_field('address_icon'); ?> pl-5"></i></p>
-				<h3 class="section-title pb-5"><?php echo the_sub_field('address_title'); ?></h3>
+				<p class="section-icon mb-3"><i class="fas <?php echo the_sub_field('address_icon'); ?>"></i></p>
+				<h5 class=""><?php echo the_sub_field('address_title'); ?></h5>
 				<p class="section-description"><?php echo the_sub_field('address_description'); ?></p>
               </div>
           </div>
