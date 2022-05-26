@@ -2,7 +2,7 @@
   .blog-page {
     padding: 0 0 50px 0;
 }
-.site-main p, .site-main .main-para, .single-blog p, .about-sec-one ul li {
+.site-main p, .site-main .main-para, .single-blog p, .about-sec-one ul li, .page-template-how-to-order ul li {
     font-family: var(--font-family-open-sans);
     font-size: 14px;
     font-weight: var(--font-weight-light);

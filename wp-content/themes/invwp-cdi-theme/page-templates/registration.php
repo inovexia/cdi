@@ -11,7 +11,7 @@
    ?>
 <main id="primary" class="site-main">
    <div class="content">
-      <section class="registration-section section-margin ">
+      <section class="registration-section section-margin section-padding">
          <div class="container">
             <div class="row">
                <div class="col-5 mx-auto">
@@ -149,12 +149,12 @@
                      <!-- Step 2 -->
                      <fieldset id="cur-step2" class="registtration-tab">
                         <div class="form-group row">
-                           <div class="col-4">
+                           <div class="col-6">
                            <label>Patient First and Name <span>*</span></label>
                               <input type="text" class="form-control" name="patient_first_name" id="reg_first_name" autocomplete="patient_first_name"
                                  value="<?php echo ( ! empty( $_POST['patient_first_name'] ) ) ? esc_attr( wp_unslash( $_POST['patient_first_name'] ) ) : ''; ?>" placeholder="First and Last name of Prescribed Patient" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
-                           <div class="col-4">
+                           <div class="col-6">
                            <label>Date of Birth <span>*</span></label>
                            <input type="date" id="birthday" name="date_of_birth">
                            </div>

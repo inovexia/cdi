@@ -1,8 +1,9 @@
 <section class="woocommerce-products-header clearfix ">
-    <div class="container">
-        <div class="wc-container" <?php if(is_shop() || is_product_category()){?>
+<div class="wc-container image-breadcrumb" <?php if(is_shop() || is_product_category()){?>
             style="background-image:url('<?php echo get_template_directory_uri () . '/assets/images/shop-banner.png'; ?>')"
             <?php } ?>>
+    <div class="container">
+        
             <?php
     if (is_shop()) {
       $title = 'BROWSE MEDICATION';

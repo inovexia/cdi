@@ -17,6 +17,15 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--faux-cg-blue);
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
   .three-column-cards {
     position: relative;
@@ -113,6 +122,44 @@
   color: green;
   font-weight: 500;
 }
+/*how to order*/
+.page-template-how-to-order ul {
+  padding-left: 8px;
+}
+/*404 page*/
+.error-404.not-found {
+  padding: 25px 0;
+}
+
+/*Registration*/
+
+#registration-form-wrp fieldset {
+  border: none;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#registration-form-wrp fieldset label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+}
+#registration-form-wrp fieldset input, #registration-form-wrp fieldset select {
+  background-color: var(--grey1);
+  border: 1px solid var(--white);
+  margin-bottom: 20px !important;
+  padding: 8px 15px !important;
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 26px;
+  outline: 0;
+  border-radius: 0;
+  width: 100% !important;
+}
+
 }
 @media (min-width: 576px) {
 

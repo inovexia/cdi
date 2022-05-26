@@ -18,7 +18,7 @@ get_header();
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'invwp' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<!-- <div class="page-content">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'invwp' ); ?></p>
 
 						<?php
@@ -42,17 +42,18 @@ get_header();
 								);
 								?>
 							</ul>
-						</div><!-- .widget -->
+						</div>
 
 						<?php
-						/* translators: %1$s: smiley */
+						
 						$invwp_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'invwp' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$invwp_archive_content" );
 
 						the_widget( 'WP_Widget_Tag_Cloud' );
 						?>
 
-				</div><!-- .page-content -->
+				</div> -->
+				<!-- .page-content -->
 			</section><!-- .error-404 -->
 		</div>
 

@@ -506,7 +506,9 @@
 		font-family: "OSR";
 		color: #1E1E1E;
 	}
-
+	.single-product-content .price bdi, .single-product-content .price span {
+		font-size: 22px !important;
+	}
 	/* End Shop page ntry header */
 
 }

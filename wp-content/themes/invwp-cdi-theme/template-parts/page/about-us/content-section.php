@@ -20,7 +20,7 @@
 </section>
 
 
-<section class="section-margin better-choice">
+<section class="section-margin better-choice section-padding">
   <div class="container">
 	<div class="bg-dark text-center">
 	  <h2 class="section-title mb-5">

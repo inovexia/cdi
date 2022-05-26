@@ -68,11 +68,11 @@
     line-height: 19px;
     font-family: "OSL";
     font-weight: 300;
-    padding: 30px 0px 22px;
+    padding: 18px 0px 8px;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-  }
+}
 
   .remove.remove_from_cart_button {
     font-size: 12px;
@@ -134,7 +134,11 @@
     text-transform: uppercase;
     height: 45px;
     letter-spacing: 0.5px;
+    margin-right: 5px;
   }
+  #minicart-nav .awdr_cart_strikeout_line {
+    margin-bottom: 0;
+}
 
   #minicart-nav .button.checkout.wc-forward {
     background-color: transparent;
