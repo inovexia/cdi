@@ -14,19 +14,11 @@ get_header();
     
 <div class="content">
 
-<section class="section-privacyfullwidth section-margin">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 privacy-inner-content">
-        <div class="">
-          <p><?php echo the_content(); ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- Content Area Customer Agreement Section -->
+        <?php get_template_part( 'template-parts/page/customer-agreement/content-section', 'content'); ?>
 
-</div>
+      </div>
+
 
 </main><!-- #main -->
 <?php get_footer(); ?>

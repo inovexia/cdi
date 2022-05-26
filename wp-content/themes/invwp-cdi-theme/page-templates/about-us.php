@@ -21,7 +21,7 @@ get_header ();
 
   <div class="content">
 
-  <?php get_template_part( 'template-parts/page/about-us/banner', ''); ?>
+  <?php //get_template_part( 'template-parts/page/about-us/banner', ''); ?>
 
 <!-- Content Area Section -->
 <?php get_template_part( 'template-parts/page/about-us/content-section', ''); ?>

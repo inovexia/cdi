@@ -640,7 +640,7 @@
 
 	/* Shop page entry header */
 	.wc-container {
-		padding: 35px 40px;
+		padding: 35px 0;
 		background-position: center center;
 		background: #F9FAFB;
 		background-size: cover;

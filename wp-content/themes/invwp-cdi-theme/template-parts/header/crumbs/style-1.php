@@ -23,11 +23,15 @@
       $title = 'FAQ';
       $sub_title = '';
     } else if (is_page('contact')) {
-      $title = 'Contact';
-      $sub_title = '';
+      $title = 'Contact Information';
+      $sub_title = 'Contact us by phone or email any time if you require assistance.
+      We’re here for you.';
     } else if (is_page('shipping-returns')) {
       $title = 'REFUND AND RETURNS POLICY';
       $sub_title = '';
+    } else if (is_page('about-us')) {
+      $title = 'About Us';
+      $sub_title = 'We provide low cost insulin to American diabetics safely and secure';
     } else if (is_page('referral')) {
       $title = '';
       $sub_title = '';

@@ -8,7 +8,19 @@
     .order-banner-section {
       display: none;
     }
-    .how-to-order-section, .order-by-phone-section, .about-main-banner {
+    .how-to-order-section.full-width {
+      padding-top: 50px;
+  }
+  .order-col-section .section-title {
+    margin-bottom: 20px;
+}
+.page-template-how-to-order img {
+  border-radius: 20px;
+}
+.order-by-phone-section {
+  margin: 50px 0;
+}
+     .order-by-phone-section, .about-main-banner {
       background: #F9FAFB;
       padding: 50px 0;
     }
@@ -26,7 +38,9 @@
         background-color: var(--alice-blue);
     }
 
-
+    .about-sec-one ul {
+      padding-left: 8px;
+    }
 
   }
   @media (min-width: 576px) {
