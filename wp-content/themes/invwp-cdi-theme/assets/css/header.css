@@ -26,7 +26,7 @@
         display: inline-flex
     }
 
-    .top-left-header li a::before {
+    /* .top-left-header li a::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -34,7 +34,7 @@
         border-bottom: 1px solid #fff;
         left: 0;
         opacity: 0.6;
-    }
+    } */
 
     .top-header-search {
         display: flex;
@@ -511,6 +511,9 @@
 
     header .mob-mega-menu.left-0 {
         left: 0;
+    }
+    .top-left-header li a {
+        margin-left: 5px;
     }
 
 }

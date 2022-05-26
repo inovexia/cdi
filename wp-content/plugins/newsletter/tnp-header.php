@@ -30,10 +30,10 @@ $warning = false;
 
 //$warning |= empty($status_options['mail']);
 
-$current_user_email = $current_user->user_email;
-if (strpos($current_user_email, 'admin@') === 0) {
-    $current_user_email = '';
-}
+$current_user_email = ''; //$current_user->user_email;
+//if (strpos($current_user_email, 'admin@') === 0) {
+//    $current_user_email = '';
+//}
 ?>
 
 <div class="tnp-drowpdown" id="tnp-header">
@@ -256,7 +256,7 @@ if (strpos($current_user_email, 'admin@') === 0) {
             if (strpos($content, '[newsletter]') === false && strpos($content, '[newsletter ') === false) {
                 ?>
                 <div class="tnp-notice">
-                    <a href="<?php echo $_SERVER['REQUEST_URI'] . '&noheader=1&dismiss=newsletter-shortcode' ?>" class="tnp-dismiss">&times;</a>
+                    <a href="<?php echo esc_attr($_SERVER['REQUEST_URI']) . '&noheader=1&dismiss=newsletter-shortcode' ?>" class="tnp-dismiss">&times;</a>
                     The Newsletter dedicated page does not contain the [newsletter] shortcode. If you're using a visual composer it could be ok.
                     <a href="<?php echo site_url('/wp-admin/post.php') ?>?post=<?php echo esc_attr(Newsletter::instance()->options['page']) ?>&action=edit"><strong>Edit the page</strong></a>.
 
@@ -270,7 +270,7 @@ if (strpos($current_user_email, 'admin@') === 0) {
 
 <?php if (isset($_GET['debug']) || !isset($dismissed['rate']) && $user_count > 300) { ?>
     <div class="tnp-notice">
-        <a href="<?php echo $_SERVER['REQUEST_URI'] . '&noheader=1&dismiss=rate' ?>" class="tnp-dismiss">&times;</a>
+        <a href="<?php echo esc_attr($_SERVER['REQUEST_URI']) . '&noheader=1&dismiss=rate' ?>" class="tnp-dismiss">&times;</a>
 
         We never asked before and we're curious: <a href="http://wordpress.org/plugins/newsletter/" target="_blank">would you rate this plugin</a>?
         (few seconds required - account on WordPress.org required, every blog owner should have one...). <strong>Really appreciated, The Newsletter Team</strong>.
@@ -280,7 +280,7 @@ if (strpos($current_user_email, 'admin@') === 0) {
 
 <?php if (isset($_GET['debug']) || !isset($dismissed['newsletter-page']) && empty(Newsletter::instance()->options['page'])) { ?>
     <div class="tnp-notice">
-        <a href="<?php echo $_SERVER['REQUEST_URI'] . '&noheader=1&dismiss=newsletter-page' ?>" class="tnp-dismiss">&times;</a>
+        <a href="<?php echo esc_attr($_SERVER['REQUEST_URI']) . '&noheader=1&dismiss=newsletter-page' ?>" class="tnp-dismiss">&times;</a>
 
         You should create a blog page to show the subscription form and the subscription messages. Go to the
         <a href="?page=newsletter_main_main">general settings panel</a> to configure it.
@@ -290,7 +290,7 @@ if (strpos($current_user_email, 'admin@') === 0) {
 
 <?php if (isset($_GET['debug']) || !isset($dismissed['newsletter-subscribe']) && get_option('newsletter_install_time') && get_option('newsletter_install_time') < time() - 86400 * 15) { ?>
     <div class="tnp-notice">
-        <a href="<?php echo $_SERVER['REQUEST_URI'] . '&noheader=1&dismiss=newsletter-subscribe' ?>" class="tnp-dismiss">&times;</a>
+        <a href="<?php echo esc_attr($_SERVER['REQUEST_URI']) . '&noheader=1&dismiss=newsletter-subscribe' ?>" class="tnp-dismiss">&times;</a>
         Subscribe to our news, promotions and getting started lessons!
         Proceeding you agree to the <a href="https://www.thenewsletterplugin.com/privacy" target="_blank">privacy policy</a>.
         <br>

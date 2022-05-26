@@ -214,6 +214,9 @@ class NewsletterMailer {
 class NewsletterDefaultMailer extends NewsletterMailer {
 
     var $filter_active = false;
+    
+    /** @var WP_Error */
+    var $last_error = null;
 
     /**
      * Static to be accessed in the hook: on some installation the object $this is not working, we're still trying to understand why
@@ -223,6 +226,11 @@ class NewsletterDefaultMailer extends NewsletterMailer {
 
     function __construct() {
         parent::__construct('default', Newsletter::instance()->get_options('smtp'));
+        add_action('wp_mail_failed', [$this, 'hook_wp_mail_failed']);
+    }
+    
+    function hook_wp_mail_failed($error) {
+        $this->last_error = $error;
     }
 
     function get_description() {
@@ -310,10 +318,29 @@ class NewsletterDefaultMailer extends NewsletterMailer {
 
         $this->current_message = $message;
 
+        $this->last_error = null;
         $r = wp_mail($message->to, $message->subject, $body, $wp_mail_headers);
         $this->current_message = null;
 
         if (!$r) {
+            if ($this->last_error && is_wp_error($this->last_error)) {
+                $error_message = $this->last_error->get_error_message();
+                
+                // Still not used
+                $error_data = $this->last_error->get_error_data();
+                $error_code = '';
+                if (isset($mail_data['phpmailer_exception_code'])) {
+                    $error_code = $mail_data['phpmailer_exception_code'];
+                }
+                
+                if (stripos($error_message, 'Could not instantiate mail function') || stripos($error_message, 'Failed to connect to mailserver')) {
+                    return new WP_Error(self::ERROR_FATAL, $error_message);
+                } else {
+                    return new WP_Error(self::ERROR_GENERIC, $error_message);
+                }
+            }
+            
+            // This code should be removed when sure...
             $last_error = error_get_last();
             if (is_array($last_error)) {
                 $message->error = $last_error['message'];

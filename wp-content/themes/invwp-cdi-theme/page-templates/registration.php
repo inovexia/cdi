@@ -140,12 +140,12 @@
                            </div>
                                 </div>
                      </fieldset>
-                     <fieldset>
+                     <div>
                      <h3>Patient Medical Questionnaire</h3>
                      <p>In order to safely review your order, we require information about the prescribed patient.</p>
                      <p>If you are ordering for yourself, please provide your information.</p>
                      <p>If you are ordering for a family member or pet, please answer these questions on their behalf.</p>
-                     </fieldset>
+                              </div>
                      <!-- Step 2 -->
                      <fieldset id="cur-step2" class="registtration-tab">
                         <div class="form-group row">

@@ -1,4 +1,4 @@
-<section class="order-online-section">
+<section class="order-online-section section-padding">
   <div class="container">
     <div class="row">
       <div class="col-6 d-flex pr-6 ">

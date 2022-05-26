@@ -289,6 +289,8 @@ class TNP_Subscription {
 
     const EXISTING_ERROR = 1;
     const EXISTING_MERGE = 0;
+    const EXISTING_SINGLE_OPTIN = 2;
+    
 
     /**
      * Subscriber's data following the syntax of the TNP_User

@@ -90,7 +90,8 @@ function tnp_post_content($post) {
 }
 
 function tnp_post_title($post) {
-    return $post->post_title;
+    //return $post->post_title;
+    return get_the_title($post);
 }
 
 function tnp_post_date($post, $format = null) {

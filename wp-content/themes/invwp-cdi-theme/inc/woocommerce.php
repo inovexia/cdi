@@ -212,10 +212,10 @@ if ( ! function_exists( 'invwp_woocommerce_header_cart' ) ) {
 			$class = '';
 		}
 		?>
-<li class="<?php echo esc_attr( $class ); ?>">
-    <?php invwp_woocommerce_cart_link(); ?>
-</li>
-<!--
+		<li class="<?php echo esc_attr( $class ); ?>">
+		    <?php invwp_woocommerce_cart_link(); ?>
+		</li>
+		<!--
 		<li class="d-none">
 			<?php
 			/*
