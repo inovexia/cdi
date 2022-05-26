@@ -10,12 +10,15 @@
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--eerie-black);
+    background: var(--faux-cg-blue);
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--faux-cg-blue);
+  }
+  .woocommerce-products-header {
+    padding: 20px 0;
   }
   .three-column-cards {
     position: relative;
