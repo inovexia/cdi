@@ -48,6 +48,9 @@
     } else if (is_page('how-to-order')) {
       $title = 'How To Order';
       $sub_title = '';
+    } else if (is_page('articles')) {
+      $title = 'Articles';
+      $sub_title = '';
     } else {
       $title = get_the_title();
       $sub_title = 'Edit your personal information.';

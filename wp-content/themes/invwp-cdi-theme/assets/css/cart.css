@@ -84,7 +84,7 @@
 
     /* Cart Page CSS */
     .woocommerce-cart table.shop_table_responsive tr .product-details {
-        display: flex;
+        display: block;
         align-items: center;
         margin-bottom: 21px;
     }
@@ -474,11 +474,22 @@
     .cart-page-bottom-section .cart-custom-message {
         margin-bottom: 20px;
     }
+    .woocommerce-cart .woocommerce-cart-form {
+        padding: 50px 0 0 0;
+    }
+    .woocommerce-cart .cart-page-bottom-section {
+        margin-bottom: 25px;
+    }
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .woocommerce-cart table.shop_table_responsive tr .product-details {
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+    }
     .cart-page-bottom-section .cart-custom-message {
         margin-bottom: 0;
     }
