@@ -1,4 +1,4 @@
-=== Permalink Manager Lite ===
+=== Permalink Manager Pro ===
 Contributors: mbis
 Donate link: https://www.paypal.me/Bismit
 License: GPLv2

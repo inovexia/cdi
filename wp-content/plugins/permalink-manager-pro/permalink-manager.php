@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Plugin Name:       Permalink Manager Lite
+* Plugin Name:       Permalink Manager Pro
 * Plugin URI:        https://permalinkmanager.pro?utm_source=plugin
 * Description:       Advanced plugin that allows to set-up custom permalinks (bulk editors included), slugs and permastructures (WooCommerce compatible).
 * Version:           2.2.18
