@@ -558,9 +558,9 @@ header .nav-right-icons {
     margin-left: 20px;
   }
 
-  .home-banner-section .banner-texts {
+  /* .home-banner-section .banner-texts {
     display: none;
-  }
+  } */
 
   header .navbar.responsive .nav-menu-container {
     position: relative;
@@ -649,12 +649,13 @@ header .nav-right-icons {
   }
 
   .hero-buttons a {
-    padding: 17px 0;
-    min-width: 165px;
-    min-height: 56px;
-    width: 165px;
-    height: 56px;
-  }
+    padding: 11px 0;
+    min-width: 112px;
+    min-height: 37px;
+    width: 144px;
+    height: 40px;
+    font-size: 11px;
+}
 
 }
 

@@ -335,6 +335,9 @@ cursor: pointer;
 .content-wrap .section-title {
   display: none;
 }
+.home-banner-section .row {
+  padding: 25px 0px;
+}
 }
 @media (min-width: 576px) {
   
