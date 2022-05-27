@@ -17,11 +17,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--faux-cg-blue);
   }
+
   input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
   input[type=number] {
     -moz-appearance: textfield;
@@ -47,7 +48,7 @@ input::-webkit-inner-spin-button {
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     color: white;
     font-size: 20px;
     padding: 20px;
@@ -57,9 +58,11 @@ input::-webkit-inner-spin-button {
   .three-column-cards:hover .overlay {
     opacity: 1;
   }
+
   .section-padding {
     padding-top: 80px;
   }
+
   .section-margin {
     margin-bottom: 80px;
   }
@@ -67,27 +70,34 @@ input::-webkit-inner-spin-button {
   .testimonial-wrp {
     position: relative;
   }
+
   .testimonial-awtar {
     width: 80px;
     height: 80px;
   }
+
   .testimonial-awtar img {
     border-radius: 50%;
   }
+
   .testimonial-star {
     display: flex;
   }
+
   .test-back-column {
     background: #fff;
     padding: 20px;
     border: 1px solid #ccc;
   }
+
   .test-back-column .testimonial-awtar {
     margin: auto;
   }
+
   .test-back-column ul {
     justify-content: center;
   }
+
   article#post-12 {
     margin-bottom: 50px;
   }
@@ -96,21 +106,18 @@ input::-webkit-inner-spin-button {
   .about-customer-content-section {
     padding-bottom: 50px;
   }
+
   .about-customer-content-section .section-title {
     margin-top: 0;
     margin-bottom: 10px;
-}
- /* Customer agreement page*/
- .customer-main-banner {
-  padding: 70px 0px;
-}
+  }
 
-
-
-/* Customer Get Started*/
-.get-started-banner {
+  /* Customer agreement page*/
+  .customer-main-banner {
     padding: 70px 0px;
+  }
 }
+
 /*newsletter*/
 .newsletter-wrp {
   padding: 20px;
@@ -118,14 +125,17 @@ input::-webkit-inner-spin-button {
   color: green;
   margin-top: 40px;
 }
+
 .newsletter-wrp p {
   color: green;
   font-weight: 500;
 }
+
 /*how to order*/
 .page-template-how-to-order ul {
   padding-left: 8px;
 }
+
 /*404 page*/
 .error-404.not-found {
   padding: 25px 0;
@@ -139,12 +149,15 @@ input::-webkit-inner-spin-button {
   margin: 25px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 #registration-form-wrp fieldset label {
   width: 100%;
   margin-bottom: 10px;
   display: block;
 }
-#registration-form-wrp fieldset input, #registration-form-wrp fieldset select {
+
+#registration-form-wrp fieldset input,
+#registration-form-wrp fieldset select {
   background-color: var(--grey1);
   border: 1px solid var(--white);
   margin-bottom: 20px !important;
@@ -160,32 +173,55 @@ input::-webkit-inner-spin-button {
   width: 100% !important;
 }
 
-}
+
 @media (min-width: 576px) {
 
+
+
+  /* Customer Get Started*/
+  .get-started-banner {
+    padding: 70px 0px;
+  }
+
+  /*newsletter*/
+  .newsletter-wrp {
+    padding: 20px;
+    background: #b4d9b4;
+    color: green;
+    margin-top: 40px;
+  }
+
+  .newsletter-wrp p {
+    color: green;
+    font-weight: 500;
+  }
+
+  .woocommerce-products-header {
+    padding: 20px;
+    border: none !important;
+  }
 }
+
+@media (min-width: 576px) {}
+
 @media (min-width: 768px) {
- /* Brand page*/
- .brands .prod-category {
-  margin-right: 15px;
-}
-.woocommerce-products-header {
-  padding: 20px 0;
-  border: none !important;
-}
-}
-@media (min-width: 992px) {
 
-}
-@media (min-width:1200px) {
+  /* Brand page*/
+  .brands .prod-category {
+    margin-right: 15px;
+  }
 
+  .woocommerce-products-header {
+    padding: 35px 40px;
+  }
 }
-@media (min-width: 1440px) {
 
-}
-@media (min-width: 1680px) {
+@media (min-width: 992px) {}
 
-}
-@media (min-width:1920px) {
+@media (min-width:1200px) {}
 
-}
+@media (min-width: 1440px) {}
+
+@media (min-width: 1680px) {}
+
+@media (min-width:1920px) {}

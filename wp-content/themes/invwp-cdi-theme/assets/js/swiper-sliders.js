@@ -181,7 +181,7 @@
 
     // Home Blogs Slider
     new Swiper(".blogSwiper", {
-      slidesPerView: 1,
+      slidesPerView: 3,
       loop: true,
       spaceBetween: 20,
       pagination: {
@@ -197,10 +197,10 @@
           slidesPerView: 1.4,
         },
         768: {
-          slidesPerView: 1.4,
+          slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 1.8,
+          slidesPerView: 3,
         },
       },
     });
