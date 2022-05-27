@@ -35,7 +35,7 @@
                      </div>
                      <div class="testimonial-title my-5">
                        <h6 class="slide-meta text-center">
-                          <a class="slide-title text-uppercase" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
+                          <?php the_title(); ?>
                        </h6>
                      </div>
                      <p class="slide-excerpt mb-5">

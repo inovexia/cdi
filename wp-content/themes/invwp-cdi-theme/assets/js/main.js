@@ -113,7 +113,7 @@ jQuery(document).ready(function () {
   jQuery("#desktopSearch .close").click(function () {
     jQuery("#desktopSearch").fadeOut();
   });
-  jQuery(".tnp-email").attr("placeholder", "Email");
+  jQuery(".tnp-email").attr("placeholder", "Enter Your Email");
 });
 
 /* Collapsible/Accordion */

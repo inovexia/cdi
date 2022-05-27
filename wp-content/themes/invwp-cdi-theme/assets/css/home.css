@@ -194,9 +194,10 @@ width: 120px;
 height: 120px;
 }
 
-.testimonial-title h6, .testimonial-title h6 a{
-color: var(--faux-cg-blue);
-font-size: var(--font-size-xxxl);
+.testimonial-title h6, .testimonial-title h6 a {
+  color: var(--faux-cg-blue);
+  font-size: var(--font-size-xxxl);
+  margin: 15px 0;
 }
 
 /* Home Faq */
@@ -245,8 +246,8 @@ border-bottom: 1px solid var(--faux-cg-blue);
 }
 
 .tnp-subscription-minimal input.tnp-submit{
-background-color: var(--white) !important;
-color: var(--faux-cg-blue) !important;
+background-color: #444 !important;
+color: #fff !important;
 font-family: var(--font-family-lato) !important;
 font-size: var(--font-size-s) !important;
 font-style: normal;
@@ -334,6 +335,9 @@ cursor: pointer;
 }
 .content-wrap .section-title {
   display: none;
+}
+.home-banner-section .row {
+  padding: 25px 0px;
 }
 }
 @media (min-width: 576px) {
@@ -508,10 +512,10 @@ cursor: pointer;
   footer .payment-options section:first-child {
     display: block;
   }
-
+/* 
   footer .bottom-footer .social-icons {
     top: 55px;
-  }
+  } */
 
   footer .bottom-footer {
     height: auto;

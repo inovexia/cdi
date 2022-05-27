@@ -2,7 +2,7 @@
   /*My Account*/
 .myaccount-rightsidebar {
     background-color: #F7F7F7;
-    padding: 50px;
+    padding: 25px;
     margin-top: 25px;
 }
 .myaccount-leftsidebar-nav {
@@ -59,8 +59,9 @@
 .myaccount-rightsidebar table.woocommerce-MyAccount-orders tbody tr{
     border-bottom: 1px solid var(--eerie-black);
 }
-.myaccount-rightsidebar table.woocommerce-MyAccount-orders tbody tr td.woocommerce-orders-table__cell-order-actions{
+.myaccount-rightsidebar table.woocommerce-MyAccount-orders tbody tr td.woocommerce-orders-table__cell-order-actions {
     display: flex;
+    justify-content: space-between;
 }
 .myaccount-rightsidebar table.woocommerce-MyAccount-orders tbody tr td.woocommerce-orders-table__cell-order-actions a{
     min-height: 40px;
@@ -295,6 +296,9 @@
 }
 .myaccount-leftsidebar-nav {
     padding: 0 25px;
+}
+.myaccount-rightsidebar {
+    padding: 50px;
 }
 }
 @media (min-width: 992px) {

@@ -1,4 +1,10 @@
 @media (min-width:0) {
+  .product-data-left .category-info {
+    display: none;
+}
+.single-product-content .posted_in_category {
+  display: flex;
+}
   .single-product div.product {
     position: relative;
   }
@@ -491,6 +497,9 @@
   .product-data-left .product-title {
     display: none;
   }
+  .woocommerce-products-header {
+    padding: 40px 0;
+}
 }
 
 @media (min-width:768px) {
@@ -499,7 +508,9 @@
     margin-left: 10px;
 
   }
-
+  .product-data-left .category-info {
+    display: block;
+}
   .single-product .product-data-left .quantity {
     width: 50%;
     display: inline-flex;
