@@ -436,7 +436,7 @@ header .nav-right-icons {
   .payment-options {
     float: right;
     list-style: none;
-    display: flex;
+    display: flex; 
     align-items: center;
   }
 
@@ -664,7 +664,14 @@ header .nav-right-icons {
   padding: 0;
   background: #F9FAFB;
 }
-
+.bottom-footer-second {
+  width: 66%;
+  float: left;
+}
+.bottom-footer-first {
+  width: 34%;
+  float: left;
+}
 @media only screen and (min-width: 768px) {
   footer .top-footer-contact h6 {
     margin-bottom: 24px;
@@ -1392,9 +1399,14 @@ footer .top-footer-contact .widget {
 
 .tnp-subscription-minimal input.tnp-email {
   background-color: var(--frostproof) !important;
-  height: 47px;
+  height: 46px;
 }
-
+.tnp-subscription-minimal input.tnp-email {
+  line-height: 14px;
+}
+/* .tnp-subscription-minimal input.tnp-submit {
+  background-color: #444;
+} */
 .tnp-subscription-minimal input.tnp-submit {
   height: 46px;
 }
@@ -1462,11 +1474,11 @@ footer .payment-options section.widget_block p {
   line-height: 26px;
   color: var(--white);
 }
-
+/* 
 footer .payment-options img {
   width: 60px;
   height: 38px;
-}
+} */
 
 footer .bottom-footer .social-icons {
   position: relative;

@@ -2,6 +2,22 @@
   .blog-page {
     padding: 0 0 50px 0;
 }
+.page-template-blog-list .pagination {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 50px 0px 0px;
+  }
+  .page-template-blog-list .page-numbers {
+    margin: 0px 10px;
+    color: #037E9B;
+   font-size: 14px;
+    font-family: "OSR";
+    display: inline-block;
+  }
+  .page-template-blog-list .page-numbers.current {
+    font-family: "OSB";
+  }
 .site-main p, .site-main .main-para, .single-blog p, .about-sec-one ul li, .page-template-how-to-order ul li {
     font-family: var(--font-family-open-sans);
     font-size: 14px;

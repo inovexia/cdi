@@ -181,7 +181,7 @@
 
     // Home Blogs Slider
     new Swiper(".blogSwiper", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       loop: true,
       spaceBetween: 20,
       pagination: {
