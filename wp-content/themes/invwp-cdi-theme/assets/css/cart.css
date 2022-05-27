@@ -182,7 +182,7 @@
         height: 30px;
         background-color: #037e9b;
         border: none;
-        border-radius: 50px;
+        /* border-radius: 50px; */
         text-align: center;
         color: #fff;
         font-size: 16px;
@@ -479,6 +479,9 @@
     }
     .woocommerce-cart .cart-page-bottom-section {
         margin-bottom: 25px;
+    }
+    .cart-page-buttons {
+        display: flex;
     }
 }
 

@@ -13,9 +13,12 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="container">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'invwp' ); ?></h1>
+			<section class="error-404 not-found section-margin">
+				<header class="page-header text-center col-6 mx-auto">
+					<h1 class="page-title"><?php esc_html_e( 'The Page Can Not Be Found.', 'invwp' ); ?></h1>	
+					<p>It looks like nothing was found at this location. Maybe try browsing our products.</p>
+					<a href="<?php echo site_url('/shop');?>" class="main-btn">Browse Our Products</a>
+
 				</header><!-- .page-header -->
 
 				<!-- <div class="page-content">
