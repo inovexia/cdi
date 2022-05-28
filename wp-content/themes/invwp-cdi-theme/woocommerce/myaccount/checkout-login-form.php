@@ -21,10 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 do_action( 'woocommerce_before_customer_login_form' ); ?>
 
-<?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
-
-<?php endif; ?>
-
 <div class="" id="customer_login">
 		<h2 class="syncopate-normal-black-pearl-24px"><?php esc_html_e( 'Login to your account', 'woocommerce' ); ?></h2>
 
@@ -66,9 +62,11 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
 
-			<div class="woocommerce-form-row form-row" >
-				<p class="text-center align-center lato-normal-black-pearl-14px">Don't have an account yet? <a href="#customer_register" class="lato-bold-black-pearl-14px" id="join-action-link">Join <?php echo bloginfo ('name'); ?></a></p>
-			</div>
+			<?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
+				<div class="woocommerce-form-row form-row" >
+					<p class="text-center align-center lato-normal-black-pearl-14px">Don't have an account yet? <a href="<?php echo home_url( '/registration/'); ?>" class="" id="join-action-link">Join <?php echo bloginfo ('name'); ?></a></p>
+				</div>			
+			<?php endif; ?>
 
 		</form>
 
