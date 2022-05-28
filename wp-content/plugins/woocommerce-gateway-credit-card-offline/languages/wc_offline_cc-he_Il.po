@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Offline Credit Card Processing v1.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-05-02 17:28+0300\n"
+"Last-Translator: Yaron Arama <yaron.arama@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:38 updater/LicensePage.php:28
+msgid "Offline Credit Card"
+msgstr "כרטיסי אשראי OFFLINE"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:144
+#, php-format
+msgid ""
+"You need to enter an email adress in the  <a href=\"%s\">Offline Credit Card "
+"Processing settings</a> to make this payment gateway available on your site."
+msgstr ""
+"עליך להכניס כתובת דואר אלקטרוני <a href=\"%s\">Offline Credit Card "
+"Processing settings</a> בכדי לאפשר את השימוש באמצעי תשלום זה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:146
+#, php-format
+msgid ""
+"Please <a href=\"%s\">activate your license</a> to receive automatic updates "
+"for this plugin."
+msgstr "הקלד <a href=\"%s\"> כדי להפעיל את התוכנה עבור האתר שלך וקבלת עדכונים"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:156
+#, php-format
+msgid ""
+"Offline Credit Card Processing is enabled, but the <a href=\"%s\">force SSL "
+"option</a> is disabled; your checkout may not be secure! Please enable SSL "
+"and ensure your server has a valid SSL certificate - Offline Credit Card "
+"Processing will only work in test mode."
+msgstr ""
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:166
+msgid ""
+"Enter a URL to your custom icon or copy and paste a filename from below:"
+msgstr "הקלד את הכתובת עבור צלמית מותאמת אישית או העתק את שם הקובץ"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:176
+msgid "Enable/Disable"
+msgstr "אפשר/בטל"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:177
+msgid "Enable Offline Credit Card Processing"
+msgstr "אפשר תשלום בכרטיסי אשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:183
+msgid "Title"
+msgstr "כותרת"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:185
+msgid "This controls the title which the user sees during checkout."
+msgstr "כאן מעדכנים את הכותרת שהלקוחות רואים בהזמנה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:186
+msgid "Credit Card"
+msgstr "כרטיס אשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:189
+msgid "Description"
+msgstr "תיאור"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:191
+msgid "This controls the description which the user sees during checkout."
+msgstr "כאן מעדכנים את התיאור שהלקוחות רואים בהזמנה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:197
+msgid "Custom Icon"
+msgstr "לוגו מעוצב"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:199
+msgid "Enable Custom Icon"
+msgstr "אפשר לוגו מעוצב"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:203
+msgid "Custom Icon URL"
+msgstr "כתובת צלמית מותאמת אישית"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:211
+msgid "Email Address"
+msgstr "כתובת דואר אלקטרוני"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:213
+msgid ""
+"This address will receive an additional email containing extra cc numbers "
+"and security code."
+msgstr ""
+"כתובת דואר זו תקבל פריטם נוספים של ההזמנה כמו מספר CC וקוד אבטחת כטיס אשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:217
+msgid "Email Subject"
+msgstr "נושא האימייל"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:219 gateway-credit-card-offline.php:225
+msgid "Available shortcodes"
+msgstr "קודי קיצור מאופשרים"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:220
+msgid "Additional Order Details"
+msgstr "פריט הזמנה נוספים"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:223
+msgid "Email Template"
+msgstr "תבנית דואר אלקטרוני"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:229
+msgid "Test Mode"
+msgstr "מצב בדיקה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:230
+msgid "Enable CC Test Mode"
+msgstr "אפשר CC מוד"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:232
+msgid ""
+"This will disable the SSL check and allow using test credit card numbers "
+"like 4111111111111111."
+msgstr ""
+"אפשרות זו תבטל את ההצפנה של SSL ויאפשר בדיקת כריטסי אשראי כמו "
+"4111111111111111"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:245
+msgid "Offline Credit Card Processing"
+msgstr "חיוב כרטיס אשראי לא מכוון מופעל"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:246
+msgid "Process credit card payments manually."
+msgstr "כרטיסי אשראי ידנית"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:284
+msgid "TEST MODE ENABLED"
+msgstr "תשלום באמצעות כרטיס אשראי!!!"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:288
+msgid "Credit Card number"
+msgstr "מס' כרטיס אשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:295
+msgid "Expiration date"
+msgstr "תאריך תפוגה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:297
+msgid "Month"
+msgstr "חודש"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:308
+msgid "Year"
+msgstr "שנה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:315
+msgid "Card security code"
+msgstr "מס' אבטחה של הכרטיס (3 ספרות בגב הכרטיס)"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:342
+msgid "Card security code is invalid (only digits are allowed)"
+msgstr "כרטיס האשראי אינו בתוקף- ניתן להזין רק ספרות בשדה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:360
+msgid "Card expiration date is invalid"
+msgstr "תאריך תפגת הכרטיס שגוי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:368
+msgid "No card number was provided"
+msgstr "לא הוכנסו פרטי כרטיס אשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:373
+msgid "Card number is invalid"
+msgstr "מספר כרטיס אשראי שגוי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:487
+msgid "Credit Card payment completed."
+msgstr "תשלום באמצעות כרטיס האשראי הושלם"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:491
+msgid "Awaiting payment clearance"
+msgstr "ממתין לאישור התשלום"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:514 gateway-credit-card-offline.php:534
+#, php-format
+msgid "Paid with %s card ending with %s."
+msgstr "שולם באמצעות כרטיס  %s  המסתיים ב  %s "
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:563
+msgid "Credit Card Details"
+msgstr "פרטי כרטיס האשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:580
+msgid "Card Number"
+msgstr "מספר כרטיס האשראי"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:581
+msgid "Card Type"
+msgstr "סוג הכרטיס"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:582
+msgid "Security Code"
+msgstr "קוד אבטחה"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:583
+msgid "Valid until"
+msgstr "תוקף"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:584
+msgid "Email sent"
+msgstr "האימייל נשלח"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:64
+msgid "Check for updates was initiated."
+msgstr "בדוק האם העדכונים הותקנו"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:65
+msgid "You can visit your WordPress Updates now."
+msgstr "אתה יכול לבקר בעדכון של WordPress"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:66
+msgid ""
+"Since the updater runs in the background, it might take a little while "
+"before new updates appear."
+msgstr "מאחר והעדכון מתרחש ברקע, יתכן ותראה אותו מעט מאוחר יותר"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:67
+msgid "view updates"
+msgstr "הצג עדכונים"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:94
+msgid "Your license was activated."
+msgstr "הרשיון שלך הופעל"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:98 updater/LicensePage.php:101
+#: updater/LicensePage.php:104
+msgid "There was a problem activating your license."
+msgstr "ארעה שגיאה בהפעלת רשיונך"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:120
+msgid "Your license was deactivated."
+msgstr "הרשיון שלך בוטל"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:127 updater/LicensePage.php:130
+#: updater/LicensePage.php:133
+msgid "There was a problem deactivating your license."
+msgstr "ארעה שגיאה להפעיל את הרשיון שלך"
+
+# @ wc_offline_cc
+#: updater/license_page.php:46
+msgid "Offline Credit Card Processing - Updates"
+msgstr "מתבצע עדכון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:60
+msgid "License"
+msgstr "רשיון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:63
+msgid "License email"
+msgstr "EMIL הרשיון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:66
+msgid "License key"
+msgstr "מספר הרשיון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:70
+msgid "Your license has been activated for"
+msgstr "הרשיון שלך הופעל עבור"
+
+# @ wc_offline_cc
+#: updater/license_page.php:73
+msgid "Your license has not been activated."
+msgstr "הרשיון שלך טרם הופעל"
+
+# @ wc_offline_cc
+#: updater/license_page.php:74
+msgid "Please check if your license key matches your email address."
+msgstr "בדוק האם הקוד תואם את כתובת ה-EMAIL"
+
+# @ wc_offline_cc
+#: updater/license_page.php:80
+msgid "Deactivate license"
+msgstr "בטל רשיון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:83
+msgid "Yes, I want to deactivate this license for"
+msgstr "כן, אני מעוניין לבטל את רישום הדומיין"
+
+# @ wc_offline_cc
+#: updater/license_page.php:93
+msgid "Beta testers"
+msgstr "גרסת בטא לבדיקה"
+
+# @ wc_offline_cc
+#: updater/license_page.php:97
+msgid ""
+"If you want to test new features before they are released, select the \"beta"
+"\" channel."
+msgstr "אם אתה מעוניין לבדוק אפשרויות אלו לפני הפצתן בחר באפשרות בטא"
+
+# @ wc_offline_cc
+#: updater/license_page.php:99
+msgid "Update channel"
+msgstr "ערוץ עדכון"
+
+# @ wc_offline_cc
+#: updater/license_page.php:101
+msgid "stable"
+msgstr "יציב"
+
+# @ wc_offline_cc
+#: updater/license_page.php:102
+msgid "beta"
+msgstr "בטא"
+
+# @ wc_offline_cc
+#: updater/license_page.php:109
+msgid "Force update check"
+msgstr "אלץ בדיקת עדכונים"
+
+# @ wc_offline_cc
+#: updater/license_page.php:112
+msgid "Update settings"
+msgstr "עדכן הגדרות"
+
+# @ wc_offline_cc
+msgid "Credit Card holder"
+msgstr "שם מלא כפי שמופיע על הכרטיס"
+
+# @ wc_offline_cc
+msgid "Card Holder Identity Number"
+msgstr "תעודת זהות של בעל הכרטיס"

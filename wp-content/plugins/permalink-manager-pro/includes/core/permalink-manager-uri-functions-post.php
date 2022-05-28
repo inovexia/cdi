@@ -187,11 +187,10 @@ class Permalink_Manager_URI_Functions_Post extends Permalink_Manager_Class {
 		}
 
 		// 1B. Get the permastructure
-		if($native_uri) {
+		if($native_uri || empty($permalink_manager_permastructs['post_types'][$post_type])) {
 			$permastructure = $native_permastructure;
 		} else {
-			$permastructure = (!empty($permalink_manager_permastructs['post_types'][$post_type])) ? $permalink_manager_permastructs['post_types'][$post_type] : $native_permastructure;
-			$permastructure = apply_filters('permalink_manager_filter_permastructure', $permastructure, $post);
+			$permastructure = apply_filters('permalink_manager_filter_permastructure', $permalink_manager_permastructs['post_types'][$post_type], $post);
 		}
 
 		// 1C. Set the permastructure

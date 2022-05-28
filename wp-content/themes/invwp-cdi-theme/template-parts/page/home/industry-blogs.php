@@ -17,7 +17,7 @@
                $args = array (
                 'post_type' => 'post',
                 'post_status' => 'publish',
-                'posts_per_page' => -1,
+                'posts_per_page' => 9,
                 'orderby'    => 'date',
                 'order'      => 'DESC',
                 'hide_empty' => false,
@@ -33,7 +33,8 @@
                       <!-- Slides -->
                       <div class="swiper-slide col-3 px-5">
                          <div class="slide-image">
-                           <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
+                           <?php invwp_post_thumbnail () ?>
+                           <!-- <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' /> -->
                          </div>
                          <h6 class="slide-meta text-uppercase">
                          </h6>
@@ -60,7 +61,7 @@
                <?php
                  wp_reset_postdata();
                   } else { ?>
-                  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+
                 <?php } ?>
                  <!-- end of the loop -->
                </div>

@@ -1,0 +1,702 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Offline Credit Card Processing v1.3.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-17 15:22+0000\n"
+"PO-Revision-Date: 2018-02-18 15:31+0200\n"
+"Language-Team: Finnish (Finland)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: Erik van Esdonk <erik.vanesdonk@seuraava.info>\n"
+"Language: fi_FI\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gateway-credit-card-offline.php:46
+msgid "Payment gateway to process credit cards offline"
+msgstr "Maksu-yhdyskäytävä maksukorttien käsittelylle offline -tilassa"
+
+#: gateway-credit-card-offline.php:234
+#, php-format
+msgid ""
+"Great, your <a href=\"%s\">license</a> has been activated for this site."
+msgstr "Hyvä, sinun <a href=\"%s\">lisenssi</a> on aktivoitu sivustolle."
+
+#: gateway-credit-card-offline.php:313
+msgid "Order Status"
+msgstr "Tilauksen tila"
+
+#: gateway-credit-card-offline.php:314
+msgid ""
+"Select the default status for new orders. <i>On-hold</i> is intended by "
+"WooCommerce for orders that require manual processing, but you can select "
+"<i>Processing</i> as well. <i>Completed</i> and <i>Pending</i> are not "
+"recommended."
+msgstr ""
+"Valitse oletus tilatietoa uusille tilauksille.<i>Odottaa</i> on "
+"WooCommercessa, joka tarvitaan manuaaliseen käsittelyyn, mutta voit myös "
+"valita <i>Käsittelyssä</i>, kuten myös <i>Valmis</i> ja <i>Vireillä</i> "
+"eivät ole suositeltuja."
+
+#: gateway-credit-card-offline.php:321
+msgid "On Hold"
+msgstr "Odotuksella"
+
+#: gateway-credit-card-offline.php:322
+msgid "Processing"
+msgstr "Käsittelyssä"
+
+#: gateway-credit-card-offline.php:323
+msgid "Completed"
+msgstr "Valmis"
+
+#: gateway-credit-card-offline.php:324
+msgid "Pending"
+msgstr "Odottaa"
+
+#: gateway-credit-card-offline.php:329
+msgid "Cardholder name"
+msgstr "Kortin haltijan nimi"
+
+#: gateway-credit-card-offline.php:330
+msgid "Ask for cardholder name"
+msgstr "Pyydä kortin haltijan nimeä"
+
+#: gateway-credit-card-offline.php:332
+msgid "This will add an additional field for the cardholder name."
+msgstr "Tämä lisää lisäkentän kortin haltijan nimelle."
+
+#: gateway-credit-card-offline.php:338
+msgid "Cardholder identity card"
+msgstr "Kortin haltijan henkilökortti"
+
+#: gateway-credit-card-offline.php:339
+msgid "Ask for cardholder identity card"
+msgstr "Pyydä kortin haltijan henkilökorttia"
+
+#: gateway-credit-card-offline.php:341
+msgid "This will add an additional field for the cardholder identity card."
+msgstr "Tämä lisää lisäkentän kortin haltijan henkilökortti -kohtaan."
+
+#: gateway-credit-card-offline.php:347
+msgid "Debit Cards"
+msgstr "Pankkikortit (debit)"
+
+#: gateway-credit-card-offline.php:348
+msgid "Ask whether the card is a debit card or credit card"
+msgstr "Pyydä kortin tyyppiä (pankki tai luottokortti)"
+
+#: gateway-credit-card-offline.php:350
+msgid "This will add an additional selection to the checkout form."
+msgstr "Tämä lisää lisäkentän valinnan kassa -lomakkeelle."
+
+#: gateway-credit-card-offline.php:360
+msgid ""
+"Enable this to change the payment icon shown on checkout.<br>After ticking "
+"the checkbox, save your changes to see the available options."
+msgstr ""
+"Kytke päälle tämä, joka vaihtaa maksutavan ikonin kassa -sivulta.<br>Tämän "
+"jälkeen tallentamalla, saat näkyviin käytettävät valinnat"
+
+#: gateway-credit-card-offline.php:373
+msgid "Backup Storage URL"
+msgstr "Varmuuskopioinnin tallennus URL"
+
+#: gateway-credit-card-offline.php:375
+msgid ""
+"To enable the backup storage feature, copy the storage.php file from the "
+"scripts folder within the plugin to a different server and enter the full "
+"URL like this:"
+msgstr ""
+"Kytkemällä varmuuskopioinnin päälle, kopioi storage.php tiedosto scripts "
+"kansiosta toiselle palvelimelle ja anna seuraava URL:"
+
+#: gateway-credit-card-offline.php:382
+msgid "WooCommerce form"
+msgstr "WooCommerce lomake"
+
+#: gateway-credit-card-offline.php:383
+msgid "Use the built in WooCommerce credit card form"
+msgstr "Käytä sisäänrakennettua WooCommerce maksukorttilomaketta"
+
+#: gateway-credit-card-offline.php:385
+msgid "Please only enable this if you are using WooCommerce 2.1 or better."
+msgstr ""
+"Ole hyvä ja aktivoi tämä, jos olet käyttämässä WooCommercen versiota 2.1. "
+"tai uudempaa."
+
+#: gateway-credit-card-offline.php:396
+msgid "PCI compliance"
+msgstr "PCI noudattaminen"
+
+#: gateway-credit-card-offline.php:397
+msgid "Disable PCI mode and store full details in database"
+msgstr "Kytke pois päältä PCI -tila ja tallenna kaikki tiedot tietokantaan"
+
+#: gateway-credit-card-offline.php:399
+msgid ""
+"Warning: By enabling this option, you might violate laws or regulations that "
+"apply in your country."
+msgstr ""
+"Varoitus: Kytkemällä tämän päälle, voit tehdä vastoin lakeja ja määräyksiä, "
+"jotka perustuvat maan normeihin."
+
+#: gateway-credit-card-offline.php:410
+msgid "Checksum validation"
+msgstr "Tarkistussumman (Checksum) todentaminen"
+
+#: gateway-credit-card-offline.php:411
+msgid "Disable checksum validation for credit card numbers"
+msgstr ""
+"Kytke pois päältä tarkistussumman (checksum) tarkastus luottokortin "
+"numeroille"
+
+#: gateway-credit-card-offline.php:413
+msgid "This should normally be left unticked."
+msgstr "Tämä pitää normaalisti ilman valintaa."
+
+#: gateway-credit-card-offline.php:464 gateway-credit-card-offline.php:465
+#: gateway-credit-card-offline.php:1096
+msgid "Card Holder"
+msgstr "Kortin haltija"
+
+#: gateway-credit-card-offline.php:471 gateway-credit-card-offline.php:472
+msgid "Card Holder Identity Card"
+msgstr "Kortin haltijan henkilökortti"
+
+#: gateway-credit-card-offline.php:480 gateway-credit-card-offline.php:544
+msgid "Select card type"
+msgstr "Valitse kortin tyyppi"
+
+#: gateway-credit-card-offline.php:481 gateway-credit-card-offline.php:545
+msgid "Credit card"
+msgstr "Luottokortti (credit)"
+
+#: gateway-credit-card-offline.php:482 gateway-credit-card-offline.php:546
+msgid "Debit card"
+msgstr "Pankkikortti (debit)"
+
+#: gateway-credit-card-offline.php:532
+msgid "Credit Card holder"
+msgstr "Maksukortin haltija"
+
+#: gateway-credit-card-offline.php:538
+msgid "Card Holder Identity Number"
+msgstr "Kortin haltijan henkilötunnus"
+
+#: gateway-credit-card-offline.php:542
+msgid "Card type"
+msgstr "Maksukortin tyyppi"
+
+#: gateway-credit-card-offline.php:636
+msgid ""
+"It seems like you did not enter any credit card details. Card number, expiry "
+"date and security code are required."
+msgstr ""
+"Nähtävästi et antanut maksukortin tietoja. Pakollisia tietoja ovat kortin "
+"numero, vanhenemispäivä ja turvakoodi."
+
+#: gateway-credit-card-offline.php:679
+msgid "Card number is invalid."
+msgstr "Kortin numero on virheellinen."
+
+#: gateway-credit-card-offline.php:698
+msgid "No cardholder name was provided"
+msgstr "Kortin haltijan nimi edellytetään"
+
+#: gateway-credit-card-offline.php:705
+msgid "No cardholder identity card was provided"
+msgstr "Kortin haltijan nimeä ei edellytetä"
+
+#: gateway-credit-card-offline.php:713
+msgid "Please select whether your card is a credit card or a debit card."
+msgstr ""
+"Ole hyvä ja valitse maksukortin tyyppi luottokortti (credit) vai "
+"pankkikortti (debit)"
+
+#: gateway-credit-card-offline.php:1099
+msgid "Card Holder ID"
+msgstr "Kortin haltijan ID"
+
+#: gateway-credit-card-offline.php:1106
+msgid "Debit Card"
+msgstr "Pankkikortti (debit)"
+
+#: gateway-credit-card-offline.php:1112
+msgid "Failure details"
+msgstr "Vian tiedot"
+
+#: gateway-credit-card-offline.php:1121
+msgid "Clear private data after processing"
+msgstr "Poista yksityiset tiedot käsittelyn jälkeen"
+
+#: gateway-credit-card-offline.php:1122
+msgid "Full Number"
+msgstr "Koko numero"
+
+#: gateway-credit-card-offline.php:1133
+msgid "Clear private data"
+msgstr "Tyhjennä yksityiset tiedot"
+
+#: updater/license_page.php:222
+msgid "Check license activation"
+msgstr "Tarkasta lisenssin aktivoinnin tila"
+
+#: updater/LicensePage.php:78
+msgid "Your license is currently active on this site."
+msgstr "Sinun lisenssi on aktivoitu tälle sivustolle."
+
+#: updater/LicensePage.php:82
+msgid "This license has not been activated on this site."
+msgstr "Annettua lisenssiä ei ole aktivoitu tälle sivustolle."
+
+#: updater/LicensePage.php:83
+msgid "The update server responded:"
+msgstr "Päivityspalvelin vastasi:"
+
+#: updater/LicensePage.php:90 updater/LicensePage.php:93
+#: updater/LicensePage.php:96
+msgid "There was a problem checking your license."
+msgstr "Käyttöoikeuden tarkistamisessa tapahtui virhe."
+
+#: updater/wc_offline_cc_updater.php:238
+msgid "An unknown error occurred"
+msgstr "Tapahtui tuntematon virhe"
+
+#. Name of the plugin
+msgid "WooCommerce Offline Credit Card Processing"
+msgstr "WooCommerce Offline Credit Card Processing"
+
+#. Description of the plugin
+msgid "A payment gateway for processing credit cards offline."
+msgstr "Maksu-yhdyskäytävä maksukorttien käsittelylle offline -tilassa."
+
+#. URI of the plugin
+msgid ""
+"https://www.wplab.com/plugins/woocommerce-offline-credit-card-processing/"
+msgstr ""
+"https://www.wplab.com/plugins/woocommerce-offline-credit-card-processing/"
+
+#. Author of the plugin
+msgid "WP Lab"
+msgstr "WP Lab"
+
+#. Author URI of the plugin
+msgid "https://www.wplab.com/"
+msgstr "https://www.wplab.com/"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:45 updater/LicensePage.php:33
+msgid "Offline Credit Card"
+msgstr "Offline Credit Card"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:224
+#, php-format
+msgid ""
+"You need to enter an email adress in the  <a href=\"%s\">Offline Credit Card "
+"Processing settings</a> to make this payment gateway available on your site."
+msgstr ""
+"Anna sähköpostiosoite <a href=\"%s\">Offline Credit Card prosessing "
+"asetuksiin</a>, jotta saat yhdyskäytävän käyttöön sivustolla."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:227
+#, php-format
+msgid ""
+"Please <a href=\"%s\">activate your license</a> to receive automatic updates "
+"for this plugin."
+msgstr ""
+"Ole hyvä ja <a href=\"%s\">aktivoi lisenssi</a>, jotta saat automaattiset "
+"päivityksen lisäosalle."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:244
+#, php-format
+msgid ""
+"Offline Credit Card Processing is enabled, but the <a href=\"%s\">force SSL "
+"option</a> is disabled; your checkout may not be secure! Please enable SSL "
+"and ensure your server has a valid SSL certificate - Offline Credit Card "
+"Processing will only work in test mode."
+msgstr ""
+"Offline luottokortin käsittely on käytössä, mutta <a href=\"%s\">pakottaa "
+"SSL-asetuksen</a> pois käytöstä; maksaminen ei ole ehkä turvallista! Kytke "
+"SSL-yhteys päälle ja varmista ,että palvelimella on voimassa SSL-"
+"sertifikaatti - Offline luottokortin käsittely toimii vain testitilassa."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:254
+msgid ""
+"Enter a URL to your custom icon or copy and paste a filename from below:"
+msgstr ""
+"Lisää URL mukautettuun kuvakkeelle tai kopioi ja liitä tiedostonimi "
+"lomakkeeseen alle:"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:265
+msgid "Enable/Disable"
+msgstr "Päällä / Pois"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:266
+msgid "Enable Offline Credit Card Processing"
+msgstr "Kytke päälle Offline Credit Card Prosessing"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:272
+msgid "Title"
+msgstr "Otsikko"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:274
+msgid "This controls the title which the user sees during checkout."
+msgstr "Tämä määrittelee otsikon, jonka käyttäjä näkee kassalla."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:275
+msgid "Credit Card"
+msgstr "Maksukortti"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:278
+msgid "Description"
+msgstr "Kuvaus"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:280
+msgid "This controls the description which the user sees during checkout."
+msgstr "Tämä määrittelee kuvauksen, jonka asiakas näkee kassalla."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:285
+msgid "Email Address"
+msgstr "Sähköpostiosoite"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:287
+msgid ""
+"This address will receive an additional email containing extra cc numbers "
+"and security code."
+msgstr ""
+"Tämä sähköpostiosoite vastaanottaa lisätietosähköpostit, jotka sisältävät "
+"maksutiedot (cc numerot ja turvakoodin)."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:288
+msgid ""
+"You can enter multiple email addresses seperated by a comma to prevent lost "
+"emails in case of delivery issues."
+msgstr ""
+"Voit syöttää useita sähköpostiosoitteita toisistaan pilkulla erottaen, jotta "
+"voit vähentää kadonneiden sähköpostien määrää ja vähentää ylimääräistä "
+"kyselyä."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:292
+msgid "Email Subject"
+msgstr "Sähköpostin aihe"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:294 gateway-credit-card-offline.php:300
+msgid "Available shortcodes"
+msgstr "Saatavilla lyhytkoodina"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:295
+msgid "Additional Order Details"
+msgstr "Tilauksen lisätiedot"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:298
+msgid "Email Template"
+msgstr "Sähköpostipohja"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:304
+msgid "Accepted Cards"
+msgstr "Hyväksytyt kortit"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:306
+msgid ""
+"Leave this empty to accept all cards. Or enter a list of cards separated by "
+"comma like this:"
+msgstr ""
+"Jätä tämä tyhjäksi, jotta voit vastaanottaa kaikkia korttityyppejä. Tai "
+"kirjoita kortit pilkulla eroteltuna, kuten tämä:"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:357
+msgid "Custom Icon"
+msgstr "Mukautettu kuvake"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:359
+msgid "Enable Custom Icon"
+msgstr "Kytke päälle mukautettu kuvake"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:365
+msgid "Custom Icon URL"
+msgstr "Mukautetun kuvakkeen URL"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:389
+msgid "Test Mode"
+msgstr "Testitila"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:390
+msgid "Enable CC Test Mode"
+msgstr "Ota testitila käyttöön"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:392
+msgid ""
+"This will disable the SSL check, store all details in the database - and "
+"allow using test numbers like 4111111111111111."
+msgstr ""
+"Tämä sammuttaa SSL tarkastuksen, kaupan kaikki tiedot tietokannassa ja "
+"hyväksyy testinumero kuten 4111111111111111."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:403
+msgid "Disable extra email"
+msgstr "Poista käytöstä lisäsähköposti"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:404
+msgid "Do not send additional emails"
+msgstr "Älä lähetä lisää sähköposteja"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:406
+msgid ""
+"This will include the extra email content in the New Order notification "
+"emails sent to the shop owner."
+msgstr ""
+"Tämä lisää lisäsähköpostin sisällön uuden tilauksen ilmoitus sähköpostiin, "
+"joka lähetetään kauppiaalle."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:427
+msgid "Offline Credit Card Processing"
+msgstr "Offline Maksukortin suoritus"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:428
+msgid "Process credit card payments manually."
+msgstr "Prosessoi maksukortin maksu manuaalisesti."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:478 gateway-credit-card-offline.php:1101
+msgid "Card Type"
+msgstr "Maksukortin tyyppi"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:523
+msgid "TEST MODE ENABLED"
+msgstr "KEHITTÄJÄ TILA ON PÄÄLLÄ"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:527
+msgid "Credit Card number"
+msgstr "Maksukortin numero"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:552
+msgid "Expiration date"
+msgstr "Voimassaolopäivä"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:554
+msgid "Month"
+msgstr "Kuukausi"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:565
+msgid "Year"
+msgstr "Vuosi"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:572
+msgid "Card security code"
+msgstr "Kortin turvakoodi"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:642
+msgid "Card security code is invalid (only digits are allowed)"
+msgstr "Turvakoodi on virheellinen (vain numerot ovat sallittuja)"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:660
+msgid "Card expiration date is invalid"
+msgstr "Viimeinen voimassaolopäivä on virheellinen"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:668
+msgid "No card number was provided"
+msgstr "Kortin numero ei ole annettu"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:673
+msgid "Card number is invalid"
+msgstr "Kortin numero on virheellinen"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:930
+msgid "Awaiting payment clearance"
+msgstr "Odottaa maksua"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:992 gateway-credit-card-offline.php:1012
+#, php-format
+msgid "Paid with %s card ending with %s."
+msgstr "Maksettu %s kortilla ja se voimassa %s asti."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1072
+msgid "Credit Card Details"
+msgstr "Maksukortin tiedot"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1102
+msgid "Card Number"
+msgstr "Maksukortin numero"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1103
+msgid "Valid until"
+msgstr "Voimassa"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1109
+msgid "Email sent"
+msgstr "Sähköposti lähetetty"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1123
+msgid "Security Code"
+msgstr "Turvakoodi"
+
+# @ wc_offline_cc
+#: updater/license_page.php:154
+msgid "Offline Credit Card Processing - Updates"
+msgstr "Offline Credit Card Processing - Päivitykset"
+
+# @ wc_offline_cc
+#: updater/license_page.php:167
+msgid "License"
+msgstr "Lisenssi"
+
+# @ wc_offline_cc
+#: updater/license_page.php:171
+msgid "License email"
+msgstr "Lisenssi sähköposti"
+
+# @ wc_offline_cc
+#: updater/license_page.php:177
+msgid "License key"
+msgstr "Lisenssiavain"
+
+# @ wc_offline_cc
+#: updater/license_page.php:185
+msgid "Deactivate license"
+msgstr "Poista lisenssi käytöstä"
+
+# @ wc_offline_cc
+#: updater/license_page.php:190
+msgid "Yes, I want to deactivate this license for"
+msgstr "Kyllä, haluan poistaa lisenssin sivustolta"
+
+# @ wc_offline_cc
+#: updater/license_page.php:200
+msgid "Beta testers"
+msgstr "Beta testaajat"
+
+# @ wc_offline_cc
+#: updater/license_page.php:204
+msgid ""
+"If you want to test new features before they are released, select the \"beta"
+"\" channel."
+msgstr ""
+"Jos haluat testata uusia ominaisuuksia, ennen kuin ne luovutetaan, valitse "
+"”beta”-kanava."
+
+# @ wc_offline_cc
+#: updater/license_page.php:207
+msgid "Update channel"
+msgstr "Päivityskanava"
+
+# @ wc_offline_cc
+#: updater/license_page.php:211
+msgid "stable"
+msgstr "vakaa"
+
+# @ wc_offline_cc
+#: updater/license_page.php:212
+msgid "beta"
+msgstr "beta"
+
+# @ wc_offline_cc
+#: updater/license_page.php:219
+msgid "Force update check"
+msgstr "Pakotettu päivitysten tarkistus"
+
+# @ wc_offline_cc
+#: updater/license_page.php:224
+msgid "Update settings"
+msgstr "Päivitysasetukset"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:114
+msgid "Check for updates was initiated."
+msgstr "Päivitystarkistus aloitettiin."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:115
+msgid "You can visit your WordPress Updates now."
+msgstr "Voit vierailla WordPress päivityssivulla nyt."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:116
+msgid ""
+"Since the updater runs in the background, it might take a little while "
+"before new updates appear."
+msgstr ""
+"Koska päivitys toimii taustalla, voi mennä hetki ennen, kuin uusi päivitys "
+"ilmaantuu."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:117
+msgid "view updates"
+msgstr "näytä päivitykset"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:144
+msgid "Your license was activated."
+msgstr "Lisenssiavain on aktivoitu."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:149 updater/LicensePage.php:152
+#: updater/LicensePage.php:155
+msgid "There was a problem activating your license."
+msgstr "Ilmeni virhe aktivoitaessa lisenssiä."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:171
+msgid "Your license was deactivated."
+msgstr "Lisenssiavain on poistettu käytöstä."
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:179 updater/LicensePage.php:182
+#: updater/LicensePage.php:185
+msgid "There was a problem deactivating your license."
+msgstr "Ilmeni virhe poistaessa lisenssiä käytöstä."

@@ -436,7 +436,7 @@ header .nav-right-icons {
   .payment-options {
     float: right;
     list-style: none;
-    display: flex; 
+    display: flex;
     align-items: center;
   }
 
@@ -800,6 +800,9 @@ header .nav-right-icons {
   border: 1px solid var(--faux-cg-blue);
 }
 
+.button-block {
+  width:100%;
+}
 
 /* UTILITY CLASSES */
 /* Margins */
@@ -1474,7 +1477,7 @@ footer .payment-options section.widget_block p {
   line-height: 26px;
   color: var(--white);
 }
-/* 
+/*
 footer .payment-options img {
   width: 60px;
   height: 38px;
@@ -1664,7 +1667,7 @@ form.woocommerce-form-login {
   border-radius: 0px;
   overflow-x: hidden;
   height: 100%;
-  box-shadow: 0px 0px 3px 1px #037E9B;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
