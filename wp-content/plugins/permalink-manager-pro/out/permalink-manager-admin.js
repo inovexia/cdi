@@ -506,15 +506,13 @@ jQuery(document).ready(function() {
 					if(table_dom.length > 0) {
 						jQuery('html, body').animate({
 							scrollTop: table_dom.offset().top - 100
-						}, 2000);
+	          }, 2000);
 					}
 
 					// Reset progress & updated count
 					progress = updated_count = 0;
 					jQuery(form).attr("data-updated_count", 0);
 				}
-
-				return true;
       },
 			error: function(xhr, status, error_data) {
 				alert('Tthere was a problem running this tool and the process could not be completed. You can find more details in browser\'s console log.')

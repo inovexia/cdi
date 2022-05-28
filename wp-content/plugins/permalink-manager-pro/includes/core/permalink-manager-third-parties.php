@@ -694,8 +694,6 @@ class Permalink_Manager_Third_Parties extends Permalink_Manager_Class {
 					$alt_title = (!empty($yoast_meta_terms[$term->taxonomy][$term->term_id]['wpseo_bctitle'])) ? $yoast_meta_terms[$term->taxonomy][$term->term_id]['wpseo_bctitle'] : '';
 				} else if($current_filter == 'seopress_pro_breadcrumbs_crumbs') {
 					$alt_title = get_term_meta($term->term_id, '_seopress_robots_breadcrumbs', true);
-				} else if($current_filter == 'rank_math/frontend/breadcrumb/items') {
-					$alt_title = get_term_meta($term->term_id, 'rank_math_breadcrumb_title', true);
 				}
 
  				$title = (!empty($alt_title)) ? $alt_title : $term->name;
@@ -715,8 +713,6 @@ class Permalink_Manager_Third_Parties extends Permalink_Manager_Class {
 					$alt_title = get_post_meta($page->ID, '_yoast_wpseo_bctitle', true);
 				} else if($current_filter == 'seopress_pro_breadcrumbs_crumbs') {
 					$alt_title = get_post_meta($page->ID, '_seopress_robots_breadcrumbs', true);
-				} else if($current_filter == 'rank_math/frontend/breadcrumb/items') {
-					$alt_title = get_post_meta($page->ID, 'rank_math_breadcrumb_title', true);
 				}
 
  				$title = (!empty($alt_title)) ? $alt_title : $page->post_title;
