@@ -154,6 +154,15 @@
   width: 100%;
   margin-bottom: 10px;
   display: block;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+}
+#registration-form-wrp fieldset label span {
+  color: red;
+}
+#registration-form-wrp fieldset .primary-colr {
+  color: #000;
 }
 
 #registration-form-wrp fieldset input,
