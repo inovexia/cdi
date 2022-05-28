@@ -11,40 +11,39 @@ function invwp_total_product_count ($post_type='product', $post_status='publish'
 
 
 // Function to return an array of product categories and sub categories
-function invwp_get_product_categories () {
-  $cats =  array();
-  $args = array(
-          'taxonomy' => 'product_cat',
-          'hide_empty' => false,
-          'parent'   => 0
-  );
-  $product_cat = get_terms( $args );
+function invwp_get_product_categories ($category_name='') {
+    $cats =  array();
+    $args = array(
+           'taxonomy' => 'product_cat',
+           'hide_empty' => true,
+           'parent'   => 0,
+           'slug' => $category_name, /*category name*/
+         );
+    $product_cat = get_terms( $args );
 
-  foreach ($product_cat as $parent_product_cat)  {
-    $id = $parent_product_cat->term_id;
-    $cats[$id] = [
-        'id'=>$parent_product_cat->term_id,
-        'name'=>$parent_product_cat->name,
-        'count'=>$parent_product_cat->count,
-        'link'=>get_term_link($parent_product_cat->term_id),
-    ];
-    $child_args = array(
-              'taxonomy' => 'product_cat',
-              'hide_empty' => false,
-              'parent'   => $parent_product_cat->term_id
-          );
-    $child_product_cats = get_terms( $child_args );
-    foreach ($child_product_cats as $child_product_cat) {
-      $cats[$id]['sub_cats'][] = [
-        'id'=>$child_product_cat->term_id,
-        'name'=>$child_product_cat->name,
-        'count'=>$child_product_cat->count,
-        'link'=>get_term_link($child_product_cat->term_id)
-      ];
+    foreach ($product_cat as $parent_product_cat)  {
+     $id = $parent_product_cat->term_id;
+     $cats[$id] = [
+         'id'=>$parent_product_cat->term_id,
+         'name'=>$parent_product_cat->name,
+         'link'=>get_term_link($parent_product_cat->term_id),
+     ];
+     $child_args = array(
+               'taxonomy' => 'product_cat',
+               'hide_empty' => false,
+               'parent'   => $parent_product_cat->term_id
+           );
+     $child_product_cats = get_terms( $child_args );
+     foreach ($child_product_cats as $child_product_cat) {
+       $cats[$id]['sub_cats'][] = [
+         'id'=>$child_product_cat->term_id,
+         'name'=>$child_product_cat->name,
+         'link'=>get_term_link($child_product_cat->term_id)
+       ];
+     }
     }
-  }
 
-  return $cats;
+    return $cats;
 }
 
 
