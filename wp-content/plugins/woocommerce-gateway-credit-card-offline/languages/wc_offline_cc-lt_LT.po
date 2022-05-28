@@ -1,0 +1,664 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Offline Credit Card Processing v1.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-17 15:23+0000\n"
+"PO-Revision-Date: 2018-01-17 15:23+0000\n"
+"Last-Translator: admin <info@wplab.com>\n"
+"Language-Team: Lithuanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Language: lt-LT\n"
+"X-Poedit-SearchPath-0: ."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:45 updater/LicensePage.php:33
+#: updater/LicensePage.php:33
+msgid "Offline Credit Card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:46
+msgid "Payment gateway to process credit cards offline"
+msgstr ""
+
+#: gateway-credit-card-offline.php:234
+#, php-format
+msgid ""
+"Great, your <a href=\"%s\">license</a> has been activated for this site."
+msgstr ""
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:254
+msgid ""
+"Enter a URL to your custom icon or copy and paste a filename from below:"
+msgstr ""
+
+#: gateway-credit-card-offline.php:288
+msgid ""
+"You can enter multiple email addresses seperated by a comma to prevent lost "
+"emails in case of delivery issues."
+msgstr ""
+
+#: gateway-credit-card-offline.php:304
+msgid "Accepted Cards"
+msgstr ""
+
+#: gateway-credit-card-offline.php:306
+msgid ""
+"Leave this empty to accept all cards. Or enter a list of cards separated by "
+"comma like this:"
+msgstr ""
+
+#: gateway-credit-card-offline.php:313
+msgid "Order Status"
+msgstr ""
+
+#: gateway-credit-card-offline.php:314
+msgid ""
+"Select the default status for new orders. <i>On-hold</i> is intended by "
+"WooCommerce for orders that require manual processing, but you can select <i>"
+"Processing</i> as well. <i>Completed</i> and <i>Pending</i> are not "
+"recommended."
+msgstr ""
+
+#: gateway-credit-card-offline.php:321
+msgid "On Hold"
+msgstr ""
+
+#: gateway-credit-card-offline.php:322
+msgid "Processing"
+msgstr ""
+
+#: gateway-credit-card-offline.php:323
+msgid "Completed"
+msgstr ""
+
+#: gateway-credit-card-offline.php:324
+msgid "Pending"
+msgstr ""
+
+#: gateway-credit-card-offline.php:329
+msgid "Cardholder name"
+msgstr ""
+
+#: gateway-credit-card-offline.php:330
+msgid "Ask for cardholder name"
+msgstr ""
+
+#: gateway-credit-card-offline.php:332
+msgid "This will add an additional field for the cardholder name."
+msgstr ""
+
+#: gateway-credit-card-offline.php:338
+msgid "Cardholder identity card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:339
+msgid "Ask for cardholder identity card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:341
+msgid "This will add an additional field for the cardholder identity card."
+msgstr ""
+
+#: gateway-credit-card-offline.php:347
+msgid "Debit Cards"
+msgstr ""
+
+#: gateway-credit-card-offline.php:348
+msgid "Ask whether the card is a debit card or credit card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:350
+msgid "This will add an additional selection to the checkout form."
+msgstr ""
+
+#: gateway-credit-card-offline.php:360
+msgid ""
+"Enable this to change the payment icon shown on checkout.<br>After ticking "
+"the checkbox, save your changes to see the available options."
+msgstr ""
+
+#: gateway-credit-card-offline.php:373
+msgid "Backup Storage URL"
+msgstr ""
+
+#: gateway-credit-card-offline.php:375
+msgid ""
+"To enable the backup storage feature, copy the storage.php file from the "
+"scripts folder within the plugin to a different server and enter the full "
+"URL like this:"
+msgstr ""
+
+#: gateway-credit-card-offline.php:382
+msgid "WooCommerce form"
+msgstr ""
+
+#: gateway-credit-card-offline.php:383
+msgid "Use the built in WooCommerce credit card form"
+msgstr ""
+
+#: gateway-credit-card-offline.php:385
+msgid "Please only enable this if you are using WooCommerce 2.1 or better."
+msgstr ""
+
+#: gateway-credit-card-offline.php:392
+msgid ""
+"This will disable the SSL check, store all details in the database - and "
+"allow using test numbers like 4111111111111111."
+msgstr ""
+
+#: gateway-credit-card-offline.php:396
+msgid "PCI compliance"
+msgstr ""
+
+#: gateway-credit-card-offline.php:397
+msgid "Disable PCI mode and store full details in database"
+msgstr ""
+
+#: gateway-credit-card-offline.php:399
+msgid ""
+"Warning: By enabling this option, you might violate laws or regulations that "
+"apply in your country."
+msgstr ""
+
+#: gateway-credit-card-offline.php:403
+msgid "Disable extra email"
+msgstr ""
+
+#: gateway-credit-card-offline.php:404
+msgid "Do not send additional emails"
+msgstr ""
+
+#: gateway-credit-card-offline.php:406
+msgid ""
+"This will include the extra email content in the New Order notification "
+"emails sent to the shop owner."
+msgstr ""
+
+#: gateway-credit-card-offline.php:410
+msgid "Checksum validation"
+msgstr ""
+
+#: gateway-credit-card-offline.php:411
+msgid "Disable checksum validation for credit card numbers"
+msgstr ""
+
+#: gateway-credit-card-offline.php:413
+msgid "This should normally be left unticked."
+msgstr ""
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:427
+msgid "Offline Credit Card Processing"
+msgstr ""
+
+#: gateway-credit-card-offline.php:464 gateway-credit-card-offline.php:465
+#: gateway-credit-card-offline.php:1096
+msgid "Card Holder"
+msgstr ""
+
+#: gateway-credit-card-offline.php:471 gateway-credit-card-offline.php:472
+msgid "Card Holder Identity Card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:480 gateway-credit-card-offline.php:544
+msgid "Select card type"
+msgstr ""
+
+#: gateway-credit-card-offline.php:481 gateway-credit-card-offline.php:545
+msgid "Credit card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:482 gateway-credit-card-offline.php:546
+msgid "Debit card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:532
+msgid "Credit Card holder"
+msgstr ""
+
+#: gateway-credit-card-offline.php:538
+msgid "Card Holder Identity Number"
+msgstr ""
+
+#: gateway-credit-card-offline.php:542
+msgid "Card type"
+msgstr ""
+
+#: gateway-credit-card-offline.php:636
+msgid ""
+"It seems like you did not enter any credit card details. Card number, expiry "
+"date and security code are required."
+msgstr ""
+
+#: gateway-credit-card-offline.php:679
+msgid "Card number is invalid."
+msgstr ""
+
+#: gateway-credit-card-offline.php:698
+msgid "No cardholder name was provided"
+msgstr ""
+
+#: gateway-credit-card-offline.php:705
+msgid "No cardholder identity card was provided"
+msgstr ""
+
+#: gateway-credit-card-offline.php:713
+msgid "Please select whether your card is a credit card or a debit card."
+msgstr ""
+
+#: gateway-credit-card-offline.php:1099
+msgid "Card Holder ID"
+msgstr ""
+
+#: gateway-credit-card-offline.php:1106
+msgid "Debit Card"
+msgstr ""
+
+#: gateway-credit-card-offline.php:1112
+msgid "Failure details"
+msgstr ""
+
+#: gateway-credit-card-offline.php:1121
+msgid "Clear private data after processing"
+msgstr ""
+
+#: gateway-credit-card-offline.php:1122
+msgid "Full Number"
+msgstr ""
+
+#: gateway-credit-card-offline.php:1133
+msgid "Clear private data"
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/license_page.php:211
+msgid "stable"
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/license_page.php:212
+msgid "beta"
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/license_page.php:219
+msgid "Force update check"
+msgstr ""
+
+#: updater/license_page.php:222
+msgid "Check license activation"
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/license_page.php:224
+msgid "Update settings"
+msgstr ""
+
+#: updater/LicensePage.php:78
+msgid "Your license is currently active on this site."
+msgstr ""
+
+#: updater/LicensePage.php:82
+msgid "This license has not been activated on this site."
+msgstr ""
+
+#: updater/LicensePage.php:83
+msgid "The update server responded:"
+msgstr ""
+
+#: updater/LicensePage.php:90 updater/LicensePage.php:93
+#: updater/LicensePage.php:96
+msgid "There was a problem checking your license."
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:115
+msgid "You can visit your WordPress Updates now."
+msgstr ""
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:116
+msgid ""
+"Since the updater runs in the background, it might take a little while "
+"before new updates appear."
+msgstr ""
+
+#: updater/wc_offline_cc_updater.php:238
+msgid "An unknown error occurred"
+msgstr ""
+
+#. Name of the plugin
+msgid "WooCommerce Offline Credit Card Processing"
+msgstr ""
+
+#. Description of the plugin
+msgid "A payment gateway for processing credit cards offline."
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://www.wplab.com/plugins/woocommerce-offline-credit-card-processing/"
+msgstr ""
+
+#. Author of the plugin
+msgid "WP Lab"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.wplab.com/"
+msgstr ""
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:224
+#, php-format
+msgid ""
+"You need to enter an email adress in the  <a href=\"%s\">Offline Credit Card "
+"Processing settings</a> to make this payment gateway available on your site."
+msgstr ""
+"Norėdami šį mokėjimo būdą įgalinti savo svetainėje, turite  <a href=\"%s\">"
+"Offline Credit Card Processing nustatymuose</a> įvesti el. pašto adresą."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:227
+#, php-format
+msgid ""
+"Please <a href=\"%s\">activate your license</a> to receive automatic updates "
+"for this plugin."
+msgstr ""
+"Prašome <a href=\"%s\">aktyvuoti savo licenciją, </a> kad gautumėt "
+"automatinius įskiepo atnaujinimus."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:244
+#, php-format
+msgid ""
+"Offline Credit Card Processing is enabled, but the <a href=\"%s\">force SSL "
+"option</a> is disabled; your checkout may not be secure! Please enable SSL "
+"and ensure your server has a valid SSL certificate - Offline Credit Card "
+"Processing will only work in test mode."
+msgstr ""
+"Offline Credit Card Processing įgalintas, tačiau <a href=\"%s\">privalomo "
+"SSL parinktis</a> išjungta; atsiskaitymas gali būti nesaugus! Įgalinkite SSL "
+"ir įsitikinkite, kad jūsų serveris turi galiojantį SSL certificate - kitaip "
+"Offline Credit Card Processing dirbs tik testavimo režimu."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:265
+msgid "Enable/Disable"
+msgstr "Įgalinti/Išjungti"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:266
+msgid "Enable Offline Credit Card Processing"
+msgstr "Įgalinti Offline Credit Card Processing"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:272
+msgid "Title"
+msgstr "Pavadinimas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:274
+msgid "This controls the title which the user sees during checkout."
+msgstr "Nustato, koks pavadinimas bus matomas atsiskaitymo puslapyje"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:275
+msgid "Credit Card"
+msgstr "Kreditinė kortelė"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:278
+msgid "Description"
+msgstr "Aprašymas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:280
+msgid "This controls the description which the user sees during checkout."
+msgstr "Nustato, koks aprašymas bus matomas atsiskaitymo puslapyje"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:285
+msgid "Email Address"
+msgstr "El. pašto adresas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:287
+msgid ""
+"This address will receive an additional email containing extra cc numbers "
+"and security code."
+msgstr ""
+"Šiuo adresu bus siunčiama papildoma informacija su sąskaitos numeriu ir "
+"saugos kodu"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:292
+msgid "Email Subject"
+msgstr "Laiško pavadinimas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:294 gateway-credit-card-offline.php:300
+msgid "Available shortcodes"
+msgstr "Galimi trumpieji kodai"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:295
+msgid "Additional Order Details"
+msgstr "Papildomi užsakymo duomenys"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:298
+msgid "Email Template"
+msgstr "El. pašto šablonas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:357
+msgid "Custom Icon"
+msgstr "Nuosavas paveiksliukas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:359
+msgid "Enable Custom Icon"
+msgstr "Įgalinti nuosavą paveiksliuką"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:365
+msgid "Custom Icon URL"
+msgstr "Nuosavo paveiksliuko URL"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:389
+msgid "Test Mode"
+msgstr "Testavimo režimas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:390
+msgid "Enable CC Test Mode"
+msgstr "Įgalinti testavimo režimą"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:428
+msgid "Process credit card payments manually."
+msgstr "Apdoroti mokėjimus kreditine kortele rankiniu būdu."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:478 gateway-credit-card-offline.php:1101
+msgid "Card Type"
+msgstr "Kortelės tipas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:523
+msgid "TEST MODE ENABLED"
+msgstr "ĮGALINTAS TESTAVIMO REŽIMAS"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:527
+msgid "Credit Card number"
+msgstr "Kreditinės kortelės numeris"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:552
+msgid "Expiration date"
+msgstr "Galiojimo data"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:554
+msgid "Month"
+msgstr "Mėnuo"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:565
+msgid "Year"
+msgstr "Metai"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:572
+msgid "Card security code"
+msgstr "Kortelės saugos kodas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:642
+msgid "Card security code is invalid (only digits are allowed)"
+msgstr "Kortelės saugos kodas neteisingas (galimi tik skaičiai)"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:660
+msgid "Card expiration date is invalid"
+msgstr "Kortelės galiojimo laikas neteisingas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:668
+msgid "No card number was provided"
+msgstr "Neįvestas kortelės numeris"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:673
+msgid "Card number is invalid"
+msgstr "Kortelės numeris neteisingas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:930
+msgid "Awaiting payment clearance"
+msgstr "Laukiama mokėjimo patvirtinimo"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:992 gateway-credit-card-offline.php:1012
+#, php-format
+msgid "Paid with %s card ending with %s."
+msgstr "Sumokėta %s kortele, kuri baigiasi %s."
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1072
+msgid "Credit Card Details"
+msgstr "Kreditinės kortelės duomenys"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1102
+msgid "Card Number"
+msgstr "Kortelės numeris"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1103
+msgid "Valid until"
+msgstr "Galioja iki"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1109
+msgid "Email sent"
+msgstr "El. laiškas išsiųstas"
+
+# @ wc_offline_cc
+#: gateway-credit-card-offline.php:1123
+msgid "Security Code"
+msgstr "Saugos kodas"
+
+# @ wc_offline_cc
+#: updater/license_page.php:154
+msgid "Offline Credit Card Processing - Updates"
+msgstr "Offline Credit Card Processing - Atnaujinimai"
+
+# @ wc_offline_cc
+#: updater/license_page.php:167
+msgid "License"
+msgstr "Licencija"
+
+# @ wc_offline_cc
+#: updater/license_page.php:171
+msgid "License email"
+msgstr "Licencijos el. paštas"
+
+# @ wc_offline_cc
+#: updater/license_page.php:177
+msgid "License key"
+msgstr "Licencijos raktas"
+
+# @ wc_offline_cc
+#: updater/license_page.php:185
+msgid "Deactivate license"
+msgstr "Deaktyvuoti licenciją"
+
+# @ wc_offline_cc
+#: updater/license_page.php:190
+msgid "Yes, I want to deactivate this license for"
+msgstr "Taip, noriu deaktyvuoti licenciją"
+
+# @ wc_offline_cc
+#: updater/license_page.php:200
+msgid "Beta testers"
+msgstr "Beta testuotojai"
+
+# @ wc_offline_cc
+#: updater/license_page.php:204
+msgid ""
+"If you want to test new features before they are released, select the "
+"\"beta\" channel."
+msgstr ""
+"Jei norite testuoti naujas galimybes prieš joms dar pasirodant, pasirinkite  "
+"\"beta\" kanalą."
+
+# @ wc_offline_cc
+#: updater/license_page.php:207
+msgid "Update channel"
+msgstr "Atnaujinti kanalą"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:114
+msgid "Check for updates was initiated."
+msgstr "Pradėta atnaujinimų paieška"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:117
+msgid "view updates"
+msgstr "peržiūrėti atnaujinimus"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:144
+msgid "Your license was activated."
+msgstr "Licencija aktyvuota"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:149 updater/LicensePage.php:152
+#: updater/LicensePage.php:155
+msgid "There was a problem activating your license."
+msgstr "Problemos aktyvuojant licenciją"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:171
+msgid "Your license was deactivated."
+msgstr "Licencija deaktyvuota"
+
+# @ wc_offline_cc
+#: updater/LicensePage.php:179 updater/LicensePage.php:182
+#: updater/LicensePage.php:185
+msgid "There was a problem deactivating your license."
+msgstr "Problemos deaktyvuojant licenciją"
