@@ -8,7 +8,7 @@
         <h2 class="section-title text-white"><?php echo the_field("product_section_title"); ?></h2>
       </div>-->
             <div class="col-12">
-                <h1>Browse Medications</h1>
+                <h1>Browse medications</h1>
             </div>
         </div>
 
