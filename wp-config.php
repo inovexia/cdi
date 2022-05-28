@@ -81,8 +81,8 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'http://localhost/dev/cdi-latest' );
-define( 'WP_HOME', 'http://localhost/dev/cdi-latest' );
+define( 'WP_SITEURL', 'https://dev.icbtc.com/canadianinsulin' );
+define( 'WP_HOME', 'https://dev.icbtc.com/canadianinsulin' );
 
 
 /* That's all, stop editing! Happy publishing. */
