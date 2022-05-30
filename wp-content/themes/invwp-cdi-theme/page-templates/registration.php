@@ -6,7 +6,7 @@
    * @subpackage Inovexia_Ecomm_Theme
    * @since 2021
    */
-   
+
    get_header();
    ?>
 <main id="primary" class="site-main">
@@ -30,57 +30,49 @@
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Username <span>*</span></label>
-                              <input type="text" class="form-control" name="username" id="reg_username" autocomplete="username"
-                                 value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" placeholder="Username" required="required" />
+                              <input type="text" class="form-control" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" placeholder="Username" required="required" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-4">
                               <label>Shopper First Name <span>*</span></label>
-                              <input type="text" class="form-control" name="shopper_first_name" id="reg_first_name" autocomplete="shopper_first_name"
-                                 value="<?php echo ( ! empty( $_POST['shopper_first_name'] ) ) ? esc_attr( wp_unslash( $_POST['shopper_first_name'] ) ) : ''; ?>" placeholder="First Name" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="first_name" id="first_name" autocomplete="first_name" value="<?php echo ( ! empty( $_POST['first_name'] ) ) ? esc_attr( wp_unslash( $_POST['first_name'] ) ) : ''; ?>" placeholder="First Name" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                            <div class="col-4">
                               <label>Shopper Middle Name</label>
-                              <input type="text" class="form-control" name="shopper_middle_name" id="reg_last_name" autocomplete="shopper_middle_name"
-                                 value="<?php echo ( ! empty( $_POST['shopper_middle_name'] ) ) ? esc_attr( wp_unslash( $_POST['shopper_middle_name'] ) ) : ''; ?>" placeholder="Middle Name" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="middle_name" id="middle_name" autocomplete="middle_name" value="<?php echo ( ! empty( $_POST['middle_name'] ) ) ? esc_attr( wp_unslash( $_POST['middle_name'] ) ) : ''; ?>" placeholder="Middle Name" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                            <div class="col-4">
                               <label>Shopper Last Name <span>*</span></label>
-                              <input type="text" class="form-control" name="shopper_last_name" id="reg_last_name" autocomplete="shopper_last_name"
-                                 value="<?php echo ( ! empty( $_POST['shopper_last_name'] ) ) ? esc_attr( wp_unslash( $_POST['shopper_last_name'] ) ) : ''; ?>" placeholder="Last Name" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="last_name" id="last_name" autocomplete="last_name" value="<?php echo ( ! empty( $_POST['last_name'] ) ) ? esc_attr( wp_unslash( $_POST['last_name'] ) ) : ''; ?>" placeholder="Last Name" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Email <span>*</span></label>
-                              <input type="email" class="form-control" name="email" id="reg_email" autocomplete="email"
-                                 value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>" placeholder="Email address" />
+                              <input type="email" class="form-control" name="email" id="reg_email" autocomplete="email" value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>" placeholder="Email address" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Confirm Your Email <span>*</span></label>
-                              <input type="email" class="form-control" name="confirm_email" id="reg_email" autocomplete="confirm_email"
-                                 value="<?php echo ( ! empty( $_POST['confirm_email'] ) ) ? esc_attr( wp_unslash( $_POST['confirm_email'] ) ) : ''; ?>" placeholder="Confirmed Email address" />
+                              <input type="email" class="form-control" name="confirm_email" id="confirm_email" autocomplete="confirm_email" value="<?php echo ( ! empty( $_POST['confirm_email'] ) ) ? esc_attr( wp_unslash( $_POST['confirm_email'] ) ) : ''; ?>" placeholder="Confirmed Email address" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-6">
                               <label>Password <span>*</span></label>
-                              <input type="text" class="form-control" name="password" id="reg_first_name" autocomplete="password"
-                                 value="<?php echo ( ! empty( $_POST['password'] ) ) ? esc_attr( wp_unslash( $_POST['password'] ) ) : ''; ?>" placeholder="Password" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="password" class="form-control" name="password" id="password" autocomplete="password" value="<?php echo ( ! empty( $_POST['password'] ) ) ? esc_attr( wp_unslash( $_POST['password'] ) ) : ''; ?>" placeholder="Password" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                            <div class="col-6">
                               <label>Confirm Password <span>*</span></label>
-                              <input type="text" class="form-control" name="confirm_password" id="reg_last_name" autocomplete="confirm_password"
-                                 value="<?php echo ( ! empty( $_POST['confirm_password'] ) ) ? esc_attr( wp_unslash( $_POST['confirm_password'] ) ) : ''; ?>" placeholder="Confirm Password" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="password" class="form-control" name="confirm_password" id="confirm_password" autocomplete="confirm_password" value="<?php echo ( ! empty( $_POST['confirm_password'] ) ) ? esc_attr( wp_unslash( $_POST['confirm_password'] ) ) : ''; ?>" placeholder="Confirm Password" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Street Address <span>*</span></label>
-                              <input type="text" class="form-control" name="street_address" id="reg_address" autocomplete="street_address"
+                              <input type="text" class="form-control" name="street_address" id="street_address" autocomplete="street_address"
                                  value="<?php echo ( ! empty( $_POST['street_address'] ) ) ? esc_attr( wp_unslash( $_POST['street_address'] ) ) : ''; ?>"
                                  placeholder="Street Address" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
@@ -88,13 +80,11 @@
                         <div class="form-group row">
                            <div class="col-6">
                               <label>City <span>*</span></label>
-                              <input type="text" class="form-control" name="city" id="reg_city" autocomplete="city"
-                                 value="<?php echo ( ! empty( $_POST['city'] ) ) ? esc_attr( wp_unslash( $_POST['city'] ) ) : ''; ?>" placeholder="City" />
+                              <input type="text" class="form-control" name="city" id="city" autocomplete="city" value="<?php echo ( ! empty( $_POST['city'] ) ) ? esc_attr( wp_unslash( $_POST['city'] ) ) : ''; ?>" placeholder="City" />
                            </div>
                            <div class="col-6">
                               <label>Apt/Suite No</label>
-                              <input type="text" class="form-control" name="app_no" id="reg_city" autocomplete="app_no"
-                                 value="<?php echo ( ! empty( $_POST['app_no'] ) ) ? esc_attr( wp_unslash( $_POST['app_no'] ) ) : ''; ?>" placeholder="Apt/Suite No" />
+                              <input type="text" class="form-control" name="app_no" id="app_no" autocomplete="app_no" value="<?php echo ( ! empty( $_POST['app_no'] ) ) ? esc_attr( wp_unslash( $_POST['app_no'] ) ) : ''; ?>" placeholder="Apt/Suite No" />
                            </div>
                         </div>
                         <div class="form-group row">
@@ -126,20 +116,17 @@
                            </div>
                            <div class="col-6">
                               <label>Zip Code <span>*</span></label>
-                              <input type="text" class="form-control" name="zipcode" id="reg_zipcode" autocomplete="zipcode"
-                                 value="<?php echo ( ! empty( $_POST['zipcode'] ) ) ? esc_attr( wp_unslash( $_POST['zipcode'] ) ) : ''; ?>" placeholder="Zip code" />
+                              <input type="text" class="form-control" name="zipcode" id="zipcode" autocomplete="zipcode" value="<?php echo ( ! empty( $_POST['zipcode'] ) ) ? esc_attr( wp_unslash( $_POST['zipcode'] ) ) : ''; ?>" placeholder="Zip code" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-6">
                               <label>Phone Number <span>*</span></label>
-                              <input type="email" class="form-control" name="shopper_phone" id="reg_email" autocomplete="shopper_phone"
-                                 value="<?php echo ( ! empty( $_POST['shopper_phone'] ) ) ? esc_attr( wp_unslash( $_POST['shopper_phone'] ) ) : ''; ?>" placeholder="" />
+                            <input type="email" class="form-control" name="Phone" id="phone" autocomplete="phone" value="<?php echo ( ! empty( $_POST['phone'] ) ) ? esc_attr( wp_unslash( $_POST['phone'] ) ) : ''; ?>" placeholder="123-456-7890" />
                            </div>
                            <div class="col-6">
                               <label>Fax </label>
-                              <input type="email" class="form-control" name="shopper-fax" id="reg_email" autocomplete="shopper-fax"
-                                 value="<?php echo ( ! empty( $_POST['shopper-fax'] ) ) ? esc_attr( wp_unslash( $_POST['shopper-fax'] ) ) : ''; ?>" placeholder="" />
+                              <input type="email" class="form-control" name="fax" id="fax" autocomplete="fax" value="<?php echo ( ! empty( $_POST['fax'] ) ) ? esc_attr( wp_unslash( $_POST['fax'] ) ) : ''; ?>" placeholder="123-456--7890" />
                            </div>
                         </div>
                         <div class=" form-group row">
@@ -166,27 +153,24 @@
                         <div class="form-group row">
                            <div class="col-6">
                               <label>Patient First and Name <span>*</span></label>
-                              <input type="text" class="form-control" name="patient_first_name" id="reg_first_name" autocomplete="patient_first_name"
-                                 value="<?php echo ( ! empty( $_POST['patient_first_name'] ) ) ? esc_attr( wp_unslash( $_POST['patient_first_name'] ) ) : ''; ?>" placeholder="First and Last name of Prescribed Patient" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="patient_name" id="patient_name" autocomplete="patient_name" value="<?php echo ( ! empty( $_POST['patient_name'] ) ) ? esc_attr( wp_unslash( $_POST['patient_name'] ) ) : ''; ?>" placeholder="First and Last name of Prescribed Patient" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                            <div class="col-6">
                               <label>Date of Birth <span>*</span></label>
-                              <input type="date" id="birthday" name="date_of_birth">
+                              <input type="date" id="patient_dob" name="patient_dob">
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-6 radio-wrp">
                               <label>Gender <span>*</span></label>
                               <div class="radio-column">
-                              <p><label for="patient_male" class="label-radio">Male</label>
-                              <input type="radio" id="patient_male" name="patient_male" value="HTML" class="input-radio"></p>
-                              <p><label for="patient_female" class="label-radio">Female</label>
-                              <input type="radio" id="css" name="patient_female" value="CSS" class="input-radio"></p>
-                              <p><label for="patient_other" class="label-radio">Other</label>
-                              <input type="radio" id="javascript" name="patient_other" value="JavaScript" class="input-radio"></p>
+                                <p><label for="patient_gender_male" class="label-radio">Male</label>
+                                <input type="radio" id="patient_gender_male" name="patient_gender" value="m" class="input-radio"></p>
+                                <p><label for="patient_gender_female" class="label-radio">Female</label>
+                                <input type="radio" id="patient_gender_female" name="patient_gender_female" value="f" class="input-radio"></p>
+                                <p><label for="patient_gender_other" class="label-radio">Other</label>
+                                <input type="radio" id="patient_gender_other" name="patient_gender_other" value="o" class="input-radio"></p>
                               </div>
-                              
-                              
                            </div>
                            <div class="col-6">
                               <label>Patient Relationship <span>*</span></label>
@@ -216,22 +200,21 @@
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Current Medical Conditions – Please list patient’s current medical condition(s) <span>*</span></label>
-                              <input type="text" class="form-control" name="Conditions" id="reg_first_name" autocomplete="Conditions"
-                                 value="<?php echo ( ! empty( $_POST['Conditions'] ) ) ? esc_attr( wp_unslash( $_POST['Conditions'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="patient_conditions" id="patient_conditions" autocomplete="patient_conditions" value="<?php echo ( ! empty( $_POST['patient_conditions'] ) ) ? esc_attr( wp_unslash( $_POST['patient_conditions'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Drug Allergies – Please list patient’s allergies and include any necessary comments <span>*</span></label>
-                              <input type="text" class="form-control" name="drug" id="reg_first_name" autocomplete="drug"
-                                 value="<?php echo ( ! empty( $_POST['drug'] ) ) ? esc_attr( wp_unslash( $_POST['drug'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="patient_drug_allergies" id="patient_drug_allergies" autocomplete="patient_drug_allergies"
+                                 value="<?php echo ( ! empty( $_POST['patient_drug_allergies'] ) ) ? esc_attr( wp_unslash( $_POST['patient_drug_allergies'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Current Medication – Please list all medications/supplements patient currently takes <span>*</span></label>
-                              <input type="text" class="form-control" name="current_medicine" id="reg_first_name" autocomplete="current_medicine"
-                                 value="<?php echo ( ! empty( $_POST['current_medicine'] ) ) ? esc_attr( wp_unslash( $_POST['current_medicine'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="patient_current_medication" id="patient_current_medication" autocomplete="patient_current_medication"
+                                 value="<?php echo ( ! empty( $_POST['patient_current_medication'] ) ) ? esc_attr( wp_unslash( $_POST['patient_current_medication'] ) ) : ''; ?>" placeholder="" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                      </fieldset>
@@ -240,45 +223,41 @@
                         <div class="form-group row">
                            <div class="col-6">
                               <label> First Name <span>*</span></label>
-                              <input type="text" class="form-control" name="doctor_first_name" id="reg_first_name" autocomplete="doctor_first_name"
-                                 value="<?php echo ( ! empty( $_POST['doctor_first_name'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_first_name'] ) ) : ''; ?>" placeholder="First Name" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="doctor_first_name" id="doctor_first_name" autocomplete="doctor_first_name" value="<?php echo ( ! empty( $_POST['doctor_first_name'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_first_name'] ) ) : ''; ?>" placeholder="First Name" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                            <div class="col-6">
                               <label> Last Name <span>*</span></label>
-                              <input type="text" class="form-control" name="doctor_last_name" id="reg_last_name" autocomplete="doctor_last_name"
-                                 value="<?php echo ( ! empty( $_POST['doctor_last_name'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_last_name'] ) ) : ''; ?>" placeholder="Last Name" /><?php // @codingStandardsIgnoreLine ?>
+                              <input type="text" class="form-control" name="doctor_last_name" id="reg_last_name" autocomplete="doctor_last_name" value="<?php echo ( ! empty( $_POST['doctor_last_name'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_last_name'] ) ) : ''; ?>" placeholder="Last Name" /><?php // @codingStandardsIgnoreLine ?>
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Phone Number <span>*</span></label>
-                              <input type="email" class="form-control" name="dr_phone" id="reg_email" autocomplete="dr_phone"
-                                 value="<?php echo ( ! empty( $_POST['dr_phone'] ) ) ? esc_attr( wp_unslash( $_POST['dr_phone'] ) ) : ''; ?>" placeholder="" />
+                              <input type="email" class="form-control" name="doctor_phone" id="doctor_phone" autocomplete="doctor_phone" value="<?php echo ( ! empty( $_POST['doctor_phone'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_phone'] ) ) : ''; ?>" placeholder="" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Clinic Name</label>
-                              <input type="email" class="form-control" name="clinic_name" id="reg_email" autocomplete="clinic_name"
-                                 value="<?php echo ( ! empty( $_POST['clinic_name'] ) ) ? esc_attr( wp_unslash( $_POST['clinic_name'] ) ) : ''; ?>" placeholder="Clinic Name" />
+                              <input type="email" class="form-control" name="doctor_clinic_name" id="doctor_clinic_name" autocomplete="doctor_clinic_name"
+                                 value="<?php echo ( ! empty( $_POST['doctor_clinic_name'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_clinic_name'] ) ) : ''; ?>" placeholder="Clinic Name" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-12">
                               <label>Clinic Address</label>
-                              <input type="email" class="form-control" name="clinic_address" id="reg_email" autocomplete="clinic_address"
-                                 value="<?php echo ( ! empty( $_POST['clinic_address'] ) ) ? esc_attr( wp_unslash( $_POST['clinic_address'] ) ) : ''; ?>" placeholder="Clinic Address" />
+                              <input type="email" class="form-control" name="doctor_clinic_address" id="doctor_clinic_address" autocomplete="doctor_clinic_address"
+                                 value="<?php echo ( ! empty( $_POST['doctor_clinic_address'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_clinic_address'] ) ) : ''; ?>" placeholder="Clinic Address" />
                            </div>
                         </div>
                         <div class="form-group row">
                            <div class="col-6">
                               <label>City</label>
-                              <input type="text" class="form-control" name="dr_city" id="reg_city" autocomplete="dr_city"
-                                 value="<?php echo ( ! empty( $_POST['dr_city'] ) ) ? esc_attr( wp_unslash( $_POST['dr_city'] ) ) : ''; ?>" placeholder="City" />
+                              <input type="text" class="form-control" name="doctor_city" id="doctor_city" autocomplete="dr_city" value="<?php echo ( ! empty( $_POST['doctor_city'] ) ) ? esc_attr( wp_unslash( $_POST['doctor_city'] ) ) : ''; ?>" placeholder="City" />
                            </div>
                            <div class="col-6">
                               <label>Apt/Suite No </label>
-                              <input type="text" class="form-control" name="dr_app_no" id="reg_city" autocomplete="dr_app_no"
+                              <input type="text" class="form-control" name="doctor_app_no" id="doctor_app_no" autocomplete="dr_app_no"
                                  value="<?php echo ( ! empty( $_POST['dr_app_no'] ) ) ? esc_attr( wp_unslash( $_POST['dr_app_no'] ) ) : ''; ?>" placeholder="Apt/Suite No" />
                            </div>
                         </div>

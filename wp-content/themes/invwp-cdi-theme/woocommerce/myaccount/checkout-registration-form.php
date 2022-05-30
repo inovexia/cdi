@@ -15,7 +15,7 @@
           <div class=" form-group row">
             <?php if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) : ?>
             <div class="col-md-6">
-              <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="reg_username" autocomplete="username"
+              <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" autocomplete="username"
                 value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" placeholder="Username" required="required" />
             </div>
             <?php endif; ?>
@@ -23,11 +23,11 @@
             <div class="col-md-6">
               <?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
-              <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" autocomplete="new-password" placeholder="Password" />
+                <input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="password" autocomplete="new-password" placeholder="Password" />
 
               <?php else : ?>
 
-              <p><?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?></p>
+                <p><?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?></p>
 
               <?php endif; ?>
             </div>
