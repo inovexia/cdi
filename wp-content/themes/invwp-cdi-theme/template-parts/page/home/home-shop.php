@@ -25,7 +25,7 @@
           <h3 class="section-title mb-5"><?php echo the_field('home_shop_title'); ?></h3>
           <p class="section-description"><?php echo the_field('home_shop_description'); ?></p>
           <p class="mt-30">
-            <a class="button button-primary text-uppercase" href="<?php echo site_url('about');?>"><?php echo the_field('home_shop_button_title'); ?></a>
+            <a class="button button-primary text-uppercase" href="<?php echo site_url('/registration');?>"><?php echo the_field('home_shop_button_title'); ?></a>
           </p>
         </div>
       </div>

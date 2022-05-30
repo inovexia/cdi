@@ -29,6 +29,7 @@ require get_template_directory() . '/inc/helper-functions.php';
 /**
 * Load default woocommerce layout customizer.
 */
+require get_template_directory() . '/inc/plugins/custom-post-type.php';
 require get_template_directory() . '/inc/plugins/custom-layout.php';
 require get_template_directory() . '/inc/plugins/show-featured-products.php';
 require get_template_directory() . '/inc/plugins/add-to-cart.php';

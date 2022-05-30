@@ -31,7 +31,10 @@
                       <!-- Slides -->
                       <div class="swiper-slide col-3 px-5">
                          <div class="slide-image">
+                         <a href="<?php echo the_permalink (); ?>">
                            <?php invwp_post_thumbnail () ?>
+                           <!-- <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' /> -->
+                 </a>
                          </div>
                          <h6 class="slide-meta text-uppercase">
                          </h6>
