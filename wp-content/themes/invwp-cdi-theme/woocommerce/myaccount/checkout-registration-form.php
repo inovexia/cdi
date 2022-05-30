@@ -7,7 +7,7 @@
 <div class="row">
    <div class="col-8 mx-auto">
       <p>Registering an account is free, easy, and it allows you to place orders, track your prescriptions, and view your order history. It also keeps your information secure when you order.</p>
-      <form id="registration-form-wrp" class=" my-0 form-horizontal" <?php do_action( 'woocommerce_register_form_tag' ); ?>>
+      <form id="user-custom-register-form" class=" my-0 form-horizontal" <?php do_action( 'woocommerce_register_form_tag' ); ?>>
          <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
          <?php wp_nonce_field('user_register', 'reg_user_nonce', true, true ); ?>
          <input type="hidden" name="action" value="register_user">
