@@ -41,7 +41,7 @@ do_action( 'woocommerce_before_main_content' );
             <div class="col-9 all-products">
                 <div class="mobile-filetr-icon">
                     <div class="col-6">
-                        <span class="filter-open"><i class="fas fa-filter"></i>Filetr By</span>
+                        <span class="filter-open"><i class="fas fa-filter"></i>Filter By</span>
                     </div>
                 </div>
                 <?php

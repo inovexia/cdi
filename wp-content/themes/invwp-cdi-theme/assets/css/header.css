@@ -633,6 +633,9 @@
     header .mobile-search-box {
         display: none;
     }
+    .top-left-header li a {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -651,6 +654,9 @@
     .top-left-header li a {
         font-size: 14px;
         line-height: 19px;
+    }
+    .top-left-header li a {
+        font-size: 12px;
     }
 }
 
