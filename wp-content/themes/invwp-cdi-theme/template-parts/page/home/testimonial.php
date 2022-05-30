@@ -16,7 +16,7 @@
                $args = array (
                 'post_type' => 'testimonial',
                 'post_status' => 'publish',
-                'posts_per_page' => -1,
+                'posts_per_page' => 6,
                 'orderby'    => 'date',
                 'order'      => 'DESC',
                 'hide_empty' => false,
@@ -25,13 +25,11 @@
                if ($query->have_posts()) {
                  while ($query->have_posts()) {
                   $query->the_post();
-                  // get the image URL
-                  $image = wp_get_attachment_url ( get_post_thumbnail_id ( get_the_Id()));
                   ?>
                   <!-- Slides -->
                   <div class="swiper-slide1 col-4 text-center">
                      <div class="slide-image">
-                       <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>" width='319' height='427' />
+                       <?php invwp_post_thumbnail () ?>
                      </div>
                      <div class="testimonial-title my-5">
                        <h6 class="slide-meta text-center">

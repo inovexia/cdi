@@ -37,7 +37,7 @@ function woocommerce_product_custom_fields_save ($post_id) {
 add_action('wp_enqueue_scripts', 'mspa_cart_ajax_scripts');
 function mspa_cart_ajax_scripts() {
     // Here you register your script located in a subfolder `js` of your active theme
-    wp_enqueue_script( 'cart-ajax-script', get_template_directory_uri().'/assets/js/product-group-buy.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'product-group-buy', get_template_directory_uri().'/assets/js/product-group-buy.js', array('jquery'), '1.0', true );
     // Here you are going to make the bridge between php and js
     //wp_localize_script( 'cart-ajax-script', 'cart_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 }

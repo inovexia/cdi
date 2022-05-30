@@ -55,18 +55,18 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 			<div class="woocommerce-form-row form-row" >
 					<?php wp_nonce_field( 'ajax-login-nonce', 'security' ); ?>
-					<button type="submit" class="woocommerce-button button woocommerce-form-login__submit sign-in button-background-blue" name="login" value="<?php esc_attr_e( 'Sign in', 'woocommerce' ); ?>" id="checkout-custom-submit"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+					<button type="submit" class="woocommerce-button button button-block woocommerce-form-login__submit sign-in button-background-blue" name="login" value="<?php esc_attr_e( 'Sign in', 'woocommerce' ); ?>" id="checkout-custom-submit"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 			</div>
 
 			<p class="status"></p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
 
-			<?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
+			<?php //if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 				<div class="woocommerce-form-row form-row" >
-					<p class="text-center align-center lato-normal-black-pearl-14px">Don't have an account yet? <a href="<?php echo home_url( '/registration/'); ?>" class="" id="join-action-link">Join <?php echo bloginfo ('name'); ?></a></p>
-				</div>			
-			<?php endif; ?>
+					<p class="text-center align-center lato-normal-black-pearl-14px">Don't have an account yet? <a href="<?php echo home_url( '/registration/'); ?>" class="" >Join <?php echo bloginfo ('name'); ?></a></p>
+				</div>
+			<?php //endif; ?>
 
 		</form>
 
