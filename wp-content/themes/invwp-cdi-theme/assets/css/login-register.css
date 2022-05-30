@@ -75,14 +75,14 @@
 }
 
 /* Customer registration form */
-#registration-form-wrp fieldset {
+#user-custom-register-form fieldset {
   border: none;
   padding: 25px;
   margin: 25px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#registration-form-wrp fieldset label {
+#user-custom-register-form fieldset label {
   width: 100%;
   margin-bottom: 10px;
   display: block;
@@ -90,15 +90,15 @@
   color: #000;
   font-weight: 500;
 }
-#registration-form-wrp fieldset label span {
+#user-custom-register-form fieldset label span {
   color: red;
 }
-#registration-form-wrp fieldset .primary-colr {
+#user-custom-register-form fieldset .primary-colr {
   color: #000;
 }
 
-#registration-form-wrp fieldset input,
-#registration-form-wrp fieldset select {
+#user-custom-register-form fieldset input,
+#user-custom-register-form fieldset select {
   background-color: var(--grey1);
   border: 1px solid var(--white);
   margin-bottom: 20px;
@@ -114,23 +114,23 @@
   width: 100%;
 }
 
-.registration-section .woocommerce-form__input-checkbox {
+#user-custom-register-form .woocommerce-form__input-checkbox {
   width: 35px !important;
   float: left;
 }
-#registration-form-wrp .form-row {
+#user-custom-register-form .form-row {
   margin: 0;
 }
-.col-6.radio-wrp p {
+#user-custom-register-form .col-6.radio-wrp p {
   display: flex;
   align-items: center;
 }
-.radio-column {
+#user-custom-register-form .radio-column {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-label.label-radio, .input-radio {
+#user-custom-register-form label.label-radio, .input-radio {
   margin-bottom: 0 !important;
 }
 .main-btn {

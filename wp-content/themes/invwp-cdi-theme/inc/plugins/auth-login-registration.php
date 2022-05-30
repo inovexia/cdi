@@ -83,7 +83,8 @@ function auth_user_registration () {
     } else {
       $info = array();
       $info_meta = array();
-      $info['user_nicename'] = $info['nickname'] = $info['display_name'] = $info['first_name'] = $info['user_login'] = sanitize_user($_POST['username']) ;
+      $info['user_nicename'] = $info['nickname'] = $info['display_name'] = $info['first_name'] = sanitize_text_field($_POST['first_name']);
+      $info['user_login'] = sanitize_user($_POST['username']) ;
       $info['user_pass'] = sanitize_text_field($_POST['password']);
       $info['user_email'] = sanitize_email( $_POST['email']);
 
@@ -100,15 +101,20 @@ function auth_user_registration () {
               echo json_encode(array('error'=>true, 'current_tab'=>$current_tab, 'message'=>__('This email address is already registered.')));
           } else {
             // meta-info
-            $info_meta['user_phone'] = sanitize_text_field($_POST['reg_phone']);
+            $info_meta['phone'] = sanitize_text_field($_POST['reg_phone']);
             $info_meta['first_name'] = sanitize_text_field($_POST['first_name']);
+            $info_meta['middle_name'] = sanitize_text_field($_POST['middle_name']);
             $info_meta['last_name'] = sanitize_text_field($_POST['last_name']);
-            $info_meta['billing_address'] = sanitize_text_field($_POST['billing_address']);
-            $info_meta['billing_city'] = sanitize_text_field($_POST['billing_city']);
-            $info_meta['billing_zipcode'] = sanitize_text_field($_POST['billing_zipcode']);
+            $info_meta['billing_address'] = sanitize_text_field($_POST['street_address']);
+            $info_meta['billing_address2'] = sanitize_text_field($_POST['app_no']);
+            $info_meta['billing_city'] = sanitize_text_field($_POST['city']);
+            $info_meta['billing_zipcode'] = sanitize_text_field($_POST['zipcode']);
             $info_meta['billing_country'] = sanitize_text_field($_POST['mspa_country_field']);
             $info_meta['billing_state'] = sanitize_text_field($_POST['mspa_state_field']);
+            $info_meta['phone'] = sanitize_text_field($_POST['phone']);
+            $info_meta['fax'] = sanitize_text_field($_POST['fax']);
             $info_meta['hear_about_us'] = sanitize_text_field($_POST['hear_about_us']);
+            /*
             $info_meta['company_name'] = sanitize_text_field($_POST['company_name']);
             $info_meta['contact_name'] = sanitize_text_field($_POST['contact_name']);
             $info_meta['secondary_phone_number'] = sanitize_text_field($_POST['secondary_phone_number']);
@@ -121,6 +127,7 @@ function auth_user_registration () {
             $info_meta['speciality'] = sanitize_text_field($_POST['speciality']);
             $info_meta['medical_professional_name'] = sanitize_text_field($_POST['medical_professional_name']);
             $info_meta['fax'] = sanitize_text_field($_POST['fax']);
+            */
 
             foreach ($info_meta as $key=>$value) {
               update_user_meta( $user_id, $key, $value );
@@ -160,28 +167,45 @@ function validate_user_input ($current_tab=0) {
   $message = [];
 
   if (($current_tab > 0 && $current_tab == 1) || $current_tab == 0) {
+
       if (empty ($_POST['username'])) {
           $error = true;
           array_push ($message, 'Username cannot be empty');
+      } else {
+        // check if name only contains letters and whitespace
+        if (!preg_match("/^[a-zA-Z0-9-' ]*$/",$_POST['username'])) {
+          array_push ($message, 'Only letters and white space allowed');
+        }
       }
+
       if (empty ($_POST['email'])) {
           $error = true;
           array_push ($message, 'Email cannot be empty');
       } else if (filter_var ($_POST['email'], FILTER_VALIDATE_EMAIL) == false) {
           $error = true;
           array_push ($message, 'This is not a valid email');
+      } else if ($_POST['email'] != $_POST['confirm_email']) {
+          $error = true;
+          array_push ($message, 'Email and Confirm email are different');
       } else if (email_exists ($_POST['email'])) {
           $error = true;
-          array_push ($message, 'This email already exists. Try another email');
+          array_push ($message, 'An account with this email already exists. Try another email');
       }
-      if (empty ($_POST['reg_phone'])) {
+
+      if (empty ($_POST['phone'])) {
           $error = true;
           array_push ($message, 'Phone number is required');
+      } elseif (! is_numeric ($_POST['phone'])) {
+          $error = true;
+          array_push ($message, 'Phone number is not valid');
       }
-      
+
       if (empty ($_POST['password'])) {
           $error = true;
           array_push ($message, 'Password is required');
+      } else if ($_POST['password'] != $_POST['confirm_password']) {
+          $error = true;
+          array_push ($message, 'Password and Confirm password are different');
       } else {
         $pattern = '/(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/';
         if (strlen($_POST['password']) < 8 || !preg_match ($pattern, $_POST['password'])) {
@@ -206,15 +230,15 @@ function validate_user_input ($current_tab=0) {
           $error = true;
           array_push ($message, 'Last name cannot be empty');
       }
-      if (empty ($_POST['billing_address'])) {
+      if (empty ($_POST['street_address'])) {
           $error = true;
-          array_push ($message, 'Address cannot be empty');
+          array_push ($message, 'Street address cannot be empty');
       }
-      if (empty ($_POST['billing_city'])) {
+      if (empty ($_POST['city'])) {
           $error = true;
           array_push ($message, 'Enter your city');
       }
-      if (empty ($_POST['billing_zipcode'])) {
+      if (empty ($_POST['zipcode'])) {
           $error = true;
           array_push ($message, 'Enter a postal code');
       }

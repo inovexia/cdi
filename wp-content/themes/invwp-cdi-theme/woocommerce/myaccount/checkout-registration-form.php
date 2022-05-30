@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-   <div class="col-8 mx-auto">
+   <div class="col-10 mx-auto">
       <p>Registering an account is free, easy, and it allows you to place orders, track your prescriptions, and view your order history. It also keeps your information secure when you order.</p>
       <form id="user-custom-register-form" class=" my-0 form-horizontal" <?php do_action( 'woocommerce_register_form_tag' ); ?>>
          <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
@@ -58,8 +58,7 @@
             <div class="form-group row">
                <div class="col-12">
                   <label>Street Address <span>*</span></label>
-                  <input type="text" class="form-control" name="street_address" id="street_address" autocomplete="street_address"
-                     value="<?php echo ( ! empty( $_POST['street_address'] ) ) ? esc_attr( wp_unslash( $_POST['street_address'] ) ) : ''; ?>"
+                  <input type="text" class="form-control" name="street_address" id="street_address" autocomplete="street_address" value="<?php echo ( ! empty( $_POST['street_address'] ) ) ? esc_attr( wp_unslash( $_POST['street_address'] ) ) : ''; ?>"
                      placeholder="Street Address" /><?php // @codingStandardsIgnoreLine ?>
                </div>
             </div>
@@ -147,12 +146,11 @@
          </fieldset>
 
          <div class="woocommerce-form-row form-row ">
-            <p class=" align-center already-acc-btn">Already have an account? <a href="#customer_login" id="login-action-link"
-               class="lato-bold-black-pearl-14px">Log-In</a></p>
             <p>
                <button type="submit" class="woocommerce-Button woocommerce-button button button-block woocommerce-form-register__submit reg-form-submit button-background-blue " name="register" value="<?php esc_attr_e( 'SUBMIT', 'woocommerce' ); ?>"><?php esc_html_e( 'REGISTER', 'woocommerce' ); ?></button>
             </p>
             <p class="status"></p>
+            <p class=" align-center already-acc-btn">Already have an account? <a href="#customer_login" id="login-action-link" class="lato-bold-black-pearl-14px">Log-In</a></p>
          </div>
          <?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
          <div class="thanks-message text-center d-none" id="thanks-message">
