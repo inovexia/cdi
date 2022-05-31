@@ -114,6 +114,21 @@ function auth_user_registration () {
             $info_meta['phone'] = sanitize_text_field($_POST['phone']);
             $info_meta['fax'] = sanitize_text_field($_POST['fax']);
             $info_meta['hear_about_us'] = sanitize_text_field($_POST['hear_about_us']);
+
+            /* Patient Block */
+            $info_meta['patient_name'] = sanitize_text_field($_POST['patient_name']);
+            $info_meta['patient_dob'] = sanitize_text_field($_POST['patient_dob']);
+            $info_meta['patient_gender'] = sanitize_text_field($_POST['patient_gender']);
+            $info_meta['patient_species'] = sanitize_text_field($_POST['patient_species']);
+            $info_meta['patient_height'] = sanitize_text_field($_POST['patient_height']);
+            $info_meta['patient_weight'] = sanitize_text_field($_POST['patient_weight']);
+            $info_meta['patient_conditions'] = sanitize_text_field($_POST['patient_conditions']);
+            $info_meta['patient_relationship'] = sanitize_text_field($_POST['patient_relationship']);
+            $info_meta['patient_conditions'] = sanitize_text_field($_POST['patient_conditions']);
+            $info_meta['patient_current_medication'] = sanitize_text_field($_POST['patient_current_medication']);
+
+            /* Doctor's Block */
+
             /*
             $info_meta['company_name'] = sanitize_text_field($_POST['company_name']);
             $info_meta['contact_name'] = sanitize_text_field($_POST['contact_name']);
@@ -246,12 +261,47 @@ function validate_user_input ($current_tab=0) {
           $error = true;
           array_push ($message, 'Select your country');
       }
-      /*
-      if (empty ($_POST['mspa_state_field'])) {
+      /* Patient Information */
+      if (empty ($_POST['patient_name'])) {
           $error = true;
-          array_push ($message, 'Select your state');
+          array_push ($message, 'Select patient name');
       }
-      */
+      if (empty ($_POST['patient_dob'])) {
+          $error = true;
+          array_push ($message, 'Select patient date of birth');
+      }
+      if (empty ($_POST['patient_gender'])) {
+          $error = true;
+          array_push ($message, 'Select patient gender');
+      }
+      if (empty ($_POST['patient_relationship'])) {
+          $error = true;
+          array_push ($message, 'Select patient relationship');
+      }
+      if (empty ($_POST['patient_species'])) {
+          $error = true;
+          array_push ($message, 'Select patient species');
+      }
+      if (empty ($_POST['patient_height'])) {
+          $error = true;
+          array_push ($message, 'Select patient height');
+      }
+      if (empty ($_POST['patient_weight'])) {
+          $error = true;
+          array_push ($message, 'Select patient weight');
+      }
+      if (empty ($_POST['patient_conditions'])) {
+          $error = true;
+          array_push ($message, 'Add patient conditions');
+      }
+      if (empty ($_POST['patient_drug_allergies'])) {
+          $error = true;
+          array_push ($message, 'Add patient drug allergies');
+      }
+      if (empty ($_POST['patient_current_medication'])) {
+          $error = true;
+          array_push ($message, 'Add patient current medications');
+      }
   }
 
   if (($current_tab > 0 && $current_tab == 3) || $current_tab == 0) {
