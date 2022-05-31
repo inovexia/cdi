@@ -38,7 +38,7 @@
           $y++;
           $tCount = $y;
           ?>
-          <div class="col-4 col-m-6">
+          <div class="col-4">
               <div class="">
 				<p class="section-icon pb-5"><i class="fas <?php echo the_sub_field('lists_order_icons'); ?> pl-5"></i></p>
 				<h3 class="section-title "><?php echo the_sub_field('list_order_title'); ?></h3>

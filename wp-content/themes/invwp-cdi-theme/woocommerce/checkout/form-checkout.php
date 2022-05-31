@@ -71,10 +71,12 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 										'hidden'   => false,
 									));
 
+									/*
 									wc_get_template( 'myaccount/checkout-registration-form.php', array(
 										'redirect' => wc_get_page_permalink( 'checkout' ),
 										'hidden'   => false,
 									));
+									*/
 								}
 								?>
 	          </fieldset>

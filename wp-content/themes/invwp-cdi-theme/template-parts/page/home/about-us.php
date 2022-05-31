@@ -13,7 +13,7 @@
           <h3 class="section-title"><?php echo the_field('about_title'); ?></h3>
           <p class="section-description"><?php echo the_field('about_description'); ?></p>
           <p class="mt-30">
-            <a class="button button-primary text-uppercase" href="<?php echo site_url('about');?>"><?php echo the_field('about_button_text'); ?></a>
+            <a class="button button-primary text-uppercase" href="<?php echo site_url('/about-us');?>"><?php echo the_field('about_button_text'); ?></a>
           </p>
         </div>
       </div>

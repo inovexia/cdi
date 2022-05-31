@@ -116,6 +116,13 @@
   .customer-main-banner {
     padding: 70px 0px;
   }
+
+  .desktop-order-phone {
+    display: none;
+}
+.mobile-order-phone {
+  display: block;
+}
 }
 
 /*newsletter*/
@@ -134,6 +141,10 @@
 /*how to order*/
 .page-template-how-to-order ul {
   padding-left: 8px;
+}
+
+.order-col-section .col-4 {
+  margin-bottom: 25px;
 }
 
 /*404 page*/
@@ -182,6 +193,19 @@
   .woocommerce-products-header {
     padding: 35px 40px;
   }
+
+  .order-col-section .col-4 {
+    margin-bottom: 0;
+}
+.desktop-order-phone {
+  display: block;
+}
+.mobile-order-phone {
+  display: none;
+}
+.order-by-phone-section .content-wrap {
+  padding: 0 50px;
+}
 }
 
 @media (min-width: 992px) {}
