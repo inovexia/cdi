@@ -18,8 +18,9 @@ add_action( 'woocommerce_checkout_before_order_review', 'woocommerce_checkout_co
 
 add_action( 'invwp_woocommerce_checkout_place_order_button', 'invwp_checkout_place_order_button', 5 );
 function invwp_checkout_place_order_button () {
-  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine
+  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order button-primary" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine
 }
+
 
 add_action( 'wp_head', 'invwp_multi_step_checkout_style' );
 function invwp_multi_step_checkout_style () {
@@ -28,12 +29,14 @@ function invwp_multi_step_checkout_style () {
   wp_enqueue_style( 'invwps-msc-css', get_template_directory_uri () . '/assets/css/multi-step-checkout.css', array(), _S_VERSION, 'all' );
 }
 
+
+
 add_action( 'wp_footer', 'invwp_multi_step_checkout_script' );
 function invwp_multi_step_checkout_script () {
   // Only run this on the single product page
   //if ( ! is_page ('checkout')) return;
   ?>
-   <script type="text/javascript" src="<?php echo get_template_directory_uri () .'/assets/js/multi-step-checkout.js'; ?>">
-   </script>
-   <?php
+<script type="text/javascript" src="<?php echo get_template_directory_uri () .'/assets/js/multi-step-checkout.js'; ?>">
+</script>
+<?php
 }

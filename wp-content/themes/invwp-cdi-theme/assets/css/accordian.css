@@ -2,6 +2,11 @@
     display: none;
 }
 
+.faq-section.home-faq-section .group {
+    border-bottom: none;
+    padding: 20px 0px;
+}
+
 .home-faq-section .accordion-title {
     margin: 0;
 }
@@ -14,6 +19,18 @@
 .home-faq-section .accordion-title {
     margin: 0;
     padding-right: 20px;
+}
+
+.faq-section.home-faq-section .accordion-title {
+    font-size: 22px;
+}
+
+.faq-section.home-faq-section {
+    padding-bottom: 50px;
+}
+
+.faq-section.home-faq-section .group a::after {
+    font-size: 25px;
 }
 
 
