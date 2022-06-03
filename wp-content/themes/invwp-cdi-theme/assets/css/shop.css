@@ -10,6 +10,16 @@
 		margin-bottom: 0;
 	}
 
+	.product-data .product-img {
+		background: #fff;
+	}
+
+	.product-data .product-img img {
+		width: 100%;
+		height: unset;
+		max-width: 200px;
+	}
+
 	.sidebar-left .collapsible a {
 		font-size: 18px;
 		line-height: 24px;
@@ -503,9 +513,12 @@
 		font-family: "OSR";
 		color: #1E1E1E;
 	}
-	.single-product-content .price bdi, .single-product-content .price span {
+
+	.single-product-content .price bdi,
+	.single-product-content .price span {
 		font-size: 22px !important;
 	}
+
 	/* End Shop page ntry header */
 
 }
@@ -660,6 +673,7 @@
 		top: 50%;
 		height: 100%;
 	}
+
 	.product-btns .add_to_cart_button.ajax_add_to_cart,
 	.product-btns .product_type_variable {
 		max-width: 180px;
@@ -667,6 +681,7 @@
 		padding: 10px;
 		line-height: 19px;
 	}
+
 	.product-btns .view-product {
 		max-width: 180px;
 		font-size: 13px;

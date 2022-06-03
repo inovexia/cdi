@@ -31,36 +31,37 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 <section id="custom-checkout-progressbar">
 
-  <div class="row">
-    <div class="col-9">
+    <div class="row">
+        <div class="col-9">
 
-			<div class="row">
-	      <div class="col-12">
-	        <ul id="progressbar">
-	            <li class="step-progress active <?php if (! is_user_logged_in ()) { echo 'active';} ?>" id="step1">
-	                <strong class="">Account</strong>
-	            </li>
-	            <li class="step-progress <?php if (is_user_logged_in ()) { echo 'active';} ?>" id="step2">
-	                <strong class="">Shipping</strong>
-	            </li>
-	            <li class="step-progress" id="step3">
-								<strong class="">Payment</strong>
-							</li>
-	            <li class="step-progress" id="step4">
-								<strong class="">Review</strong>
-							</li>
-	        </ul>
-				</div>
-			</div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="progressbar">
+                        <li class="step-progress active <?php if (! is_user_logged_in ()) { echo 'active';} ?>"
+                            id="step1">
+                            <strong class="">Account</strong>
+                        </li>
+                        <li class="step-progress <?php if (is_user_logged_in ()) { echo 'active';} ?>" id="step2">
+                            <strong class="">Shipping</strong>
+                        </li>
+                        <li class="step-progress" id="step3">
+                            <strong class="">Payment</strong>
+                        </li>
+                        <li class="step-progress" id="step4">
+                            <strong class="">Review</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-	    <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
-			<div class="row">
-	      <div class="col-12">
+            <div class="row">
+                <div class="col-12">
 
-						<!-- Login Block -->
-	          <fieldset id="fieldset1" class="checkout-tab">
-	              <?php
+                    <!-- Login Block -->
+                    <fieldset id="fieldset1" class="checkout-tab">
+                        <?php
 								// If checkout registration is disabled and not logged in, the user cannot checkout.
 								if ( ! is_user_logged_in() ) {
 
@@ -79,106 +80,113 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 									*/
 								}
 								?>
-	          </fieldset>
-	          <!--//  Login Block -->
+                    </fieldset>
+                    <!--//  Login Block -->
 
-						<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+                    <form name="checkout" method="post" class="checkout woocommerce-checkout"
+                        action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
-							<!--  Address Block -->
-							<fieldset id="fieldset2" class="checkout-tab">
-								<?php if ( $checkout->get_checkout_fields() ) : ?>
+                        <!--  Address Block -->
+                        <fieldset id="fieldset2" class="checkout-tab">
+                            <?php if ( $checkout->get_checkout_fields() ) : ?>
 
-									<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+                            <?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-									<div class="col2-set" id="customer_details">
-										<div class="col-1-full">
-											<?php do_action( 'woocommerce_checkout_billing' ); ?>
-										</div>
+                            <div class="col2-set" id="customer_details">
+                                <div class="col-1-full">
+                                    <?php do_action( 'woocommerce_checkout_billing' ); ?>
+                                </div>
 
-										<div class="col-2-full">
-											<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-										</div>
-									</div>
+                                <div class="col-2-full">
+                                    <?php do_action( 'woocommerce_checkout_shipping' ); ?>
+                                </div>
+                            </div>
 
-									<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+                            <?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
-									<div class="clearfix"></div>
+                            <div class="clearfix"></div>
 
-									<button type="button" class="wc-forward next-step button button-primary text-uppercase"
-											id="checkout-review-order-button">Next: Payment </button>
-									<?php endif; ?>
+                            <button type="button" class="wc-forward next-step button button-primary text-uppercase"
+                                id="checkout-review-order-button">Next: Payment </button>
+                            <?php endif; ?>
+                            <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
 
-							</fieldset>
+                        </fieldset>
 
-							<!--  Payment Block -->
-		          <fieldset id="fieldset3" class="checkout-tab">
-		              <h2>Payment Details</h2>
-		              <?php do_action( 'invwp_woocommerce_payment_methods' ); ?>
-		              <p class="mt-4"></p>
-		              <button type="button" id="rev-order" class="rev-order wc-forward next-step button button-primary text-uppercase">Review Order</button>
-		          </fieldset>
-		          <!--//  Payment Block -->
+                        <!--  Payment Block -->
+                        <fieldset id="fieldset3" class="checkout-tab">
+                            <h2>Payment Details</h2>
+                            <?php do_action( 'invwp_woocommerce_payment_methods' ); ?>
+                            <p class="mt-4"></p>
+                            <button type="button" id="rev-order"
+                                class="rev-order wc-forward next-step button button-primary text-uppercase">Review
+                                Order</button>
+                            <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
+                        </fieldset>
+                        <!--//  Payment Block -->
 
-							<!--  Review Block -->
-							<fieldset id="fieldset4" class="checkout-tab">
-								<h2>Review Order</h2>
-                <div class="row checkout-order-review-shipping-block">
-                    <div class="review-left">
-                        <strong>Shipping address:</strong>
-                        <div id="shipping-address-line1" class="montserrat-normal-ebony-clay-10px"></div>
-                        <div id="shipping-address-line2" class="montserrat-normal-ebony-clay-10px">
-                            <span id="shipping-address-zipcode"></span>
-                            <span id="shipping-address-city"></span>
-                            <span id="shipping-address-state"></span>
-                        </div>
-                        <div id="shipping-address-line3" class="montserrat-normal-ebony-clay-10px">
-                            <span id="shipping-address-canada"></span>
-                        </div>
-                        <div><a href="#" id="edit-shipping-tab">Edit</a></div>
-                    </div>
+                        <!--  Review Block -->
+                        <fieldset id="fieldset4" class="checkout-tab">
+                            <h2>Review Order</h2>
+                            <div class="row checkout-order-review-shipping-block">
+                                <div class="review-left">
+                                    <strong>Shipping address:</strong>
+                                    <div id="shipping-address-line1" class="montserrat-normal-ebony-clay-10px"></div>
+                                    <div id="shipping-address-line2" class="montserrat-normal-ebony-clay-10px">
+                                        <span id="shipping-address-zipcode"></span>
+                                        <span id="shipping-address-city"></span>
+                                        <span id="shipping-address-state"></span>
+                                    </div>
+                                    <div id="shipping-address-line3" class="montserrat-normal-ebony-clay-10px">
+                                        <span id="shipping-address-canada"></span>
+                                    </div>
+                                    <div><a href="#" id="edit-shipping-tab">Edit</a></div>
+                                </div>
 
-                    <div class="review-right">
-                        <strong>Payment method:</strong>
-                        <div id="shipping-payment-line1" class="montserrat-normal-ebony-clay-10px"></div>
-                        <div id="shipping-payment-line2" class="montserrat-normal-ebony-clay-10px"></div>
-                        <div id="shipping-payment-line3" class="montserrat-normal-ebony-clay-10px"></div>
-                        <div><a href="#" id="edit-payment-tab">Edit</a></div>
-                    </div>
+                                <div class="review-right">
+                                    <strong>Payment method:</strong>
+                                    <div id="shipping-payment-line1" class="montserrat-normal-ebony-clay-10px"></div>
+                                    <div id="shipping-payment-line2" class="montserrat-normal-ebony-clay-10px"></div>
+                                    <div id="shipping-payment-line3" class="montserrat-normal-ebony-clay-10px"></div>
+                                    <div><a href="#" id="edit-payment-tab">Edit</a></div>
+                                </div>
+                            </div>
+
+                            <div class="row checkout-order-review-email-block">
+                                <div class="review-bottom">
+                                    <strong>Email address:</strong>
+                                    <div id="shipping-email-line1" class="montserrat-normal-ebony-clay-10px"></div>
+                                </div>
+                            </div>
+
+                            <div class="final-step-place-order">
+                                <?php do_action ('invwp_woocommerce_checkout_place_order_button'); ?>
+
+                            </div>
+                            <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
+                        </fieldset>
+                    </form>
+
                 </div>
+            </div>
+        </div>
 
-                <div class="row checkout-order-review-email-block">
-                    <div class="review-bottom">
-                        <strong>Email address:</strong>
-                        <div id="shipping-email-line1" class="montserrat-normal-ebony-clay-10px"></div>
-                    </div>
-                </div>
+        <div class="col-3">
 
-								<div class="final-step-place-order">
-									<?php do_action ('invwp_woocommerce_checkout_place_order_button'); ?>
-								</div>
-							</fieldset>
-						</form>
+            <?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 
-					</div>
-				</div>
-			</div>
+            <h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
 
-			<div class="col-3">
+            <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-				<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
+            <div id="order_review" class="woocommerce-checkout-review-order">
+                <?php do_action( 'woocommerce_checkout_order_review' ); ?>
+            </div>
 
-				<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+            <?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
-				<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
-				<div id="order_review" class="woocommerce-checkout-review-order">
-					<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-				</div>
-
-				<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-
-			</div>
-		</div>
+        </div>
+    </div>
 
 
 </section>
@@ -226,12 +234,18 @@ $(document).ready(function() {
         $('#shipping-email-line1').html($('#billing_email').val());
     });
     $('#rev-order').on('click', function() {
-        var ccn = $('#offline_cc-card-number').val();
-        var cn = ccn.substr(-4);
-        $('#shipping-payment-line1').html($('#offline_cc-card-holder').val());
-        $('#shipping-payment-line2').html(cn);
-        $('#shipping-payment-line3').html("Expires" +
-            " " + $('#offline_cc-card-expiry').val());
+        var checkDiv = $(this).parent().parent();
+        if (checkDiv.attr("id") == "offline_cc-card-number") {
+            var ccn = $('#offline_cc-card-number').val();
+            alert(ccn);
+            var cn = ccn.substr(-4);
+            $('#shipping-payment-line1').html($('#offline_cc-card-holder').val());
+            $('#shipping-payment-line2').html(cn);
+            $('#shipping-payment-line3').html("Expires" +
+                " " + $('#offline_cc-card-expiry').val());
+        }
+
+
     });
 
     $('#edit-shipping-tab').on('click', function() {
