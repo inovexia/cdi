@@ -94,6 +94,7 @@ jQuery(document).ready(function () {
   jQuery(".shopfilterclose").click(function () {
     jQuery(".sidebar-left-outer").removeClass("left-0");
   });
+  jQuery(".mob-search .search-submit").attr("value", "");
 });
 
 jQuery(document).ready(function () {

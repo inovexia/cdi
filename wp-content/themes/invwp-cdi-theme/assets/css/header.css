@@ -127,7 +127,7 @@
     }
 
     .site-branding .custom-logo-link {
-        width: 76px;
+        width: 70px;
     }
 
     .mob-menu-body ul li {
@@ -318,7 +318,13 @@
     }
 
     .mob-search .search-submit {
-        display: none;
+        position: absolute;
+        top: 0;
+        width: 10px;
+        z-index: 999;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     header .main-navigation .nav-menu-right .mob-search {
@@ -343,7 +349,7 @@
 
     .mob-search .search-field {
         padding-left: 30px;
-        max-width: 145px;
+        max-width: 130px;
         font-size: 14px;
         line-height: 19px;
         font-family: "OSR";
@@ -512,6 +518,7 @@
     header .mob-mega-menu.left-0 {
         left: 0;
     }
+
     .top-left-header li a {
         margin-left: 5px;
     }
@@ -633,6 +640,7 @@
     header .mobile-search-box {
         display: none;
     }
+
     .top-left-header li a {
         font-size: 11px;
     }
@@ -655,6 +663,7 @@
         font-size: 14px;
         line-height: 19px;
     }
+
     .top-left-header li a {
         font-size: 12px;
     }

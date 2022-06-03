@@ -9,7 +9,7 @@
  /**
  * Reposition related products on single product page
  **/
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20, 0);
+//remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20, 0);
 add_action('woocommerce_after_single_product', 'invwps_show_related_products', 20, 0);
 function invwps_show_related_products () {
 
