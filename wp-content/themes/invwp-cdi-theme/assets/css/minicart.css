@@ -132,7 +132,7 @@
     border: 1px solid #037E9B;
     color: #fff;
     text-transform: uppercase;
-    height: 45px;
+    /* height: 45px; */
     letter-spacing: 0.5px;
     margin-right: 5px;
   }

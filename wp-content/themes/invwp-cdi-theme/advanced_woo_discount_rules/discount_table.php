@@ -63,7 +63,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
             //asort($table_sort_by_columns); ?>
 <span class="price-chart">PRICE CHART</span>
 <div class="row border my-2 group-buy-table">
-    <div class="col-7">
+    <div class="col-12">
         <div class="awdr-bulk-customizable-table w-100">
             <table id="sort_customizable_table" class="wdr_bulk_table_msg sar-table" width="100%">
                 <thead class="wdr_bulk_table_thead">
@@ -191,7 +191,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
         </div>
 
     </div>
-    <div class="col-5 comparison-col">
+    <!-- <div class="col-5 comparison-col">
         <a class="add_to_cart_button button br_compare_button br_product_745 berocket_product_smart_compare"
             data-id="<?php echo $product->get_id(); ?>" href="<?php echo site_url ('/compare/'); ?>">
             +
@@ -199,7 +199,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                 ADD TO COMPARISON CHART
             </span>
         </a>
-    </div>
+    </div> -->
 </div>
 
 <?php

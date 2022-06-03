@@ -511,7 +511,7 @@
         top: 0;
         transition: all 0.3s;
         background-color: #fff;
-        z-index: 99;
+        z-index: 999;
         max-width: 390px;
     }
 

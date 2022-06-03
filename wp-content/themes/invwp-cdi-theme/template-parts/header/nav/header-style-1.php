@@ -59,8 +59,11 @@
                     <?php } else { ?>
                     <!-- inser more links here -->
                     <li class="nav-item sign-in-btn">
+                        <div>
                         <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
-                            data-signin="login">SIGN IN</a>
+                            data-signin="login">LOG IN</a>
+                        <a class="" href="<?php echo site_url(); ?>/registration" style="cursor:pointer;">SIGN UP</a>
+                    </div>
                     </li>
                     <?php } ?>
 
@@ -100,7 +103,7 @@
                     <!-- inser more links here -->
                     <span class="nav-item">
                         <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
-                            data-signin="login">Sign In</a>
+                            data-signin="login">LOG IN</a>
                     </span>
                     <?php } ?>
                 </li>

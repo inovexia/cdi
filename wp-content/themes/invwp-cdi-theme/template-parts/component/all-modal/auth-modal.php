@@ -8,7 +8,7 @@
 
           <div class="tabs">
             <button class="tablinks" onclick="openTab(event, 'tab-content-login')" id="defaultOpenTab">LOGIN</button>
-            <button class="tablinks" onclick="openTab(event, 'tab-content-register')">REGISTER</button>
+            <!-- <button class="tablinks" onclick="openTab(event, 'tab-content-register')">REGISTER</button> -->
           </div>
           <p class="subtitle">Login to your account</p>
 
@@ -17,7 +17,7 @@
           </div>
 
           <div id="tab-content-register" class="tabcontent">
-            <?php wc_get_template ('myaccount/custom-registration-form.php'); ?>
+            <?php //wc_get_template ('myaccount/custom-registration-form.php'); ?>
           </div>
         </div>
   		</div>

@@ -255,6 +255,18 @@ header .top-header-search form select:focus-visible {
   outline: none;
   background: var(--faux-cg-blue2);
 }
+.header-right .sign-in-btn {
+  /* display: flex; */
+  display: none;
+}
+.header-right .sign-in-btn a {
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: "OSL";
+  letter-spacing: 0.5px;
+  margin-left: 20px;
+}
 
 #s {
   width: 40%;
@@ -775,6 +787,12 @@ header .nav-right-icons {
 
   header .menu-toggler {
     display: none;
+  }
+  .header-right .sign-in-btn {
+    display: block;
+  }
+  .header-right .sign-in-btn div {
+    display: flex;
   }
 }
 
@@ -1658,6 +1676,10 @@ form.woocommerce-form-login {
     left: 20px;
     position: absolute;
   }
+  #minicart-nav .woocommerce-mini-cart__buttons a {
+    padding: 8px 33px;
+    line-height: 12px;
+}
 }
 
 .collapse .active::after {
@@ -1672,6 +1694,9 @@ form.woocommerce-form-login {
 }
 
 /* ----==== Minicart ===---- */
+#minicart-nav .woocommerce-mini-cart__buttons a {
+  padding: 10px 48px;
+}
 .minicart {
   height: 100%;
   width: 90%;
