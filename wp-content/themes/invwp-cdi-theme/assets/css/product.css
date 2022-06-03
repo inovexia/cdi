@@ -477,12 +477,18 @@
     padding: 75px 0px;
   }
 
-  .single-product .related.products h2 {
+  .single-product .related.products h2, .single-product .product-description h3 {
     font-size: 36px;
     line-height: 49px;
     font-family: "OSR";
     margin: 0;
-  }
+    font-weight: 500;
+}
+.single-product .product-description h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 20px;
+}
 
   .single-product .related.products .woocommerce-loop-product__title {
     font-size: 14px;

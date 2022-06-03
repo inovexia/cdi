@@ -19,7 +19,7 @@ get_header();
                 <?php
           $args = array(
              'post_type' => 'post',
-             'order'     => 'ASC',
+             'order'     => 'DESC',
              "posts_per_page" => 6,
              'paged' => get_query_var('paged'), 
           );
@@ -50,7 +50,7 @@ get_header();
 
                         </div>
                         <div class="blog-btn">
-                            <a href="<?php the_permalink(); ?>" class="main-btn">Read More</a>
+                            <a href="<?php the_permalink(); ?>">Read More</a>
                         </div>
                     </div>
                 </div>

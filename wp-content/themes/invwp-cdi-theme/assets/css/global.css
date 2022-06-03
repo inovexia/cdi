@@ -398,6 +398,19 @@ header .nav-right-icons {
     width: 100%;
   }
 
+  .footer-contact-title {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-right: 6px;
+  }
+
+  .top-footer-contact p,
+  .top-footer-contact a {
+    color: #fff;
+    font-size: 12px;
+  }
+
   footer .top-footer {
     width: 100%;
     background-color: var(--faux-cg-blue);
@@ -650,10 +663,10 @@ header .nav-right-icons {
 
   .hero-buttons a {
     padding: 11px 0;
-    min-width: 112px;
-    min-height: 37px;
-    width: 144px;
-    height: 40px;
+    /* min-width: 112px;
+    min-height: 37px; */
+    /* width: 144px;
+    height: 40px; */
     font-size: 11px;
   }
 
@@ -775,7 +788,8 @@ header .nav-right-icons {
   font-style: normal;
   text-align: center;
   margin: 5px 0;
-  width: 233px;
+  width: 90%;
+  max-width: 233px;
 }
 
 .button-primary {
@@ -1092,7 +1106,7 @@ header .nav-right-icons {
   font-size: var(--font-size-IVxl);
   font-weight: var(--font-weight-medium);
   font-style: normal;
-  line-height: 150%;
+  line-height: 130%;
   margin-top: 10px;
 }
 
