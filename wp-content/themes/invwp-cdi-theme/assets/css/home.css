@@ -61,8 +61,8 @@ font-style: normal;
 line-height: 19px;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-width: 233px;
-height: 45px;
+/* width: 233px;
+height: 45px; */
 padding: 12px 30px;
 }
 .home-banner-section .banner-image-wrap {
@@ -256,9 +256,9 @@ top: -2px;
 letter-spacing: 0.05em !important;
 cursor: pointer;
 }
-.home-banner-section {
+/* .home-banner-section {
   padding: 0 0px;
-}
+} */
 .home-about-us {
   padding: 50px 20px;
 }
@@ -339,6 +339,12 @@ cursor: pointer;
 .home-banner-section .row {
   padding: 25px 0px;
 }
+.hero-buttons .button-secondary {
+  width: 96%;
+  display: block;
+  margin-right: 15px;
+}
+
 }
 @media (min-width: 576px) {
   
@@ -375,6 +381,9 @@ cursor: pointer;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-top: 50px;
+  }
+  .home-product-categories h1 {
+    margin-top: .0;
   }
 }
 @media (min-width: 992px) {

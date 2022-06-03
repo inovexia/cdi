@@ -1,5 +1,5 @@
 <?php $image = get_field('banner_image'); ?>
-<section class="home-banner-section full-width" >
+<section class="home-banner-section" >
     <div class="container" style="background-image:url('<?php echo $image['url']; ?>');background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="row ">
             <div class="col-6 d-flex">

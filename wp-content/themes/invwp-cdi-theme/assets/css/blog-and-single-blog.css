@@ -169,14 +169,14 @@
 
     .blog-btn a {
         color: #037E9B;
-        font-size: 20px;
+        font-size: 14px;
         font-family: "OSR";
     }
 
     .blog-btn::after {
         position: absolute;
         left: -50px;
-        top: 6px;
+        top: 11px;
         width: 40px;
         height: 1px;
         background: #1E1E1E;
@@ -205,6 +205,9 @@
 
     .single-post .page-title {
         display: none;
+    }
+    .single-post .post-thumbnail {
+        margin: 15px 0;
     }
 }
 
