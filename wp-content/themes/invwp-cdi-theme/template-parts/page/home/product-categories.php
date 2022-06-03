@@ -68,7 +68,7 @@
       </div>
       <div class="col-4 mt-5">
     			<div class="box-product-categories">
-                <h4 class="">Top Diabetic Supplies</h4>
+                <h4 class="">Top Diabetic supplies</h4>
                 <!--<ul class="list-disc mt-5 pl-6">
                   <?php
                   $terms =  array('taxonomy' => 'product_brand', 'hide_empty' => false,);
