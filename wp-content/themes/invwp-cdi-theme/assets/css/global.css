@@ -415,11 +415,14 @@ header .nav-right-icons {
     font-size: 14px;
     text-decoration: underline;
     margin-right: 6px;
-}
-.top-footer-contact p, .top-footer-contact a {
-  color: #fff;
-  font-size: 12px;
-}
+  }
+
+  .top-footer-contact p,
+  .top-footer-contact a {
+    color: #fff;
+    font-size: 12px;
+  }
+
   footer .top-footer {
     width: 100%;
     background-color: var(--faux-cg-blue);
@@ -677,7 +680,7 @@ header .nav-right-icons {
     /* width: 144px;
     height: 40px; */
     font-size: 11px;
-}
+  }
 
 }
 
@@ -686,14 +689,17 @@ header .nav-right-icons {
   padding: 0;
   background: #F9FAFB;
 }
+
 .bottom-footer-second {
   width: 66%;
   float: left;
 }
+
 .bottom-footer-first {
   width: 34%;
   float: left;
 }
+
 @media only screen and (min-width: 768px) {
   footer .top-footer-contact h6 {
     margin-bottom: 24px;
@@ -800,8 +806,8 @@ header .nav-right-icons {
   font-style: normal;
   text-align: center;
   margin: 5px 0;
-  /* width: 233px;
-  height: 45px; */
+  width: 90%;
+  max-width: 233px;
 }
 
 .button-primary {
@@ -829,7 +835,7 @@ header .nav-right-icons {
 }
 
 .button-block {
-  width:100%;
+  width: 100%;
 }
 
 /* UTILITY CLASSES */
@@ -1432,9 +1438,11 @@ footer .top-footer-contact .widget {
   background-color: var(--frostproof) !important;
   height: 46px;
 }
+
 .tnp-subscription-minimal input.tnp-email {
   line-height: 14px;
 }
+
 /* .tnp-subscription-minimal input.tnp-submit {
   background-color: #444;
 } */
@@ -1505,6 +1513,7 @@ footer .payment-options section.widget_block p {
   line-height: 26px;
   color: var(--white);
 }
+
 /*
 footer .payment-options img {
   width: 60px;
