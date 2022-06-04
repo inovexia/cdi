@@ -1,4 +1,116 @@
 @media (min-width:0) {
+  .single-product .product-data-left {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .single-product .value div {
+    color: #000;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+  }
+
+  .single-product .value label {
+    margin-left: 0;
+    padding: 15px;
+    background-color: #F3F8F9;
+    border: 2px solid #DFE9EB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .single-product tr.attribute-package {
+    display: block;
+    margin-top: 30px;
+  }
+
+
+  .single-product .value div input[type="radio"]:checked+label {
+    border: 2px solid #037E9B;
+  }
+
+  .single-product .value input[type="radio"] {
+    accent-color: transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-radius: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .nav-arrow .swiper-button-next {
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(3, 126, 155, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-product .fraction-header {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .single-product .related-header a {
+    font-size: 14px;
+    line-height: 19px;
+    color: #037E9B;
+    font-family: "OSR";
+  }
+
+  .single-product .fraction-header h3 {
+    margin: 30px 0px;
+    font-size: 22px;
+  }
+
+  .single-product .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+    position: unset;
+    width: auto;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .nav-arrow .swiper-button-prev {
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(3, 126, 155, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-arrow .swiper-button-next::after,
+  .nav-arrow .swiper-button-prev::after {
+    font-size: 15px;
+    color: #037E9B;
+  }
+
+  .related-product-footer span {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .related-product-footer span.amount bdi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   .related-product-image {
     height: 200px;
     display: inline-flex;
@@ -604,14 +716,6 @@
   z-index: 9;
 }
 
-.single-product .value label {
-  margin-left: 5px;
-}
-
-.single-product .value input[type="radio"] {
-  accent-color: grey;
-}
-
 .single-product .value input[type='radio']:after {
   width: 15px;
   height: 15px;
@@ -640,15 +744,7 @@
   border: 2px solid #037E9B;
 }
 
-.single-product .value div {
-  width: 100%;
-  background: #F3F8F9;
-  color: #000;
-  font-weight: 600;
-  padding: 14px;
-  margin-right: 10px;
-  text-align: center;
-}
+
 
 .single-product td.label {
   display: none;
@@ -659,13 +755,21 @@
   align-items: center;
 }
 
-.single-product tr.attribute-package {
-  width: 320px;
-  display: block;
-}
-
 
 @media (min-width:768px) {
+  .single-product .product-data-left {
+    padding-right: 0px;
+    padding-left: 40px;
+  }
+
+  .single-product .fraction-header {
+    width: 50%;
+  }
+
+  .single-product .fraction-header h3 {
+    font-size: 28px;
+  }
+
   .product-outer {
     padding-left: 60px;
   }
@@ -732,10 +836,7 @@
   color: #037E9B;
 }
 
-.single-product .product-data-left {
-  padding-right: 0px;
-  padding-left: 40px;
-}
+
 
 .single-product .product-data-right {
   position: relative;

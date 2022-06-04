@@ -41,6 +41,7 @@ if ( post_password_required() ) {
                 <div class="product-outer col-9">
                     <div class="row">
                         <div class="col-6 product-data-right">
+
                             <div class="product-title mob-d-block">
                                 <?php
 										/*
@@ -76,6 +77,7 @@ if ( post_password_required() ) {
 										?>
                             </div>
                             <div class="single-product-rating">
+
                                 <?php
 										/*
 										 * Custom action:
@@ -143,7 +145,12 @@ if ( post_password_required() ) {
 <section id="single-product-related-products" class="product-section related-product-single-page">
     <div class="container">
         <div class="row related-header">
-            <h3>Related Products</h3>
+            <div class="fraction-header">
+                <h3>Related Products</h3>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
             <a href="<?php echo site_url(); ?>/shop">All Products</a>
         </div>
         <div class="row">
@@ -190,11 +197,11 @@ if ( post_password_required() ) {
 							 wp_reset_postdata();
 							}
 								?>
-                        <div class="swiper-pagination"></div>
-                        <div class="nav-arrow">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
+                    </div>
+
+                    <div class="nav-arrow">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
