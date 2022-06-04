@@ -45,70 +45,77 @@ do_action( 'woocommerce_before_main_content' );
                     </div>
                 </div>
                 <?php
-    				if ( woocommerce_product_loop() ) {
+        				if ( woocommerce_product_loop() ) {
 
-      					/**
-      					 * Hook: woocommerce_before_shop_loop.
-      					 *
-      					 * @hooked woocommerce_output_all_notices - 10
-      					 * @hooked woocommerce_result_count - 20
-      					 * @hooked woocommerce_catalog_ordering - 30
-      					 */
-      					do_action( 'woocommerce_before_shop_loop' );
+          					/**
+          					 * Hook: woocommerce_before_shop_loop.
+          					 *
+          					 * @hooked woocommerce_output_all_notices - 10
+          					 * @hooked woocommerce_result_count - 20
+          					 * @hooked woocommerce_catalog_ordering - 30
+          					 */
+          					do_action( 'woocommerce_before_shop_loop' );
+                    ?>
+                    <div class="product-page-sorting d-flex">
+                      <?php
+                      do_action( 'invwp_woocommerce_before_shop_loop' );
+                      ?>
+                    </div>
 
-      					woocommerce_product_loop_start();
-
-      					if ( wc_get_loop_prop( 'total' ) ) {
-      						while ( have_posts() ) {
-      							the_post();
-
-      							/**
-      							 * Hook: woocommerce_shop_loop.
-      							 */
-      							do_action( 'woocommerce_shop_loop' );
-
-      							wc_get_template_part( 'content', 'product' );
-      						}
-      					}
-
-    					  woocommerce_product_loop_end();
-    					?>
-                <div class="clearfix"></div>
-                <p>
                     <?php
-      						/**
-      						 * Hook: woocommerce_after_shop_loop.
-      						 *
-      						 * @hooked woocommerce_pagination - 10
-      						 */
-      						do_action('woocommerce_after_shop_loop');
-      						?>
-                </p>
+          					woocommerce_product_loop_start();
 
-                <?php
+          					if ( wc_get_loop_prop( 'total' ) ) {
+          						while ( have_posts() ) {
+          							the_post();
 
-    				} else {
-    					/**
-    					 * Hook: woocommerce_no_products_found.
-    					 *
-    					 * @hooked wc_no_products_found - 10
-    					 */
-    					do_action( 'woocommerce_no_products_found' );
-    				}
+          							/**
+          							 * Hook: woocommerce_shop_loop.
+          							 */
+          							do_action( 'woocommerce_shop_loop' );
 
-            /**
-             * Hook: woocommerce_after_main_content.
-             *
-             * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-             */
-            do_action( 'woocommerce_after_main_content' );
+          							wc_get_template_part( 'content', 'product' );
+          						}
+          					}
 
-            /**
-             * Hook: invwp_woocommerce_featured_products.
-             *
-             * @hooked outputs featured products
-             */
-            do_action( 'invwp_woocommerce_featured_products' );
+        					  woocommerce_product_loop_end();
+        					?>
+                    <div class="clearfix"></div>
+                    <p>
+                        <?php
+          						/**
+          						 * Hook: woocommerce_after_shop_loop.
+          						 *
+          						 * @hooked woocommerce_pagination - 10
+          						 */
+          						do_action('woocommerce_after_shop_loop');
+          						?>
+                    </p>
+
+                    <?php
+
+        				} else {
+        					/**
+        					 * Hook: woocommerce_no_products_found.
+        					 *
+        					 * @hooked wc_no_products_found - 10
+        					 */
+        					do_action( 'woocommerce_no_products_found' );
+        				}
+
+                /**
+                 * Hook: woocommerce_after_main_content.
+                 *
+                 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+                 */
+                do_action( 'woocommerce_after_main_content' );
+
+                /**
+                 * Hook: invwp_woocommerce_featured_products.
+                 *
+                 * @hooked outputs featured products
+                 */
+                do_action( 'invwp_woocommerce_featured_products' );
 
     				?>
             </div>
