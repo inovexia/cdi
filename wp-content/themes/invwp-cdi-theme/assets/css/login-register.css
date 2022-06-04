@@ -1,112 +1,77 @@
 @media (min-width: 0) {
-
-  /*--------------------login popup--------------------*/
-  .login-modal .simple-tabs button:hover {
-    background: inherit;
-  }
-
-  .login-modal .simple-tabs .subtitle {
-    display: none;
-  }
-
-  .login-modal .woocommerce-form-register select,
-  .login-modal #license_expiry {
-    padding: 15px 15px;
-    border-radius: 50px;
-    margin: 10px;
-    width: 100%;
-    display: block;
-    background: var(--frostproof);
-    color: #898989;
-    font-size: 12px;
-  }
-
-  .woocommerce-account .woocommerce-button.button.woocommerce-form-login__submit {
-    display: block;
-    width: 100%;
-    margin: 20px 0px;
-  }
-
-  .woocommerce-form-login,
-  .lost_reset_password {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    background: #F7F7F7;
-    border-radius: 10px;
-    margin-bottom: 50px;
-  }
-
-  .woocommerce-form-login .woocommerce-Input--text,
-  .lost_reset_password .woocommerce-Input--text {
-    width: 100%;
-  }
-
-  .login-title {
-    display: none;
-  }
-
-  .woocommerce-form-login input,
-  .lost_reset_password input {
-    padding: 10px 20px;
-    margin-top: 8px;
-  }
-
-  .woocommerce-LostPassword a {
-    color: #000;
-  }
-
-  .woocommerce-Button {
-    background: #037e9b;
-    color: #fff;
-    border: 1px solid #037e9b;
-  }
-
-  #customer_login form {
-    width: 100%;
-  }
-
-  #custom-registration-tabs fieldset {
-    border: none;
-  }
-
-  .login-modal form button {
-    width: 100%;
-    display: block;
-    background: var(--faux-cg-blue);
-    padding: 15px;
-    color: #fff;
-    margin: 5px;
-    text-transform: uppercase;
-  }
-
-  span.modal-close {
-    font-size: 40px;
-  }
-
-  #login-modal .woocommerce-form-login {
-    background: transparent;
-  }
-
-  .login-modal form button:hover {
-    color: #000;
-  }
-
-  form#checkout-custom-login-form {
-    padding: 0;
-  }
-
-  #login-modal .modal-window {
-    max-height: inherit;
-  }
-}
-
-@media (min-width:768px) {
-
-  .woocommerce-form-login,
-  .lost_reset_password {
-    width: 48%;
-  }
+    /*--------------------login popup--------------------*/
+    .login-modal .simple-tabs button:hover {
+        background: inherit;
+    }
+    .login-modal .simple-tabs .subtitle {
+        display: none;
+    }
+    .login-modal .woocommerce-form-register select, .login-modal #license_expiry {
+        padding: 15px 15px;
+        border-radius: 50px;
+        margin: 10px;
+        width: 100%;
+        display: block;
+        background: var(--frostproof);
+        color: #898989;
+        font-size: 12px;
+    }
+    .woocommerce-form-login, .lost_reset_password {
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .woocommerce-form-login .woocommerce-Input--text, .lost_reset_password .woocommerce-Input--text {
+        width: 100%;
+    }
+    .login-title {
+        display: none;
+    }
+    .woocommerce-form-login input, .lost_reset_password input {
+        padding: 10px 20px;
+        margin-top: 8px;
+    }
+    .woocommerce-LostPassword a {
+        color: #000;
+    }
+    .woocommerce-Button {
+        background: #037e9b;
+        color: #fff;
+        border: 1px solid #037e9b;
+    }
+    #customer_login form {
+        width: 100%;
+    }
+    #custom-registration-tabs fieldset {
+        border: none;
+    }
+    .login-modal form button {
+        width: 100%;
+        display: block;
+        background: var(--faux-cg-blue);
+        padding: 15px;
+        color: #fff;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+    span.modal-close {
+        font-size: 40px;
+    }
+    #login-modal .woocommerce-form-login {
+        background: transparent;
+    }
+    .login-modal form button:hover {
+        color: #000;
+    }
+    form#checkout-custom-login-form {
+        padding: 0;
+    }
+    #login-modal .modal-window {
+         max-height: inherit;
+    }
 }
 
 /* Customer registration form */
@@ -185,4 +150,9 @@
   margin: auto;
   padding: 12px;
   margin-top: 25px;
+}
+@media (min-width: 768px) {
+.woocommerce-form-login, .lost_reset_password {
+  width: 48%;
+}
 }
