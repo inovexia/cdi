@@ -12,6 +12,7 @@
 
 	.product-data .product-img {
 		background: #fff;
+		border: 1px solid #efefef;
 	}
 
 	.product-data .product-img img {
@@ -207,7 +208,7 @@
 		position: relative;
 		overflow: hidden;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 0 !important;
 	}
 
 	.product-list ul.products li.product span.onsale {
@@ -389,13 +390,14 @@
 		max-width: 100px;
 		margin: 5px auto;
 		text-align: center;
-		background-color: #fff;
+		background-color: #037E9B;
 		padding: 10px 8px;
 		line-height: 10px;
 		letter-spacing: 0.5px;
-		color: #0A5B89;
+		color: #fff;
 		text-decoration: none;
 		font-size: 9px;
+		border: 1px solid #fff;
 	}
 
 	/* .product-data .add_to_cart_button,
@@ -703,6 +705,9 @@
 		z-index: 999;
 		color: #fff;
 		color: var(--black2);
+	}
+	.product-list ul.products li.product {
+		margin-bottom: 30px;
 	}
 }
 

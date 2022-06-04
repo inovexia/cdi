@@ -17,7 +17,7 @@
         font-size: 12px;
     }
     .woocommerce-form-login, .lost_reset_password {
-        width: 48%;
+        width: 100%;
         margin: auto;
         padding: 50px;
         background: #F7F7F7;
@@ -142,4 +142,9 @@
   margin: auto;
   padding: 12px;
   margin-top: 25px;
+}
+@media (min-width: 768px) {
+.woocommerce-form-login, .lost_reset_password {
+  width: 48%;
+}
 }
