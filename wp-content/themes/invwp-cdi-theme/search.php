@@ -81,16 +81,17 @@ if ( have_posts() ) {
 		if ( get_post_type() == 'post' ) { //for posts		?>
 
                     <div id="post-<?php the_ID(); ?>" class="card1 post-column search-result-card post-search">
-                        <div class="card-body">
-
-                        </div>
-                        <?php
+                        <div class="cat-image">
+                            <div class="img-box">
+                                <?php
 						if ( has_post_thumbnail() ) :
 							the_post_thumbnail();
 						endif;
 					?>
-                        <div class="card-body">
-                            <h5 class="card-title"> <?php
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title"> <?php
 						$name = get_the_title();;
 						if (strlen($name) > 50){
 							echo substr($name, 0, 45) . '...';
@@ -100,9 +101,12 @@ if ( have_posts() ) {
 						}
 						
 						?></h5>
-                            <a href="<?php the_permalink(); ?>" class="float-left card-link read-more"><span></span>Read
-                                More</a>
+                                <a href="<?php the_permalink(); ?>"
+                                    class="float-left card-link read-more"><span></span>Read
+                                    More</a>
+                            </div>
                         </div>
+
                     </div>
                     <?php
 						/*

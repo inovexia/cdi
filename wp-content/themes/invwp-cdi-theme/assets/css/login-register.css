@@ -90,9 +90,11 @@
   color: #000;
   font-weight: 500;
 }
+
 #user-custom-register-form fieldset label span {
   color: red;
 }
+
 #user-custom-register-form fieldset .primary-colr {
   color: #000;
 }
@@ -118,21 +120,27 @@
   width: 35px !important;
   float: left;
 }
+
 #user-custom-register-form .form-row {
   margin: 0;
 }
+
 #user-custom-register-form .col-6.radio-wrp p {
   display: flex;
   align-items: center;
 }
+
 #user-custom-register-form .radio-column {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#user-custom-register-form label.label-radio, .input-radio {
+
+#user-custom-register-form label.label-radio,
+.input-radio {
   margin-bottom: 0 !important;
 }
+
 .main-btn {
   background-color: var(--faux-cg-blue);
   border: 1px solid var(--faux-cg-blue);
