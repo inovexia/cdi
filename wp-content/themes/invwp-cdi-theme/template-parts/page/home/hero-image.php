@@ -10,7 +10,7 @@
                     <?php echo the_field('banner_short_description'); ?>
                   </p>
                   <p class="hero-buttons mt-30">
-                    <a class="button button-primary text-uppercase" href="<?php echo site_url('/about-us');?>"><?php echo the_field('banner_button'); ?></a>
+                    <a class="button button-primary text-uppercase" href="<?php echo site_url('/how-to-order');?>"><?php echo the_field('banner_button'); ?></a>
                   </p>
                 </div>
             </div>
