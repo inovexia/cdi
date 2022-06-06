@@ -26,28 +26,28 @@
 <section class="home-col-section text-center">
   <div class="container">
       <div class="banner-button-row">
-          <div class="col-3 ">
+          <div class="banner-button-btn ">
               
                 <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('/registration');?>"><?php echo the_field('banner_section_button_text'); ?></a>
                 </p>
             
           </div>
-          <div class="col-3">
+          <div class="banner-button-btn">
               
                 <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('/contact');?>"><?php echo the_field('banner_section_button_text1'); ?></a>
                 </p>
             
           </div>
-          <div class="col-3">
+          <div class="banner-button-btn">
               
                 <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('/about-us/');?>"><?php echo the_field('banner_section_button_text2'); ?></a>
                 </p>
             
           </div>
-          <div class="col-3">
+          <div class="banner-button-btn">
               
                 <p class="hero-buttons">
                   <a class="button button-secondary border-radius-5 font-poppins" href="<?php echo site_url('/shop');?>"><?php echo the_field('banner_section_button_text3'); ?></a>
