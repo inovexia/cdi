@@ -7,6 +7,7 @@
                 </div>
             </div>
             <div class="bottom-footer-second">
+                <span class="payment-title-mobile">Payment Methods:</span>
                 <div class="payment-options">
                     <?php dynamic_sidebar('bottom-footer-right'); ?>
                 </div>

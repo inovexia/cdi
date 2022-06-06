@@ -1,6 +1,12 @@
 @media (min-width:0) {}
 
 @media (min-width:768px) {
+    header .mob-mega-menu ul {
+        margin: 0;
+        padding: 5px 0px 30px;
+        border-bottom: 1px solid #037E9B;
+    }
+
     .main-nav {
         position: relative;
     }

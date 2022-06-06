@@ -7,27 +7,29 @@
 * @since 2021
 */
 
-get_header();
+get_header ();
 ?>
 <main id="primary" class="site-main">
 
 
-<div class="content">
+    <div class="content">
 
-    <!-- Hero section -->
-    <?php get_template_part( 'template-parts/page/how-to-order/hero-banner', 'hero'); ?>
+        <!-- Hero section -->
+        <?php get_template_part( 'template-parts/page/how-to-order/hero-banner', 'hero'); ?>
 
-    <!-- Order Online section -->
-    <?php get_template_part( 'template-parts/page/how-to-order/order-online', 'online'); ?>
+        <!-- Order Online section -->
+        <?php get_template_part( 'template-parts/page/how-to-order/order-online', 'online'); ?>
 
-    <!-- Order By phone section -->
-    <?php get_template_part( 'template-parts/page/how-to-order/order-by-phone', 'phone'); ?>
+        <!-- Order By phone section -->
+        <?php get_template_part( 'template-parts/page/how-to-order/order-by-phone', 'phone'); ?>
 
-    <!-- Order By Fax section -->
-    <?php get_template_part( 'template-parts/page/how-to-order/order-by-fax', 'fax'); ?>
+        <!-- Order By Fax section -->
+        <?php get_template_part( 'template-parts/page/how-to-order/order-by-fax', 'fax'); ?>
 
-  </div>
+    </div>
 
 
 </main><!-- #main -->
-<?php get_footer(); ?>
+<?php
+get_footer ();
+?>
