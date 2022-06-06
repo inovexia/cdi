@@ -18,9 +18,9 @@
   .page-template-blog-list .page-numbers.current {
     font-family: "OSB";
   }
-.site-main p, .site-main .main-para, .single-blog p, .about-sec-one ul li, .page-template-how-to-order ul li, .contact-col-section p a {
+.single-blog p, .about-sec-one ul li, .page-template-how-to-order ul li, .contact-col-section p a {
     font-family: var(--font-family-open-sans);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: var(--font-weight-light);
     font-style: normal;
     color: var(--black2);

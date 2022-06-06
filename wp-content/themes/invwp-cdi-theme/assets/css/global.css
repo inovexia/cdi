@@ -109,6 +109,75 @@ body {
 
 
   .col-1 {
+    width: 16.66%;
+  }
+
+  .col-2 {
+    width: 33.33%;
+  }
+
+  .col-3 {
+    width: 50.00%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50.00%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75.00%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100.0%;
+  }
+}
+
+
+
+
+/* Media query (ONLY FOR TABLET AND LARGE DEVICES - This is known as mobile first) */
+@media only screen and (min-width: 992px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: none;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .row>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+
+  .col-1 {
     width: 8.33%;
   }
 
@@ -156,6 +225,13 @@ body {
     width: 100.0%;
   }
 }
+
+
+
+
+
+
+
 
 /* HEADER STYLING */
 
@@ -412,10 +488,12 @@ header .nav-right-icons {
 
   .footer-contact-title {
     color: #fff;
-    font-size: 14px;
-    text-decoration: underline;
+    font-size: 11px;
+    /* text-decoration: underline; */
     margin-right: 6px;
-  }
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
   .top-footer-contact p,
   .top-footer-contact a {
@@ -516,6 +594,28 @@ header .nav-right-icons {
 
   footer .top-footer {
     padding: 40px 0px 20px;
+  }
+
+
+
+  footer .payment-options section:first-child {
+    display: block;
+  }
+/* 
+  footer .bottom-footer .social-icons {
+    top: 55px;
+  } */
+
+  footer .bottom-footer {
+    height: auto;
+  }
+
+  footer .top-footer {
+    padding: 40px 0px;
+  }
+
+  .top-footer-newslettert .widget_block div {
+    padding: 0 !important;
   }
 }
 

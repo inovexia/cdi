@@ -340,9 +340,11 @@ cursor: pointer;
   padding: 25px 0px;
 }
 .hero-buttons .button-secondary {
-  width: 96%;
+  width: 97%;
   display: block;
   margin-right: 15px;
+  padding: 20px 27px;
+  max-width: 275px;
 }
 
 }
@@ -385,12 +387,22 @@ cursor: pointer;
   .home-product-categories h1 {
     margin-top: .0;
   }
+  .hero-buttons .button-secondary {
+    width: 97%;
+    display: block;
+    margin-right: 15px;
+    padding: 20px 27px;
+    max-width: 275px;
+  }
 }
 @media (min-width: 992px) {
   .home-product-categories .col-4 {
     margin-right: 20px;
     width: 31.5%;
     margin-bottom: 20px;
+  }
+  .hero-buttons .button-secondary {
+    max-width: 275px;
   }
 }
 @media (min-width:1200px) {
@@ -518,23 +530,5 @@ cursor: pointer;
     padding-bottom: 20px;
   }
 
-  footer .payment-options section:first-child {
-    display: block;
-  }
-/* 
-  footer .bottom-footer .social-icons {
-    top: 55px;
-  } */
-
-  footer .bottom-footer {
-    height: auto;
-  }
-
-  footer .top-footer {
-    padding: 40px 0px;
-  }
-
-  .top-footer-newslettert .widget_block div {
-    padding: 0 !important;
-  }
+ 
 }
