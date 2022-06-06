@@ -346,7 +346,7 @@
         font-weight: var(--font-weight-light);
         font-style: normal;
         color: var(--black2);
-        width: 100%;
+        /* width: 100%; */
         line-height: 22px;
         margin: 10px 0;
     }
