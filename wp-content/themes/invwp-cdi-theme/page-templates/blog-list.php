@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<div id="primary" class="site-content blog-page">
+<div id="primary" class="site-content blog-page section-padding">
     <main id="main" class="site-main">
         <div class="container">
             <div class="entry-header">

@@ -220,7 +220,7 @@
     }
 
     .site-branding a {
-        width: 106px;
+        width: 95px;
     }
 
     #menu-main-menu {
@@ -527,10 +527,6 @@
         margin-left: 30px;
     }
 
-    #menu-main-menu li a {
-        font-size: 11px;
-    }
-
     header .menu-toggler {
         display: none;
     }
@@ -558,7 +554,6 @@
         line-height: 19px;
         margin-right: 60px;
     }
-   
 }
 
 @media (min-width: 1200px) {
@@ -999,7 +994,7 @@
     }
 
     .site-branding .custom-logo-link {
-        width: 106px;
+        width: 95px;
     }
 
     header .dropdown:hover .dropdown-content {
