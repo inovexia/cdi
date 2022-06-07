@@ -555,6 +555,11 @@
     .home-product-categories h1 {
         margin-top: .0;
     }
+    .home-about-us .container .col-5 .section-title, .home-shop .container .row .col-5 video {
+      display: none;
+
+  }
+
 
 }
 

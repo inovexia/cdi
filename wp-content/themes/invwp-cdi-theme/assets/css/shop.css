@@ -260,7 +260,7 @@
 	.woocommerce-products-header__title.page-title {
 		margin-bottom: 0;
 		font-weight: 500;
-		color: #fff;
+		color: var(--black2);
 		margin-top: 12px;
 	}
 
@@ -631,7 +631,7 @@
 
 	.image-breadcrumb .subtitle {
 		z-index: 999;
-		color: #fff;
+		color: var(--black2);
 	}
 }
 

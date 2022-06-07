@@ -150,7 +150,7 @@
     }
 
     .blog-row {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -179,18 +179,7 @@
         transform: translate(-50%);
     }
 
-    .site-main p,
-    .site-main .main-para,
-    .single-blog p {
-        font-family: var(--font-family-open-sans);
-        font-size: 14px;
-        font-weight: var(--font-weight-light);
-        font-style: normal;
-        color: var(--black2);
-        width: 100%;
-        line-height: 22px;
-        margin: 10px 0;
-    }
+    
 
     .site-main p strong,
     .single-blog p strong {

@@ -130,9 +130,11 @@
 
     .footer-contact-title {
         color: #fff;
-        font-size: 14px;
-        text-decoration: underline;
+        font-size: 12px;
+        /* text-decoration: underline; */
         margin-right: 6px;
+        font-weight: 600;
+        letter-spacing: 1px;
     }
 
     .top-footer-contact p,

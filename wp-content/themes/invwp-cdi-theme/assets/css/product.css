@@ -696,25 +696,10 @@
     display: none;
   }
 
-  .woocommerce-products-header {
-    padding: 40px 0;
-  }
+  
 }
 
-.image-breadcrumb {
-  position: relative;
-}
 
-.image-breadcrumb::after {
-  position: absolute;
-  left: 0;
-  top: 13px;
-  background: #0000006e;
-  width: 100%;
-  height: 48vh;
-  content: "";
-  z-index: 9;
-}
 
 .single-product .value input[type='radio']:after {
   width: 15px;
