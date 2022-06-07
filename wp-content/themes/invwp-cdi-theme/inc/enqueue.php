@@ -47,7 +47,7 @@ function invx_add_theme_scripts () {
 		wp_enqueue_style( 'invwps-minicart-css', get_template_directory_uri () . '/assets/css/minicart.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-checkout-css', get_template_directory_uri () . '/assets/css/checkout.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-my-account-css', get_template_directory_uri () . '/assets/css/my-account.css', array(), _S_VERSION, 'all' );
-		//wp_enqueue_style( 'invwps-accordian-css', get_template_directory_uri () . '/assets/css/accordian.css', array(), _S_VERSION, 'all' );
+		wp_enqueue_style( 'invwps-accordian-css', get_template_directory_uri () . '/assets/css/accordian.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-home-css', get_template_directory_uri () . '/assets/css/home.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-about-css', get_template_directory_uri () . '/assets/css/about.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-contact-css', get_template_directory_uri () . '/assets/css/contact.css', array(), _S_VERSION, 'all' );
