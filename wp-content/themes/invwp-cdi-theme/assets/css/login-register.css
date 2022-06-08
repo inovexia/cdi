@@ -72,6 +72,9 @@
     #login-modal .modal-window {
          max-height: inherit;
     }
+    .woocommerce-form-row a {
+      color: #037e9b;
+  }
 }
 
 /* Customer registration form */

@@ -97,6 +97,7 @@
 }
 .contact-col-section p a {
   color: #037e9b;
+  font-size: 15px;
 }
   }
   @media (min-width: 576px) {

@@ -516,6 +516,9 @@
   }
 }
 
+
+
+
 /* Product details css end */
 
 /* Related Product css start */
@@ -646,15 +649,21 @@
     margin-top: 10px;
     line-height: 24px;
   }
-
-  .single-product .related.products h2,
-  .single-product .product-description .single-product-desc-title {
+  .single-product-content .product-description ul li, .single-product-content .product-description ul li strong {
+    color: var(--black2);
+    font-family: var(--font-family-open-sans);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    line-height: 24px;
+}
+  .single-product .related.products h2, .single-product .product-description .single-product-desc-title {
     font-size: 36px;
     line-height: 49px;
     font-family: "OSR";
-    margin: 0;
+    margin: 0 0 10px 0;
     font-weight: 500;
-  }
+}
 
   .single-product .related.products .woocommerce-loop-product__title {
     font-size: 14px;
@@ -715,16 +724,26 @@
     line-height: 24px;
     font-weight: 600;
     font-family: "OSR";
-  }
+    margin-bottom: 10px;
+}
 
-  .single-product .product-description h2,
-  .single-product .product-description h2 strong {
+  .single-product .product-description h2 {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
     font-family: "OSR";
     font-weight: 400;
+    border-bottom: 1px solid var(--faux-cg-blue);
+    padding-bottom: 5px;
   }
+
+ .single-product .product-description h2 strong {
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    
+}
 
   .single-product .product-description p {
     margin: 12px 0px;
@@ -733,15 +752,15 @@
     font-weight: 400;
   }
 
-  .single-product .product-description h2,
+  /* .single-product .product-description h2,
   .single-product .product-description h3,
   .single-product .product-description h4,
   .single-product .product-description h5,
   .single-product .product-description h6 {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
-    line-height: 20px;
-  }
+    line-height: 24px;
+  } */
 
   .single-product .product-description p a {
     color: #037e9b;
@@ -754,7 +773,18 @@
   }
 
 }
-
+@media (min-width:1900px) {
+  .single-product .product-description h2 strong {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  .single-product-content .product-description ul li, .single-product-content .product-description ul li strong {
+    font-size: var(--font-size-xl);
+    line-height: 22px;
+}
+}
 /* Product description css end */
 
 /* Review css start */

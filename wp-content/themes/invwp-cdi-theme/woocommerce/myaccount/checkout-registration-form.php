@@ -318,7 +318,8 @@
                <button type="submit" class="woocommerce-Button woocommerce-button button button-block woocommerce-form-register__submit reg-form-submit button-background-blue " name="register" value="<?php esc_attr_e( 'SUBMIT', 'woocommerce' ); ?>"><?php esc_html_e( 'REGISTER', 'woocommerce' ); ?></button>
             </p>
             <p class="status"></p>
-            <p class=" align-center already-acc-btn">Already have an account? <a href="#customer_login" id="login-action-link" class="lato-bold-black-pearl-14px">Log-In</a></p>
+            <p class=" align-center already-acc-btn">Already have an account? <a href="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
+                            data-signin="login">Log-In</a></p>
          </div>
 
          <?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>

@@ -10,7 +10,9 @@
 .home-faq-section .accordion-title {
     margin: 0;
 }
-
+.home-faq-section .section-title {
+    margin-top: 0;
+}
 .home-faq-section .group {
     border-bottom: 1px solid #037E9B;
     padding: 15px 0px;
@@ -19,6 +21,8 @@
 .home-faq-section .accordion-title {
     margin: 0;
     padding-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .faq-section.home-faq-section .accordion-title {

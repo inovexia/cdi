@@ -115,6 +115,14 @@
         font-style: normal;
         line-height: 24px;
       }
+      .single-blog h2 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .single-blog h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -333,6 +341,9 @@
         height: 165px;
         max-height: 165px;
     }
+    .blog-page .sub-heading {
+        min-height: 65px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -358,6 +369,9 @@
     .blog-image {
         height: 215px;
         max-height: 215px;
+    }
+    .blog-page .sub-heading {
+        min-height: 72px;
     }
 }
 
