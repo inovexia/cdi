@@ -516,6 +516,9 @@
   }
 }
 
+
+
+
 /* Product details css end */
 
 /* Related Product css start */
@@ -717,14 +720,23 @@
     font-family: "OSR";
   }
 
-  .single-product .product-description h2,
-  .single-product .product-description h2 strong {
+  .single-product .product-description h2 {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
     font-family: "OSR";
     font-weight: 400;
+    border-bottom: 1px solid var(--faux-cg-blue);
+    padding-bottom: 5px;
   }
+
+ .single-product .product-description h2 strong {
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    
+}
 
   .single-product .product-description p {
     margin: 12px 0px;
@@ -733,15 +745,15 @@
     font-weight: 400;
   }
 
-  .single-product .product-description h2,
+  /* .single-product .product-description h2,
   .single-product .product-description h3,
   .single-product .product-description h4,
   .single-product .product-description h5,
   .single-product .product-description h6 {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
-    line-height: 20px;
-  }
+    line-height: 24px;
+  } */
 
   .single-product .product-description p a {
     color: #037e9b;
@@ -754,7 +766,14 @@
   }
 
 }
-
+@media (min-width:1900px) {
+  .single-product .product-description h2 strong {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+}
 /* Product description css end */
 
 /* Review css start */
