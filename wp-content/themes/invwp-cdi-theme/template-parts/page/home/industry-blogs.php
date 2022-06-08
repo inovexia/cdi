@@ -48,7 +48,7 @@
                            <p class="slide-excerpt text-left mb-5 mt-5">
                               <?php
               								$excerpt= get_the_excerpt();
-              								echo substr($excerpt, 0, 160);
+              								echo substr($excerpt, 0, 120);
               								?>
                            </p>
                            <div class="read-more text-right">

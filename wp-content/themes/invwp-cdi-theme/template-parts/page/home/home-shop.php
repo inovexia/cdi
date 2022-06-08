@@ -1,8 +1,10 @@
 <section class="home-shop">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-          <h3 class="section-title text-center"><?php echo the_field('home_shop_main_title'); ?></h3>
+      <div class="col-5">
+      </div>
+      <div class="col-7 home-shop-title-column">
+          <h3 class="section-title"><?php echo the_field('home_shop_main_title'); ?></h3>
       </div>
     </div>
     <div class="row">
