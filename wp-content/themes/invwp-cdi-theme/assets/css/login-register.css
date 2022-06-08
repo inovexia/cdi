@@ -132,8 +132,12 @@
 
 #user-custom-register-form .radio-column {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+}
+#user-custom-register-form .radio-column input {
+  width: 25px;
+  margin-right: 10px;
 }
 
 #user-custom-register-form label.label-radio,

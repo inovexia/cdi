@@ -97,19 +97,7 @@
         display: none;
     }
 
-    .home-col-section {
-        position: relative;
-        top: -60px;
-        box-shadow: 0 0 0 #ffffff;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1240px;
-        height: 98px;
-        margin: 0px auto;
-        background: #FFFFFF;
-        border-radius: 5px;
-    }
-
+   
     .home-col-section [class*="col-"] {
         padding: 0px 10px;
     }
@@ -119,7 +107,7 @@
     }
 
     .banner-button-btn {
-        width: 25%;
+        width: 50%;
         margin-right: 20px;
         display: block;
     }
@@ -128,6 +116,21 @@
     .home-shop .container .row .col-5 video {
         display: none;
     }
+
+    .banner-button-row {
+      display: flex;
+      justify-content: start;
+  }
+  .home-col-section .col-3 {
+    width: 50%;
+    float: left;
+}
+.home-col-section .hero-buttons {
+  margin: 0;
+}
+.home-col-section {
+  margin-bottom: 35px;
+}
 }
 
 @media (min-width: 576px) {}
@@ -159,11 +162,22 @@
         height: inherit;
 
     }
+    .banner-button-btn {
+      width: 25%;
+  }
+  .home-col-section {
+    position: relative;
+    top: -60px;
+    box-shadow: 0 0 0 #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    height: 98px;
+    margin: 0px auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 
-    .banner-button-row {
-        display: flex;
-        justify-content: start;
-    }
 }
 
 @media (min-width: 992px) {
@@ -174,6 +188,13 @@
     .banner-bottom-btn {
         width: 25%;
         float: left;
+    }
+    .home-col-section .col-3 {
+      width: 25%;
+      float: left;
+    }
+    .home-col-section {
+      margin-bottom: inherit;
     }
 }
 
@@ -277,9 +298,10 @@
     }
 
     .home-about-us .container .col-5 {
-        padding: 0px;
-        margin-top: 0;
-    }
+      padding: 0px;
+      margin-top: 0;
+      align-self: center;
+  }
 
     .home-shop {
         padding: 50px 0;
@@ -501,7 +523,7 @@
     }
 
     .home-col-section .row {
-        margin-top: 25px;
+        padding-top: 25px;
     }
 
     .content-wrap .section-title {
@@ -522,15 +544,14 @@
 
 @media (min-width: 768px) {
 
-    .home-about-us .container .col-7,
-    .content-wrap {
+    .home-about-us .container .col-7 {
         padding-left: 70px;
         padding-right: 50px;
     }
 
     .home-product-categories .col-4 {
         margin-right: 20px;
-        width: 49%;
+        width: 46%;
         margin-bottom: 20px;
     }
 
@@ -555,6 +576,11 @@
     .home-product-categories h1 {
         margin-top: .0;
     }
+    .home-about-us .container .col-5 .section-title, .home-shop .container .row .col-5 video {
+      display: none;
+
+  }
+
 
 }
 

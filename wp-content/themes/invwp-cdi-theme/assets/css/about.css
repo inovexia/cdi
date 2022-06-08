@@ -6,15 +6,16 @@
 /* ORDER HERO BANNER SECTION */
 @media (min-width: 0) {
 
-    .contact-banner .hero-title {
-      font-family: var(--font-family-open-sans);
-      font-size: var(--font-size-Vxl);
-      font-weight: var(--font-weight-regular);
-      color: var(--faux-cg-blue);
-      line-height: 65px;
-      letter-spacing: 0;
-      margin-top: 10px;
-    }
+  .about-sec-one ul li {
+    font-family: var(--font-family-open-sans);
+    font-size: 14px;
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    color: var(--black2);
+    width: 100%;
+    line-height: 22px;
+    margin: 10px 0;
+  }
     .about-content-section {
         padding: 50px 0;
         background-color: var(--alice-blue);
@@ -23,7 +24,9 @@
     .about-sec-one ul {
       padding-left: 8px;
     }
-
+    .better-choice p .button {
+      min-width: 100%;
+  }
   }
   @media (min-width: 576px) {
 
@@ -37,6 +40,9 @@
       width: 75%;
       margin: auto;
   }
+  .better-choice p .button {
+    min-width: 230px;
+}
   }
   @media (min-width: 992px) {
 

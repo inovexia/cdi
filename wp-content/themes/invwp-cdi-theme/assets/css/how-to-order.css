@@ -9,9 +9,10 @@
 
   .order-col-section .section-title {
     margin-bottom: 20px;
-  }
+    font-size: 30px;
+}
 
-  .page-template-how-to-order img {
+  .page-template-how-to-order .col-6 img {
     border-radius: 20px;
   }
 
@@ -25,7 +26,7 @@
     padding: 50px 0;
   }
 
-  .page-template-how-to-order .order-online-section ul li {
+  .page-template-how-to-order .content-wrap ul li {
     font-family: var(--font-family-open-sans);
     font-size: 14px;
     font-weight: var(--font-weight-light);
@@ -35,11 +36,31 @@
     line-height: 22px;
     margin: 10px 0;
   }
+ .desktop-order-phone {
+    display: none;
+}
+.page-template-how-to-order .col-6 ul {
+  padding: 0 0 0 8px;
+}
 }
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+.mobile-order-phone {
+    display: none;
+}
+.desktop-order-phone {
+  display: block;
+}
+.order-col-section .section-title {
+  font-size: var(--font-size-IVxl);
+}
+.content-wrap {
+  padding-left: 70px;
+  padding-right: 50px;
+}
+}
 
 @media (min-width: 992px) {}
 
