@@ -60,7 +60,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
             </div>
         </div>
-
+		<a class="" href="<?php echo the_permalink(); ?>">
         <?php
 				 /**
 					 * Hook: woocommerce_shop_loop_item_title.
@@ -77,5 +77,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 					 */
 					do_action( 'woocommerce_after_shop_loop_item_title' );
 				?>
+				</a>
     </div>
 </li>
