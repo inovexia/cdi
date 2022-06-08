@@ -603,6 +603,10 @@
     .home-banner-section {
         background-position: top center !important;
     }
+    .home-product-categories ul li a {
+        color: #037E9B;
+        font-size: var(--font-size-xl);
+    }
 }
 
 
@@ -618,6 +622,7 @@
     .home-banner-section {
         background-position: top center !important;
     }
+    
 }
 
 @media only screen and (max-width: 767px) {
