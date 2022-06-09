@@ -3,22 +3,15 @@
         <div class="row">
             <div class="col-4">
                 <div class="site-branding">
-                    <?php if( has_custom_logo() ):  ?>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                        title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
-                        <?php the_custom_logo(); ?>
-                    </a>
-                    <?php else: ?>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"
-                        class="site-title"><?php bloginfo( 'name' ); ?></a>
-                    <?php endif; ?>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo the_field('footer_logo', 'option'); ?>" alt="footer-logo" /></a>
                 </div><!-- .site-branding -->
                 <div class="footer-payment">
                     <span class="payment-title-mobile">Payment Methods:</span>
                     <div class="payment-options">
                         <?php dynamic_sidebar('bottom-footer-right'); ?>
                     </div>
-                    </div>
+                </div>
             </div>
             <div class="col-4">
                 <div class="top-footer-menu">
@@ -31,8 +24,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8">
+        <div class="row bottom-footer-data">
+            <div class="col-8 copyright-text">
                 <p>Copyright © 2022 Canadian INSULIN. All rights reserved.</p>
             </div>
             <div class="col-4">
