@@ -3,7 +3,16 @@
     display: inline-block;
     height: 100%;
 }
-
+.top-header-search .autocomplete {
+    position: relative;
+}
+.top-header-search .autocomplete img {
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 15px;
+    height: auto;
+}
 .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
