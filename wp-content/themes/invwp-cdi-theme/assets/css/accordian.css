@@ -39,7 +39,7 @@
 
 
 .home-faq-section .group a::after {
-    content: "+";
+    content: "ˆ";
     right: 0;
     padding-right: -5px;
     top: 0;
@@ -47,10 +47,12 @@
     right: 20px;
     position: absolute;
     color: #037E9B;
+    font-size: 36px;
 }
 
 .home-faq-section .active .group a::after {
-    content: "-";
+    content: "ˆ";
+    transform: scale(1, -1);
 }
 
 .home-faq-section .group a {

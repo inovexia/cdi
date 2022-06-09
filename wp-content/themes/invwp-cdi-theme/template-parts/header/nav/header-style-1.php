@@ -60,10 +60,11 @@
                     <!-- inser more links here -->
                     <li class="nav-item sign-in-btn">
                         <div>
-                        <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
-                            data-signin="login">LOG IN</a>
-                        <a class="" href="<?php echo site_url(); ?>/registration" style="cursor:pointer;">SIGN UP</a>
-                    </div>
+                            <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
+                                data-signin="login">LOG IN</a>
+                            <a class="" href="<?php echo site_url(); ?>/registration" style="cursor:pointer;">SIGN
+                                UP</a>
+                        </div>
                     </li>
                     <?php } ?>
 
