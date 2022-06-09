@@ -27,6 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <input type="search" id="woocommerce-product-search-field" class="search-field"
             placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'woocommerce' ); ?>"
             value="<?php echo get_search_query(); ?>" name="s" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search-top.png" />
     </div>
     <?php
 	$args = array(

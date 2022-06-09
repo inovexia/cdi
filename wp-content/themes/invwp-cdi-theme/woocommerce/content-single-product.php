@@ -150,8 +150,10 @@ if ( post_password_required() ) {
                 <div class="swiper-pagination"></div>
             </div>
 
-
-            <a href="<?php echo site_url(); ?>/shop">All Products</a>
+            <div class="view-single-btn">
+                <a href="<?php echo site_url(); ?>/shop">View all featured</a>
+            </div>
+            
         </div>
         <div class="row">
             <div class="col-12">

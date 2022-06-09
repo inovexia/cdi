@@ -501,7 +501,7 @@
     .home-shop .button {
         width: 233px;
     }
-
+    
     .home-industry-slider h5 a {
         color: var(--faux-cg-blue);
     }
@@ -538,6 +538,10 @@
     padding: 20px 27px;
     max-width: 275px;
   } */
+  .home-about-us .button:active, .home-shop .button:active,  .home-about-us .button:focus, .home-shop .button:focus{
+    color: #fff !important;
+    background-color: #037e9b !important;
+}
 
 }
 
