@@ -14,9 +14,9 @@
   --font-size-xl: 36px; 
   --font-size-xxl: 34px; 
   --font-size-xxxl: 28px; 
-  --font-size-xxxxl: 24px; 
-  --font-size-xxxxxl: 22px; 
-  --font-size-xxxxxxl: 20px; 
+  --font-size-xxxxl: 22px; 
+  --font-size-xxxxxl: 20px; 
+  --font-size-xxxxxxl: 18px; 
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -48,7 +48,7 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-light);
   text-align: left;
-  background-color: var(--white);
+  background-color: var(--secondary-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
