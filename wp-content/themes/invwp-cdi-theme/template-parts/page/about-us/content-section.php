@@ -1,4 +1,4 @@
-<section class=" about-sec-one section-padding">
+<section class="about-sec-one section-padding">
   <div class="container">
 	<div class="row flex-lg-row-reverse align-items-center gx-0">
 	  <div class="col-6">
