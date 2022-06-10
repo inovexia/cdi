@@ -67,6 +67,7 @@ h1 {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-xl);
   font-style: normal;
+  line-height: 40px;
 }
 
 h2 {
@@ -75,6 +76,7 @@ h2 {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-xxl);
   font-style: normal;
+  line-height: 40px;
 }
 
 h3 {

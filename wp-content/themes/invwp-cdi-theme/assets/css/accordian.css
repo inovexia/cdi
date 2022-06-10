@@ -1,5 +1,6 @@
 .home-faq-section .group .body-part {
     display: none;
+    padding-top: 18px;
 }
 
 .faq-section.home-faq-section .group {
@@ -21,9 +22,10 @@
 .home-faq-section .accordion-title {
     margin: 0;
     padding-right: 20px;
-    font-size: 16px;
-    line-height: 20px;
+    color: var(--faux-cg-blue);
+    font-weight: var(--font-weight-semi-bold);
 }
+
 
 .faq-section.home-faq-section .accordion-title {
     font-size: 22px;

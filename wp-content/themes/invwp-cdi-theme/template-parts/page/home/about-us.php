@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-5 mt-5 text-left">
-        <h3 class="section-title text-center mb-5"><?php echo the_field('about_title'); ?></h3>
+        <h2 class="section-title text-center mb-5"><?php echo the_field('about_title'); ?></h2>
         <?php
           $image =  get_field('about_image');
         ?>
@@ -10,7 +10,7 @@
       </div>
       <div class="col-7 d-flex">
         <div class="content-wrap px-10">
-          <h3 class="section-title"><?php echo the_field('about_title'); ?></h3>
+          <h2><?php echo the_field('about_title'); ?></h2>
           <p class="section-description"><?php echo the_field('about_description'); ?></p>
           <p class="mt-30">
             <a class="button button-primary text-uppercase" href="<?php echo site_url('/about-us');?>"><?php echo the_field('about_button_text'); ?></a>

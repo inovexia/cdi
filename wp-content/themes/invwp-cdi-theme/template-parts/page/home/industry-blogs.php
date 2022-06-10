@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-          <h3 class="section-title">Health blog & articles<?php //echo the_field("industry_title"); ?></h3>
+          <h2 class="section-title">Health blog & articles<?php //echo the_field("industry_title"); ?></h2>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
                               <a class="slide-title" href="<?php echo the_permalink (); ?>"><?php the_title(); ?></a>
                            </h5>
                            <div class="post-meta text-left my-4">
-                            <?php echo get_the_date( 'F d, Y' ); ?>
+                            <p><?php echo get_the_date( 'F d, Y' ); ?></p>
                            </div>
                            <p class="slide-excerpt text-left mb-5 mt-5">
                               <?php
