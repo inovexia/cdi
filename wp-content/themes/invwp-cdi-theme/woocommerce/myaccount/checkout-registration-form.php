@@ -1,6 +1,6 @@
 <div class="row">
    <div class="col-5 mx-auto">
-      <h4 class="section-title text-center"><strong>CUSTOMER REGISTRATION</strong> REGISTER AND START SAVING</h4>
+      <h2 class="section-title text-center"><strong>CUSTOMER REGISTRATION</strong> REGISTER AND START SAVING</h2>
    </div>
 </div>
 

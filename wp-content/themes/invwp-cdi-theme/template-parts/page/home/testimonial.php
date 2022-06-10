@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-          <h3 class="section-title">Notes from our happy customer</h3>
+          <h2 class="section-title">Notes from our happy customer</h2>
         </div>
       </div>
 
@@ -32,9 +32,9 @@
                        <?php invwp_post_thumbnail () ?>
                      </div>
                      <div class="testimonial-title my-5">
-                       <h6 class="slide-meta text-center">
+                       <h4 class="slide-meta text-center">
                           <?php the_title(); ?>
-                       </h6>
+                       </h4>
                      </div>
                      <p class="slide-excerpt mb-5">
                         <?php

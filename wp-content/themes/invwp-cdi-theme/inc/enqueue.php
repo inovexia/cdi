@@ -37,7 +37,7 @@ function invx_add_theme_scripts () {
 		wp_enqueue_style( 'invwps-styleguide-css', get_template_directory_uri () . '/assets/css/styleguide.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-header-css', get_template_directory_uri () . '/assets/css/header.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-search-form-css', get_template_directory_uri () . '/assets/css/search-form.css', array(), _S_VERSION, 'all' );
-		wp_enqueue_style( 'invwps-footer-css', get_template_directory_uri () . '/assets/css/footer-main.css', array(), _S_VERSION, 'all' );
+		wp_enqueue_style( 'invwps-footer-css', get_template_directory_uri () . '/assets/css/footer.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-global-css', get_template_directory_uri () . '/assets/css/global.css', array(), _S_VERSION, 'all' );
 		//wp_enqueue_style( 'invwps-common-component-css', get_template_directory_uri () . '/assets/css/common-component.css', array(), _S_VERSION, 'all' );
 		wp_enqueue_style( 'invwps-mega-menu-css', get_template_directory_uri () . '/assets/css/mega-menu.css', array(), _S_VERSION, 'all' );

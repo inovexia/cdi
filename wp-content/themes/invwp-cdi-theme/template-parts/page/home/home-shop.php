@@ -4,7 +4,7 @@
       <div class="col-5">
       </div>
       <div class="col-7 home-shop-title-column">
-          <h3 class="section-title"><?php echo the_field('home_shop_main_title'); ?></h3>
+          <h2 class="section-title"><?php echo the_field('home_shop_main_title'); ?></h2>
       </div>
     </div>
     <div class="row">
@@ -24,8 +24,8 @@
           </video>
           <img class="my-5" src="<?php echo $imagem['url']; ?>" alt="<?php echo $imagem['alt']; ?>" width="<?php echo $imagem['width']; ?>" <?php echo $imagem['height']; ?>/>
 
-          <h3 class="section-title mb-5"><?php echo the_field('home_shop_title'); ?></h3>
-          <p class="section-description"><?php echo the_field('home_shop_description'); ?></p>
+          <h2 class="section-title mb-5"><?php echo the_field('home_shop_title'); ?></h2>
+          <div class="paragraph-shop"><?php echo the_field('home_shop_description'); ?></div>
           <p class="mt-30">
             <a class="button button-primary text-uppercase" href="<?php echo site_url('/registration');?>"><?php echo the_field('home_shop_button_title'); ?></a>
           </p>

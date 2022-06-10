@@ -15,7 +15,7 @@ get_header();
 
       <div class="content">
 
-          <section class="section-privacyfullwidth section-margin section-padding">
+          <section class="section-privacyfullwidth">
             <div class="container">
               <div class="row">
                 <div class="col-12 privacy-inner-content">

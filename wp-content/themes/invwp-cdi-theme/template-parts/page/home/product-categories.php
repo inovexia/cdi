@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-4 mt-5">
     			<div class="box-product-categories">
-              <h4 class="">Top Insulin Brands</h4>
+              <h6 class="">Top Insulin Brands</h6>
               <ul class="list-disc mt-5 pl-6">
                 <?php
                 $args = array(
@@ -37,7 +37,7 @@
 
         <div class="col-4 mt-5">
     			<div class="box-product-categories">
-              <h4 class="">Top Diabetic Medications</h4>
+              <h6 class="">Top Diabetic Medications</h6>
               <ul class="list-disc mt-5 pl-6">
                 <?php
                 $args = array(
@@ -63,7 +63,7 @@
       </div>
       <div class="col-4 mt-5">
   			<div class="box-product-categories">
-            <h4 class="">Top Diabetic supplies</h4>
+            <h6 class="">Top Diabetic supplies</h6>
             <ul class="list-disc mt-5 pl-6">
               <?php
               $args = array(
@@ -99,7 +99,7 @@
             ?>
             <div class="col-4 product-categories">
       				<div class="box-product-categories">
-                      <h4 class="mb-5"><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h4>
+                      <h6 class="mb-5"><?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?></h6>
                       <?php
                       $i = 1;
                       if (! empty ($cat['sub_cats'])) {

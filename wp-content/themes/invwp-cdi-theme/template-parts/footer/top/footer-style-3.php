@@ -7,7 +7,7 @@
                         <img src="<?php echo the_field('footer_logo', 'option'); ?>" alt="footer-logo" /></a>
                 </div><!-- .site-branding -->
                 <div class="footer-payment">
-                    <span class="payment-title-mobile">Payment Methods:</span>
+                    <!-- <span class="payment-title-mobile">Payment Methods:</span> -->
                     <div class="payment-options">
                         <?php dynamic_sidebar('bottom-footer-right'); ?>
                     </div>

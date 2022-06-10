@@ -62,3 +62,4 @@ remove_action( 'woocommerce_proceed_to_checkout', 'wc_get_pay_buttons', 10 );
 remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
 add_action( 'invwp_proceed_to_checkout', 'wc_get_pay_buttons', 10 );
 add_action( 'invwp_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
+
