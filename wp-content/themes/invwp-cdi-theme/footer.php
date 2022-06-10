@@ -11,7 +11,8 @@
 
 ?>
 
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer"
+    style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/footerBg.jpg');">
     <!-- Footer Loader File -->
     <?php get_template_part('template-parts/footer/footer'); ?>
 
