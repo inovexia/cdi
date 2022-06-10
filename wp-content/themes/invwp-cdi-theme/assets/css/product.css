@@ -407,6 +407,7 @@
     line-height: 49px;
     font-family: "OSR";
     color: #037E9B;
+    font-weight: 400;
   }
 
   .single-product .product-data-left .variations tbody {
@@ -539,14 +540,14 @@
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    width: 50%;
-}
-.view-single-btn {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 50%;
-}
+    width: 100%;
+  }
+
+  .view-single-btn {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
 
   .single-product .related-header a {
     font-size: 14px;
@@ -556,7 +557,7 @@
   }
 
   .single-product .fraction-header h3 {
-    margin: 30px 0px;
+    margin: 10px 0px;
     font-size: 22px;
   }
 
@@ -655,21 +656,25 @@
     margin-top: 10px;
     line-height: 24px;
   }
-  .single-product-content .product-description ul li, .single-product-content .product-description ul li strong {
+
+  .single-product-content .product-description ul li,
+  .single-product-content .product-description ul li strong {
     color: var(--black2);
     font-family: var(--font-family-open-sans);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-l);
     font-style: normal;
     line-height: 24px;
-}
-  .single-product .related.products h2, .single-product .product-description .single-product-desc-title {
-    font-size: 36px;
-    line-height: 49px;
+  }
+
+  .single-product .related.products h2,
+  .single-product .product-description .single-product-desc-title {
+    font-size: 24px;
+    line-height: 28px;
     font-family: "OSR";
-    margin: 0 0 10px 0;
-    font-weight: 500;
-}
+    margin: 0 0 20px 0;
+    font-weight: 400;
+  }
 
   .single-product .related.products .woocommerce-loop-product__title {
     font-size: 14px;
@@ -683,6 +688,22 @@
     margin-top: 50px;
   }
 
+}
+
+@media (min-width:768px) {
+  .single-product .fraction-header {
+    width: 50%;
+  }
+
+  .view-single-btn {
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+  }
+
+  .single-product .fraction-header h3 {
+    margin: 30px 0px;
+  }
 }
 
 /* Related Product css end */
@@ -731,25 +752,25 @@
     font-weight: 600;
     font-family: "OSR";
     margin-bottom: 10px;
-}
+  }
 
   .single-product .product-description h2 {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
     font-family: "OSR";
-    font-weight: 400;
+    font-weight: 600;
     border-bottom: 1px solid var(--faux-cg-blue);
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
- .single-product .product-description h2 strong {
+  .single-product .product-description h2 strong {
     margin: 10px 0 10px 0;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    
-}
+
+  }
 
   .single-product .product-description p {
     margin: 12px 0px;
@@ -779,6 +800,7 @@
   }
 
 }
+
 @media (min-width:1900px) {
   .single-product .product-description h2 strong {
     margin: 10px 0 10px 0;
@@ -786,11 +808,14 @@
     line-height: 28px;
     font-weight: 400;
   }
-  .single-product-content .product-description ul li, .single-product-content .product-description ul li strong {
+
+  .single-product-content .product-description ul li,
+  .single-product-content .product-description ul li strong {
     font-size: var(--font-size-xl);
     line-height: 22px;
+  }
 }
-}
+
 /* Product description css end */
 
 /* Review css start */
