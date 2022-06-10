@@ -398,7 +398,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-weight: var(--font-weight-medium);
   font-style: normal;
   text-align: center;
@@ -854,9 +854,9 @@ body {
   font-family: var(--font-family-open-sans);
   font-style: normal;
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   line-height: 19px;
-  color: var(--black2);
+  color: var(--black-russian);
 }
 
 .woocommerce-breadcrumb-desc {
@@ -978,6 +978,11 @@ form.woocommerce-form-login {
   text-align: left;
   outline: none;
   margin-bottom: 22px;
+  margin-top: 20px;
+}
+.collapse .collapsible a {
+  font-size: var(--font-size-m);
+  color: #037E9B;
 }
 
 .collapse ul li {

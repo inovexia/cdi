@@ -2,14 +2,16 @@
   .order-banner-section {
     display: none;
   }
-
+  .how-to-order-section.full-width p {
+    padding-bottom: 8px;
+}
   .how-to-order-section.full-width {
     padding-top: 50px;
   }
 
   .order-col-section .section-title {
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 15px;
+    /* font-size: 30px; */
 }
 
   .page-template-how-to-order .col-6 img {
@@ -31,7 +33,7 @@
     font-size: 14px;
     font-weight: var(--font-weight-light);
     font-style: normal;
-    color: var(--black2);
+    color: var(--black-russian);
     width: 100%;
     line-height: 22px;
     margin: 10px 0;
@@ -41,6 +43,20 @@
 }
 .page-template-how-to-order .col-6 ul {
   padding: 0 0 0 8px;
+}
+.page-template-how-to-order .content-wrap ul li {
+  position: relative;
+  padding-left: 10px;
+}
+.page-template-how-to-order .content-wrap ul li::before {
+  position: absolute;
+  left: -4px;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  background: var(--black-russian);
+  content: "";
+  border-radius: 50%;
 }
 }
 
@@ -53,9 +69,9 @@
 .desktop-order-phone {
   display: block;
 }
-.order-col-section .section-title {
+/* .order-col-section .section-title {
   font-size: var(--font-size-IVxl);
-}
+} */
 .content-wrap {
   padding-left: 70px;
   padding-right: 50px;

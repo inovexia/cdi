@@ -52,14 +52,14 @@
         line-height: 15px;
         /* font-size: 35px; */
     }
-    .main-para {
+    /* .main-para {
         color: var(--black2);
         font-family: var(--font-family-open-sans);
         font-weight: var(--font-weight-regular);
         font-size: var(--font-size-l);
         font-style: normal;
         line-height: 24px;
-    }
+    } */
     #main.single-blog {
         padding: 30px 0px;
     }
@@ -111,7 +111,7 @@
         color: var(--black2);
         font-family: var(--font-family-open-sans);
         font-weight: var(--font-weight-regular);
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-s);
         font-style: normal;
         line-height: 24px;
       }
@@ -122,6 +122,13 @@
     .single-blog h3 {
         font-size: 20px;
         line-height: 25px;
+    }
+    .blog-page .main-para {
+        margin-top: 5px;
+    }
+    .single-blog .entry-content h2, .single-blog .entry-content h3, .single-blog .entry-content h4, .single-blog .entry-content h5, .single-blog .entry-content h6 {
+        margin-top: 20px;
+        font-size: var(--font-size-l);
     }
 }
 
@@ -146,13 +153,13 @@
         padding-bottom: 15px
     }
 
-    .entry-header p {
+    /* .entry-header p {
         margin: 0;
         text-align: justify;
         font-size: 16px;
         line-height: 23px;
         font-family: "OSR";
-    }
+    } */
 
     .blog-row {
         /* margin-top: 50px; */
@@ -275,9 +282,9 @@
         padding: 50px 0px;
     }
 
-    .single-post .article-sidebar h3 {
-        font-size: 22px;
-        margin: 0;
+    .single-post .article-sidebar h6 {
+        /* font-size: 22px;
+        margin: 0; */
         background-color: #037E9B;
         padding: 10px;
         color: #fff;
@@ -294,7 +301,7 @@
     }
 
     .single-post .article-sidebar ul li a {
-        font-size: 16px;
+        font-size: 14px;
         font-family: "OSR";
         display: inline-block;
         color: #037E9B;
@@ -335,7 +342,7 @@
         padding-left: 100px;
     }
     .blog-row {
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .blog-image {
         height: 165px;

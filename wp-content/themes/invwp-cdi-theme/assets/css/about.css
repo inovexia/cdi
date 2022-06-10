@@ -27,6 +27,23 @@
     .better-choice p .button {
       min-width: 100%;
   }
+  .page-template-about-us .about-inner-text ul li {
+    position: relative;
+    padding-left: 10px;
+  }
+  .page-template-about-us .about-inner-text ul li::before {
+    position: absolute;
+    left: -4px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background: var(--black-russian);
+    content: "";
+    border-radius: 50%;
+  }
+  .better-choice p {
+    padding-bottom: 10px;
+}
   }
   @media (min-width: 576px) {
 
@@ -41,7 +58,7 @@
       margin: auto;
   }
   .better-choice p .button {
-    min-width: 230px;
+    min-width: 250px;
 }
   }
   @media (min-width: 992px) {

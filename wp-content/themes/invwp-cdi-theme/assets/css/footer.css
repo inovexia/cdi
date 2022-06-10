@@ -8,6 +8,12 @@
         width: 100%;
         padding: 40px 0px;
     }
+    footer .footer-payment {
+        margin-top: 15px;
+    }
+    footer .footer-payment span {
+        color: #fff;
+    }
 
     footer .site-branding {
         width: 135px;
