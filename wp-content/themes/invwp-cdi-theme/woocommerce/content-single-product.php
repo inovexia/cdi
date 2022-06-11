@@ -41,6 +41,37 @@ if ( post_password_required() ) {
                 <div class="product-outer col-9">
                     <div class="row">
                         <div class="col-6 product-data-right">
+                            <!-- Swiper -->
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                class="swiper gallerySwiper2">
+                                <div class="swiper-wrapper">
+                                    <?php
+                                    $attachment_ids = $product->get_gallery_image_ids();
+                                    foreach( $attachment_ids as $attachment_id ) {
+                                        $image_link = wp_get_attachment_url( $attachment_id ); ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?php echo $image_link; ?>" alt="slider-image" />
+                                    </div>
+                                    <?php  }
+                                ?>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper gallerySwiper">
+                                <div class="swiper-wrapper">
+                                    <?php
+                                    $attachment_ids = $product->get_gallery_image_ids();
+                                    foreach( $attachment_ids as $attachment_id ) {
+                                        $image_link = wp_get_attachment_url( $attachment_id ); ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?php echo $image_link; ?>" alt="slider-image" />
+                                    </div>
+                                    <?php  }
+                                ?>
+                                </div>
+                            </div>
+
 
                             <div class="product-title mob-d-block">
                                 <?php
@@ -62,7 +93,7 @@ if ( post_password_required() ) {
 								 * @hooked woocommerce_show_product_sale_flash - 10
 								 * @hooked woocommerce_show_product_images - 20
 								 */
-								do_action( 'invwp_woocommerce_show_product_images' );
+								//do_action( 'invwp_woocommerce_show_product_images' );
 								?>
                         </div>
                         <div class="col-6 product-data-left">
@@ -153,7 +184,7 @@ if ( post_password_required() ) {
             <div class="view-single-btn">
                 <a href="<?php echo site_url(); ?>/shop">View all featured</a>
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col-12">

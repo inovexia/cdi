@@ -283,6 +283,26 @@
       },
     });
 
+    // Gallery Slider On Single Product Page
+    var galleryswiper = new Swiper(".gallerySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    new Swiper(".gallerySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: galleryswiper,
+      },
+    });
+
     /*single product gallery product_title*/
     var galleryThumbs = new Swiper(".gallery-thumbs", {
       spaceBetween: 10,
