@@ -40,7 +40,7 @@
     .blog-btn::after {
         position: absolute;
         left: -50px;
-        top: 6px;
+        top: 11px;
         width: 40px;
         height: 1px;
         background: #1E1E1E;
@@ -67,7 +67,7 @@
     .blog-page .sub-heading a {
         font-family: var(--font-family-open-sans);
         font-weight: var(--font-weight-medium);
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-l);
         font-style: normal;
         color: #000;
         line-height: 25px;
@@ -351,6 +351,12 @@
     .blog-page .sub-heading {
         min-height: 65px;
     }
+    .blog-page .sub-heading a {
+        font-size: var(--font-size-l);
+    }
+    .blog-btn::after {
+        top: 6px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -380,9 +386,14 @@
     .blog-page .sub-heading {
         min-height: 72px;
     }
+    
 }
 
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .blog-page .sub-heading a {
+        font-size: var(--font-size-xxxxxl);
+    }
+}
 
 @media (min-width: 1440px) {}
 
