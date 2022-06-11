@@ -184,6 +184,40 @@
       slidesPerView: 1,
       loop: true,
       spaceBetween: 20,
+      autoplay: 
+      {
+        delay: 3000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-prev01",
+        prevEl: ".swiper-button-next01",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    // Home Testimonial Slider
+    new Swiper(".testimonialSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20,
+      autoplay: 
+      {
+        delay: 3000,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

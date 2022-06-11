@@ -194,6 +194,7 @@
 		width: 205px;
 		padding: 5px 11px;
 		height: 34px;
+		border: 1px solid var(--alice-blue);
 	}
 
 	.shop-page-filters .sorting .woocommerce-result-count {
@@ -269,6 +270,11 @@
 /* List Item CSS Start */
 
 @media (min-width:0) {
+	.product-btns .view-product:hover, .product-btns .add_to_cart_button.ajax_add_to_cart:hover {
+		background: var(--secondary-color);
+		color: var(--faux-cg-blue);
+		border: 1px solid var(--faux-cg-blue);
+	}
 
 	.product-data .product-img {
 		background: #fff;

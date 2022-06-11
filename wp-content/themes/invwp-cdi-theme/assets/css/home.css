@@ -374,8 +374,14 @@
         font-size: var(--font-size-s);
         line-height: 24px;
     }
-
-
+    .testimonialSwiper .post-thumbnail {
+        display: flex;
+        justify-self: center;
+    }
+    .testimonialSwiper .post-thumbnail img {
+        width: 120px;
+        margin: auto;
+    }
     .home-industry-slider .swiper-wrapper.row {
         flex-wrap: inherit;
     }
@@ -512,6 +518,7 @@
         padding-top: 10px;
         /* padding-bottom: 10px; */
     }
+    
 
     .home-about-us .container .col-7 img {
         display: none;

@@ -15,7 +15,7 @@
             //$mplayimage =  get_field('home_shop_play_image');
           ?>
                     <video class="home-video" width="100%" height="349" poster="<?php echo $image['url']; ?>"
-                        controls="hidden">
+                     autoplay>
                         <source src="<?php echo $vupload_dir['baseurl']; ?>/2022/04/1590252299.mp4" type="video/mp4">
                         <source src="video.ogg" type="video/ogg">
                         <source src="video.webm" type="video/webm">
@@ -38,8 +38,8 @@
           $image =  get_field('home_shop_image');
           //$playimage =  get_field('home_shop_play_image');
         ?>
-                <video width="737" height="349" poster="<?php echo $image['url']; ?>" controls>
-                    <source src="<?php echo $upload_dir['baseurl']; ?>/2022/04/1590252299.mp4" type="video/mp4">
+                <video width="737" height="349" poster="<?php echo $image['url']; ?>"  autoplay>
+                    <source src="<?php echo $upload_dir['baseurl']; ?>/2022/04/1590252299.mp4" type="video/mp4" >
                     <source src="video.ogg" type="video/ogg">
                     <source src="video.webm" type="video/webm">
                     <object data="video.mp4" width="737" height="349">
