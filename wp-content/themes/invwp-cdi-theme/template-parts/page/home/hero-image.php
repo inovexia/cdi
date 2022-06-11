@@ -5,7 +5,7 @@
             <div class="col-6 d-flex">
                 <div class="banner-texts">
                   <p class="hero-text"><?php echo the_field('banner_sub_title'); ?></p>
-                  <h2 class="hero-title"><?php echo the_field('banner_title'); ?></h2>
+                  <h1 class="hero-title"><?php echo the_field('banner_title'); ?></h1>
                   <p class="hero-paragraph">
                     <?php echo the_field('banner_short_description'); ?>
                   </p>

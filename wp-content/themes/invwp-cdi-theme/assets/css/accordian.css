@@ -13,6 +13,7 @@
 }
 .home-faq-section .section-title {
     margin-top: 0;
+    text-align: center;
 }
 .home-faq-section .group {
     border-bottom: 1px solid #037E9B;
@@ -63,4 +64,9 @@
     outline: none;
     position: relative;
     width: 100%;
+}
+@media (min-width: 768px) {
+    .home-faq-section .section-title {
+        text-align: left;
+    }
 }
