@@ -135,7 +135,9 @@ p {
   line-height: 24px;
 }
 
-
+a:focus, a:active {
+  outline: none;
+}
 
 table {
   width: 100%;
