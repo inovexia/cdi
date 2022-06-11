@@ -125,7 +125,9 @@ a {
   font-style: normal;
   outline: none;
 }
-
+a:hover, a:focus, a:active {
+  color: #037f9b;
+}
 p {
   color: var(--black-russian);
   font-family: var(--font-family-open-sans);
