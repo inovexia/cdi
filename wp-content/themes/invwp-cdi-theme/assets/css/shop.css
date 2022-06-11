@@ -25,6 +25,7 @@
 		color: #1E1E1E;
 		margin-bottom: 10px;
 	}
+
 	/* .woocommerce-products-header h1 {
 		font-size: 20px;
 		line-height: 27px;
@@ -68,13 +69,13 @@
 
 /* Breadcrumb css end */
 /* Shop Page Entry Header */
-@media (min-width:0) {
+/* @media (min-width:0) {
 
 	.single-product-content .price bdi,
 	.single-product-content .price span {
 		font-size: 22px !important;
 	}
-}
+} */
 
 /* End Shop page ntry header */
 
