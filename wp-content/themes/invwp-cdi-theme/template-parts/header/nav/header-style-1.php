@@ -16,6 +16,7 @@
             <div class="nav-menu-container">
                 <?php
                 wp_nav_menu( array(
+                    'menu'           => 'Main Menu',
                     'menu_class'     => 'nav-menu',
                     'depth'          => 1,
                 ) );
