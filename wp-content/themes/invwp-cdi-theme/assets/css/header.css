@@ -52,6 +52,7 @@
         font-size: 12px;
         line-height: 15px;
         font-weight: 600;
+        margin-left: 5px;
         color: #fff;
         position: relative;
         text-transform: unset;
@@ -143,7 +144,8 @@
         background: var(--faux-cg-blue2);
     }
 
-    .top-header-search .search-field, .top-header-search button {
+    .top-header-search .search-field,
+    .top-header-search button {
         border-radius: 0;
     }
 
@@ -409,10 +411,6 @@
         display: none;
     }
 
-    .top-left-header li a {
-        font-size: 11px;
-    }
-
     header .search-section-nav,
     .bag-section {
         display: block;
@@ -573,14 +571,14 @@
         font-size: 14px;
         line-height: 19px;
     }
-/* 
+
+    /* 
     .top-left-header li a {
         font-size: 12px;
     } */
 }
 
 /* Main Menu Header Css end */
-
 
 /* Mobile Menu Start */
 
@@ -962,10 +960,6 @@
         left: 0;
     }
 
-    .top-left-header li a {
-        margin-left: 5px;
-        position: relative;
-    }
     .top-left-header li a::after {
         position: absolute;
         left: 0;
@@ -1044,9 +1038,5 @@
 
 
 }
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
 
 /* Mobile Menu Css end */

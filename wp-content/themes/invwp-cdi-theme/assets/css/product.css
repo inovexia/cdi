@@ -11,6 +11,24 @@
     display: none !important;
   }
 
+  .single-product .product-data-right .swiper-button-prev,
+  .single-product .product-data-right .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-product .product-data-right .swiper-button-prev::after,
+  .single-product .product-data-right .swiper-button-next::after {
+    color: rgb(3, 126, 155);
+    font-size: 16px;
+  }
+
+
   .single-product .product-data-right .woocommerce-product-gallery.woocommerce-product-gallery--with-images {
     width: 100%;
     /* max-height: 541px; */
