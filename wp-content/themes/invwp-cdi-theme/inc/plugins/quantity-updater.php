@@ -56,10 +56,7 @@ function add_cart_quantity_plus_minus() {
           }
         }
       });
-    ');
 
-    ?>
-    <script type="text/javascript">
       // Add to cart functionality on single product page
       $("form.cart").on("submit", function (e) {
         e.preventDefault();
@@ -103,7 +100,7 @@ function add_cart_quantity_plus_minus() {
 
             var $thisbutton = form.find(".single_add_to_cart_button"); //
             $thisbutton.html(
-              'Added to cart &nbsp;<i class="text-white fas fa-check"></i>';
+              "Added to cart &nbsp;<i class=\"text-white fas fa-check\"></i>"
             );
 
             //	var $thisbutton = null; // uncomment this if you dont want the View cart button
@@ -134,6 +131,11 @@ function add_cart_quantity_plus_minus() {
           },
         });
       });
+    ');
+
+    ?>
+    <script type="text/javascript">
+
     </script>
     <?php
   }
