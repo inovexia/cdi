@@ -39,6 +39,7 @@
 
     header ul li {
         list-style: none;
+        color: #fff;
     }
 
     .top-left-header li {
@@ -237,7 +238,7 @@
     }
 
     #menu-main-menu li a {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 17px;
         font-weight: 600;
         font-family: "OSL";
@@ -543,6 +544,7 @@
     .header-right .sign-in-btn div {
         display: flex;
     }
+   
 }
 
 @media (min-width: 992px) {
@@ -559,6 +561,9 @@
         line-height: 19px;
         margin-right: 60px;
         color: var(--secondary-color);
+    }
+    #menu-main-menu li a {
+        font-size: 12px;
     }
 }
 
