@@ -19,16 +19,16 @@
  */
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'invxadmin_dev_cdi' );
+define( 'DB_NAME', 'devinovexia1_dev_cdi_live' );
 
 /** Database username */
-define( 'DB_USER', 'invxadmin_develop' );
+define( 'DB_USER', 'devinovexia1_develop' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'inovexiasoftware.in' );
+define( 'DB_HOST', 'developer1.website' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
