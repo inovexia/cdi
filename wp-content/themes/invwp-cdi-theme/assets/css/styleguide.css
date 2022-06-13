@@ -16,7 +16,7 @@
   --font-size-xxxl: 28px; 
   --font-size-xxxxl: 22px; 
   --font-size-xxxxxl: 20px; 
-  --font-size-xxxxxxl: 18px; 
+  /* --font-size-xxxxxxl: 18px;  */
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -124,6 +124,7 @@ a {
   text-decoration: none;
   font-style: normal;
   outline: none;
+  color: #037E9B;
 }
 a:hover, a:focus, a:active {
   color: #037f9b;
@@ -191,7 +192,7 @@ img {
   }
   
   h6 {
-    font-size: var(--font-size-xxxxxxl);
+    font-size: var(--font-size-l);
     line-height: 24px;
   }
 }
