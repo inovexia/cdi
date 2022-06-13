@@ -11,11 +11,11 @@
   --font-size-s: 14px;
   --font-size-m: 16px;
   --font-size-l: 18px;
-  --font-size-xl: 36px; 
-  --font-size-xxl: 32px; 
-  --font-size-xxxl: 28px; 
-  --font-size-xxxxl: 22px; 
-  --font-size-xxxxxl: 20px; 
+  --font-size-xl: 36px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 28px;
+  --font-size-xxxxl: 22px;
+  --font-size-xxxxxl: 20px;
   /* --font-size-xxxxxxl: 18px;  */
 
   --font-weight-light: 300;
@@ -42,11 +42,11 @@
 html,
 body {
   margin: 0;
-  color: var(--faux-cg-blue);
+  color: var(--black-russian);
   font-family: var(--font-family-open-sans);
   font-size: var(--font-size-s);
   font-style: normal;
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   text-align: left;
   background-color: var(--secondary-color);
   -webkit-text-size-adjust: 100%;
@@ -67,7 +67,7 @@ h1 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   font-style: normal;
   line-height: 40px;
 }
@@ -75,8 +75,8 @@ h1 {
 h2 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   line-height: 40px;
 }
@@ -85,7 +85,7 @@ h3 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   line-height: 35px;
 }
@@ -93,16 +93,16 @@ h3 {
 h4 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
-  font-weight: var(--font-weight-semi-bold);
-  font-size: var(--font-size-xxxxxl);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
 }
 
 h5 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-xxxxxxl);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxxxxl);
   font-style: normal;
   line-height: 28px;
 }
@@ -111,7 +111,7 @@ h6 {
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
   font-weight: var(--font-weight-semi-bold);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-l);
   font-style: normal;
   line-height: 24px;
 }
@@ -120,6 +120,7 @@ a {
   font-family: var(--font-family-open-sans);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-s);
+  line-height: 20px;
   display: contents;
   text-decoration: none;
   font-style: normal;
@@ -135,7 +136,7 @@ p {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-s);
   font-style: normal;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 a:focus, a:active {
@@ -165,32 +166,32 @@ img {
   height: auto;
 }
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   h1 {
     font-size: var(--font-size-xl);
     line-height: 40px;
   }
-  
+
   h2 {
     font-size: var(--font-size-xxl);
     line-height: 40px;
   }
-  
+
   h3 {
     font-size: var(--font-size-xxxl);
     line-height: 35px;
   }
-  
+
   h4 {
     font-size: var(--font-size-xxxxl);
     line-height: 32px;
   }
-  
+
   h5 {
     font-size: var(--font-size-xxxxxl);
     line-height: 28px;
   }
-  
+
   h6 {
     font-size: var(--font-size-l);
     line-height: 24px;

@@ -5,49 +5,6 @@
       if (is_shop()) {
         $title = 'BROWSE MEDICATION';
         $sub_title = 'Check out our wide range of fillers and injectables.';
-      } else if ( is_product()) {
-        $title = '';
-        $sub_title = '';
-      } else if (is_page('blog')) {
-        $title = 'BEAUTY INDUSTRY';
-        $sub_title = 'Read the latest news about the beauty business.';
-      } else if (is_page('privacy-policy')) {
-        $title = 'PRIVACY POLICY';
-        $sub_title = 'Learn about ' . ucwords(strtolower(get_bloginfo('name'))) . '\'s privacy policy.';
-      } else if (is_page('site-map')) {
-        $title = 'SITEMAP';
-        $sub_title = ucwords(strtolower(get_bloginfo('name'))) . '\'s sitemap.';
-      } else if (is_page('faq')) {
-        $title = 'FAQ';
-        $sub_title = '';
-      } else if (is_page('contact')) {
-        $title = 'Contact Information';
-        $sub_title = 'Contact us by phone or email any time if you require assistance.
-        We’re here for you.';
-      } else if (is_page('shipping-returns')) {
-        $title = 'REFUND AND RETURNS POLICY';
-        $sub_title = '';
-      } else if (is_page('about-us')) {
-        $title = 'About Us';
-        $sub_title = 'We provide low cost insulin to American diabetics safely and secure';
-      } else if (is_page('referral')) {
-        $title = '';
-        $sub_title = '';
-      } else if (is_404()) {
-        $title = 'PAGE NOT FOUND';
-        $sub_title = '';
-      } else if (is_search()) {
-        $title = '';
-        $sub_title = '';
-      } else if (is_page('checkout')) {
-        $title = '';
-        $sub_title = '';
-      } else if (is_page('how-to-order')) {
-        $title = 'How To Order';
-        $sub_title = '';
-      } else if (is_page('articles')) {
-        $title = 'Articles';
-        $sub_title = '';
       } else {
         $title = get_the_title();
         $sub_title = '';
