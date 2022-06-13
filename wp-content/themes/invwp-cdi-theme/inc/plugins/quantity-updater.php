@@ -19,7 +19,7 @@ function display_quantity_plus() {
 add_action( 'wp_head', 'hide_update_cart_button' );
 function hide_update_cart_button() {
   ?>
-  <style media="screen">
+  <style>
     button[name=update_cart] {
       display: none;
     }
@@ -29,12 +29,156 @@ function hide_update_cart_button() {
 
 add_action( 'wp_footer', 'add_cart_quantity_plus_minus' );
 function add_cart_quantity_plus_minus() {
-  // Only run this on the single product page
-  //if ( ! is_product() || ! is_page ('cart')) return;
-  ?>
-   <script type="text/javascript" src="<?php echo get_template_directory_uri () .'/assets/js/quantity-updater.js'; ?>">
-   </script>
-   <?php
+  // Only run this on single product page
+  if (is_product ()) {
+    wc_enqueue_js ('
+      // Quantity updater on product single page
+      $("form.cart").on("click", "button.plus, button.minus", function () {
+        // Get current quantity values
+        var qty = $(this).parent().find(".qty");
+        var val = parseFloat(qty.val());
+        var max = parseFloat(qty.attr("max"));
+        var min = parseFloat(qty.attr("min"));
+        var step = parseFloat(qty.attr("step"));
+
+        // Change the value if plus or minus
+        if ($(this).is(".plus")) {
+          if (max && max <= val) {
+            qty.val(max);
+          } else {
+            qty.val(val + step);
+          }
+        } else {
+          if (min && min >= val) {
+            qty.val(min);
+          } else if (val > 1) {
+            qty.val(val - step);
+          }
+        }
+      });
+    ');
+
+    ?>
+    <script type="text/javascript">
+      // Add to cart functionality on single product page
+      $("form.cart").on("submit", function (e) {
+        e.preventDefault();
+
+        var form = $(this);
+        form.block({
+          message: null,
+          overlayCSS: { background: "#fff", opacity: 0.6 },
+        });
+
+        var formData = new FormData(form[0]);
+        formData.append("add-to-cart", form.find("[name=add-to-cart]").val());
+
+        // Ajax action.
+        $.ajax({
+          url: wc_add_to_cart_params.wc_ajax_url
+            .toString()
+            .replace("%%endpoint%%", "mspa_add_to_cart"),
+          data: formData,
+          type: "POST",
+          processData: false,
+          contentType: false,
+          complete: function (response) {
+            response = response.responseJSON;
+            //$ (".cart-items-count").text (str);
+
+            if (!response) {
+              return;
+            }
+
+            if (response.error && response.product_url) {
+              window.location = response.product_url;
+              return;
+            }
+
+            // Redirect to cart option
+            if (wc_add_to_cart_params.cart_redirect_after_add === "yes") {
+              window.location = wc_add_to_cart_params.cart_url;
+              return;
+            }
+
+            var $thisbutton = form.find(".single_add_to_cart_button"); //
+            $thisbutton.html(
+              'Added to cart &nbsp;<i class="text-white fas fa-check"></i>';
+            );
+
+            //	var $thisbutton = null; // uncomment this if you dont want the View cart button
+
+            // Trigger event so themes can refresh other areas.
+            $(document.body).trigger("added_to_cart", [
+              response.fragments,
+              response.cart_hash,
+              $thisbutton,
+            ]);
+
+            // Remove existing notices
+            $(
+              ".woocommerce-error, .woocommerce-message, .woocommerce-info"
+            ).remove();
+
+            // Add new notices
+            form.closest(".product").before(response.fragments.notices_html);
+
+            // Refresh cart item count
+            $(".cart-items-count").text(response.fragments.cart_items_count);
+
+            // Refresh mini cart content
+            const fragments_array = Object.values(response.fragments);
+            $("#mini-cart-content").html(fragments_array[0]);
+
+            form.unblock();
+          },
+        });
+      });
+    </script>
+    <?php
+  }
+
+  // Only run this on cart page
+  if (is_cart() || (is_cart() && is_checkout ()) )  {
+    wc_enqueue_js ('
+      // Quantity updater on Cart page - This will change the quantity and update the cart through ajax
+      $(document).on("click", "button.plus, button.minus", function () {
+          var timeout;
+        // Get current quantity values
+        var qty = $(this).parent().find(".qty");
+        var val = parseFloat(qty.val());
+        var max = parseFloat(qty.attr("max"));
+        var min = parseFloat(qty.attr("min"));
+        var step = parseFloat(qty.attr("step"));
+
+        // Change the value if plus or minus
+        if ($(this).is(".plus")) {
+          if (max && max <= val) {
+            qty.val(max);
+          } else {
+            qty.val(val + step);
+          }
+        } else {
+          if (min && min >= val) {
+            qty.val(min);
+          } else if (val > 1) {
+            qty.val(val - step);
+          }
+        }
+
+        if (timeout !== undefined) {
+          clearTimeout(timeout);
+        }
+
+        timeout = setTimeout(function () {
+          $("[name=update_cart]").prop("disabled", false);
+          $("[name=update_cart]").prop("aria-disabled", false);
+          $("[name=update_cart]").trigger("click");
+        }, 500); // 1 second delay, half a second (500) seems comfortable too
+      });
+    ');
+  }
+
 }
 
 //add_filter( 'woocommerce_widget_cart_item_quantity', 'add_minicart_quantity_fields', 10, 3 );

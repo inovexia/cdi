@@ -266,7 +266,7 @@
       .woocommerce-cart .cart-collaterals {
           background-color: #F1F1F1;
           padding: 20px;
-          border-radius: 0px 0px 18px 18px;
+          border-radius: 0px;
           border-top: 1px solid #1E1E1E;
       }
 

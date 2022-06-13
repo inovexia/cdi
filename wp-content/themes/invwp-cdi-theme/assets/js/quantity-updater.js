@@ -27,7 +27,8 @@ jQuery(function ($) {
   });
 
   // Quantity updater on Cart page - This will change the quantity and update the cart through ajax
-  $("form.woocommerce-cart-form").on("click", "button.plus, button.minus", function () {
+  $(document).on("click", "button.plus, button.minus", function () {
+    alert ()
     var timeout;
     // Get current quantity values
     var qty = $(this).parent().find(".qty");
@@ -59,8 +60,7 @@ jQuery(function ($) {
       $("[name=update_cart]").prop("disabled", false);
       $("[name=update_cart]").prop("aria-disabled", false);
       $("[name=update_cart]").trigger("click");
-    }, 1000); // 1 second delay, half a second (500) seems comfortable too
-    //setInterval('location.reload()', 1000);
+    }, 500); // 1 second delay, half a second (500) seems comfortable too
   });
 
   // Update cart quantity functionality on mini-cart
@@ -113,6 +113,7 @@ jQuery(function ($) {
     }, 1000); // 1 second delay, half a second (500) seems comfortable too
   });
 
+
   // Add to cart functionality on single product page
   $("form.cart").on("submit", function (e) {
     e.preventDefault();
@@ -137,7 +138,7 @@ jQuery(function ($) {
       contentType: false,
       complete: function (response) {
         response = response.responseJSON;
-        //$ ('.cart-items-count').text (str);
+        //$ (".cart-items-count").text (str);
 
         if (!response) {
           return;
@@ -156,10 +157,10 @@ jQuery(function ($) {
 
         var $thisbutton = form.find(".single_add_to_cart_button"); //
         $thisbutton.html(
-          'Added to cart &nbsp;<i class="text-white fas fa-check"></i>'
+          "Added to cart &nbsp;<i class="text-white fas fa-check"></i>"
         );
 
-        //	var $thisbutton = null; // uncomment this if you don't want the 'View cart' button
+        //	var $thisbutton = null; // uncomment this if you dont want the View cart button
 
         // Trigger event so themes can refresh other areas.
         $(document.body).trigger("added_to_cart", [
@@ -187,4 +188,5 @@ jQuery(function ($) {
       },
     });
   });
+
 });
