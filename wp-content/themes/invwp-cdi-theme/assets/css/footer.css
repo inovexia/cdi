@@ -28,12 +28,13 @@
         align-items: center;
     }
 
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 110px;
-    }
+    } */
 
     footer .payment-options section img {
-        width: 180px;
+        width: 140px;
+        margin-right: 10px;
     }
 
     footer .top-footer-menu h6 {
@@ -98,18 +99,18 @@
         width: 165px;
     }
 
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 150px;
-    }
+    } */
     .top-footer-about {
         margin-top: 20px;
     }
 }
 
 @media (min-width:992px) {
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 265px;
-    }
+    } */
 }
 
 /* Footer Top CSS end */
