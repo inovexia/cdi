@@ -156,7 +156,7 @@ jQuery(function ($) {
 
         var $thisbutton = form.find(".single_add_to_cart_button"); //
         $thisbutton.html(
-          'Add to cart &nbsp;<i class="text-white fas fa-check"></i>'
+          'Added to cart &nbsp;<i class="text-white fas fa-check"></i>'
         );
 
         //	var $thisbutton = null; // uncomment this if you don't want the 'View cart' button
@@ -182,11 +182,6 @@ jQuery(function ($) {
         // Refresh mini cart content
         const fragments_array = Object.values(response.fragments);
         $("#mini-cart-content").html(fragments_array[0]);
-
-        // Show mini cart
-        var miniCartOffcanvas = document.getElementById("offcanvas-mini-cart");
-        var bsOffcanvas = new bootstrap.Offcanvas(miniCartOffcanvas);
-        bsOffcanvas.show();
 
         form.unblock();
       },

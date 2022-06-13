@@ -6,7 +6,7 @@
         $title = 'BROWSE MEDICATION';
         $sub_title = 'Check out our wide range of fillers and injectables.';
       } else {
-        $title = get_the_title();
+        $title = the_title('', '', false);
         $sub_title = '';
       }
       ?>
