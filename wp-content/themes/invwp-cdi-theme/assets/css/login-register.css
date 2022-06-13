@@ -1,8 +1,8 @@
 @media (min-width: 0) {
     /*--------------------login popup--------------------*/
     .login-modal .simple-tabs button:hover {
-        background: inherit;
-    }
+      background: var(--faux-cg-blue2);
+  }
     .login-modal .simple-tabs .subtitle {
         display: none;
     }

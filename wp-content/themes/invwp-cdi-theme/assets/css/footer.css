@@ -28,12 +28,13 @@
         align-items: center;
     }
 
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 110px;
-    }
+    } */
 
     footer .payment-options section img {
-        width: 180px;
+        width: 140px;
+        margin-right: 10px;
     }
 
     footer .top-footer-menu h6 {
@@ -60,7 +61,7 @@
         display: none;
     }
 
-    footer .top-footer-contact section#block-25 p {
+    footer .top-footer-contact  p {
         margin: 0px auto 20px;
         color: #fff;
         position: relative;
@@ -69,7 +70,7 @@
         padding-left: 35px;
     }
 
-    footer .top-footer-contact section#block-25 p a {
+    footer .top-footer-contact  p a {
         color: #ffffff;
         font-size: 14px;
         font-family: "OSR";
@@ -77,7 +78,7 @@
         display: inline-block;
     }
 
-    footer .top-footer-contact section#block-25 p::before {
+    footer .top-footer-contact p::before {
         position: absolute;
         content: "";
         width: 25px;
@@ -98,18 +99,18 @@
         width: 165px;
     }
 
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 150px;
-    }
+    } */
     .top-footer-about {
         margin-top: 20px;
     }
 }
 
 @media (min-width:992px) {
-    footer .payment-options section {
+    /* footer .payment-options section {
         width: 265px;
-    }
+    } */
 }
 
 /* Footer Top CSS end */

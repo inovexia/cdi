@@ -4,7 +4,8 @@
             <div class="col-4">
                 <div class="site-branding">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php echo the_field('footer_logo', 'option'); ?>" alt="footer-logo" /></a>
+                    	<?php dynamic_sidebar('top-footer-logo'); ?>    
+					</a>
                 </div><!-- .site-branding -->
                 <div class="footer-payment">
                     <!-- <span class="payment-title-mobile">Payment Methods:</span> -->
