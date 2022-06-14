@@ -125,8 +125,14 @@ add_action( 'template_redirect', 'wc_prevent_adjacent_posts_rel_link_wp_head' );
  */
 function wc_gallery_noscript() {
 	?>
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<?php
+<noscript>
+    <style>
+    .woocommerce-product-gallery {
+        opacity: 1 !important;
+    }
+    </style>
+</noscript>
+<?php
 }
 add_action( 'wp_head', 'wc_gallery_noscript' );
 
@@ -353,14 +359,14 @@ function wc_body_class( $classes ) {
  */
 function wc_no_js() {
 	?>
-	<script type="text/javascript">
-		(function () {
-			var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;
-		})();
-	</script>
-	<?php
+<script type="text/javascript">
+(function() {
+    var c = document.body.className;
+    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+    document.body.className = c;
+})();
+</script>
+<?php
 }
 
 /**
@@ -789,7 +795,7 @@ function wc_query_string_form_fields( $values = null, $exclude = array(), $curre
 }
 
 /**
- * Get the terms and conditons page ID.
+ * Get the terms and conditions page ID.
  *
  * @since 3.4.0
  * @return int
@@ -823,7 +829,7 @@ function wc_terms_and_conditions_checkbox_enabled() {
 }
 
 /**
- * Get the terms and conditons checkbox text, if set.
+ * Get the terms and conditions checkbox text, if set.
  *
  * @since 3.4.0
  * @return string
@@ -974,32 +980,32 @@ if ( ! function_exists( 'woocommerce_content' ) ) {
 		} else {
 			?>
 
-			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
-			<?php endif; ?>
+<?php endif; ?>
 
-			<?php do_action( 'woocommerce_archive_description' ); ?>
+<?php do_action( 'woocommerce_archive_description' ); ?>
 
-			<?php if ( woocommerce_product_loop() ) : ?>
+<?php if ( woocommerce_product_loop() ) : ?>
 
-				<?php do_action( 'woocommerce_before_shop_loop' ); ?>
+<?php do_action( 'woocommerce_before_shop_loop' ); ?>
 
-				<?php woocommerce_product_loop_start(); ?>
+<?php woocommerce_product_loop_start(); ?>
 
-				<?php if ( wc_get_loop_prop( 'total' ) ) : ?>
-					<?php while ( have_posts() ) : ?>
-						<?php the_post(); ?>
-						<?php wc_get_template_part( 'content', 'product' ); ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
+<?php if ( wc_get_loop_prop( 'total' ) ) : ?>
+<?php while ( have_posts() ) : ?>
+<?php the_post(); ?>
+<?php wc_get_template_part( 'content', 'product' ); ?>
+<?php endwhile; ?>
+<?php endif; ?>
 
-				<?php woocommerce_product_loop_end(); ?>
+<?php woocommerce_product_loop_end(); ?>
 
-				<?php do_action( 'woocommerce_after_shop_loop' ); ?>
+<?php do_action( 'woocommerce_after_shop_loop' ); ?>
 
-				<?php
+<?php
 			else :
 				do_action( 'woocommerce_no_products_found' );
 			endif;
@@ -1174,8 +1180,8 @@ if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 	 */
 	function woocommerce_template_loop_category_title( $category ) {
 		?>
-		<h2 class="woocommerce-loop-category__title">
-			<?php
+<h2 class="woocommerce-loop-category__title">
+    <?php
 			echo esc_html( $category->name );
 
 			if ( $category->count > 0 ) {
@@ -1183,8 +1189,8 @@ if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 				echo apply_filters( 'woocommerce_subcategory_count_html', ' <mark class="count">(' . esc_html( $category->count ) . ')</mark>', $category );
 			}
 			?>
-		</h2>
-		<?php
+</h2>
+<?php
 	}
 }
 
@@ -1408,15 +1414,15 @@ if ( ! function_exists( 'woocommerce_get_product_thumbnail' ) ) {
 	 */
 	function woocommerce_get_product_thumbnail( $size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true ) {
 		global $product;
-		
+
 		if ( ! is_array( $attr ) ) {
 			$attr = array();
 		}
-		
+
 		if ( ! is_bool( $placeholder ) ) {
 			$placeholder = true;
 		}
-		
+
 		$image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
 
 		return $product ? $product->get_image( $image_size, $attr, $placeholder ) : '';
@@ -3344,7 +3350,7 @@ if ( ! function_exists( 'wc_display_item_meta' ) ) {
 			)
 		);
 
-		foreach ( $item->get_formatted_meta_data() as $meta_id => $meta ) {
+		foreach ( $item->get_all_formatted_meta_data() as $meta_id => $meta ) {
 			$value     = $args['autop'] ? wp_kses_post( $meta->display_value ) : wp_kses_post( make_clickable( trim( $meta->display_value ) ) );
 			$strings[] = $args['label_before'] . wp_kses_post( $meta->display_key ) . $args['label_after'] . $value;
 		}

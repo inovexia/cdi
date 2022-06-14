@@ -1,0 +1,211 @@
+ :root {
+  --container-max-width: 1280px;
+
+  --faux-cg-blue: #037E9B;
+  --faux-cg-blue2: #4EB0C7;
+  --secondary-color: #ffffff;
+  --alice-blue: #F9FAFB;
+  --faux-cg-blue1: #2394AE;
+  --black-russian: #1E1E1E;
+
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 28px;
+  --font-size-xxxxl: 22px;
+  --font-size-xxxxxl: 20px;
+  /* --font-size-xxxxxxl: 18px;  */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --font-family-open-sans: 'OSR', sans-serif;
+
+  --btn-bg-primary: #037E9B;
+  --btn-bg-secondary: #ffffff;
+
+  --btn-color-primary: #037E9B;
+  --btn-color-secondary: #ffffff;
+}
+@media (min-width: 0) {
+/* Basic Styling */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  color: var(--black-russian);
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  text-align: left;
+  background-color: var(--secondary-color);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* TYPOGRAPHY */
+div {
+  color: var(--black-russian);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  line-height: 24px;
+}
+
+h1 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  line-height: 40px;
+}
+
+h2 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  line-height: 40px;
+}
+
+h3 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  line-height: 35px;
+}
+
+h4 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+}
+
+h5 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  line-height: 28px;
+}
+
+h6 {
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  line-height: 24px;
+}
+
+a {
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-s);
+  line-height: 20px;
+  display: contents;
+  text-decoration: none;
+  font-style: normal;
+  outline: none;
+  color: #037E9B;
+}
+a:hover, a:focus, a:active {
+  color: #037f9b;
+}
+p {
+  color: var(--black-russian);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  line-height: 20px;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+table {
+  width: 100%;
+}
+
+/* FORMS AND BUTTONS */
+input {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+textarea {
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+/* Responsive images */
+img {
+  width: 100%;
+  height: auto;
+}
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--font-size-xl);
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: var(--font-size-xxl);
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: var(--font-size-xxxl);
+    line-height: 35px;
+  }
+
+  h4 {
+    font-size: var(--font-size-xxxxl);
+    line-height: 32px;
+  }
+
+  h5 {
+    font-size: var(--font-size-xxxxxl);
+    line-height: 28px;
+  }
+
+  h6 {
+    font-size: var(--font-size-l);
+    line-height: 24px;
+  }
+}
+@media (min-width:1920px) {
+p {
+    font-size: var(--font-size-m);
+    line-height: 20px;
+}
+a {
+  font-size: var(--font-size-m);
+
+}
+
+
+}

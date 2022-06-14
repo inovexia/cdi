@@ -536,17 +536,22 @@ if ($email['status'] != 'sent') {
                             <td><?php echo esc_html($email['token']); ?></td>
                         </tr>
                         <tr>
-                            <th>This is the textual version of your newsletter. 
-                                If you empty it, only an HTML version will be sent but is an anti-spam best practice to include a text only version.</th>
+                            <th style="vertical-align: top">
+                                This is the textual version of your newsletter. 
+                                If you empty it, only an HTML version will be sent but is an anti-spam best practice to include a text only version.
+                            </th>
                             <td>
-                                <?php if (Newsletter::instance()->options['phpmailer'] == 0) { ?>
-                                    <p class="tnp-tab-warning">
-                                        See <a href="https://wordpress.org/plugins/plaintext-newsletter/" target="_blank">this plugin</a> for automatic plaintext generation.
-                                        The text part is sent only when Newsletter manages 
-                                        directly the sending process. <a href="admin.php?page=newsletter_main_main" target="_blank">See the main settings</a>.
-                                    </p>
+                                <?php if ($editor_type == NewsletterEmails::EDITOR_COMPOSER) { ?>
+                                <?php $controls->select('options_text_message_mode', [''=>__('Autogenerate', 'newsletter'), '1'=>__('Hand edited', 'newsletter')]) ?>
+                                <p class="description"></p>
                                 <?php } ?>
+                                    
                                 <?php $controls->textarea_fixed('message_text', '100%', '500'); ?>
+                                <!--
+                                <p class="tnp-tab-warning">
+                                    See <a href="https://wordpress.org/plugins/plaintext-newsletter/" target="_blank">this plugin</a> for automatic plaintext generation.
+                                </p>
+                                -->
                             </td>
                         </tr>
                     </table>

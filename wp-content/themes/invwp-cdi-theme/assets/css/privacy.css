@@ -1,0 +1,36 @@
+@media (min-width: 0) {
+    .section-privacyfullwidth {
+        padding: 40px 0 60px 0;
+    }
+    .privacy-inner-content h1, .privacy-inner-content h2, .privacy-inner-content h3, .privacy-inner-content h4, .privacy-inner-content h5, .privacy-inner-content h6 {
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    /* ------------------customer agreement------------ */
+    .about-customer-content-section .text-left h5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width:1200px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1680px) {}
+
+@media (min-width:1920px) {}

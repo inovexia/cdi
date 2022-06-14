@@ -1,0 +1,173 @@
+@media (min-width: 0) {
+    /*--------------------login popup--------------------*/
+    .login-modal .simple-tabs button:hover {
+      background: var(--faux-cg-blue2);
+  }
+    .login-modal .simple-tabs .subtitle {
+        display: none;
+    }
+    .login-modal .woocommerce-form-register select, .login-modal #license_expiry {
+        padding: 15px 15px;
+        border-radius: 50px;
+        margin: 10px;
+        width: 100%;
+        display: block;
+        background: var(--frostproof);
+        color: #898989;
+        font-size: 12px;
+    }
+    .woocommerce-form-login, .lost_reset_password {
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .woocommerce-form-login .woocommerce-Input--text, .lost_reset_password .woocommerce-Input--text {
+        width: 100%;
+    }
+    .login-title {
+        display: none;
+    }
+    .woocommerce-form-login input, .lost_reset_password input {
+        padding: 10px 20px;
+        margin-top: 8px;
+    }
+    .woocommerce-LostPassword a {
+        color: #000;
+    }
+    .woocommerce-Button {
+        background: #037e9b;
+        color: #fff;
+        border: 1px solid #037e9b;
+    }
+    #customer_login form {
+        width: 100%;
+    }
+    #custom-registration-tabs fieldset {
+        border: none;
+    }
+    .login-modal form button {
+        width: 100%;
+        display: block;
+        background: var(--faux-cg-blue);
+        padding: 15px;
+        color: #fff;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+    span.modal-close {
+        font-size: 40px;
+    }
+    #login-modal .woocommerce-form-login {
+        background: transparent;
+    }
+    .login-modal form button:hover {
+        color: #000;
+    }
+    form#checkout-custom-login-form {
+        padding: 0;
+    }
+    #login-modal .modal-window {
+         max-height: inherit;
+    }
+    .woocommerce-form-row a {
+      color: #037e9b;
+  }
+  .woocommerce-form-login .woocommerce-button {
+    display: block;
+    width: 100%;
+    background: #037f9b;
+    border: none;
+    color: #fff;
+    margin: 10px 0;
+}
+}
+
+/* Customer registration form */
+#user-custom-register-form fieldset {
+  border: none;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#user-custom-register-form fieldset label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+}
+
+#user-custom-register-form fieldset label span {
+  color: red;
+}
+
+#user-custom-register-form fieldset .primary-colr {
+  color: #000;
+}
+
+#user-custom-register-form fieldset input,
+#user-custom-register-form fieldset select {
+  background-color: #dfe9eb;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  padding: 8px 15px !important;
+  color: var(--faux-cg-blue);
+  font-family: var(--font-family-open-sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  outline: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+#user-custom-register-form .woocommerce-form__input-checkbox {
+  width: 35px !important;
+  float: left;
+}
+
+#user-custom-register-form .form-row {
+  margin: 0;
+}
+
+#user-custom-register-form .col-6.radio-wrp p {
+  display: flex;
+  align-items: center;
+}
+
+#user-custom-register-form .radio-column {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#user-custom-register-form .radio-column input {
+  width: 25px;
+  margin-right: 10px;
+}
+
+#user-custom-register-form label.label-radio,
+.input-radio {
+  margin-bottom: 0 !important;
+}
+
+.main-btn {
+  background-color: var(--faux-cg-blue);
+  border: 1px solid var(--faux-cg-blue);
+  color: var(--white);
+  width: 220px;
+  display: block;
+  margin: auto;
+  padding: 12px;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+.woocommerce-form-login, .lost_reset_password {
+  width: 48%;
+}
+}

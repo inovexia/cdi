@@ -1,0 +1,72 @@
+.home-faq-section .group .body-part {
+    display: none;
+    padding-top: 18px;
+}
+
+.faq-section.home-faq-section .group {
+    border-bottom: none;
+    padding: 20px 0px;
+}
+
+.home-faq-section .accordion-title {
+    margin: 0;
+}
+.home-faq-section .section-title {
+    margin-top: 0;
+    text-align: center;
+}
+.home-faq-section .group {
+    border-bottom: 1px solid #037E9B;
+    padding: 15px 0px;
+}
+
+.home-faq-section .accordion-title {
+    margin: 0;
+    padding-right: 20px;
+    color: var(--faux-cg-blue);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+
+.faq-section.home-faq-section .accordion-title {
+    font-size: 22px;
+}
+
+.faq-section.home-faq-section {
+    padding-bottom: 50px;
+}
+
+.faq-section.home-faq-section .group a::after {
+    font-size: 25px;
+}
+
+
+.home-faq-section .group a::after {
+    content: "ˆ";
+    right: 0;
+    padding-right: -5px;
+    top: 0;
+    cursor: pointer;
+    right: 20px;
+    position: absolute;
+    color: #037E9B;
+    font-size: 36px;
+}
+
+.home-faq-section .active .group a::after {
+    content: "ˆ";
+    transform: scale(1, -1);
+}
+
+.home-faq-section .group a {
+    display: block;
+    font-size: 20px;
+    outline: none;
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .home-faq-section .section-title {
+        text-align: left;
+    }
+}

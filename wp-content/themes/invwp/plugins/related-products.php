@@ -15,12 +15,12 @@ function invwps_show_related_products () {
 
   global $post;
   ?>
-  <h2 class="text-center">Related Products</h2>
-  <!-- Slider main container -->
-  <div class="single-product-related-slider swiper">
+<h2 class="text-center">Related Products</h2>
+<!-- Slider main container -->
+<div class="single-product-related-slider swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <?php
+        <?php
       $args = array (
         'category__in' => wp_get_post_categories( $post->ID ),
         'numberposts'  => 10,
@@ -35,8 +35,8 @@ function invwps_show_related_products () {
       if ( $query->have_posts () ) {
         while ( $query->have_posts() ) {
           ?>
-          <!-- Slides -->
-          <div class="swiper-slide">
+        <!-- Slides -->
+        <div class="swiper-slide">
             <?php
               $query->the_post();
               /**
@@ -46,8 +46,8 @@ function invwps_show_related_products () {
 
               wc_get_template_part( 'content', 'product' );
             ?>
-         </div>
-         <?php
+        </div>
+        <?php
         }
       }
       //woocommerce_product_loop_end();
@@ -63,6 +63,6 @@ function invwps_show_related_products () {
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
-  </div>
+</div>
 <?php
 }

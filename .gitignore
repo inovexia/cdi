@@ -27,3 +27,5 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+*.csv
+wp-content/uploads/2022/05/wc-product-export-27-5-2022-1653662976620.csv

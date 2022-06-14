@@ -480,6 +480,20 @@ class NewsletterFields {
     }
 
     function posts($name, $label, $count = 20, $args = []) {
+        $value = $this->controls->get_value($name, 0);
+        
+        // Post select options
+        $options = [];
+        
+        // Retrieve the selected post and add as first element since it could not be part of the 
+        // latest list anymore
+        if (!empty($value)) {
+            $post = get_post($value);
+            if ($post) {
+                $options['' . $post->ID] = $post->post_title;
+            }
+        }
+        
         $args = array_merge(array('filters' => array(
                 'posts_per_page' => 5,
                 'offset' => 0,
@@ -503,7 +517,7 @@ class NewsletterFields {
         $args['filters']['posts_per_page'] = $count;
 
         $posts = get_posts($args['filters']);
-        $options = array();
+        
         if ($args['last_post_option']) {
             $options['last'] = 'Most recent post';
         }

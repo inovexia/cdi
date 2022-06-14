@@ -1,0 +1,124 @@
+/*
+ * CONTACT CSS FILE
+ * This file will contain CSS for only contact page sections
+ */
+
+/* ORDER HERO BANNER SECTION */
+@media (min-width: 0) {
+    .contact-banner {
+      background: #F9FAFB;
+        padding-top: 50px;
+    }
+    .contact-banner .hero-title {
+      font-family: var(--font-family-open-sans);
+      font-size: var(--font-size-Vxl);
+      font-weight: var(--font-weight-regular);
+      color: var(--faux-cg-blue);
+      line-height: 65px;
+      letter-spacing: 0;
+      margin-top: 10px;
+    }
+    .contact-col-section{
+      padding: 70px 0;
+    }
+    .section-icon i {
+      color: var(--faux-cg-blue);
+      font-size: var(--font-size-m);
+      height: 0;
+  line-height: 3px;
+    }
+    .contact-col-section h5 {
+      margin: 10px 0;
+  }
+  .contact-col-section .col-4 {
+    margin-bottom: 30px;
+}
+.contact-col-section .section-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #037e9b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+    .contact-section input[type=text], .contact-section input[type=email], .contact-section textarea{
+      background-color: #dfe9eb;
+      border: 1px solid #fff;
+      margin-bottom: 20px !important;
+      padding: 8px 15px !important;
+      color: var(--faux-cg-blue);
+      font-size: var(--font-size-s);
+      font-style: normal;
+      font-weight: var(--font-weight-medium);
+      line-height: 26px;
+      outline: 0;
+      border-radius: 0;
+      width: 100% !important;
+    }
+    .contact-section input[type=submit]{
+      background-color: var(--faux-cg-blue);
+      border: 1px solid var(--faux-cg-blue);
+      color: var(--secondary-color);
+      width: 100%;
+      cursor: pointer;
+      padding: 10px 48px;
+      text-decoration: none;
+      font-size: var(--font-size-m);
+      font-weight: var(--font-weight-medium);
+      height: 45px;
+    }
+
+    .contact-section input[type=submit]:hover{
+      background-color: var(--secondary-color);
+      border: 1px solid var(--faux-cg-blue);
+      color: var(--faux-cg-blue);
+    }
+
+    .contact-section .col-6 {
+      margin: 0 auto 10px;
+    }
+    .contact-section textarea {
+      height: 150px;
+    }
+    .about-map .section-title {
+      margin-bottom: 30px;
+      margin-top: 0;
+  }
+  .contact-banner .section-title {
+    margin-bottom: 0;
+}
+.contact-banner p {
+    margin-top: 5px;
+}
+.contact-col-section p a {
+  color: #037e9b;
+  font-size: 15px;
+}
+  }
+  @media (min-width: 576px) {
+
+  }
+  @media (min-width: 768px) {
+    .contact-col-section .col-4 {
+      margin-bottom: 0;
+  }
+  }
+  @media (min-width: 992px) {
+
+  }
+  @media (min-width:1200px) {
+
+  }
+  @media (min-width: 1440px) {
+
+  }
+  @media (min-width: 1680px) {
+
+  }
+  @media (min-width:1920px) {
+
+  }

@@ -490,7 +490,9 @@ class Woocommerce
         if (function_exists('WC')) {
             if(isset(WC()->cart) && WC()->cart != null){
                 if (method_exists(WC()->cart, 'get_cart')) {
-                    $cart = WC()->cart->get_cart();
+                    if (did_action('wp_loaded')) {
+                        $cart = WC()->cart->get_cart();
+                    }
                 }
             }
         }
@@ -868,7 +870,7 @@ class Woocommerce
     static function printNotice($message, $type)
     {
         if (function_exists('wc_print_notice')) {
-            wc_print_notice($message, $type);
+            wc_print_notice(wp_unslash($message), $type);
         }
     }
 
