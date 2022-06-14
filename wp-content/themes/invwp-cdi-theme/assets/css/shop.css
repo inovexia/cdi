@@ -377,7 +377,42 @@
 		width: 100%;
 		display: block;
 	}
-
+	/*My account css*/
+	.my-custom-account form .woocommerce-address-fields input[type="text"],
+	.my-custom-account form .woocommerce-address-fields input[type="tel"],
+	.my-custom-account form .woocommerce-address-fields input[type="email"],
+	.my-custom-account form .woocommerce-address-fields .select2-container .select2-selection__rendered{
+		background-color: #dfe9eb;
+	    border: 1px solid #fff;
+	    margin-bottom: 20px;
+	    padding: 8px 15px !important;
+	    color: var(--faux-cg-blue);
+	    font-family: var(--font-family-open-sans);
+	    font-size: var(--font-size-s);
+	    font-style: normal;
+	    font-weight: var(--font-weight-medium);
+	    line-height: 20px;
+	    outline: 0;
+	    border-radius: 0;
+	    width: 100%;
+	}
+	#shipping_address_1_field, #shipping_country_field{
+		margin-top: 25px;
+	}
+	.my-custom-account form .woocommerce-address-fields button.button{
+		font-family: var(--font-family-open-sans);
+	    font-weight: var(--font-weight-medium);
+	    font-style: normal;
+	    letter-spacing: 0.05em;
+	    text-transform: uppercase;
+	    display: inline;
+	    color: var(--secondary-color);
+	    background-color: var(--faux-cg-blue);
+	    border: 1px solid var(--faux-cg-blue);
+	    padding: 15px 12px;
+	    width: 100%;
+	    border-radius: 0;
+	}
 }
 
 @media (min-width:768px) {
