@@ -162,8 +162,4 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
-<<<<<<< HEAD:wp-content/themes/invwp-cdi/inc/template-tags.php
 endif;
-=======
-endif;
->>>>>>> 856d1cdceefdfbc803ad2a7f963e8e1d24d13ad1:wp-content/themes/invwp-cdi-theme/inc/template-tags.php
