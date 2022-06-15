@@ -19,7 +19,7 @@ require get_template_directory() . '/inc/enqueue.php';
 /**
 * Register widget areas.
 */
-//require get_template_directory() . '/inc/widget-areas.php';
+require get_template_directory() . '/inc/widget-areas.php';
 
 /**
 * Load common helper functions.
