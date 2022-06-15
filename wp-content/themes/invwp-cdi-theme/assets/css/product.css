@@ -690,13 +690,13 @@
     margin-top: 10px;
     line-height: 24px;
   }
-
+    
   .single-product-content .product-description ul li,
   .single-product-content .product-description ul li strong {
     color: var(--black2);
     font-family: var(--font-family-open-sans);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-s);
     font-style: normal;
     line-height: 24px;
   }
