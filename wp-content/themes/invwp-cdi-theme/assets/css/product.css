@@ -131,11 +131,13 @@
 
   .single-product .value label {
     margin-left: 0;
-    padding: 15px;
+    padding: 10px 15px;
     background-color: #F3F8F9;
     border: 2px solid #DFE9EB;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    display: block;
   }
 
   .single-product tr.attribute-package {
@@ -487,7 +489,10 @@
   .image-breadcrumb::after {
     position: inherit;
   }
-
+  .single-product-content .variations_form .variations {
+    margin-top: 25px;
+    display: block;
+}
 
 }
 

@@ -1029,8 +1029,8 @@ form.woocommerce-form-login {
 
 .woocommerce-form-login input[type=text],
 .woocommerce-form-login input[type=password] {
-  background: var(--frostproof);
-  border: 1px solid var(--frostproof);
+  background: var(--alice-blue);
+  border: 1px solid var(--alice-blue);
   height: 46px;
   padding: 10px 20px;
   border-radius: 25px;
@@ -1040,8 +1040,8 @@ form.woocommerce-form-login {
 .woocommerce-form.woocommerce-form-register input[type=text],
 .woocommerce-form.woocommerce-form-register input[type=password],
 .woocommerce-form.woocommerce-form-register input[type=email] {
-  background: var(--frostproof);
-  border: 1px solid var(--frostproof);
+  background: var(--alice-blue);
+  border: 1px solid var(--alice-blue);
   border-radius: 25px;
   width: 100%;
   height: 46px;
