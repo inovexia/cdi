@@ -305,6 +305,19 @@
         font-family: "OSB";
         color: var(--faux-cg-blue);
     }
+    #customer_login{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #customer_login div.u-column1.col-1 {
+        width: 65%;
+    }
+    #customer_login div.u-column2.col-2{
+        display: none;
+    }
 }
 
 @media (min-width:768px) {}
