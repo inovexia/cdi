@@ -88,8 +88,9 @@
             </div>
             <div class="form-group row">
                <div class="col-6">
-               <label>State <span>*</span></label>
+               <label>State </label>
                   <?php
+					/*
                      woocommerce_form_field('mspa_state_field', array(
                          'type'       => 'state',
                          'class'      => array( 'chzn-drop', 'form-select' ),
@@ -97,7 +98,12 @@
                          'placeholder'    => __('Select a State')
                          )
                      );
+					 */
+
                      ?>
+					<select name="mspa_state_field" id="mspa_state_field" class="chzn-drop form-select">
+						<option value="">Select a State</option>
+					</select>
                </div>
                <div class="col-6">
                   <label>Zip Code <span>*</span></label>
