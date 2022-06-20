@@ -132,3 +132,22 @@ for (i = 0; i < collapse.length; i++) {
     }
   });
 }
+
+$(document).ready(function () {
+  $("#offline_cc-card-holder").keyup(function () {
+    if ($(this).val().length != 0) $("#rev-order").attr("disabled", false);
+    else $("#rev-order").attr("disabled", true);
+  });
+  $("#offline_cc-card-number").keyup(function () {
+    if ($(this).val().length != 0) $("#rev-order").attr("disabled", false);
+    else $("#rev-order").attr("disabled", true);
+  });
+  $("#offline_cc-card-expiry").keyup(function () {
+    if ($(this).val().length != 0) $("#rev-order").attr("disabled", false);
+    else $("#rev-order").attr("disabled", true);
+  });
+  $("#offline_cc-card-cvc").keyup(function () {
+    if ($(this).val().length != 0) $("#rev-order").attr("disabled", false);
+    else $("#rev-order").attr("disabled", true);
+  });
+});

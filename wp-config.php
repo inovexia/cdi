@@ -82,8 +82,11 @@ define( 'WP_DEBUG', false );
 define('ALLOW_UNFILTERED_UPLOADS', true);
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'https://developer3.website/cdi/' );
-define( 'WP_HOME', 'https://developer3.website/cdi/' );
+// define( 'WP_SITEURL', 'https://developer3.website/cdi/' );
+// define( 'WP_HOME', 'https://developer3.website/cdi/' );
+
+define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );
+define( 'WP_HOME', 'https://localhost/dev/cdi/' );
 
 
 /* That's all, stop editing! Happy publishing. */
