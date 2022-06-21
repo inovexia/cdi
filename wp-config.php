@@ -86,6 +86,10 @@ define( 'WP_SITEURL', 'https://developer1.website/dev/cdi' );
 define( 'WP_HOME', 'https://developer1.website/dev/cdi' );
 
 
+// define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );
+// define( 'WP_HOME', 'https://localhost/dev/cdi/' );
+
+
 /* That's all, stop editing! Happy publishing. */
 /** Absolute path to the WordPress directory. */
 

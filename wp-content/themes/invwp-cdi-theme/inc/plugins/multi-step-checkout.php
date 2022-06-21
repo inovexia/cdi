@@ -18,7 +18,7 @@ add_action( 'woocommerce_checkout_before_order_review', 'woocommerce_checkout_co
 
 add_action( 'invwp_woocommerce_checkout_place_order_button', 'invwp_checkout_place_order_button', 5 );
 function invwp_checkout_place_order_button () {
-  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order button-primary" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine
+  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order button-primary" id="place_order" value="">Checkout</button>' ); // @codingStandardsIgnoreLine
 }
 
 

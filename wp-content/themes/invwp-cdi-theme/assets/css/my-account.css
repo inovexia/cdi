@@ -76,6 +76,10 @@
         padding: 0;
         list-style: none;
     }
+
+    .woocommerce-account .woocommerce-EditAccountForm.edit-account p input {
+        border-radius: 20px;
+    }
 }
 
 @media (min-width:768px) {
@@ -305,17 +309,20 @@
         font-family: "OSB";
         color: var(--faux-cg-blue);
     }
-    #customer_login{
+
+    #customer_login {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
     }
+
     #customer_login div.u-column1.col-1 {
         width: 65%;
     }
-    #customer_login div.u-column2.col-2{
+
+    #customer_login div.u-column2.col-2 {
         display: none;
     }
 }
@@ -333,6 +340,10 @@
         margin-top: 0;
     }
 
+    .woocommerce-account .woocommerce-EditAccountForm p {
+        margin-top: 15px;
+    }
+
     .woocommerce-EditAccountForm p input {
         width: 100%;
         display: block;
@@ -341,9 +352,10 @@
     }
 
     .woocommerce-EditAccountForm fieldset {
-        padding: 20px;
+        padding: 0;
         width: 100%;
-        border: 1px solid #ccc;
+        margin: 10px 0px;
+        display: inline-block;
     }
 
     .woocommerce-EditAccountForm .woocommerce-Button {
@@ -351,6 +363,10 @@
         color: #fff;
         border: 1px solid #037e9b;
         margin-top: 15px;
+    }
+
+    .woocommerce-MyAccount-content a:hover {
+        color: #fff;
     }
 }
 
