@@ -109,8 +109,10 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                             <button type="button" class="wc-forward next-step button button-primary text-uppercase"
                                 id="checkout-review-order-button">Next: Payment </button>
                             <?php endif; ?>
+                            <div class="additional-btn">
                             <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
-
+                            </div>
+                            
                         </fieldset>
 
                         <!--  Payment Block -->
@@ -121,7 +123,10 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                             <button type="button" id="rev-order"
                                 class="rev-order wc-forward next-step button button-primary text-uppercase">Review
                                 Order</button>
+                                <div class="additional-btn">
                             <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
+                            <span class="back back-btn-2 return-shop-btn">BACK</span>
+                            </div>
                         </fieldset>
                         <!--//  Payment Block -->
 
@@ -163,7 +168,10 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                                 <?php do_action ('invwp_woocommerce_checkout_place_order_button'); ?>
 
                             </div>
+                            <div class="additional-btn">
                             <a href="<?php echo site_url(); ?>/shop/" class="return-shop-btn">Return To Shop</a>
+                            <span class="back back-btn-3 return-shop-btn">BACK</span>
+                            </div>
                         </fieldset>
                     </form>
 
@@ -193,7 +201,18 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
 <script>
+    $(function() {
+        $('#terms').click(function() {
+        if ($(this).is(':checked')) {
+            $('#rev-order').removeAttr('disabled');
+            
+        } else {
+            $('#rev-order').attr('disabled', 'disabled'); 
+        }
+    });
+});
 $(document).ready(function() {
+   
     <?php if (is_user_logged_in ()) { ?>
     $('#fieldset1').hide();
     $('#fieldset2').show();
@@ -233,17 +252,34 @@ $(document).ready(function() {
 
         $('#shipping-email-line1').html($('#billing_email').val());
     });
+    $(".back-btn-2").click(function(){
+        $("#fieldset3").hide();
+        $("#fieldset2").show();
+        $("#fieldset2").css("opacity","1");
+    });
+    $(".back-btn-3").click(function(){
+        $("#fieldset4").hide();
+        $("#fieldset3").show();
+        $("#fieldset3").css("opacity","1");
+    })
+   
     $('#rev-order').on('click', function() {
-        var checkDiv = $(this).parent().parent();
-        if (checkDiv.attr("id") == "offline_cc-card-number") {
-            var ccn = $('#offline_cc-card-number').val();
-            alert(ccn);
-            var cn = ccn.substr(-4);
-            $('#shipping-payment-line1').html($('#offline_cc-card-holder').val());
-            $('#shipping-payment-line2').html(cn);
-            $('#shipping-payment-line3').html("Expires" +
+        var ccn = $('#offline_cc-card-number').val();
+        var cn = ccn.substr(-4);
+       // var checkDiv = $(this).parent();
+        // if (checkDiv.attr("id") == "offline_cc-card-number") {
+        //     var ccn = $('#offline_cc-card-number').val();
+        //     alert(ccn);
+        //     var cn = ccn.substr(-4);
+        //     $('#shipping-payment-line1').html($('#offline_cc-card-holder').val());
+        //     $('#shipping-payment-line2').html(cn);
+        //     $('#shipping-payment-line3').html("Expires" +
+        //         " " + $('#offline_cc-card-expiry').val());
+        // }
+        $('#shipping-payment-line1').html($('#offline_cc-card-holder').val());
+        $('#shipping-payment-line2').html(cn);
+        $('#shipping-payment-line3').html("Expires" +
                 " " + $('#offline_cc-card-expiry').val());
-        }
 
 
     });

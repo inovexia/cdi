@@ -1,0 +1,276 @@
+/*Logger modal*/
+
+.logger-section {
+    margin-top: 30px;
+}
+
+.settings-page {
+    padding-right: 20px;
+}
+
+input[type="submit"],
+.logger-section button,
+.omnisend-logger-modal button {
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 3px 15px;
+    transition: 0.25s all;
+}
+
+input[type="submit"]:hover,
+.logger-section button:hover,
+.omnisend-logger-modal button:hover {
+    background: #ddd;
+}
+
+.button-danger {
+    color: #fff !important;
+    background-color: #1d2225 !important;
+    border-color: #1d2225 !important;
+}
+
+.button-danger:hover {
+    color: #fff !important;
+    background-color: #1e1327 !important;
+    border-color: #1e1327 !important;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 1px;
+}
+
+.inner-content {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.inner-content p {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.omnisend-page {
+    padding: 30px 3%;
+}
+
+.omnisend-success {
+    color: blue;
+}
+
+.omnisend-warning,
+.omnisend-warn,
+.omnisend-error {
+    color: red !important;
+}
+
+.omnisend-hook-message {
+    background-color: #A9CCE3;
+}
+
+.current-api-key {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.wider-text {
+    width: 38em;
+}
+
+.current-api-key span {
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.omnisend-logo {
+    margin: 30px 0 20px 0;
+}
+
+.omnisend-logo img {
+    width: 160px;
+    height: auto;
+}
+
+.clean-log {
+    margin-bottom: 20px !important;
+}
+
+.logging_status {
+    line-height: 19px;
+    padding: 11px 15px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 20px 20px 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.logging_enabled {
+    border-left: 4px solid green;
+}
+
+.logging_disabled {
+    border-left: 4px solid #ffba00;
+}
+
+.logging_red {
+    border-left: 4px solid red;
+}
+
+.omnisend_dn {
+    display: none;
+}
+
+a.change_api_key {
+    cursor: pointer;
+}
+
+.fixed td.fixed_date {
+    width: 150px;
+}
+
+.fixed td.fixed_type {
+    width: 80px;
+}
+
+.fixed td.fixed_endpoint {
+    width: 65px;
+}
+
+.fixed td.fixed_url {
+    width: 300px;
+}
+
+.omni_loader {
+    float: none;
+    vertical-align: top;
+}
+
+.settings-page .connected {
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+    background: #87da86;
+}
+
+.settings-page .connected h3 {
+    padding: 8px 18px 8px 18px;
+}
+
+.settings-page .settings-section {
+    width: 55%;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.plugin-version p {
+    color: #6b747c;
+}
+
+.input-button {
+    padding: 5px 10px 5px 10px !important;
+}
+
+.settings-page .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.settings-page .sub-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.settings-page .title-desc {
+    margin-top: 5px;
+}
+
+.settings-page .sync-stats {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.settings-page .sync-loader .sync-spinner {
+    display: inline-block;
+    vertical-align: text-bottom;
+    border: 0.25em solid #2b7f13;
+    border-right-color: transparent;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 2s linear infinite;
+}
+
+.settings-page .sync-loader span {
+    color: #2b7f13;
+    padding-left: 5px;
+}
+
+.settings-page .resync-contacts {
+    margin-top: 35px;
+}
+
+.settings-page .notice {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.settings-page .permalink-notice {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.settings-page .woo-api-access-notice {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fcf9e9;
+}
+
+.settings-page .woo-api-access-notice .title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.settings-page .woo-api-access-notice .description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.settings-page ul {
+    list-style-type: disc;
+    margin: 50px 20px 0;
+}
+.settings-page ul li {
+    margin: 10px, 0;
+    line-height: 24px;
+}
+
+/* Hide Klaviyo notice in our settings page */
+#msg-config_warning {
+    display: none;
+}

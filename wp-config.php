@@ -82,8 +82,8 @@ define( 'WP_DEBUG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'https://developer1.website/dev/cdi' );
-define( 'WP_HOME', 'https://developer1.website/dev/cdi' );
+define( 'WP_SITEURL', 'https://icbtc.website/cdi' );
+define( 'WP_HOME', 'https://icbtc.website/cdi' );
 
 
 // define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );
