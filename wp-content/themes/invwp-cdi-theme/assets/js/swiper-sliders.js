@@ -184,6 +184,40 @@
       slidesPerView: 1,
       loop: true,
       spaceBetween: 20,
+      autoplay: 
+      {
+        delay: 3000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-prev01",
+        prevEl: ".swiper-button-next01",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    // Home Testimonial Slider
+    new Swiper(".testimonialSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20,
+      autoplay: 
+      {
+        delay: 3000,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -280,6 +314,26 @@
         1024: {
           slidesPerView: 1,
         },
+      },
+    });
+
+    // Gallery Slider On Single Product Page
+    var galleryswiper = new Swiper(".gallerySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    new Swiper(".gallerySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: galleryswiper,
       },
     });
 

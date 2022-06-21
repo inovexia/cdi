@@ -57,7 +57,7 @@ add_action ('invwp_woocommerce_single_product_summary', 'woocommerce_template_si
 
 add_action('invwp_woocommerce_show_product_rating', 'woocommerce_template_single_rating', 10, 0);
 
-
+// Checkout page
 remove_action( 'woocommerce_proceed_to_checkout', 'wc_get_pay_buttons', 10 );
 remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
 add_action( 'invwp_proceed_to_checkout', 'wc_get_pay_buttons', 10 );

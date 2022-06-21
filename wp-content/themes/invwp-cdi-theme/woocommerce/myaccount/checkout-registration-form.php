@@ -1,6 +1,6 @@
 <div class="row">
    <div class="col-5 mx-auto">
-      <h4 class="section-title text-center"><strong>CUSTOMER REGISTRATION</strong> REGISTER AND START SAVING</h4>
+      <h2 class="section-title text-center"><strong>CUSTOMER REGISTRATION</strong> REGISTER AND START SAVING</h2>
    </div>
 </div>
 
@@ -88,8 +88,9 @@
             </div>
             <div class="form-group row">
                <div class="col-6">
-               <label>State <span>*</span></label>
+               <label>State </label>
                   <?php
+					/*
                      woocommerce_form_field('mspa_state_field', array(
                          'type'       => 'state',
                          'class'      => array( 'chzn-drop', 'form-select' ),
@@ -97,7 +98,12 @@
                          'placeholder'    => __('Select a State')
                          )
                      );
+					 */
+
                      ?>
+					<select name="mspa_state_field" id="mspa_state_field" class="chzn-drop form-select">
+						<option value="">Select a State</option>
+					</select>
                </div>
                <div class="col-6">
                   <label>Zip Code <span>*</span></label>
@@ -318,7 +324,8 @@
                <button type="submit" class="woocommerce-Button woocommerce-button button button-block woocommerce-form-register__submit reg-form-submit button-background-blue " name="register" value="<?php esc_attr_e( 'SUBMIT', 'woocommerce' ); ?>"><?php esc_html_e( 'REGISTER', 'woocommerce' ); ?></button>
             </p>
             <p class="status"></p>
-            <p class=" align-center already-acc-btn">Already have an account? <a href="#customer_login" id="login-action-link" class="lato-bold-black-pearl-14px">Log-In</a></p>
+            <p class=" align-center already-acc-btn">Already have an account? <a href="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
+                            data-signin="login">Log-In</a></p>
          </div>
 
          <?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>

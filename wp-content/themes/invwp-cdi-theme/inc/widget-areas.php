@@ -15,6 +15,7 @@ function invwp_init_widget_areas () {
     ['name'=>'Top Header Menu Left', 'id'=>'top-header-menu1'],
     ['name'=>'Top Header Menu', 'id'=>'top-header-menu'],
     ['name'=>'Top Header Menu Right', 'id'=>'top-header-menu2'],
+	  ['name'=>'Top Footer Logo', 'id'=>'top-footer-logo'],
     ['name'=>'Top Footer About Us', 'id'=>'top-footer-about'],
     ['name'=>'Top Footer Menu', 'id'=>'top-footer-menu'],
     ['name'=>'Top Footer Customer Services', 'id'=>'top-footer-customer-service'],

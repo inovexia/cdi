@@ -23,7 +23,7 @@
     }
     .section-icon i {
       color: var(--faux-cg-blue);
-      font-size: var(--font-size-xxl);
+      font-size: var(--font-size-m);
       height: 0;
   line-height: 3px;
     }
@@ -46,13 +46,12 @@
 
 
     .contact-section input[type=text], .contact-section input[type=email], .contact-section textarea{
-      background-color: var(--grey1);
-      border: 1px solid var(--white);
+      background-color: #dfe9eb;
+      border: 1px solid #fff;
       margin-bottom: 20px !important;
       padding: 8px 15px !important;
       color: var(--faux-cg-blue);
-      font-family: var(--font-family-open-sans);
-      font-size: var(--font-size-m);
+      font-size: var(--font-size-s);
       font-style: normal;
       font-weight: var(--font-weight-medium);
       line-height: 26px;
@@ -63,7 +62,7 @@
     .contact-section input[type=submit]{
       background-color: var(--faux-cg-blue);
       border: 1px solid var(--faux-cg-blue);
-      color: var(--white);
+      color: var(--secondary-color);
       width: 100%;
       cursor: pointer;
       padding: 10px 48px;
@@ -74,7 +73,7 @@
     }
 
     .contact-section input[type=submit]:hover{
-      background-color: var(--white);
+      background-color: var(--secondary-color);
       border: 1px solid var(--faux-cg-blue);
       color: var(--faux-cg-blue);
     }
@@ -86,7 +85,7 @@
       height: 150px;
     }
     .about-map .section-title {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       margin-top: 0;
   }
   .contact-banner .section-title {
@@ -97,6 +96,7 @@
 }
 .contact-col-section p a {
   color: #037e9b;
+  font-size: 15px;
 }
   }
   @media (min-width: 576px) {

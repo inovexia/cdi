@@ -1,495 +1,221 @@
 /* Footer Top CSS start */
 
-@media (min-width: 0px) {
-    footer {
-        color: var(--white);
-    }
-
-    footer .top-footer-newslettert .widget_block p {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-m);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 24px;
-        color: var(--white);
-        padding-bottom: 20px;
-    }
-
-    footer .top-footer-about .widget_text p {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-m);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 24px;
-        color: var(--white);
-        margin: 0;
-    }
-
-    footer .top-footer-contact h6 {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        color: var(--white);
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    footer .top-footer-contact .widget_text p,
-    footer .top-footer-contact .widget_text p a {
-        font-family: var(--font-family-montserrat);
-        font-size: var(--font-size-m);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        color: var(--white);
-    }
-
-    footer .top-footer-menu .widget-title {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-top: 58px;
-    }
-
-    footer .top-footer-menu li a {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-m);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 24px;
-        color: var(--white);
-    }
-
-    footer .top-footer-menu li {
-        margin-bottom: 12px;
-        float: left;
-        width: 50%;
-    }
-
-    footer .top-footer-customer-service .widget-title {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-top: 28px;
-    }
-
-    footer .top-footer-contact h6 {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-top: 28px;
-    }
-
-    footer .top-footer-customer-service li {
-        margin-bottom: 12px;
-        float: left;
-        width: 50%;
-    }
-
-    footer .top-footer-customer-service li:last-child {
-        margin-bottom: 0;
-    }
-
-    footer .top-footer-customer-service li a {
-        font-family: var(--font-family-lato);
-        font-style: normal;
-        font-weight: var(--font-weight-regular);
-        font-size: var(--font-size-m);
-        line-height: 24px;
-        color: #FFFFFF;
-    }
-
-
-
-    footer .top-footer-contact .widget {
-        font-family: var(--font-family-open-sans);
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 22px;
-        color: #FFFFFF;
-        margin-top: 14px;
-    }
-
-    .footer-contact-title {
-        color: #fff;
-        font-size: 12px;
-        /* text-decoration: underline; */
-        margin-right: 6px;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    .top-footer-contact p,
-    .top-footer-contact a {
-        color: #fff;
-        font-size: 12px;
-        line-height: 26px;
-    }
-
-    footer .top-footer {
+@media (min-width:0) {
+    footer#colophon {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center, center;
         width: 100%;
-        background-color: var(--faux-cg-blue);
-        color: var(--white);
-        padding: 5px 0px;
-    }
-
-    .top-footer-newslettert h6 {
-        margin: 0;
-    }
-
-    footer .top-footer-newslettert .wp-block-tnp-minimal p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .top-footer-newslettert section {
-        margin: 0;
-    }
-
-    .top-footer-newslettert .tnp-subscription-minimal {
-        margin-top: 0px;
-    }
-
-    footer ul {
-        padding: 0;
-        list-style: none;
-        display: inline-block;
-        margin: 0px;
-    }
-
-    .social-icons ul {
-        margin: 0;
-    }
-
-    .payment-options {
-        float: right;
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-
-    .payment-options section {
-        margin: 0;
-    }
-
-    .payment-options section p {
-        margin: 0;
-    }
-
-    .payment-options section figure {
-        margin: 0;
-    }
-
-    footer .top-footer-about {
-        padding-top: 30px;
-    }
-
-    .top-footer-menu h6 {
-        margin-bottom: 0;
-    }
-
-    .widget2 section {
-        display: inline-block;
-    }
-
-    .widget2 section h6 {
-        margin-bottom: 0;
-    }
-
-    .top-footer-contact section p {
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-
-    .top-footer-contact section p:last-child() {
-        margin-bottom: 0px;
-    }
-
-    .top-footer-contact section {
-        margin-bottom: 0;
-    }
-
-    footer .top-footer-contact h6 {
-        margin-bottom: 0;
-    }
-
-    footer .top-footer {
-        padding: 40px 0px 20px;
-    }
-
-
-}
-
-@media (min-width: 768px) {
-
-    footer .top-footer-customer-service .widget-title {
-        margin-top: 58px;
-    }
-
-    footer .top-footer-contact h6 {
-        margin-top: 58px;
-    }
-
-    footer .top-footer-contact h6 {
-        margin-bottom: 24px;
-    }
-
-    .top-footer-contact section.widget_text {
-        margin-top: 0 !important;
-        margin-bottom: 12px;
-    }
-
-    footer .top-footer {
         padding: 40px 0px;
     }
-
-    .top-footer-newslettert .tnp-subscription-minimal {
-        margin-top: 20px;
+    footer .footer-payment {
+        margin-top: 15px;
+    }
+    footer .footer-payment span {
+        color: #fff;
     }
 
-    .widget2 section h6 {
-        margin-bottom: 24px;
+    footer .site-branding {
+        width: 135px;
     }
 
-    .top-footer-menu h6 {
-        margin-bottom: 24px;
+    footer .site-branding img {
+        width: 100%;
     }
 
-    footer .top-footer-about {
-        padding-top: 40px;
-    }
-
-
-}
-
-@media screen and (max-width: 767px) {
-
-    footer .top-footer-menu .widget-title,
-    footer .top-footer-customer-service .widget-title,
-    footer .top-footer-contact h6 {
-        margin-top: 30px;
-        text-transform: uppercase;
-        font-family: "OSR";
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 992px) {
-    footer .top-footer {
-        padding: 100px 0px;
-    }
-}
-
-/* Footer top css end */
-
-
-/* Footer Newsletter css start */
-
-@media (min-width: 0) {
-    footer .top-footer-newslettert .widget_block h6 {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--white);
-        padding-bottom: 16px;
-    }
-
-    .top-footer-newslettert .wp-block-tnp-minimal {
-        padding: 0 !important;
-    }
-
-    .tnp-subscription-minimal input.tnp-email {
-        background-color: var(--frostproof) !important;
-        height: 46px;
-    }
-
-    .tnp-subscription-minimal input.tnp-email {
-        line-height: 14px;
-    }
-
-    .tnp-subscription-minimal input.tnp-submit {
-        height: 46px;
-    }
-
-    .tnp-subscription-minimal input.tnp-email::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: var(--black-russian) !important;
-    }
-
-    .tnp-subscription-minimal input.tnp-email::-moz-placeholder {
-        /* Firefox 19+ */
-        color: var(--black-russian) !important;
-    }
-
-    .tnp-subscription-minimal input.tnp-email:-ms-input-placeholder {
-        /* IE 10+ */
-        color: var(--black-russian) !important;
-    }
-
-    .tnp-subscription-minimal input.tnp-email:-moz-placeholder {
-        /* Firefox 18- */
-        color: var(--black-russian) !important;
-    }
-
-    .tnp-subscription {
-        margin-left: 0 !important;
-    }
-
-    .tnp-field label {
-        display: none !important;
-    }
-
-    body footer .tnp-subscription-minimal input.tnp-submit {
-        background-color: #fff;
-        color: #037E9B;
-        font-family: var(--font-family-lato) !important;
-        font-size: var(--font-size-s) !important;
-        font-style: normal;
-        position: relative;
-        top: 0px;
-        text-transform: uppercase;
-        letter-spacing: 0.05em !important;
-        cursor: pointer;
-    }
-
-    footer .tnp.tnp-subscription-minimal form {
+    footer .payment-options, footer .payment-options ul {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
     }
-}
+    footer .payment-options ul li{
+        margin-right: 10px;
+    }
+    footer .bottom-footer .bottom-footer-row span {
+        color: var(--secondary-color);
+        font-family: "OSR";
+        font-size: 14px;
+        margin-top: -30px;
+        margin-right: 30px;
+    }
+    footer .top-footer-newslettert p{
+        color: var(--secondary-color);
+        font-family: "OSR";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    footer .top-footer div.row:nth-child(2){
+        padding: 30px 0 30px 0;
+    }
+    footer .bottom-footer-second{
+        display: flex;
+        justify-content: end;
+    }
 
-@media (min-width:768px) {}
+    /* footer .payment-options section {
+        width: 110px;
+    } */
 
-@media (min-width:992px) {}
+    footer .payment-options section img {
+        width: 60px;
+        margin-right: 10px;
+    }
 
-/* Footer Newsletter css end */
+    footer .top-footer-menu h6, footer .top-footer-customer-service h6, footer .top-footer-contact h6,  footer .top-footer-newslettert h6 {
+        color: var(--secondary-color);
+        /*display: none;*/
+    }
+    footer .top-footer-menu ul, footer .top-footer-customer-service ul, footer .top-footer-contact ul{
+        column-count: 2;
+    }
+    footer .top-footer-menu ul li, footer .top-footer-customer-service ul li, footer .top-footer-contact ul li{
+        margin-bottom: 20px;
+    }
+    footer .top-footer-menu ul li a, footer .top-footer-customer-service ul li a, footer .top-footer-contact ul li a, footer .top-footer-contact ul li a{
+        color: #fff;
+        font-family: "OSR";
+        font-size: 14px;
+    }
+    footer #menu-top-footer-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
+    footer #menu-top-footer-menu li {
+        margin-bottom: 20px;
+    }
 
-/* Footer bottom css start */
+    footer #menu-top-footer-menu li a {
+        color: #fff;
+        font-family: "OSR";
+        font-size: 14px;
+    }
 
-@media (min-width:0px) {
-    .payment-options #block-18 {
+    footer .top-footer-contact #block-16 {
         display: none;
     }
 
-    .payment-title-mobile {
-        width: 100%;
-        display: block;
-        text-align: right;
-        padding-bottom: 10px;
-        padding-right: 30px;
-        font-size: 12px;
-        line-height: 14px;
+    footer .top-footer-contact  p {
+        margin: 0px auto 20px;
+        color: #fff;
+        position: relative;
+        font-size: 14px;
         font-family: "OSR";
+        padding-left: 35px;
     }
 
-    footer .bottom-footer {
-        background-color: var(--faux-cg-blue);
-        padding: 0px 0px 30px;
-    }
-
-    .social-icons section {
-        margin: 0;
-    }
-
-    footer .social-icons ul li {
+    footer .top-footer-contact  p a {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "OSR";
+        margin-left: 5px;
         display: inline-block;
-        margin-right: 30px;
     }
 
-    footer .social-icons ul li:first-child {
-        padding-left: 0;
-    }
-
-    footer .social-icons ul li a {
-        color: var(--white);
-    }
-
-    footer .social-icons ul li a i {
-        font-size: var(--font-size-xxxl);
-    }
-
-    footer .payment-options section {
-        display: inline-block;
-        padding-left: 15px;
-    }
-
-    footer .payment-options section.widget_block p {
-        font-family: var(--font-family-lato);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-regular);
-        font-style: normal;
-        line-height: 26px;
-        color: var(--white);
-    }
-
-    footer .bottom-footer .social-link,
-    .payment-method {
-        display: flex;
-    }
-
-    footer .bottom-footer .social-link li,
-    .payment-method li {
-        padding-right: 10px;
-    }
-
-    footer .bottom-footer .social-link li i {
-        list-style: none;
-        color: var(--faux-cg-blue);
-    }
-
-    .bottom-footer-second {
-        width: 50%;
-    }
-
-    .bottom-footer-first {
-        width: 50%;
-        display: inline-flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    footer .bottom-footer-row {
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
+    footer .top-footer-contact p::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
     }
 }
 
 @media (min-width:768px) {
-    .payment-options #block-18 {
-        display: block;
+    footer#colophon {
+        padding: 60px 0 30px 0;
     }
 
-    .payment-title-mobile {
-        display: none;
+    footer .site-branding {
+        width: 165px;
+    }
+
+    /* footer .payment-options section {
+        width: 150px;
+    } */
+    .top-footer-about {
+        margin-top: 20px;
     }
 }
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+    /* footer .payment-options section {
+        width: 265px;
+    } */
+}
 
+/* Footer Top CSS end */
 
-/* Footer bottom css end */
+/* Bottom footer css start */
+@media (min-width:0) {
+    footer .bottom-footer-data {
+        margin-top: 30px;
+        border-top: 1px solid #fff;
+        padding: 30px 0px 0px;
+    }
+
+    footer .bottom-footer-data ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    footer .bottom-footer-data .social-icons {
+        margin-top: 20px;
+    }
+
+    footer .bottom-footer-data .social-icons ul li a {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #fff;
+        display: inline-flex;
+        margin-right: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    footer .bottom-footer-data .social-icons section {
+        margin: 0;
+    }
+
+    footer .bottom-footer-data .social-icons section ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .bottom-footer-data .copyright-text p {
+        margin: 0;
+        color: #fff;
+        font-family: "OSR";
+        font-size: 14px;
+    }
+
+    footer .top-footer-about p {
+        font-size: 14px;
+        color: #fff;
+        font-family: "OSR";
+    }
+
+}
+
+@media (min-width:768px) {
+    footer .bottom-footer-data ul {
+        justify-content: flex-end;
+    }
+
+    footer .bottom-footer-data .social-icons ul li a {
+        margin-left: 5px;
+    }
+
+    footer .bottom-footer-data .social-icons {
+        margin-top: 0px;
+    }
+}

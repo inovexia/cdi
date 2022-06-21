@@ -1,8 +1,8 @@
 @media (min-width: 0) {
     /*--------------------login popup--------------------*/
     .login-modal .simple-tabs button:hover {
-        background: inherit;
-    }
+      background: var(--faux-cg-blue2);
+  }
     .login-modal .simple-tabs .subtitle {
         display: none;
     }
@@ -72,6 +72,17 @@
     #login-modal .modal-window {
          max-height: inherit;
     }
+    .woocommerce-form-row a {
+      color: #037e9b;
+  }
+  .woocommerce-form-login .woocommerce-button {
+    display: block;
+    width: 100%;
+    background: #037f9b;
+    border: none;
+    color: #fff;
+    margin: 10px 0;
+}
 }
 
 /* Customer registration form */
@@ -101,13 +112,13 @@
 
 #user-custom-register-form fieldset input,
 #user-custom-register-form fieldset select {
-  background-color: var(--grey1);
-  border: 1px solid var(--white);
+  background-color: #dfe9eb;
+  border: 1px solid #fff;
   margin-bottom: 20px;
   padding: 8px 15px !important;
   color: var(--faux-cg-blue);
   font-family: var(--font-family-open-sans);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-style: normal;
   font-weight: var(--font-weight-medium);
   line-height: 20px;

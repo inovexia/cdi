@@ -16,6 +16,7 @@
             <div class="nav-menu-container">
                 <?php
                 wp_nav_menu( array(
+                    'menu'           => 'Main Menu',
                     'menu_class'     => 'nav-menu',
                     'depth'          => 1,
                 ) );
@@ -60,10 +61,12 @@
                     <!-- inser more links here -->
                     <li class="nav-item sign-in-btn">
                         <div>
-                        <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
-                            data-signin="login">LOG IN</a>
-                        <a class="" href="<?php echo site_url(); ?>/registration" style="cursor:pointer;">SIGN UP</a>
-                    </div>
+                            <!--<a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
+                                data-signin="login">LOG IN</a>-->
+                            <a class="" href="<?php echo site_url(); ?>/my-account" style="cursor:pointer;">LOG IN</a>
+                            <a class="" href="<?php echo site_url(); ?>/registration" style="cursor:pointer;">SIGN
+                                UP</a>
+                        </div>
                     </li>
                     <?php } ?>
 
@@ -102,7 +105,7 @@
                     <?php } else { ?>
                     <!-- inser more links here -->
                     <span class="nav-item">
-                        <a class="" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
+                        <a class="<?php echo site_url(); ?>/my-account" data-target="login-modal" data-toggle="modal" style="cursor:pointer;"
                             data-signin="login">LOG IN</a>
                     </span>
                     <?php } ?>

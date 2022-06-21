@@ -10,10 +10,10 @@
 @media (min-width: 0) {
     .home-banner-section .hero-title {
         font-family: var(--font-family-open-sans);
-        font-size: var(--font-size-Vxl);
+        font-size: 48px;
+        line-height: 65px;
         font-weight: var(--font-weight-regular);
         color: var(--faux-cg-blue);
-        line-height: 65px;
         letter-spacing: 0;
         margin-top: 10px;
     }
@@ -35,25 +35,28 @@
 
     .home-banner-section .hero-paragraph {
         font-family: var(--font-family-open-sans);
-        font-size: var(--font-size-xxl);
+        font-size: var(--font-size-l);
         font-weight: var(--font-weight-regular);
         font-style: normal;
         line-height: 25px;
-        color: var(--black2);
-        margin-top: 20px;
+        color: var(--black-russian);
+        margin-top: 15px;
+        padding-bottom: 20px;
     }
 
     .home-banner-section .hero-buttons a {
         font-family: var(--font-family-open-sans);
-        font-size: var(--font-size-l);
-        font-weight: var(--font-weight-semi-bold);
+        font-weight: var(--font-weight-medium);
         font-style: normal;
-        line-height: 19px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        /* width: 233px;
-      height: 45px; */
         padding: 12px 30px;
+        display: inline;
+        color: var(--secondary-color);
+    }
+
+    .home-banner-section .hero-buttons a:hover {
+        color: var(--faux-cg-blue);
     }
 
     .home-banner-section .banner-image-wrap {
@@ -97,7 +100,7 @@
         display: none;
     }
 
-   
+
     .home-col-section [class*="col-"] {
         padding: 0px 10px;
     }
@@ -118,24 +121,32 @@
     }
 
     .banner-button-row {
-      display: flex;
-      justify-content: start;
-  }
-  .home-col-section .col-3 {
-    width: 50%;
-    float: left;
-}
-.home-col-section .hero-buttons {
-  margin: 0;
-}
-.home-col-section {
-  margin-bottom: 35px;
-}
+        display: flex;
+        justify-content: start;
+    }
+
+    .home-col-section .col-3 {
+        width: 50%;
+        float: left;
+    }
+
+    .home-col-section .hero-buttons {
+        margin: 0;
+    }
+
+    .home-col-section {
+        margin-bottom: 35px;
+    }
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .blogSwiper .post-thumbnail {
+        max-height: 210px;
+        overflow: hidden;
+        min-height: 230px;
+    }
     .home-banner-section .row {
         padding: 173px 0px;
     }
@@ -146,7 +157,7 @@
 
     .hero-buttons a {
         font-size: 15px;
-        padding: 20px 12px;
+        padding: 15px 12px;
         width: 100%;
     }
 
@@ -162,21 +173,23 @@
         height: inherit;
 
     }
+
     .banner-button-btn {
-      width: 25%;
-  }
-  .home-col-section {
-    position: relative;
-    top: -60px;
-    box-shadow: 0 0 0 #ffffff;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1240px;
-    height: 98px;
-    margin: 0px auto;
-    background: #FFFFFF;
-    border-radius: 5px;
-}
+        width: 25%;
+    }
+
+    .home-col-section {
+        position: relative;
+        top: -60px;
+        box-shadow: 0 0 0 #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1240px;
+        height: 98px;
+        margin: 0px auto;
+        background: #FFFFFF;
+        border-radius: 5px;
+    }
 
 }
 
@@ -189,12 +202,14 @@
         width: 25%;
         float: left;
     }
+
     .home-col-section .col-3 {
-      width: 25%;
-      float: left;
+        width: 25%;
+        float: left;
     }
+
     .home-col-section {
-      margin-bottom: inherit;
+        margin-bottom: inherit;
     }
 }
 
@@ -297,14 +312,22 @@
         padding-right: 0px;
     }
 
+    .home-about-us .container .col-7 h2 {
+        display: none;
+    }
+
     .home-about-us .container .col-5 {
-      padding: 0px;
-      margin-top: 0;
-      align-self: center;
-  }
+        padding: 0px;
+        margin-top: 0;
+        align-self: center;
+    }
 
     .home-shop {
-        padding: 50px 0;
+        padding: 50px 0 80px 0;
+    }
+
+    .paragraph-shop p {
+        padding-bottom: 10px;
     }
 
     .home-product-categories {
@@ -315,6 +338,7 @@
     .home-industry-section .section-title,
     .home-testimonial-section .section-title {
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .product-categories h4 a {
@@ -339,35 +363,42 @@
     }
 
     .home-industry-title {
-        padding: 20px;
+        padding: 0 20px 20px 20px;
     }
 
     .home-industry-title h5,
     .home-industry-title h5 a {
         color: var(--faux-cg-blue);
-        font-size: var(--font-size-xxxl);
+        font-size: var(--font-size-xxxxl);
         line-height: 28px;
     }
 
-    .post-meta {
+    .post-meta p {
         color: var(--faux-cg-blue);
-        font-weight: var(--font-weight-semi-bold);
-        font-size: var(--font-size-l);
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-s);
         line-height: 24px;
     }
-
+    .testimonialSwiper .post-thumbnail {
+        display: flex;
+        justify-self: center;
+    }
+    .testimonialSwiper .post-thumbnail img {
+        width: 120px;
+        margin: auto;
+    }
     .home-industry-slider .swiper-wrapper.row {
         flex-wrap: inherit;
     }
 
-    .home-industry-slider .read-more,
+    /* .home-industry-slider .read-more,
     .home-industry-slider .read-more a {
         color: var(--faux-cg-blue);
         font-family: var(--font-family-open-sans);
         font-weight: var(--font-weight-semi-bold);
         font-size: var(--font-size-l);
         line-height: 24px;
-    }
+    } */
 
     .home-testimonial-section {
         padding-bottom: 60px;
@@ -454,10 +485,11 @@
 
     .home-product-categories ul li a {
         color: #037E9B;
+        font-size: 15px;
     }
 
     .home-product-categories ul {
-        padding-left: 8px;
+        padding-left: 20px;
     }
 
     .home-product-categories h4 {
@@ -491,15 +523,16 @@
         padding-top: 10px;
         /* padding-bottom: 10px; */
     }
+    
 
     .home-about-us .container .col-7 img {
         display: none;
     }
 
-    .home-about-us .button,
+    /* .home-about-us .button,
     .home-shop .button {
         width: 233px;
-    }
+    } */
 
     .home-industry-slider h5 a {
         color: var(--faux-cg-blue);
@@ -537,12 +570,37 @@
     padding: 20px 27px;
     max-width: 275px;
   } */
+    .home-about-us .button:active,
+    .home-shop .button:active,
+    .home-about-us .button:focus,
+    .home-shop .button:focus {
+        color: #fff !important;
+        background-color: #037e9b !important;
+    }
 
+    .box-product-categories h6 {
+        color: var(--black-russian);
+    }
+
+    .box-product-categories h6 a {
+        color: var(--black-russian);
+        font-weight: var(--font-weight-semi-bold);
+        font-size: var(--font-size-xxxxxxl);
+        font-style: normal;
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
+    .home-about-us .container .col-7 h2 {
+        display: block;
+    }
+
+    .home-shop .section-title {
+        text-align: left;
+    }
 
     .home-about-us .container .col-7 {
         padding-left: 70px;
@@ -574,14 +632,22 @@
     }
 
     .home-product-categories h1 {
-        margin-top: .0;
+        margin-top: 0;
     }
-    .home-about-us .container .col-5 .section-title, .home-shop .container .row .col-5 video {
-      display: none;
 
-  }
+    .home-about-us .container .col-5 .section-title,
+    .home-shop .container .row .col-5 video {
+        display: none;
 
+    }
 
+    .home-shop-title-column {
+        padding-left: 140px;
+    }
+
+    .home-industry-title h5 {
+        min-height: 84px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -603,6 +669,11 @@
     .home-banner-section {
         background-position: top center !important;
     }
+
+    /* .home-product-categories ul li a {
+        color: #037E9B;
+        font-size: var(--font-size-xl);
+    } */
 }
 
 
@@ -618,6 +689,7 @@
     .home-banner-section {
         background-position: top center !important;
     }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -634,6 +706,8 @@
 
     .home-about-us .container .col-5 .section-title {
         display: block;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .home-about-us .container .col-7 .section-title {

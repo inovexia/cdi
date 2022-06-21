@@ -1,3 +1,4 @@
+/* Checkout Page Css start */
 @media (min-width: 0) {
     section#custom-checkout-progressbar .col-9 {
         padding: 0;
@@ -6,14 +7,15 @@
     .return-shop-btn {
         text-decoration: none;
         display: inline-block;
-        border: 1px solid #000;
+        border: 1px solid #4eb0c7;
         text-align: center;
         padding: 10px;
         font-size: 12px;
         font-family: "OSR";
         text-transform: uppercase;
-        color: #000;
+        color: #ffffff;
         margin-top: 10px;
+        background: #4eb0c7;
     }
 
     .woocommerce-checkout #place_order {
@@ -83,16 +85,16 @@
         border: none;
     }
 
-    section#custom-checkout-progressbar input,
-    section#custom-checkout-progressbar .select2 {
+    section#custom-checkout-progressbar input, section#custom-checkout-progressbar .select2 {
         background: #F1F1F1 !important;
         width: 100%;
         padding: 8px;
         border-radius: 20px;
         border: none;
         margin-top: 5px;
+        margin-right: 5px;
     }
-
+    
     section#custom-checkout-progressbar .select2 .select2-selection__rendered {
         border: none !important;
         margin-bottom: 0 !important;
@@ -120,9 +122,35 @@
     section#custom-checkout-progressbar {
         margin-bottom: 50px;
     }
-}
 
-@media (min-width: 576px) {}
+    .woocommerce-checkout #order_review .shop_table thead tr th,
+    .woocommerce-checkout #order_review .shop_table tbody tr td,
+    .woocommerce-checkout #order_review .shop_table tfoot tr td,
+    .woocommerce-checkout #order_review .shop_table tfoot tr th {
+        font-size: 14px;
+    }
+
+    .woocommerce-checkout #order_review .blockUI.blockOverlay {
+        background-color: transparent !important;
+    }
+    #ship-to-different-address-checkbox {
+        width: 15px !important;
+    }
+    #ship-to-different-address-checkbox span {
+        font-size: 14px;
+    }
+    #payment li img {
+        width: 150px;
+    }
+    #payment li {
+        display: flex;
+        align-items: center;
+    }
+    #payment .wc_payment_method label {
+        width: 100%;
+        display: block;
+    }
+}
 
 @media (min-width: 768px) {
     section#custom-checkout-progressbar .col-9 {
@@ -130,12 +158,4 @@
     }
 }
 
-@media (min-width: 992px) {}
-
-@media (min-width:1200px) {}
-
-@media (min-width: 1440px) {}
-
-@media (min-width: 1680px) {}
-
-@media (min-width:1920px) {}
+/* Checkout Page Css end */

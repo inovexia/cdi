@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-md-3 article-sidebar">
-                <h3>Post Categories</h3>
+                <h6>Post Categories</h6>
                 <?php dynamic_sidebar( 'sidebar-right' ); ?>
             </div>
             <div class="article-left">

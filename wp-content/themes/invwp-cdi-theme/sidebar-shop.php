@@ -27,9 +27,9 @@ if ( ! is_active_sidebar( 'sidebar-shop' ) ) {
 						foreach ($cats as $id => $cat) {
 							?>
 							 <div class="collapse-item">
-								 	<h4 class="collapsible">
+								 	<h6 class="collapsible">
 								 		<?php echo '<a href="'.$cat['link'].'">' . $cat['name'] . '</a>'; ?>
-									</h4>
+						</h6>
 								 	<div class="content">
 										<ul>
 										<?php

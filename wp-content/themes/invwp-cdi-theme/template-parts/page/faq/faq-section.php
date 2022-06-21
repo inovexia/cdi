@@ -1,6 +1,6 @@
-<section class="home-faq-section">
+<section class="home-faq-section section-padding section-margin">
     <div class="container">
-        <h3 class="section-title text-center mb-5 pb-20">Frequently Asked Questions</h3>
+        <!-- <h2 class="section-title text-center mb-5 pb-20">Frequently Asked Questions</h2> -->
         <?php if (have_rows('faq_collapse')) : ?>
         <div class="accordion">
             <?php
@@ -12,7 +12,7 @@
             <div class="accordion">
                 <div class="group">
                     <a href="javascript:void(0);">
-                        <h6 class="accordion-title"><?php the_sub_field('accordion_title'); ?></h6>
+                        <p class="accordion-title"><?php the_sub_field('accordion_title'); ?></p>
                     </a>
                     <p class="body-part accordion-content"><?php the_sub_field('accordion_description'); ?></p>
                     </a>

@@ -44,7 +44,7 @@
     height: 20px;
     line-height: 5px;
     display: block;
-    color: var(--white);
+    color: var(--secondary-color);
     background: lightgray;
     border-radius: 50%;
     margin: 0 auto 10px auto;
@@ -76,7 +76,7 @@
   }
 
   #custom-checkout-progressbar fieldset.checkout-tab {
-    background: var(--white);
+    background: var(--secondary-color);
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -95,7 +95,7 @@
 
   .woocommerce-billing-fields input, .woocommerce-billing-fields select, .woocommerce-billing-fields span.select{
 	background-color: var(--grey1);
-	border: 1px solid var(--white);
+	border: 1px solid var(--secondary-color);
     margin-bottom: 10px !important;
     padding: 8px 15px !important;
     color: var(--faux-cg-blue);
@@ -111,13 +111,13 @@
   button.button.wc-forward.next-step{
 	background-color: var(--faux-cg-blue);
     border: 1px solid var(--faux-cg-blue);
-    color: var(--white);
+    color: var(--secondary-color);
     width: 100%;
 	cursor: pointer;
 	margin-left: 0;
   }
   button.button.wc-forward.next-step:hover{
-	background-color: var(--white);
+	background-color: var(--secondary-color);
     border: 1px solid var(--faux-cg-blue);
     color: var(--faux-cg-blue);
     width: 100%;
@@ -169,7 +169,7 @@
   }
   .checkout_coupon input{
 	background-color: var(--grey1);
-    border: 1px solid var(--white);
+    border: 1px solid var(--secondary-color);
     margin-bottom: 20px !important;
     padding: 8px 15px !important;
     color: var(--faux-cg-blue);
@@ -185,7 +185,7 @@
   .checkout_coupon button{
 	background-color: var(--faux-cg-blue);
     border: 1px solid var(--faux-cg-blue);
-    color: var(--white);
+    color: var(--secondary-color);
     width: 100%;
 	padding: 10px 48px;
     height: 35px;
@@ -218,10 +218,10 @@
   }
   .btn-place-order {
     background: var(--ebony-clay);
-    border: 1px solid var(--white);
+    border: 1px solid var(--secondary-color);
     padding: 14px 34px;
     transition: 0.5s all;
-    color: var(--white);
+    color: var(--secondary-color);
     font-family: var(--font-family-montserrat);
     font-size: var(--font-size-s);
     font-style: normal;
@@ -229,7 +229,7 @@
     text-transform: uppercase;
   }
   .btn-place-order:hover {
-	background: var(--white);
+	background: var(--secondary-color);
 	border: 1px solid var(--ebony-clay);
 	padding: 14px 34px;
 	transition: 0.5s all;
@@ -299,6 +299,10 @@
   color: green !important;
   background: #e1f1e1;
   font-weight: 500;
+}
+.woocommerce-info, .woocommerce-info a {
+  font-size: 14px;
+  padding: 10px;
 }
 #payment .methods {
   padding: 0;

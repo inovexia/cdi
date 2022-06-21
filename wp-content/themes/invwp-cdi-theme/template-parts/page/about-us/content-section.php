@@ -1,4 +1,4 @@
-<section class=" about-sec-one section-padding">
+<section class="about-sec-one section-padding">
   <div class="container">
 	<div class="row flex-lg-row-reverse align-items-center gx-0">
 	  <div class="col-6">
@@ -27,7 +27,7 @@
 			<?php echo the_field('about_choice_title'); ?>
 	  </h2>
 	  <p class="section-description mb-4"><?php echo the_field("about_choice_description"); ?></p>
-	  <p class="mt-30">
+	  <p>
 		<a class="button button-primary text-uppercase" href="<?php echo site_url('/how-to-order');?>"><?php echo the_field('about_choice_button'); ?></a>
 		<a class="button button-primary text-uppercase" href="<?php echo site_url('/registration');?>"><?php echo the_field('about_choice_button1'); ?></a>
 	  </p>
