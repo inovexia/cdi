@@ -144,7 +144,7 @@
          <fieldset id="cur-step2" class="registtration-tab">
             <div class="form-group row">
                <div class="col-6">
-                  <label>Patient First and Name <span>*</span></label>
+                  <label>Patient First and Last Name <span>*</span></label>
                   <input type="text" class="form-control" name="patient_name" id="patient_name" autocomplete="patient_name" value="<?php echo ( ! empty( $_POST['patient_name'] ) ) ? esc_attr( wp_unslash( $_POST['patient_name'] ) ) : ''; ?>" placeholder="First and Last name of Prescribed Patient" /><?php // @codingStandardsIgnoreLine ?>
                </div>
                <div class="col-6">
