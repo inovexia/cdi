@@ -84,11 +84,11 @@
         padding: 12px 15px;
         border: none;
     }
-	
-	
+
+
     section#custom-checkout-progressbar input,
     section#custom-checkout-progressbar .select2 {
-        background: #ffffff !important; 
+        background: #ffffff !important;
         width: 100%;
         padding: 8px;
         border: 1px solid #000;
@@ -146,9 +146,9 @@
 		background: #ccc;
 		margin-top: 20px;
 	}
-	
+
     #payment li img {
-        width: 90px;
+        width: 65px;
     }
 
     /* #payment li {
@@ -157,7 +157,9 @@
     } */
     #payment .wc_payment_method label {
         width: 100%;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .payment_box.payment_method_offline_cc {

@@ -1100,3 +1100,80 @@ form.woocommerce-form-login {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.error-404 a:hover {
+  color: #000;
+}
+
+.error-404.section-margin {
+  padding: 50px 0px;
+  margin: 0;
+}
+
+.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+section#custom-checkout-progressbar .woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme input {
+  width: unset;
+}
+
+.test_mode_msg {
+  padding: 10px 0px;
+  color: #33b5e5;
+}
+
+body .woocommerce-checkout #place_order {
+  color: #fff;
+}
+
+.additional-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.additional-btn .return-shop-btn {
+  height: 40px;
+  margin: 0px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tr th {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .woocommerce-table__product-name.product-name a {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .woocommerce-Price-amount.amount {
+  font-size: 14px;
+}
+
+.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses .woocommerce-column.woocommerce-column--1.woocommerce-column--billing-address.col-1 {
+  width: 50%;
+}
+
+.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses .woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 {
+  width: 50%;
+}
+
+.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses .woocommerce-column__title {
+  font-size: 22px;
+}

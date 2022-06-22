@@ -28,7 +28,7 @@ define( 'DB_USER', 'devinovexia1_develop' );
 define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'developer1.website' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -78,12 +78,12 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
-define('ALLOW_UNFILTERED_UPLOADS', true);
+define( 'WP_DEBUG', true );
+
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'https://developer3.website/cdi/' );
-define( 'WP_HOME', 'https://developer3.website/cdi/' );
+define( 'WP_SITEURL', 'https://icbtc.website/cdi' );
+define( 'WP_HOME', 'https://icbtc.website/cdi' );
 
 
 // define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );

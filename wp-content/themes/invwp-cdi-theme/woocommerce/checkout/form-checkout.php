@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <section id="custom-checkout-progressbar">
 
-	<?php 
+	<?php
 	do_action( 'woocommerce_before_checkout_form', $checkout );
 
 	// If checkout registration is disabled and not logged in, the user cannot checkout.
@@ -34,11 +34,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
 
-		
+
 	<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 		<div class="row">
-			<div class="col-8"> 
+			<div class="col-8">
 				<div class="invwp-checkout-fields">
 					<?php if ( $checkout->get_checkout_fields() ) : ?>
 
@@ -57,18 +57,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 					<?php endif; ?>
-					
+
 					<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-			
+
 				</div>
 			</div>
-			
-			<div class="col-4"> 
-				
+
+			<div class="col-4">
+
 				<div class="invwp-checkout-order-review">
-					
+
 					<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-					
+
 					<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
 					<div id="order_review" class="woocommerce-checkout-review-order">
@@ -76,17 +76,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 
 					<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-					
+
 					<div class="final-step-place-order">
 						<?php do_action ('invwp_woocommerce_checkout_place_order_button'); ?>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
-		
+
 	</form>
-	
+
 	<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
 
 </section>
