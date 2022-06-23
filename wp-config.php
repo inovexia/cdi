@@ -28,7 +28,7 @@ define( 'DB_USER', 'devinovexia1_develop' );
 define( 'DB_PASSWORD', 'Develop@1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'developer1.website' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -82,12 +82,12 @@ define( 'WP_DEBUG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_SITEURL', 'https://icbtc.website/cdi' );
-define( 'WP_HOME', 'https://icbtc.website/cdi' );
+// define( 'WP_SITEURL', 'https://icbtc.website/cdi' );
+// define( 'WP_HOME', 'https://icbtc.website/cdi' );
 
 
-// define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );
-// define( 'WP_HOME', 'https://localhost/dev/cdi/' );
+define( 'WP_SITEURL', 'https://localhost/dev/cdi/' );
+define( 'WP_HOME', 'https://localhost/dev/cdi/' );
 
 
 /* That's all, stop editing! Happy publishing. */
