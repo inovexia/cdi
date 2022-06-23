@@ -8,9 +8,11 @@
         width: 100%;
         padding: 40px 0px;
     }
+
     footer .footer-payment {
         margin-top: 15px;
     }
+
     footer .footer-payment span {
         color: #fff;
     }
@@ -23,13 +25,16 @@
         width: 100%;
     }
 
-    footer .payment-options, footer .payment-options ul {
+    footer .payment-options,
+    footer .payment-options ul {
         display: flex;
         align-items: center;
     }
-    footer .payment-options ul li{
+
+    footer .payment-options ul li {
         margin-right: 10px;
     }
+
     footer .bottom-footer .bottom-footer-row span {
         color: var(--secondary-color);
         font-family: "OSR";
@@ -37,17 +42,32 @@
         margin-top: -30px;
         margin-right: 30px;
     }
-    footer .top-footer-newslettert p{
+
+    footer .top-footer-newslettert p {
         color: var(--secondary-color);
         font-family: "OSR";
         font-size: 12px;
         font-weight: 400;
         line-height: 24px;
     }
-    footer .top-footer div.row:nth-child(2){
+
+    footer .tnp form .tnp-email {
+        background-color: #CFEEF5;
+        border: none;
+    }
+
+    footer .tnp form .tnp-submit {
+        background-color: #fff;
+        text-transform: uppercase;
+        color: #037E9B;
+        font-weight: 600;
+    }
+
+    footer .top-footer div.row:nth-child(2) {
         padding: 30px 0 30px 0;
     }
-    footer .bottom-footer-second{
+
+    footer .bottom-footer-second {
         display: flex;
         justify-content: end;
     }
@@ -61,21 +81,35 @@
         margin-right: 10px;
     }
 
-    footer .top-footer-menu h6, footer .top-footer-customer-service h6, footer .top-footer-contact h6,  footer .top-footer-newslettert h6 {
+    footer .top-footer-menu h6,
+    footer .top-footer-customer-service h6,
+    footer .top-footer-contact h6,
+    footer .top-footer-newslettert h6 {
         color: var(--secondary-color);
         /*display: none;*/
     }
-    footer .top-footer-menu ul, footer .top-footer-customer-service ul, footer .top-footer-contact ul{
+
+    footer .top-footer-menu ul,
+    footer .top-footer-customer-service ul,
+    footer .top-footer-contact ul {
         column-count: 2;
     }
-    footer .top-footer-menu ul li, footer .top-footer-customer-service ul li, footer .top-footer-contact ul li{
+
+    footer .top-footer-menu ul li,
+    footer .top-footer-customer-service ul li,
+    footer .top-footer-contact ul li {
         margin-bottom: 20px;
     }
-    footer .top-footer-menu ul li a, footer .top-footer-customer-service ul li a, footer .top-footer-contact ul li a, footer .top-footer-contact ul li a{
+
+    footer .top-footer-menu ul li a,
+    footer .top-footer-customer-service ul li a,
+    footer .top-footer-contact ul li a,
+    footer .top-footer-contact ul li a {
         color: #fff;
         font-family: "OSR";
         font-size: 14px;
     }
+
     footer #menu-top-footer-menu {
         list-style: none;
         padding: 0;
@@ -96,7 +130,7 @@
         display: none;
     }
 
-    footer .top-footer-contact  p {
+    footer .top-footer-contact p {
         margin: 0px auto 20px;
         color: #fff;
         position: relative;
@@ -105,7 +139,7 @@
         padding-left: 35px;
     }
 
-    footer .top-footer-contact  p a {
+    footer .top-footer-contact p a {
         color: #ffffff;
         font-size: 14px;
         font-family: "OSR";

@@ -422,7 +422,7 @@
 
 
   .single-product-content {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .single-product .group-buy-table #sort_customizable_table {
@@ -534,6 +534,9 @@
     width: 50%;
     margin-left: 10px;
 
+  }
+  .single-product-content {
+    margin-top: 50px;
   }
 }
 

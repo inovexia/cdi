@@ -41,7 +41,12 @@ if ( post_password_required() ) {
                 <div class="product-outer col-9">
                     <div class="row">
                         <div class="col-6 product-data-right">
-                            <!-- Swiper -->
+                       
+
+                                        <?php $attachment_ids = $product->get_gallery_image_ids(); 
+                                        $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'single-post-thumbnail' );
+                                        if(!empty($attachment_ids)){ ?>
+                                            <!-- Swiper -->
                             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                                 class="swiper gallerySwiper2">
                                 <div class="swiper-wrapper">
@@ -71,8 +76,17 @@ if ( post_password_required() ) {
                                 ?>
                                 </div>
                             </div>
-
-
+                            <!-- Swiper End -->
+                                        <?php }
+                                        elseif(!empty($image)){ ?>
+                                           <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'single-post-thumbnail' );?>
+                                        
+                                        <img src="<?php  echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
+                                       <?php }
+                                       else{ ?>
+                                            <img src="<?php echo site_url(); ?>/wp-content/uploads/2022/06/default.png" alt="canadian insulin">
+                                      <?php }
+                                        ?>
                             <div class="product-title mob-d-block">
                                 <?php
 										/*

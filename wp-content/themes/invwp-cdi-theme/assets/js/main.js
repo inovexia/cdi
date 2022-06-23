@@ -115,6 +115,7 @@ jQuery(document).ready(function () {
     jQuery("#desktopSearch").fadeOut();
   });
   jQuery(".tnp-email").attr("placeholder", "Enter your email");
+  jQuery(".tnp-submit").attr("value", "SIGN UP");
 });
 
 /* Collapsible/Accordion */
