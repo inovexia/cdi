@@ -1,182 +1,182 @@
-/* Footer Top CSS start */
-
-@media (min-width:0) {
-    footer#colophon {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center, center;
-        width: 100%;
-        padding: 40px 0px;
-    }
-
-    footer .site-branding {
-        width: 135px;
-    }
-
-    footer .site-branding img {
-        width: 100%;
-    }
-
-    footer .payment-options {
-        display: flex;
-        align-items: center;
-    }
-
-    footer .payment-options img {
-        width: 150px;
-        margin-right: 10px;
-    }
-
-    footer .payment-options section {
-        width: 110px;
-    }
-
-    footer .payment-options section img {
-        width: 100%;
-    }
-
-    footer .top-footer-menu h6 {
-        display: none;
-    }
-
-    footer #menu-top-footer-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    footer #menu-top-footer-menu li {
-        margin-bottom: 20px;
-    }
-
-    footer #menu-top-footer-menu li a {
-        color: #fff;
-        font-family: "OSR";
-        font-size: 14px;
-    }
-
-    footer .top-footer-contact #block-16 {
-        display: none;
-    }
-
-    footer .top-footer-contact section#block-25 p {
-        margin: 0px auto 20px;
-        color: #fff;
-        position: relative;
-        font-size: 14px;
-        font-family: "OSR";
-        padding-left: 35px;
-    }
-
-    footer .top-footer-contact section#block-25 p a {
-        color: #3a9bb3;
-        font-size: 14px;
-        font-family: "OSR";
-        margin-left: 5px;
-        display: inline-block;
-    }
-
-    footer .top-footer-contact section#block-25 p::before {
-        position: absolute;
-        content: "";
-        width: 25px;
-        height: 25px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        left: 0;
-        top: 0;
-    }
-}
-
-@media (min-width:768px) {
-    footer#colophon {
-        padding: 60px 0px;
-    }
-
-    footer .site-branding {
-        width: 165px;
-    }
-
-    footer .payment-options section {
-        width: 150px;
-    }
-}
-
-@media (min-width:992px) {
-    footer .payment-options section {
-        width: 265px;
-    }
-}
-
-/* Footer Top CSS end */
-
-/* Bottom footer css start */
-@media (min-width:0) {
-    footer .bottom-footer-data {
-        margin-top: 30px;
-        border-top: 1px solid #fff;
-        padding: 20px 0px 0px;
-    }
-
-    footer .bottom-footer-data ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    footer .bottom-footer-data .social-icons {
-        margin-top: 20px;
-    }
-
-    footer .bottom-footer-data .social-icons ul li a {
-        width: 35px;
-        height: 35px;
-        border: 1px solid #fff;
-        display: inline-flex;
-        margin-right: 20px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 20px;
-    }
-
-    footer .bottom-footer-data .social-icons section {
-        margin: 0;
-    }
-
-    footer .bottom-footer-data .social-icons section ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    footer .bottom-footer-data .copyright-text p {
-        margin: 0;
-        color: #fff;
-        font-family: "OSR";
-        font-size: 14px;
-    }
-
-    footer .top-footer-about p {
-        font-size: 14px;
-        color: #fff;
-        font-family: "OSR";
-    }
-
-}
-
-@media (min-width:768px) {
-    footer .bottom-footer-data ul {
-        justify-content: flex-end;
-    }
-
-    footer .bottom-footer-data .social-icons ul li a {
-        margin-left: 20px;
-
-    }
-
-    footer .bottom-footer-data .social-icons {
-        margin-top: 0px;
-    }
+/* Footer Top CSS start */
+
+@media (min-width:0) {
+    footer#colophon {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center, center;
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    footer .site-branding {
+        width: 135px;
+    }
+
+    footer .site-branding img {
+        width: 100%;
+    }
+
+    footer .payment-options {
+        display: flex;
+        align-items: center;
+    }
+
+    footer .payment-options img {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    footer .payment-options section {
+        width: 110px;
+    }
+
+    footer .payment-options section img {
+        width: 100%;
+    }
+
+    footer .top-footer-menu h6 {
+        display: none;
+    }
+
+    footer #menu-top-footer-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer #menu-top-footer-menu li {
+        margin-bottom: 20px;
+    }
+
+    footer #menu-top-footer-menu li a {
+        color: #fff;
+        font-family: "OSR";
+        font-size: 14px;
+    }
+
+    footer .top-footer-contact #block-16 {
+        display: none;
+    }
+
+    footer .top-footer-contact section#block-25 p {
+        margin: 0px auto 20px;
+        color: #fff;
+        position: relative;
+        font-size: 14px;
+        font-family: "OSR";
+        padding-left: 35px;
+    }
+
+    footer .top-footer-contact section#block-25 p a {
+        color: #3a9bb3;
+        font-size: 14px;
+        font-family: "OSR";
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    footer .top-footer-contact section#block-25 p::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (min-width:768px) {
+    footer#colophon {
+        padding: 60px 0px;
+    }
+
+    footer .site-branding {
+        width: 165px;
+    }
+
+    footer .payment-options section {
+        width: 150px;
+    }
+}
+
+@media (min-width:992px) {
+    footer .payment-options section {
+        width: 265px;
+    }
+}
+
+/* Footer Top CSS end */
+
+/* Bottom footer css start */
+@media (min-width:0) {
+    footer .bottom-footer-data {
+        margin-top: 30px;
+        border-top: 1px solid #fff;
+        padding: 20px 0px 0px;
+    }
+
+    footer .bottom-footer-data ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    footer .bottom-footer-data .social-icons {
+        margin-top: 20px;
+    }
+
+    footer .bottom-footer-data .social-icons ul li a {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #fff;
+        display: inline-flex;
+        margin-right: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    footer .bottom-footer-data .social-icons section {
+        margin: 0;
+    }
+
+    footer .bottom-footer-data .social-icons section ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .bottom-footer-data .copyright-text p {
+        margin: 0;
+        color: #fff;
+        font-family: "OSR";
+        font-size: 14px;
+    }
+
+    footer .top-footer-about p {
+        font-size: 14px;
+        color: #fff;
+        font-family: "OSR";
+    }
+
+}
+
+@media (min-width:768px) {
+    footer .bottom-footer-data ul {
+        justify-content: flex-end;
+    }
+
+    footer .bottom-footer-data .social-icons ul li a {
+        margin-left: 20px;
+
+    }
+
+    footer .bottom-footer-data .social-icons {
+        margin-top: 0px;
+    }
 }
