@@ -6,21 +6,22 @@
  */
 
 
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
-add_action( 'invwp_woocommerce_checkout_login_form', 'woocommerce_checkout_login_form', 10 );
+// remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
+// add_action( 'invwp_woocommerce_checkout_login_form', 'woocommerce_checkout_login_form', 10 );
 
-remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
-add_action( 'invwp_woocommerce_payment_methods', 'woocommerce_checkout_payment', 5 );
+//remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+//add_action( 'invwp_woocommerce_payment_methods', 'woocommerce_checkout_payment', 5 );
 
 // Remove the Have a coupon options form from default location
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-add_action( 'woocommerce_checkout_before_order_review', 'woocommerce_checkout_coupon_form', 5 );
+// remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+// add_action( 'woocommerce_checkout_before_order_review', 'woocommerce_checkout_coupon_form', 5 );
 
 add_action( 'invwp_woocommerce_checkout_place_order_button', 'invwp_checkout_place_order_button', 5 );
 function invwp_checkout_place_order_button () {
-  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order button-primary" id="place_order" value="">Checkout</button>' ); // @codingStandardsIgnoreLine
+  echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order button-primary" id="place_order" value="">PLACE ORDER</button>' ); // @codingStandardsIgnoreLine
 }
 
+/*
 
 add_action( 'wp_head', 'invwp_multi_step_checkout_style' );
 function invwp_multi_step_checkout_style () {
@@ -40,3 +41,4 @@ function invwp_multi_step_checkout_script () {
 </script>
 <?php
 }
+*/

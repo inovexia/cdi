@@ -237,7 +237,7 @@ body {
 }
 
 [class*="col-"] {
-  padding: 0px;
+  padding: 15px;
   width: 100%;
 }
 
